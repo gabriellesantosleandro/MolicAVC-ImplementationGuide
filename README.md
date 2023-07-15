@@ -1,2 +1,2 @@
-# Molic-avc-aps
-Registro Eletrônico de Saúde da APS - Projeto Molic-AVC
+# Molic-avc
+Projeto Molic-AVC
