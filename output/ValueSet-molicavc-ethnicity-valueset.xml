@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-ethnicity-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/32625-6/">32625-6</a></td><td>Mixed Ethnicity</td></tr><tr><td><a href="https://loinc.org/21028-6/">21028-6</a></td><td>Hispanic or Latino Ethnicity</td></tr><tr><td><a href="https://loinc.org/2028-9/">2028-9</a></td><td>Non-Hispanic or Latino Ethnicity</td></tr><tr><td><a href="https://loinc.org/32626-4/">32626-4</a></td><td>White Ethnicity</td></tr><tr><td><a href="https://loinc.org/32623-1/">32623-1</a></td><td>African Ethnicity</td></tr><tr><td><a href="https://loinc.org/80832-0/">80832-0</a></td><td>Afrodescendant Ethnicity (South America)</td></tr><tr><td><a href="https://loinc.org/32620-7/">32620-7</a></td><td>Indigenous Ethnicity (Global)</td></tr><tr><td><a href="https://loinc.org/32622-3/">32622-3</a></td><td>Asian Ethnicity</td></tr><tr><td><a href="https://loinc.org/32621-5/">32621-5</a></td><td>Aboriginal Ethnicity</td></tr><tr><td><a href="https://loinc.org/32627-2/">32627-2</a></td><td>Middle Eastern Ethnicity</td></tr><tr><td><a href="https://loinc.org/32629-8/">32629-8</a></td><td>Pacific Islander Ethnicity</td></tr><tr><td><a href="https://loinc.org/2029-7/">2029-7</a></td><td>Other Ethnicity</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-ethnicity-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_EthnicityValueSet"/>
+  <title value="Patient Ethnicity ValueSet"/>
+  <status value="draft"/>
+  <date value="2023-08-15T15:21:17-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="Patient's Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="32625-6"/>
+        <display value="Mixed Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="21028-6"/>
+        <display value="Hispanic or Latino Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="2028-9"/>
+        <display value="Non-Hispanic or Latino Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="32626-4"/>
+        <display value="White Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="32623-1"/>
+        <display value="African Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="80832-0"/>
+        <display value="Afrodescendant Ethnicity (South America)"/>
+      </concept>
+      <concept>
+        <code value="32620-7"/>
+        <display value="Indigenous Ethnicity (Global)"/>
+      </concept>
+      <concept>
+        <code value="32622-3"/>
+        <display value="Asian Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="32621-5"/>
+        <display value="Aboriginal Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="32627-2"/>
+        <display value="Middle Eastern Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="32629-8"/>
+        <display value="Pacific Islander Ethnicity"/>
+      </concept>
+      <concept>
+        <code value="2029-7"/>
+        <display value="Other Ethnicity"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

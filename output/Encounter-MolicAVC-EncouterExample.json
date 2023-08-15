@@ -1,0 +1,106 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "MolicAVC-EncouterExample",
+  "meta" : {
+    "profile" : ["https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-encounter-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"MolicAVC-EncouterExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;MolicAVC-EncouterExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-molicavc-encounter-profile.html\">Encounter Profile</a></p></div><p><b>identifier</b>: id:\u00a0AVC2023-123456\u00a0(use:\u00a0USUAL)</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#inpatient)</span></p><p><b>priority</b>: EM <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ValueSet-v3-ActPriority.html#EM)</span></p><p><b>subject</b>: <a href=\"Patient/JohnDoeStrokePatient\">Patient/JohnDoeStrokePatient</a></p><p><b>subjectStatus</b>: receiving-care <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#receiving-care)</span></p><p><b>episodeOfCare</b>: <a href=\"EpisodeOfCare/JohnDoeStrokeEpisode\">EpisodeOfCare/JohnDoeStrokeEpisode</a></p><p><b>careTeam</b>: <a href=\"CareTeam/StrokeCareTeam\">CareTeam/StrokeCareTeam</a></p><p><b>serviceProvider</b>: <a href=\"Organization/StrokeCenterHospital\">Organization/StrokeCenterHospital</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td>doctor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#doctor)</span></td><td>2023-08-15 09:00:00+0000 --&gt; 2023-08-15 11:00:00+0000</td><td><a href=\"Practitioner/StrokeSpecialistDrSmith\">Practitioner/StrokeSpecialistDrSmith</a></td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Use</b></td></tr><tr><td style=\"display: none\">*</td><td>working <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (valueset-encounter-diagnosis-use.html#working)</span></td></tr></table><h3>Admissions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>PreAdmissionIdentifier</b></td><td><b>Origin</b></td><td><b>AdmitSource</b></td><td><b>ReAdmission</b></td><td><b>Destination</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style=\"display: none\">*</td><td>id:\u00a0EMERG-2023-56789</td><td><a href=\"Organization/LocalClinic\">Organization/LocalClinic</a></td><td>emd <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (admit-source#emd)</span></td><td>R <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (re-admission#R)</span></td><td><a href=\"Organization/RehabilitationCenter\">Organization/RehabilitationCenter</a></td><td>rehab <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (discharge-disposition#rehab)</span></td></tr></table><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Location/neurologyWard\">Location/neurologyWard</a></td><td>active</td><td>2023-08-15 09:00:00+0000 --&gt; 2023-08-25 11:00:00+0000</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "usual",
+    "value" : "AVC2023-123456"
+  }],
+  "status" : "in-progress",
+  "class" : [{
+    "coding" : [{
+      "code" : "inpatient"
+    }]
+  }],
+  "priority" : {
+    "coding" : [{
+      "system" : "https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html",
+      "code" : "EM"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/JohnDoeStrokePatient"
+  },
+  "subjectStatus" : {
+    "coding" : [{
+      "code" : "receiving-care"
+    }]
+  },
+  "episodeOfCare" : [{
+    "reference" : "EpisodeOfCare/JohnDoeStrokeEpisode"
+  }],
+  "careTeam" : [{
+    "reference" : "CareTeam/StrokeCareTeam"
+  }],
+  "serviceProvider" : {
+    "reference" : "Organization/StrokeCenterHospital"
+  },
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "code" : "doctor"
+      }]
+    }],
+    "period" : {
+      "start" : "2023-08-15T09:00:00Z",
+      "end" : "2023-08-15T11:00:00Z"
+    },
+    "actor" : {
+      "reference" : "Practitioner/StrokeSpecialistDrSmith"
+    }
+  }],
+  "diagnosis" : [{
+    "use" : [{
+      "coding" : [{
+        "system" : "https://build.fhir.org/valueset-encounter-diagnosis-use.html",
+        "code" : "working"
+      }]
+    }]
+  }],
+  "admission" : {
+    "preAdmissionIdentifier" : {
+      "system" : "http://example.org/hospital-admission-system",
+      "value" : "EMERG-2023-56789"
+    },
+    "origin" : {
+      "reference" : "Organization/LocalClinic"
+    },
+    "admitSource" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/admit-source",
+        "code" : "emd"
+      }]
+    },
+    "reAdmission" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/re-admission",
+        "code" : "R"
+      }]
+    },
+    "destination" : {
+      "reference" : "Organization/RehabilitationCenter"
+    },
+    "dischargeDisposition" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/discharge-disposition",
+        "code" : "rehab"
+      }]
+    }
+  },
+  "location" : [{
+    "location" : {
+      "reference" : "Location/neurologyWard"
+    },
+    "status" : "active",
+    "period" : {
+      "start" : "2023-08-15T09:00:00Z",
+      "end" : "2023-08-25T11:00:00Z"
+    }
+  }]
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "live-alone-pre-stroke",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Yes, I lived alone</td></tr><tr><td>2</td><td>No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.gabriellesantosleandro.com/molic-avc/ValueSet/live-alone-pre-stroke",
+  "version" : "0.1.0",
+  "name" : "MolicAVC_LiveAlonePreStrokeValueSet",
+  "title" : "Live Alone Pre-Stroke ValueSet",
+  "status" : "draft",
+  "date" : "2023-08-15T15:21:17-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Yes, I lived alone"
+      },
+      {
+        "code" : "2",
+        "display" : "No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"
+      },
+      {
+        "code" : "999",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

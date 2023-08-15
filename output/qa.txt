@@ -1,0 +1,184 @@
+﻿MolicAVC : Validation Results
+=========================================
+
+err = 19, warn = 98, info = 3
+IG Publisher Version: 1.3.23 Out of date - current version is 1.3.28
+Generated Tue Aug 15 15:22:40 BRT 2023. FHIR version 5.0.0 for fhir.molic-avc#0.1.0 (canonical = https://www.gabriellesantosleandro.com/molic-avc)
+ Build Errors : 9 / 3 / 0
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Encounter-MolicAVC-EncouterExample : 15 / 13 / 2
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ImplementationGuide-fhir.molic-avc : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Organization-MolicAVC-OrganizationExample : 3 / 3 / 2
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Patient-123456789 : 1 / 6 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Practitioner-MolicAVC-DoctorExample : 0 / 2 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-live-alone-pre-stroke-extension : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-living-location-pre-stroke-extension : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-encounter-profile : 0 / 36 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-ethnicity-extension : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-genderidentity-extension : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-organization-profile : 0 / 2 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-patient-profile : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-practitioner-profile : 0 / 2 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-race-extension : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\StructureDefinition-molicavc-sex-extension : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-live-alone-pre-stroke : 0 / 3 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-living-location-pre-stroke-valueset : 0 / 3 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-molicavc-code-healthcare-unit-valueset : 0 / 3 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-molicavc-code-professional-valueset : 0 / 3 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-molicavc-ethnicity-valueset : 0 / 2 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-molicavc-gender-valueset : 0 / 2 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-molicavc-race : 0 / 12 / 2
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ValueSet-molicavc-sex-valueset : 0 / 3 / 1
+</table>
+== n/a ==
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 916: The link 'Patient/JohnDoeStrokePatient' for "Patient/JohnDoeStrokePatient" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 1182: The link 'EpisodeOfCare/JohnDoeStrokeEpisode' for "EpisodeOfCare/JohnDoeStrokeEpisode" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 1289: The link 'CareTeam/StrokeCareTeam' for "CareTeam/StrokeCareTeam" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 1381: The link 'Organization/StrokeCenterHospital' for "Organization/StrokeCenterHospital" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 1846: The link 'Practitioner/StrokeSpecialistDrSmith' for "Practitioner/StrokeSpecialistDrSmith" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2581: The link 'Organization/LocalClinic' for "Organization/LocalClinic" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 2897: The link 'Organization/RehabilitationCenter' for "Organization/RehabilitationCenter" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Encounter-MolicAVC-EncouterExample.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 167, column 3320: The link 'Location/neurologyWard' for "Location/neurologyWard" cannot be resolved
+ERROR: C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\output\Organization-MolicAVC-OrganizationExample.html#/html/body/div/div/div/div/div/div/p/a at Line 167, column 911: The link 'Organization/HospitalGroupABC' for "Organization/HospitalGroupABC" cannot be resolved
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated\resources\Encounter-MolicAVC-EncouterExample.json ==
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.status: ValueSet https://build.fhir.org/valueset-encounter-status.html not found
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.class[0]: ValueSet https://terminology.hl7.org/5.2.0/ValueSet-encounter-class.html not found
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.class[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.priority: ValueSet https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html not found
+INFORMATION: Encounter/MolicAVC-EncouterExample: Encounter.priority.coding[0]: Code System URI 'https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html' is unknown so the code cannot be validated
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.subject: Unable to resolve resource with reference 'Patient/JohnDoeStrokePatient'
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.subjectStatus: ValueSet https://build.fhir.org/valueset-encounter-subject-status.html not found
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.subjectStatus.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.episodeOfCare[0]: Unable to resolve resource with reference 'EpisodeOfCare/JohnDoeStrokeEpisode'
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.careTeam[0]: Unable to resolve resource with reference 'CareTeam/StrokeCareTeam'
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.serviceProvider: Unable to resolve resource with reference 'Organization/StrokeCenterHospital'
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.participant[0].type[0]: ValueSet https://build.fhir.org/valueset-encounter-participant-type.html not found
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.participant[0].type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.participant[0].actor: Unable to resolve resource with reference 'Practitioner/StrokeSpecialistDrSmith'
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.diagnosis[0].use[0]: ValueSet https://build.fhir.org/valueset-encounter-diagnosis-use.html not found
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.diagnosis[0].use[0].coding[0]: The code system reference https://build.fhir.org/valueset-encounter-diagnosis-use.html is wrong - the code system reference cannot be a reference to build.fhir.org. This may be the correct reference: {unable to determine intended url}
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.origin: Unable to resolve resource with reference 'Organization/LocalClinic'
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.admission.admitSource: ValueSet https://build.fhir.org/valueset-encounter-admit-source.html not found
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.admitSource.coding[0]: Unknown Code System 'http://hl7.org/fhir/admit-source'
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.admitSource.coding[0].system: URL value 'http://hl7.org/fhir/admit-source' does not resolve
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.admission.reAdmission: ValueSet https://terminology.hl7.org/5.2.0/ValueSet-v2-0092.html not found
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.reAdmission.coding[0]: Unknown Code System 'http://hl7.org/fhir/re-admission'
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.reAdmission.coding[0].system: URL value 'http://hl7.org/fhir/re-admission' does not resolve
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.destination: Unable to resolve resource with reference 'Organization/RehabilitationCenter'
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.admission.dischargeDisposition: ValueSet https://build.fhir.org/valueset-encounter-discharge-disposition.html not found
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.dischargeDisposition.coding[0]: Unknown Code System 'http://hl7.org/fhir/discharge-disposition'
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.dischargeDisposition.coding[0].system: URL value 'http://hl7.org/fhir/discharge-disposition' does not resolve
+ERROR: Encounter/MolicAVC-EncouterExample: Encounter.location[0].location: Unable to resolve resource with reference 'Location/neurologyWard'
+WARNING: Encounter/MolicAVC-EncouterExample: Encounter.location[0].status: ValueSet https://build.fhir.org/valueset-encounter-location-status.html not found
+== fsh-generated\resources\ImplementationGuide-fhir.molic-avc.json ==
+== fsh-generated\resources\Organization-MolicAVC-OrganizationExample.json ==
+WARNING: Organization/MolicAVC-OrganizationExample: Organization.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Organization/MolicAVC-OrganizationExample: Organization.identifier[0].type: None of the codings provided are in the value set 'Identifier Type Codes' (http://hl7.org/fhir/ValueSet/identifier-type|5.0.0), and a coding from this value set is required) (codes = null#org)
+ERROR: Organization/MolicAVC-OrganizationExample: Organization.type[0]: None of the codings provided are in the value set 'Organization Type' (http://hl7.org/fhir/ValueSet/organization-type|5.0.0), and a coding from this value set is required) (codes = null#prov)
+WARNING: Organization/MolicAVC-OrganizationExample: Organization.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Organization/MolicAVC-OrganizationExample: Organization.partOf: Unable to resolve resource with reference 'Organization/HospitalGroupABC'
+WARNING: Organization/MolicAVC-OrganizationExample: Organization.qualification[0].code: ValueSet https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ not found
+INFORMATION: Organization/MolicAVC-OrganizationExample: Organization.qualification[0].code.coding[0]: Code System URI 'https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/' is unknown so the code cannot be validated
+== fsh-generated\resources\Patient-123456789.json ==
+ERROR: Patient/123456789: Patient.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding.code] in profile Patient.identifier:officialIdentifier - the discriminator https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-patient-profile|0.1.0 does not have fixed value, binding or existence assertions
+WARNING: Patient/123456789: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/123456789: Patient.extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/123456789: Patient.extension[2].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/123456789: Patient.extension[3].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/123456789: Patient.extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Patient/123456789: Patient.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated\resources\Practitioner-MolicAVC-DoctorExample.json ==
+WARNING: Practitioner/MolicAVC-DoctorExample: Practitioner.qualification[0].code: ValueSet http://gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset not found
+WARNING: Practitioner/MolicAVC-DoctorExample: Practitioner.qualification[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+== fsh-generated\resources\StructureDefinition-live-alone-pre-stroke-extension.json ==
+== fsh-generated\resources\StructureDefinition-living-location-pre-stroke-extension.json ==
+== fsh-generated\resources\StructureDefinition-molicavc-encounter-profile.json ==
+WARNING: Encounter Profile.Encounter.status: Binding https://build.fhir.org/valueset-encounter-status.html could not be located
+WARNING: Encounter Profile.Encounter.location.status: Binding https://build.fhir.org/valueset-encounter-location-status.html could not be located
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[18].short: value should not start or finish with whitespace 'planned | in-progress | on-hold | discharged | completed | cancelled | discontinued |\r\nentered-in-error | unknown '
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[24].short: value should not start or finish with whitespace 'The current status of the subject in relation to the Encounter.\r\narrived | triaged | receiving-care | on-leave | departed '
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[8].short: value should not start or finish with whitespace 'planned | in-progress | on-hold | discharged | completed | cancelled | discontinued |\r\nentered-in-error | unknown '
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[14].short: value should not start or finish with whitespace 'The current status of the subject in relation to the Encounter.\r\narrived | triaged | receiving-care | on-leave | departed '
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition: Binding https://build.fhir.org/valueset-encounter-status.html could not be located
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition: Binding https://build.fhir.org/valueset-encounter-location-status.html could not be located
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[8].binding: The valueSet reference https://build.fhir.org/valueset-encounter-status.html on element Encounter.status could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[9].binding: The valueSet reference https://terminology.hl7.org/5.2.0/ValueSet-encounter-class.html on element Encounter.class could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[10].binding: The valueSet reference https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html on element Encounter.priority could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[12].binding: The valueSet reference https://terminology.hl7.org/5.2.0/CodeSystem-service-type.html on element Encounter.serviceType could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[14].binding: The valueSet reference https://build.fhir.org/valueset-encounter-subject-status.html on element Encounter.subjectStatus could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[21].binding: The valueSet reference https://build.fhir.org/valueset-encounter-participant-type.html on element Encounter.participant.type could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[31].binding: The valueSet reference https://build.fhir.org/valueset-encounter-reason-use.html on element Encounter.reason.use could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[32].binding: The valueSet reference https://build.fhir.org/valueset-encounter-reason.html on element Encounter.reason.value could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[34].binding: The valueSet reference https://build.fhir.org/valueset-condition-code.html on element Encounter.diagnosis.condition could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[35].binding: The valueSet reference https://build.fhir.org/valueset-encounter-diagnosis-use.html on element Encounter.diagnosis.use could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[43].binding: The valueSet reference https://build.fhir.org/valueset-encounter-admit-source.html on element Encounter.admission.admitSource could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[44].binding: The valueSet reference https://terminology.hl7.org/5.2.0/ValueSet-v2-0092.html on element Encounter.admission.reAdmission could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[46].binding: The valueSet reference https://build.fhir.org/valueset-encounter-discharge-disposition.html on element Encounter.admission.dischargeDisposition could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.differential.element[49].binding: The valueSet reference https://build.fhir.org/valueset-encounter-location-status.html on element Encounter.location.status could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[18].binding: The valueSet reference https://build.fhir.org/valueset-encounter-status.html on element Encounter.status could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[19].binding: The valueSet reference https://terminology.hl7.org/5.2.0/ValueSet-encounter-class.html on element Encounter.class could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[20].binding: The valueSet reference https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html on element Encounter.priority could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[22].binding: The valueSet reference https://terminology.hl7.org/5.2.0/CodeSystem-service-type.html on element Encounter.serviceType could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[24].binding: The valueSet reference https://build.fhir.org/valueset-encounter-subject-status.html on element Encounter.subjectStatus could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[34].binding: The valueSet reference https://build.fhir.org/valueset-encounter-participant-type.html on element Encounter.participant.type could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[47].binding: The valueSet reference https://build.fhir.org/valueset-encounter-reason-use.html on element Encounter.reason.use could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[48].binding: The valueSet reference https://build.fhir.org/valueset-encounter-reason.html on element Encounter.reason.value could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[53].binding: The valueSet reference https://build.fhir.org/valueset-condition-code.html on element Encounter.diagnosis.condition could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[54].binding: The valueSet reference https://build.fhir.org/valueset-encounter-diagnosis-use.html on element Encounter.diagnosis.use could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[65].binding: The valueSet reference https://build.fhir.org/valueset-encounter-admit-source.html on element Encounter.admission.admitSource could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[66].binding: The valueSet reference https://terminology.hl7.org/5.2.0/ValueSet-v2-0092.html on element Encounter.admission.reAdmission could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[68].binding: The valueSet reference https://build.fhir.org/valueset-encounter-discharge-disposition.html on element Encounter.admission.dischargeDisposition could not be resolved
+WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.snapshot.element[74].binding: The valueSet reference https://build.fhir.org/valueset-encounter-location-status.html on element Encounter.location.status could not be resolved
+== fsh-generated\resources\StructureDefinition-molicavc-ethnicity-extension.json ==
+== fsh-generated\resources\StructureDefinition-molicavc-genderidentity-extension.json ==
+== fsh-generated\resources\StructureDefinition-molicavc-organization-profile.json ==
+WARNING: StructureDefinition/molicavc-organization-profile: StructureDefinition.differential.element[23].binding: The valueSet reference https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ on element Organization.qualification.code could not be resolved
+WARNING: StructureDefinition/molicavc-organization-profile: StructureDefinition.snapshot.element[39].binding: The valueSet reference https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ on element Organization.qualification.code could not be resolved
+== fsh-generated\resources\StructureDefinition-molicavc-patient-profile.json ==
+== fsh-generated\resources\StructureDefinition-molicavc-practitioner-profile.json ==
+WARNING: StructureDefinition/molicavc-practitioner-profile: StructureDefinition.differential.element[30].binding: The valueSet reference http://gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset on element Practitioner.qualification.code could not be resolved
+WARNING: StructureDefinition/molicavc-practitioner-profile: StructureDefinition.snapshot.element[49].binding: The valueSet reference http://gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset on element Practitioner.qualification.code could not be resolved
+== fsh-generated\resources\StructureDefinition-molicavc-race-extension.json ==
+== fsh-generated\resources\StructureDefinition-molicavc-sex-extension.json ==
+== fsh-generated\resources\ValueSet-live-alone-pre-stroke.json ==
+WARNING: ValueSet/live-alone-pre-stroke: ValueSet.compose[0].include[0]: Unknown System 'https://connect.ichom.org/patient-centered-outcome-measures/stroke' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://connect.ichom.org/patient-centered-outcome-measures/stroke is unknown (from Tx-Server))
+WARNING: ValueSet/live-alone-pre-stroke: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'live-alone-pre-stroke'): Error from server: Unable to provide support for code system https://connect.ichom.org/patient-centered-outcome-measures/stroke
+== fsh-generated\resources\ValueSet-living-location-pre-stroke-valueset.json ==
+WARNING: ValueSet/living-location-pre-stroke-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://connect.ichom.org/patient-centered-outcome-measures/stroke' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://connect.ichom.org/patient-centered-outcome-measures/stroke' is unknown so the code cannot be validated)
+WARNING: ValueSet/living-location-pre-stroke-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'living-location-pre-stroke-valueset'): Error from server: Unable to provide support for code system https://connect.ichom.org/patient-centered-outcome-measures/stroke
+== fsh-generated\resources\ValueSet-molicavc-code-healthcare-unit-valueset.json ==
+WARNING: ValueSet/molicavc-code-healthcare-unit-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ is unknown (from Tx-Server))
+WARNING: ValueSet/molicavc-code-healthcare-unit-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'molicavc-code-healthcare-unit-valueset'): Error from server: Unable to provide support for code system https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/
+== fsh-generated\resources\ValueSet-molicavc-code-professional-valueset.json ==
+WARNING: ValueSet/molicavc-code-professional-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/ is unknown (from Tx-Server))
+WARNING: ValueSet/molicavc-code-professional-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'molicavc-code-professional-valueset'): Error from server: Unable to provide support for code system https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/
+== fsh-generated\resources\ValueSet-molicavc-ethnicity-valueset.json ==
+WARNING: ValueSet/molicavc-ethnicity-valueset: ValueSet.compose[0].include[0].concept[5]: The code '80832-0' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-ethnicity-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated\resources\ValueSet-molicavc-gender-valueset.json ==
+WARNING: ValueSet/molicavc-gender-valueset: ValueSet.compose[0].include[0].concept[2]: The code 'LA76696-4:' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-gender-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated\resources\ValueSet-molicavc-race.json ==
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[0]: The code '32697-1' is not valid in the system http://loinc.org
+INFORMATION: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[0]: Unknown Code '32697-1' in the system 'http://loinc.org'; The provided code http://loinc.org#32697-1 is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server)
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[1]: The code '32698-9' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[2]: The code '32699-7' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[3]: The code '32700-3' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[4]: The code '32701-1' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[5]: The code '8288-1' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[6]: The code '8310-3' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[7]: The code '8311-1' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[8]: The code '8320-2' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[9]: The code '8321-0' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet.compose[0].include[0].concept[10]: The code '32702-9' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-race: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+== fsh-generated\resources\ValueSet-molicavc-sex-valueset.json ==
+WARNING: ValueSet/molicavc-sex-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://connect.ichom.org/patient-centered-outcome-measures/stroke' specified, so Concepts and Filters can't be checked (Details: Code System URI 'https://connect.ichom.org/patient-centered-outcome-measures/stroke' is unknown so the code cannot be validated)
+WARNING: ValueSet/molicavc-sex-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
+WARNING: ValueSet.where(id = 'molicavc-sex-valueset'): Error from server: Unable to provide support for code system https://connect.ichom.org/patient-centered-outcome-measures/stroke

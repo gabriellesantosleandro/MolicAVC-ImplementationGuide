@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="living-location-pre-stroke-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>At home, with no community support</td></tr><tr><td>2</td><td>At home with community support</td></tr><tr><td>3</td><td>In an assisting living home in the community (senior's home)</td></tr><tr><td>4</td><td>In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)</td></tr><tr><td>5</td><td>In long term care (nursing home, chronic care hospital)</td></tr><tr><td>888</td><td>Other</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/living-location-pre-stroke-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_LivingLocationPreStrokeValueSet"/>
+  <title value="Patient's Residence Prior to a Stroke ValueSet"/>
+  <status value="draft"/>
+  <date value="2023-08-15T15:21:17-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <concept>
+        <code value="1"/>
+        <display value="At home, with no community support"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="At home with community support"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="In an assisting living home in the community (senior's home)"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="In long term care (nursing home, chronic care hospital)"/>
+      </concept>
+      <concept>
+        <code value="888"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

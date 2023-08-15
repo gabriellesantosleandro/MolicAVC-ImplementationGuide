@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>FHIR.MOLIC-AVC\Artifacts Summary - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">MolicAVC - Local Development build (v0.1.0). See the <a href="https://www.gabriellesantosleandro.com/molic-avc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+   <p>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-encounter-profile.html"
+                     title="StructureDefinition/molicavc-encounter-profile">Encounter Profile</a>
+               </td>
+               <td>
+<p>The Encounter Resource in the MOLIC-AVC project represents the actual interaction between 
+a patient and their healthcare provider(s). It’s designed to document delivered health services or assess
+the patient’s health status.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-organization-profile.html"
+                     title="StructureDefinition/molicavc-organization-profile">Organization Profile</a>
+               </td>
+               <td>
+<p>The Organization resource in the MOLIC-AVC project encompasses all entities or groups 
+involved in the healthcare process and related health services as part of their formal responsibilities. 
+Examples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, 
+public ambulance transport (SAMU), private services, and others.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-patient-profile.html"
+                     title="StructureDefinition/molicavc-patient-profile">Patient Profile</a>
+               </td>
+               <td>
+<p>The Patient Resource of the Molic-AVC Project stores demographics and other administrative information about an individual or animal receiving care or other health-related services.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-practitioner-profile.html"
+                     title="StructureDefinition/molicavc-practitioner-profile">Practitioner Profile</a>
+               </td>
+               <td>
+<p>The Practitioner Resource in the MOLIC-AVC project encompasses all individuals involved in the healthcare process and related health services as part of their formal responsibilities. This Resource is utilized to assign activities and responsibilities to these individuals. Examples include: doctors, nurses, therapists, receptionists, and so on.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+   <p>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-live-alone-pre-stroke-extension.html"
+                     title="StructureDefinition/live-alone-pre-stroke-extension">Live Alone Pre-Stroke Extension</a>
+               </td>
+               <td>
+<p>Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-ethnicity-extension.html"
+                     title="StructureDefinition/molicavc-ethnicity-extension">Patient Ethnicity Extension</a>
+               </td>
+               <td>
+<p>Extension to capture the patient’s ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-genderidentity-extension.html"
+                     title="StructureDefinition/molicavc-genderidentity-extension">Patient Gender Extension</a>
+               </td>
+               <td>
+<p>The patient’s gender.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-race-extension.html"
+                     title="StructureDefinition/molicavc-race-extension">Patient Race Extension</a>
+               </td>
+               <td>
+<p>Extension to capture the patient’s race, as recommended by ICHOM.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-molicavc-sex-extension.html"
+                     title="StructureDefinition/molicavc-sex-extension">Patient Sex Extension</a>
+               </td>
+               <td>
+<p>The patient’s sex at birth.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-living-location-pre-stroke-extension.html"
+                     title="StructureDefinition/living-location-pre-stroke-extension">Patient's Residence Prior to a Stroke Extension</a>
+               </td>
+               <td>
+<p>An extension to capture the patient’s residence prior to a stroke event, based on the ICHOM code.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+   <p>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-gender-valueset.html"
+                     title="ValueSet/molicavc-gender-valueset">Gender Value Set</a>
+               </td>
+               <td>
+<p>Value set for Gender identity based on LOINC.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-code-healthcare-unit-valueset.html"
+                     title="ValueSet/molicavc-code-healthcare-unit-valueset">Healthcare Unit Code ValueSet</a>
+               </td>
+               <td>
+<p>This ValueSet details codes for healthcare units serving stroke patients in Brazil. 
+It includes:</p>
+<ul>
+  <li>Public Primary Care: CNES (Cadastro Nacional de Estabelecimento Único)</li>
+  <li>Public Reference Hospital: CNES (Cadastro Nacional de Estabelecimento Único)</li>
+  <li>Public Non-Reference Hospital: CNES (Cadastro Nacional de Estabelecimento Único)</li>
+  <li>Public Emergency Unit: CNES (Cadastro Nacional de Estabelecimento Único)</li>
+  <li>Public Ambulance: CNES (Cadastro Nacional de Estabelecimento Único)</li>
+  <li>Public Rehabilitation Unit: CNES (Cadastro Nacional de Estabelecimento Único)</li>
+  <li>Private Healthcare Service: Other Code.</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-live-alone-pre-stroke.html"
+                     title="ValueSet/live-alone-pre-stroke">Live Alone Pre-Stroke ValueSet</a>
+               </td>
+               <td>
+<p>ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-ethnicity-valueset.html"
+                     title="ValueSet/molicavc-ethnicity-valueset">Patient Ethnicity ValueSet</a>
+               </td>
+               <td>
+<p>Patient’s Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-race.html" title="ValueSet/molicavc-race">Patient Race Value Set</a>
+               </td>
+               <td>
+<p>Value set for capturing the patient’s race based on LOINC standards, as recommended by ICHOM.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-living-location-pre-stroke-valueset.html"
+                     title="ValueSet/living-location-pre-stroke-valueset">Patient's Residence Prior to a Stroke ValueSet</a>
+               </td>
+               <td>
+<p>Represents the patient’s most recent place of residence before the occurrence of a stroke based on ICHOM code.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-code-professional-valueset.html"
+                     title="ValueSet/molicavc-code-professional-valueset">Professional Code ValueSet</a>
+               </td>
+               <td>
+<p>This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil. It includes:</p>
+<ul>
+  <li>Doctors: CRM (Conselho Regional de Medicina)</li>
+  <li>Nurses: COREN (Conselho Regional de Enfermagem)</li>
+  <li>Nutritionists: CRN (Conselho Regional de Nutrição)</li>
+  <li>Occupational therapists and Physiotherapists: COFFITO (Conselho Federal de Fisioterapia e Terapia Ocupacional)</li>
+  <li>Psychologists: CRP (Conselho Regional de Psicologia)</li>
+  <li>Receptionists: Locally provided code.
+Each profession is associated with its respective Brazilian registration or licensing entity.</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-sex-valueset.html"
+                     title="ValueSet/molicavc-sex-valueset">Sex ValueSet</a>
+               </td>
+               <td>
+<p>Value set for the patient’s sex at birth according to the ICHOM standard.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-MolicAVC-DoctorExample.html"
+                     title="Practitioner/MolicAVC-DoctorExample">MolicAVC-DoctorExample</a>
+               </td>
+               <td>
+<p>Example instance of a doctor in the Molic-AVC project</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Encounter-MolicAVC-EncouterExample.html"
+                     title="Encounter/MolicAVC-EncouterExample">MolicAVC-EncouterExample</a>
+               </td>
+               <td>
+<p>Example instance of an encounter for a patient admitted due to a stroke (AVC)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-MolicAVC-OrganizationExample.html"
+                     title="Organization/MolicAVC-OrganizationExample">MolicAVC-OrganizationExample</a>
+               </td>
+               <td>
+<p>Example instance of an Organization in the Molic-AVC project.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-123456789.html" title="Patient/123456789">MolicAVC-PatientExample</a>
+               </td>
+               <td>
+<p>Exemplo de um paciente dentro do contexto Molic-AVC.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package fhir.molic-avc#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Aug 15, 2023 15:21-0300">2023-08-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

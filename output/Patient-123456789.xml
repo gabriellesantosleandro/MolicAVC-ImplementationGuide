@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="123456789"/>
+  <meta>
+    <profile value="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-patient-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>João Silva(OFFICIAL)</b> (no stated gender), DoB: 1990-01-01 ( id: 123.456.789-00 (use: OFFICIAL))</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td>true</td><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td colspan="3">2023-01-01</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail:</td><td colspan="3">Rua das Flores, 123, Bairro Jardim, Cidade Maravilhosa, Estado, 12345-678(HOME)</td></tr><tr><td style="background-color: #f3f5da" title="Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information."><a href="StructureDefinition-molicavc-ethnicity-extension.html">Patient Ethnicity Extension:</a></td><td colspan="3"><ul><li><span title="Codes: ">Hispanic or Latino Ethnicity</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code."><a href="StructureDefinition-living-location-pre-stroke-extension.html">Patient's Residence Prior to a Stroke Extension:</a></td><td colspan="3"><ul><li><span title="Codes: ">At home, with no community support</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."><a href="StructureDefinition-live-alone-pre-stroke-extension.html">Live Alone Pre-Stroke Extension:</a></td><td colspan="3"><ul><li><span title="Codes: ">No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The patient's sex at birth."><a href="StructureDefinition-molicavc-sex-extension.html">Patient Sex Extension:</a></td><td colspan="3"><ul><li><span title="Codes: ">Male</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The patient's gender."><a href="StructureDefinition-molicavc-genderidentity-extension.html">Patient Gender Extension:</a></td><td colspan="3"><ul><li><span title="Codes: ">Identifies as male</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Extension to capture the patient's race, as recommended by ICHOM."><a href="StructureDefinition-molicavc-race-extension.html">Patient Race Extension:</a></td><td colspan="3"><ul><li><span title="Codes: ">White or Caucasian Race</span></li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-genderidentity-extension">
+    <valueCodeableConcept>
+      <coding>
+        <code value="LA22878-5"/>
+        <display value="Identifies as male"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-sex-extension">
+    <valueCodeableConcept>
+      <coding>
+        <code value="1"/>
+        <display value="Male"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-ethnicity-extension">
+    <valueCodeableConcept>
+      <coding>
+        <code value="21028-6"/>
+        <display value="Hispanic or Latino Ethnicity"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-race-extension">
+    <valueCodeableConcept>
+      <coding>
+        <code value="32697-1"/>
+        <display value="White or Caucasian Race"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/living-location-pre-stroke-extension">
+    <valueCodeableConcept>
+      <coding>
+        <code value="1"/>
+        <display value="At home, with no community support"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/live-alone-pre-stroke-extension">
+    <valueCodeableConcept>
+      <coding>
+        <code value="2"/>
+        <display value="No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <use value="official"/>
+    <system value="https://rnds-fhir.saude.gov.br/NamingSystem/cpf"/>
+    <value value="123.456.789-00"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <use value="official"/>
+    <text value="João Silva"/>
+  </name>
+  <birthDate value="1990-01-01"/>
+  <deceasedDateTime value="2023-01-01"/>
+  <address>
+    <use value="home"/>
+    <type value="physical"/>
+    <text value="Rua das Flores, 123, Bairro Jardim, Cidade Maravilhosa, Estado, 12345-678"/>
+    <city value="Cidade Maravilhosa"/>
+    <district value="Jardim"/>
+    <state value="Estado"/>
+    <postalCode value="12345-678"/>
+    <country value="Brasil"/>
+  </address>
+</Patient>

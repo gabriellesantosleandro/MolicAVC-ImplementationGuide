@@ -1,0 +1,24 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-fhir.molic-avc.json	10552	-	0	0	0	0	0	0	3	66	0	0	0	0	0	0	0	1	0	0	188	114	0	0	0	4	0	1
+fsh-generated/resources/Encounter-MolicAVC-EncouterExample.json	2671	24	1	0	0	0	0	0	1	1534	0	0	0	0	0	0	0	0	0	0	51	60	0	0	0	0	0	0
+fsh-generated/resources/Organization-MolicAVC-OrganizationExample.json	1486	10	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	25	33	0	0	0	0	0	0
+fsh-generated/resources/Patient-123456789.json	2721	29	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	35	28	0	0	0	0	0	0
+fsh-generated/resources/Practitioner-MolicAVC-DoctorExample.json	671	10	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	23	34	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-live-alone-pre-stroke-extension.json	1972	23	0	0	0	0	0	56	0	42	0	0	0	0	0	0	0	0	0	0	118	2919	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-living-location-pre-stroke-extension.json	2030	15	0	0	0	0	0	29	0	29	0	0	0	0	0	0	0	0	0	0	125	464	0	0	1	1	0	0
+fsh-generated/resources/StructureDefinition-molicavc-encounter-profile.json	13590	47	0	0	0	0	0	293	0	226	0	0	0	0	0	0	0	3	0	0	1034	2278	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-molicavc-ethnicity-extension.json	2116	10	0	0	0	0	0	32	0	17	0	0	0	0	0	0	0	0	0	0	87	406	0	0	0	2	1	0
+fsh-generated/resources/StructureDefinition-molicavc-genderidentity-extension.json	2211	14	0	0	0	0	0	27	0	81	0	0	0	0	0	0	0	0	0	0	97	397	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-molicavc-organization-profile.json	6919	25	0	0	0	0	0	98	0	95	0	0	1	0	0	0	0	0	0	0	570	1294	0	0	0	7	0	2
+fsh-generated/resources/StructureDefinition-molicavc-patient-profile.json	8474	31	1	0	0	0	0	224	0	191	0	0	0	0	0	0	0	2	0	0	978	1814	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-molicavc-practitioner-profile.json	7559	33	0	0	0	0	0	129	0	133	0	0	0	0	0	0	0	1	0	0	761	1635	0	0	0	9	0	1
+fsh-generated/resources/StructureDefinition-molicavc-race-extension.json	2246	9	0	0	0	0	0	25	0	15	0	0	0	0	0	0	0	0	0	0	88	331	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-molicavc-sex-extension.json	2170	6	0	0	0	0	0	19	0	26	0	0	0	0	0	0	0	1	0	0	76	416	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-live-alone-pre-stroke.json	926	4	0	0	0	0	0	0	1	161	0	0	0	0	0	0	0	0	0	0	23	9712	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-living-location-pre-stroke-valueset.json	1431	4	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	21	95	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-molicavc-code-healthcare-unit-valueset.json	2380	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	24	89	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-molicavc-code-professional-valueset.json	2046	3	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	24	117	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-molicavc-ethnicity-valueset.json	2071	3	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	25	116	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-molicavc-gender-valueset.json	1274	4	0	0	0	0	0	0	0	12	0	0	0	0	0	0	0	0	0	0	17	103	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-molicavc-race.json	1814	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	20	90	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-molicavc-sex-valueset.json	841	2	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	14	75	0	0	0	0	0	0

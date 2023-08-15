@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "MolicAVC-DoctorExample",
+  "meta" : {
+    "profile" : ["https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-practitioner-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"MolicAVC-DoctorExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;MolicAVC-DoctorExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-molicavc-practitioner-profile.html\">Practitioner Profile</a></p></div><p><b>identifier</b>: id:\u00a0123456789\u00a0(use:\u00a0OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Dr. João Silva</p><p><b>deceased</b>: false</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Identifier</b></td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td>id:\u00a0CRM-SP 12345\u00a0(use:\u00a0OFFICIAL)</td><td>Doctor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#Doctor)</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "use" : "official",
+    "value" : "123456789"
+  }],
+  "active" : true,
+  "name" : [{
+    "text" : "Dr. João Silva"
+  }],
+  "deceasedBoolean" : false,
+  "qualification" : [{
+    "identifier" : [{
+      "use" : "official",
+      "value" : "CRM-SP 12345"
+    }],
+    "code" : {
+      "coding" : [{
+        "code" : "Doctor"
+      }]
+    }
+  }]
+}

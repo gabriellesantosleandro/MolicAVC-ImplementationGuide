@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="b17df044-81f6-418d-a706-36227f3d0f17"/>
+  <meta>
+    <lastUpdated value="2023-08-15T15:21:17.959-03:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-ethnicity-valueset"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 11 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32625-6"> </a>  
+                  <a href="https://loinc.org/32625-6/">32625-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Mixed Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21028-6"> </a>  
+                  <a href="https://loinc.org/21028-6/">21028-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Hispanic or Latino Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2028-9"> </a>  
+                  <a href="https://loinc.org/2028-9/">2028-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Non-Hispanic or Latino Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32626-4"> </a>  
+                  <a href="https://loinc.org/32626-4/">32626-4</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>White Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32623-1"> </a>  
+                  <a href="https://loinc.org/32623-1/">32623-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>African Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32620-7"> </a>  
+                  <a href="https://loinc.org/32620-7/">32620-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Indigenous Ethnicity (Global)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32622-3"> </a>  
+                  <a href="https://loinc.org/32622-3/">32622-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Asian Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32621-5"> </a>  
+                  <a href="https://loinc.org/32621-5/">32621-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Aboriginal Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32627-2"> </a>  
+                  <a href="https://loinc.org/32627-2/">32627-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Middle Eastern Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32629-8"> </a>  
+                  <a href="https://loinc.org/32629-8/">32629-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Pacific Islander Ethnicity</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2029-7"> </a>  
+                  <a href="https://loinc.org/2029-7/">2029-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Other Ethnicity</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-ethnicity-valueset"/>
+        <version value="0.1.0"/>
+        <name value="MolicAVC_EthnicityValueSet"/>
+        <title value="Patient Ethnicity ValueSet"/>
+        <status value="draft"/>
+        <date value="2023-08-15T15:21:17-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:df49093e-67cc-4f16-8ef9-9c582ec6039f"/>
+          <timestamp value="2023-08-15T15:21:55-03:00"/>
+          <total value="11"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32625-6"/>
+            <display value="Mixed Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21028-6"/>
+            <display value="Hispanic or Latino Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2028-9"/>
+            <display value="Non-Hispanic or Latino Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32626-4"/>
+            <display value="White Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32623-1"/>
+            <display value="African Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32620-7"/>
+            <display value="Indigenous Ethnicity (Global)"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32622-3"/>
+            <display value="Asian Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32621-5"/>
+            <display value="Aboriginal Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32627-2"/>
+            <display value="Middle Eastern Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32629-8"/>
+            <display value="Pacific Islander Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2029-7"/>
+            <display value="Other Ethnicity"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-gender-valueset"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 7 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA22878-5"> </a>  
+                  <a href="https://loinc.org/LA22878-5/">LA22878-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Identifies as male</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA22879-3"> </a>  
+                  <a href="https://loinc.org/LA22879-3/">LA22879-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Identifies as female</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA22880-1"> </a>  
+                  <a href="https://loinc.org/LA22880-1/">LA22880-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Female-to-male transsexual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA22881-9"> </a>  
+                  <a href="https://loinc.org/LA22881-9/">LA22881-9</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Male-to-female transsexual</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA22882-7"> </a>  
+                  <a href="https://loinc.org/LA22882-7/">LA22882-7</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Identifies as non-conforming</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA46-8"> </a>  
+                  <a href="https://loinc.org/LA46-8/">LA46-8</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Other</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-LA20384-6"> </a>  
+                  <a href="https://loinc.org/LA20384-6/">LA20384-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Asked but unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-gender-valueset"/>
+        <version value="0.1.0"/>
+        <name value="MolicAVC_GenderIdentityValueSet"/>
+        <title value="Gender Value Set"/>
+        <status value="draft"/>
+        <date value="2023-08-15T15:21:17-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:b93b9755-ebb7-490c-9972-a3f7d7e80f52"/>
+          <timestamp value="2023-08-15T15:21:55-03:00"/>
+          <total value="7"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA22878-5"/>
+            <display value="Identifies as male"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA22879-3"/>
+            <display value="Identifies as female"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA22880-1"/>
+            <display value="Female-to-male transsexual"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA22881-9"/>
+            <display value="Male-to-female transsexual"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA22882-7"/>
+            <display value="Identifies as non-conforming"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA46-8"/>
+            <display value="Other"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="LA20384-6"/>
+            <display value="Asked but unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-race"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-2135-2"> </a>  
+                  <a href="https://loinc.org/2135-2/">2135-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Unknown</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-race"/>
+        <version value="0.1.0"/>
+        <name value="MolicAVC_RaceValueSet"/>
+        <title value="Patient Race Value Set"/>
+        <status value="draft"/>
+        <date value="2023-08-15T15:21:17-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:c61c91ff-85e7-4475-9849-6de50a51e77f"/>
+          <timestamp value="2023-08-15T15:21:55-03:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="2135-2"/>
+            <display value="Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

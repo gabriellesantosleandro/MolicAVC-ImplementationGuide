@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-gender-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA22878-5/">LA22878-5</a></td><td>Identifies as male</td></tr><tr><td><a href="https://loinc.org/LA22879-3/">LA22879-3</a></td><td>Identifies as female</td></tr><tr><td><a href="https://loinc.org/LA76696-4:/">LA76696-4:</a></td><td>Non-binary</td></tr><tr><td><a href="https://loinc.org/LA22880-1/">LA22880-1</a></td><td>Female-to-male transsexual</td></tr><tr><td><a href="https://loinc.org/LA22881-9/">LA22881-9</a></td><td>Male-to-female transsexual</td></tr><tr><td><a href="https://loinc.org/LA22882-7/">LA22882-7</a></td><td>Identifies as non-conforming</td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr><tr><td><a href="https://loinc.org/LA20384-6/">LA20384-6</a></td><td>Asked but unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-gender-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_GenderIdentityValueSet"/>
+  <title value="Gender Value Set"/>
+  <status value="draft"/>
+  <date value="2023-08-15T15:21:17-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="Value set for Gender identity based on LOINC."/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA22878-5"/>
+        <display value="Identifies as male"/>
+      </concept>
+      <concept>
+        <code value="LA22879-3"/>
+        <display value="Identifies as female"/>
+      </concept>
+      <concept>
+        <code value="LA76696-4:"/>
+        <display value="Non-binary"/>
+      </concept>
+      <concept>
+        <code value="LA22880-1"/>
+        <display value="Female-to-male transsexual"/>
+      </concept>
+      <concept>
+        <code value="LA22881-9"/>
+        <display value="Male-to-female transsexual"/>
+      </concept>
+      <concept>
+        <code value="LA22882-7"/>
+        <display value="Identifies as non-conforming"/>
+      </concept>
+      <concept>
+        <code value="LA46-8"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="LA20384-6"/>
+        <display value="Asked but unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

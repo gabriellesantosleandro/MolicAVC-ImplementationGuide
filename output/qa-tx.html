@@ -1,0 +1,242 @@
+<html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2><pre>
+
+--- 1 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html","code":"EM"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:614
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:20 GMT
+last-modified:Tue, 15 Aug 2023 18:21:20 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105456
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html"},{"name" : "message","valueString" : "The CodeSystem https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://terminology.hl7.org/5.2.0/ValueSet-v3-ActPriority.html is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 2 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://build.fhir.org/valueset-encounter-diagnosis-use.html","code":"working"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:608
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:21 GMT
+last-modified:Tue, 15 Aug 2023 18:21:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105458
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://build.fhir.org/valueset-encounter-diagnosis-use.html"},{"name" : "message","valueString" : "The CodeSystem https://build.fhir.org/valueset-encounter-diagnosis-use.html is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://build.fhir.org/valueset-encounter-diagnosis-use.html is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 3 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/admit-source","code":"emd"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:524
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:21 GMT
+last-modified:Tue, 15 Aug 2023 18:21:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105461
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/admit-source"},{"name" : "message","valueString" : "The CodeSystem http://hl7.org/fhir/admit-source is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://hl7.org/fhir/admit-source is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 4 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/re-admission","code":"R"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:524
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:21 GMT
+last-modified:Tue, 15 Aug 2023 18:21:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105462
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/re-admission"},{"name" : "message","valueString" : "The CodeSystem http://hl7.org/fhir/re-admission is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://hl7.org/fhir/re-admission is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 5 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"http://hl7.org/fhir/discharge-disposition","code":"rehab"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:551
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:21 GMT
+last-modified:Tue, 15 Aug 2023 18:21:21 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105463
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "http://hl7.org/fhir/discharge-disposition"},{"name" : "message","valueString" : "The CodeSystem http://hl7.org/fhir/discharge-disposition is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem http://hl7.org/fhir/discharge-disposition is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 6 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://connect.ichom.org/patient-centered-outcome-measures/stroke","code":"1"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:626
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:23 GMT
+last-modified:Tue, 15 Aug 2023 18:21:23 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105466
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke"},{"name" : "message","valueString" : "The CodeSystem https://connect.ichom.org/patient-centered-outcome-measures/stroke is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://connect.ichom.org/patient-centered-outcome-measures/stroke is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 7 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/","code":"UBSF"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:704
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:23 GMT
+last-modified:Tue, 15 Aug 2023 18:21:23 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105467
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/"},{"name" : "message","valueString" : "The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ is unknown"},"location" : ["Coding.system"]}]}}]}
+
+--- 8 -----------------
+Request: 
+
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: hapi-fhir-tooling-client
+Accept-Charset: UTF-8
+Accept: application/fhir+json
+Content-Type: application/fhir+json;charset=UTF-8
+
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/","code":"Doctor"}},{"name":"displayLanguage","valueString":"en-US"},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"profile","resource":{"resourceType":"Parameters","parameter":[{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}}]}
+
+
+Response: 
+
+200
+access-control-allow-methods:GET, POST, PUT, PATCH, DELETE
+access-control-allow-origin:*
+access-control-expose-headers:Content-Location, Location
+cache-control:public, max-age=600
+connection:keep-alive
+content-length:710
+content-type:application/fhir+json
+date:Tue, 15 Aug 2023 18:21:23 GMT
+last-modified:Tue, 15 Aug 2023 18:21:23 GMT
+pragma:no-cache
+server:nginx
+x-request-id:4-105468
+
+{"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/"},{"name" : "message","valueString" : "The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/ is unknown"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"text" : "The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/ is unknown"},"location" : ["Coding.system"]}]}}]}
+</pre></head></html>

@@ -1,0 +1,1039 @@
+{
+  "date" : "Tue, 15 Aug, 2023 15:21:17 -0300",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "\\fsh-generated\\resources\\ImplementationGuide-fhir.molic-avc.json",
+      "size" : 10552,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 46
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 52,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 52,
+          "length" : 66
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 1309
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 188
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 114
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 117,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 132,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Encounter-MolicAVC-EncouterExample.json",
+      "size" : 2671,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 24
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 52,
+          "length" : 1534
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 36
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 51
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 60
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Organization-MolicAVC-OrganizationExample.json",
+      "size" : 1486,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 13
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 12
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 33
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-123456789.json",
+      "size" : 2721,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 38
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 35
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 28
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Practitioner-MolicAVC-DoctorExample.json",
+      "size" : 671,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 10
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 34
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-live-alone-pre-stroke-extension.json",
+      "size" : 1972,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 23
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 9
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 56
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 42
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 138
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 118
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 2919
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 132,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-living-location-pre-stroke-extension.json",
+      "size" : 2030,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 29
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 29
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 51
+        },
+        {
+          "activity" : "generate1",
+          "start" : 59,
+          "length" : 125
+        },
+        {
+          "activity" : "generate2",
+          "start" : 68,
+          "length" : 464
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 116,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-encounter-profile.json",
+      "size" : 13590,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 47
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 36
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 293
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 226
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 647
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 59,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 60,
+          "length" : 1034
+        },
+        {
+          "activity" : "generate2",
+          "start" : 69,
+          "length" : 2278
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 132,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-ethnicity-extension.json",
+      "size" : 2116,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 4
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 32
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 53,
+          "length" : 17
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 61,
+          "length" : 87
+        },
+        {
+          "activity" : "generate2",
+          "start" : 71,
+          "length" : 406
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 2
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 132,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-genderidentity-extension.json",
+      "size" : 2211,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 14
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 6
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 27
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 81
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 52
+        },
+        {
+          "activity" : "generate1",
+          "start" : 61,
+          "length" : 97
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 397
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-organization-profile.json",
+      "size" : 6919,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 25
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 21
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 98
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 95
+        },
+        {
+          "activity" : "validate",
+          "start" : 56,
+          "length" : 245
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 61,
+          "length" : 570
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 1294
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 132,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-patient-profile.json",
+      "size" : 8474,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 31
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 50,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 23
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 224
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 191
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 403
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 59,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 61,
+          "length" : 978
+        },
+        {
+          "activity" : "generate2",
+          "start" : 73,
+          "length" : 1814
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 12
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 132,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-practitioner-profile.json",
+      "size" : 7559,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 33
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 18
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 51,
+          "length" : 129
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 133
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 343
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 62,
+          "length" : 761
+        },
+        {
+          "activity" : "generate2",
+          "start" : 75,
+          "length" : 1635
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 9
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 132,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-race-extension.json",
+      "size" : 2246,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 5
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 52,
+          "length" : 25
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 15
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 28
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 88
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 331
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-molicavc-sex-extension.json",
+      "size" : 2170,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 51,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 52,
+          "length" : 19
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 26
+        },
+        {
+          "activity" : "validate",
+          "start" : 57,
+          "length" : 28
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 76
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 416
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-live-alone-pre-stroke.json",
+      "size" : 926,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 11
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 161
+        },
+        {
+          "activity" : "validate",
+          "start" : 54,
+          "length" : 813
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 23
+        },
+        {
+          "activity" : "generate2",
+          "start" : 77,
+          "length" : 9712
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 116,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-living-location-pre-stroke-valueset.json",
+      "size" : 1431,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 15
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 21
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 95
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-molicavc-code-healthcare-unit-valueset.json",
+      "size" : 2380,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 6
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 171
+        },
+        {
+          "activity" : "validate",
+          "start" : 59,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 89
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 117,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-molicavc-code-professional-valueset.json",
+      "size" : 2046,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 179
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 24
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 117
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-molicavc-ethnicity-valueset.json",
+      "size" : 2071,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 18
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 25
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 116
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-molicavc-gender-valueset.json",
+      "size" : 1274,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 6
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 12
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 17
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 103
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-molicavc-race.json",
+      "size" : 1814,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 7
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 7
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 7
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 20
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 90
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-molicavc-sex-valueset.json",
+      "size" : 841,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 50,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 50,
+          "length" : 4
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 54,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 55,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 63,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 75
+        }
+      ]
+    }
+  ]
+}
