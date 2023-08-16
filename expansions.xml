@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b17df044-81f6-418d-a706-36227f3d0f17"/>
+  <id value="5cfbeceb-8907-4c0f-bc79-0f915cc2d89d"/>
   <meta>
-    <lastUpdated value="2023-08-15T15:21:17.959-03:00"/>
+    <lastUpdated value="2023-08-16T00:27:03.203-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-ethnicity-valueset"/>
+    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 11 concepts</p>
+            <p>This value set contains 10 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
             <table class="codes">
               <tr>
@@ -26,14 +26,6 @@
                 <td>
                   <b>Display</b>
                 </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32625-6"> </a>  
-                  <a href="https://loinc.org/32625-6/">32625-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Mixed Ethnicity</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -118,16 +110,16 @@
             </table>
           </div>
         </text>
-        <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-ethnicity-valueset"/>
+        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
         <version value="0.1.0"/>
         <name value="MolicAVC_EthnicityValueSet"/>
         <title value="Patient Ethnicity ValueSet"/>
         <status value="draft"/>
-        <date value="2023-08-15T15:21:17-03:00"/>
+        <date value="2023-08-16T00:27:03-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:df49093e-67cc-4f16-8ef9-9c582ec6039f"/>
-          <timestamp value="2023-08-15T15:21:55-03:00"/>
-          <total value="11"/>
+          <identifier value="urn:uuid:44a2863f-8dc5-41d4-952c-379bc4fcf256"/>
+          <timestamp value="2023-08-16T00:27:58-03:00"/>
+          <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -140,11 +132,6 @@
             <name value="version"/>
             <valueUri value="http://loinc.org|2.74"/>
           </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32625-6"/>
-            <display value="Mixed Ethnicity"/>
-          </contains>
           <contains>
             <system value="http://loinc.org"/>
             <code value="21028-6"/>
@@ -200,7 +187,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-gender-valueset"/>
+    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
     <resource>
       <ValueSet>
         <text>
@@ -279,15 +266,15 @@
             </table>
           </div>
         </text>
-        <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-gender-valueset"/>
+        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
         <version value="0.1.0"/>
         <name value="MolicAVC_GenderIdentityValueSet"/>
         <title value="Gender Value Set"/>
         <status value="draft"/>
-        <date value="2023-08-15T15:21:17-03:00"/>
+        <date value="2023-08-16T00:27:03-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:b93b9755-ebb7-490c-9972-a3f7d7e80f52"/>
-          <timestamp value="2023-08-15T15:21:55-03:00"/>
+          <identifier value="urn:uuid:331912ad-9b1c-45e8-a00a-900d5336082e"/>
+          <timestamp value="2023-08-16T00:27:58-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -341,7 +328,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-race"/>
+    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
     <resource>
       <ValueSet>
         <text>
@@ -372,15 +359,15 @@
             </table>
           </div>
         </text>
-        <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-race"/>
+        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
         <version value="0.1.0"/>
         <name value="MolicAVC_RaceValueSet"/>
         <title value="Patient Race Value Set"/>
         <status value="draft"/>
-        <date value="2023-08-15T15:21:17-03:00"/>
+        <date value="2023-08-16T00:27:03-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:c61c91ff-85e7-4475-9849-6de50a51e77f"/>
-          <timestamp value="2023-08-15T15:21:55-03:00"/>
+          <identifier value="urn:uuid:324211e1-879d-4c12-a502-4df7db919308"/>
+          <timestamp value="2023-08-16T00:27:58-03:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>

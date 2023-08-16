@@ -1,31 +1,31 @@
 {
-  "package": "fhir.molic-avc",
+  "package": "guide",
   "version": "0.1.0",
   "fhirVersion": "5.0.0",
   "extensions": [
     {
-      "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/live-alone-pre-stroke-extension",
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
       "title": "Live Alone Pre-Stroke Extension",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/living-location-pre-stroke-extension",
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension",
       "title": "Patient\u0027s Residence Prior to a Stroke Extension",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-ethnicity-extension",
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
       "title": "Patient Ethnicity Extension",
       "types": [
         "CodeableConcept"
       ]
     },
     {
-      "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-genderidentity-extension",
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
       "title": "Patient Gender Extension",
       "types": [
         "CodeableConcept",
@@ -33,7 +33,7 @@
       ]
     },
     {
-      "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-race-extension",
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension",
       "title": "Patient Race Extension",
       "types": [
         "CodeableConcept",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-sex-extension",
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension",
       "title": "Patient Sex Extension",
       "types": [
         "CodeableConcept",
@@ -52,25 +52,25 @@
   "profiles": {
     "Encounter": [
       {
-        "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-encounter-profile",
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
         "title": "Encounter Profile"
       }
     ],
     "Organization": [
       {
-        "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-organization-profile",
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
         "title": "Organization Profile"
       }
     ],
     "Patient": [
       {
-        "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-patient-profile",
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile",
         "title": "Patient Profile"
       }
     ],
     "Practitioner": [
       {
-        "url": "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-practitioner-profile",
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
         "title": "Practitioner Profile"
       }
     ]
@@ -115,22 +115,22 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/live-alone-pre-stroke-extension": [
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension": [
       "Patient"
     ],
-    "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/living-location-pre-stroke-extension": [
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension": [
       "Patient"
     ],
-    "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-ethnicity-extension": [
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension": [
       "Patient"
     ],
-    "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-genderidentity-extension": [
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension": [
       "Patient"
     ],
-    "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-race-extension": [
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension": [
       "Patient"
     ],
-    "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-sex-extension": [
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension": [
       "Patient"
     ]
   }

@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.gabriellesantosleandro.com/molic-avc/Practitioner/MolicAVC-DoctorExample> a fhir:Practitioner ;
+<https://molic-avc.gabriellesantosleandro.com/Practitioner/MolicAVC-DoctorExample> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "MolicAVC-DoctorExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-practitioner-profile"^^xsd:anyURI ;
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-practitioner-profile>
+       fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"^^xsd:anyURI ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile>
      ] )
   ] ; # 
   fhir:text [

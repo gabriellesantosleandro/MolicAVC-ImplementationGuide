@@ -3,10 +3,10 @@
 
 err = 19, warn = 98, info = 3
 IG Publisher Version: 1.3.23 Out of date - current version is 1.3.28
-Generated Tue Aug 15 15:22:40 BRT 2023. FHIR version 5.0.0 for fhir.molic-avc#0.1.0 (canonical = https://www.gabriellesantosleandro.com/molic-avc)
+Generated Wed Aug 16 00:28:49 BRT 2023. FHIR version 5.0.0 for guide#0.1.0 (canonical = https://molic-avc.gabriellesantosleandro.com)
  Build Errors : 9 / 3 / 0
  C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Encounter-MolicAVC-EncouterExample : 15 / 13 / 2
- C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ImplementationGuide-fhir.molic-avc : 0 / 0 / 1
+ C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\ImplementationGuide-guide : 0 / 0 / 1
  C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Organization-MolicAVC-OrganizationExample : 3 / 3 / 2
  C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Patient-123456789 : 1 / 6 / 1
  C:\xampp\htdocs\molicavc\fhir.schema.json\Molic-AVC\fsh-generated\resources\Practitioner-MolicAVC-DoctorExample : 0 / 2 / 1
@@ -72,17 +72,17 @@ ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.dischargeDisposit
 ERROR: Encounter/MolicAVC-EncouterExample: Encounter.admission.dischargeDisposition.coding[0].system: URL value 'http://hl7.org/fhir/discharge-disposition' does not resolve
 ERROR: Encounter/MolicAVC-EncouterExample: Encounter.location[0].location: Unable to resolve resource with reference 'Location/neurologyWard'
 WARNING: Encounter/MolicAVC-EncouterExample: Encounter.location[0].status: ValueSet https://build.fhir.org/valueset-encounter-location-status.html not found
-== fsh-generated\resources\ImplementationGuide-fhir.molic-avc.json ==
+== fsh-generated\resources\ImplementationGuide-guide.json ==
 == fsh-generated\resources\Organization-MolicAVC-OrganizationExample.json ==
 WARNING: Organization/MolicAVC-OrganizationExample: Organization.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Organization/MolicAVC-OrganizationExample: Organization.identifier[0].type: None of the codings provided are in the value set 'Identifier Type Codes' (http://hl7.org/fhir/ValueSet/identifier-type|5.0.0), and a coding from this value set is required) (codes = null#org)
 ERROR: Organization/MolicAVC-OrganizationExample: Organization.type[0]: None of the codings provided are in the value set 'Organization Type' (http://hl7.org/fhir/ValueSet/organization-type|5.0.0), and a coding from this value set is required) (codes = null#prov)
 WARNING: Organization/MolicAVC-OrganizationExample: Organization.type[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Organization/MolicAVC-OrganizationExample: Organization.partOf: Unable to resolve resource with reference 'Organization/HospitalGroupABC'
-WARNING: Organization/MolicAVC-OrganizationExample: Organization.qualification[0].code: ValueSet https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ not found
-INFORMATION: Organization/MolicAVC-OrganizationExample: Organization.qualification[0].code.coding[0]: Code System URI 'https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/' is unknown so the code cannot be validated
+WARNING: Organization/MolicAVC-OrganizationExample: Organization.qualification[0].code: ValueSet https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/ not found
+INFORMATION: Organization/MolicAVC-OrganizationExample: Organization.qualification[0].code.coding[0]: Code System URI 'https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/' is unknown so the code cannot be validated
 == fsh-generated\resources\Patient-123456789.json ==
-ERROR: Patient/123456789: Patient.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding.code] in profile Patient.identifier:officialIdentifier - the discriminator https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-patient-profile|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Patient/123456789: Patient.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [type.coding.code] in profile Patient.identifier:officialIdentifier - the discriminator https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile|0.1.0 does not have fixed value, binding or existence assertions
 WARNING: Patient/123456789: Patient.extension[0].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Patient/123456789: Patient.extension[1].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Patient/123456789: Patient.extension[2].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
@@ -90,7 +90,7 @@ WARNING: Patient/123456789: Patient.extension[3].value.ofType(CodeableConcept).c
 WARNING: Patient/123456789: Patient.extension[4].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Patient/123456789: Patient.extension[5].value.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated\resources\Practitioner-MolicAVC-DoctorExample.json ==
-WARNING: Practitioner/MolicAVC-DoctorExample: Practitioner.qualification[0].code: ValueSet http://gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset not found
+WARNING: Practitioner/MolicAVC-DoctorExample: Practitioner.qualification[0].code: ValueSet http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset not found
 WARNING: Practitioner/MolicAVC-DoctorExample: Practitioner.qualification[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
 == fsh-generated\resources\StructureDefinition-live-alone-pre-stroke-extension.json ==
 == fsh-generated\resources\StructureDefinition-living-location-pre-stroke-extension.json ==
@@ -134,12 +134,12 @@ WARNING: StructureDefinition/molicavc-encounter-profile: StructureDefinition.sna
 == fsh-generated\resources\StructureDefinition-molicavc-ethnicity-extension.json ==
 == fsh-generated\resources\StructureDefinition-molicavc-genderidentity-extension.json ==
 == fsh-generated\resources\StructureDefinition-molicavc-organization-profile.json ==
-WARNING: StructureDefinition/molicavc-organization-profile: StructureDefinition.differential.element[23].binding: The valueSet reference https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ on element Organization.qualification.code could not be resolved
-WARNING: StructureDefinition/molicavc-organization-profile: StructureDefinition.snapshot.element[39].binding: The valueSet reference https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ on element Organization.qualification.code could not be resolved
+WARNING: StructureDefinition/molicavc-organization-profile: StructureDefinition.differential.element[23].binding: The valueSet reference https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/ on element Organization.qualification.code could not be resolved
+WARNING: StructureDefinition/molicavc-organization-profile: StructureDefinition.snapshot.element[39].binding: The valueSet reference https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/ on element Organization.qualification.code could not be resolved
 == fsh-generated\resources\StructureDefinition-molicavc-patient-profile.json ==
 == fsh-generated\resources\StructureDefinition-molicavc-practitioner-profile.json ==
-WARNING: StructureDefinition/molicavc-practitioner-profile: StructureDefinition.differential.element[30].binding: The valueSet reference http://gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset on element Practitioner.qualification.code could not be resolved
-WARNING: StructureDefinition/molicavc-practitioner-profile: StructureDefinition.snapshot.element[49].binding: The valueSet reference http://gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset on element Practitioner.qualification.code could not be resolved
+WARNING: StructureDefinition/molicavc-practitioner-profile: StructureDefinition.differential.element[30].binding: The valueSet reference http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset on element Practitioner.qualification.code could not be resolved
+WARNING: StructureDefinition/molicavc-practitioner-profile: StructureDefinition.snapshot.element[49].binding: The valueSet reference http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-professionalcode-valueset on element Practitioner.qualification.code could not be resolved
 == fsh-generated\resources\StructureDefinition-molicavc-race-extension.json ==
 == fsh-generated\resources\StructureDefinition-molicavc-sex-extension.json ==
 == fsh-generated\resources\ValueSet-live-alone-pre-stroke.json ==
@@ -151,15 +151,15 @@ WARNING: ValueSet/living-location-pre-stroke-valueset: ValueSet.compose[0].inclu
 WARNING: ValueSet/living-location-pre-stroke-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 WARNING: ValueSet.where(id = 'living-location-pre-stroke-valueset'): Error from server: Unable to provide support for code system https://connect.ichom.org/patient-centered-outcome-measures/stroke
 == fsh-generated\resources\ValueSet-molicavc-code-healthcare-unit-valueset.json ==
-WARNING: ValueSet/molicavc-code-healthcare-unit-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/ is unknown (from Tx-Server))
+WARNING: ValueSet/molicavc-code-healthcare-unit-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/ is unknown (from Tx-Server))
 WARNING: ValueSet/molicavc-code-healthcare-unit-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: ValueSet.where(id = 'molicavc-code-healthcare-unit-valueset'): Error from server: Unable to provide support for code system https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/
+WARNING: ValueSet.where(id = 'molicavc-code-healthcare-unit-valueset'): Error from server: Unable to provide support for code system https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/
 == fsh-generated\resources\ValueSet-molicavc-code-professional-valueset.json ==
-WARNING: ValueSet/molicavc-code-professional-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/ is unknown (from Tx-Server))
+WARNING: ValueSet/molicavc-code-professional-valueset: ValueSet.compose[0].include[0]: Unknown System 'https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_professional-valueset/' specified, so Concepts and Filters can't be checked (Details: The CodeSystem https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_professional-valueset/ is unknown (from Tx-Server))
 WARNING: ValueSet/molicavc-code-professional-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
-WARNING: ValueSet.where(id = 'molicavc-code-professional-valueset'): Error from server: Unable to provide support for code system https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_professional-valueset/
+WARNING: ValueSet.where(id = 'molicavc-code-professional-valueset'): Error from server: Unable to provide support for code system https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_professional-valueset/
 == fsh-generated\resources\ValueSet-molicavc-ethnicity-valueset.json ==
-WARNING: ValueSet/molicavc-ethnicity-valueset: ValueSet.compose[0].include[0].concept[5]: The code '80832-0' is not valid in the system http://loinc.org
+WARNING: ValueSet/molicavc-ethnicity-valueset: ValueSet.compose[0].include[0].concept[4]: The code '80832-0' is not valid in the system http://loinc.org
 WARNING: ValueSet/molicavc-ethnicity-valueset: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 == fsh-generated\resources\ValueSet-molicavc-gender-valueset.json ==
 WARNING: ValueSet/molicavc-gender-valueset: ValueSet.compose[0].include[0].concept[2]: The code 'LA76696-4:' is not valid in the system http://loinc.org

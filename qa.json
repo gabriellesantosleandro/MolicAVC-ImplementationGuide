@@ -1,9 +1,9 @@
 {
-  "url" : "https://www.gabriellesantosleandro.com/molic-avc/ImplementationGuide/fhir.molic-avc",
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide",
   "name" : "MolicAVC",
-  "package-id" : "fhir.molic-avc",
+  "package-id" : "guide",
   "ig-ver" : "0.1.0",
-  "date" : "Tue, 15 Aug, 2023 15:21:17 -0300",
+  "date" : "Wed, 16 Aug, 2023 00:27:03 -0300",
   "errs" : 19,
   "warnings" : 98,
   "hints" : 3,

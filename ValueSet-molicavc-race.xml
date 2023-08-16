@@ -5,18 +5,18 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/32697-1/">32697-1</a></td><td>White or Caucasian Race</td></tr><tr><td><a href="https://loinc.org/32698-9/">32698-9</a></td><td>Black or African American Race</td></tr><tr><td><a href="https://loinc.org/32699-7/">32699-7</a></td><td>American Indian or Alaska Native Race</td></tr><tr><td><a href="https://loinc.org/32700-3/">32700-3</a></td><td>Asian Race</td></tr><tr><td><a href="https://loinc.org/32701-1/">32701-1</a></td><td>Native Hawaiian or Other Pacific Islander Race</td></tr><tr><td><a href="https://loinc.org/8288-1/">8288-1</a></td><td>Indigenous Ethnicity (South America)</td></tr><tr><td><a href="https://loinc.org/8310-3/">8310-3</a></td><td>African Descent Ethnicity (South America)</td></tr><tr><td><a href="https://loinc.org/8311-1/">8311-1</a></td><td>European Descent Ethnicity (South America)</td></tr><tr><td><a href="https://loinc.org/8320-2/">8320-2</a></td><td>Asian Descent Ethnicity (South America)</td></tr><tr><td><a href="https://loinc.org/8321-0/">8321-0</a></td><td>Mixed Race or Ethnicity (South America)</td></tr><tr><td><a href="https://loinc.org/32702-9/">32702-9</a></td><td>Other Race</td></tr><tr><td><a href="https://loinc.org/2135-2/">2135-2</a></td><td>Unknown</td></tr></table></li></ul></div>
   </text>
-  <url value="https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-race"/>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
   <version value="0.1.0"/>
   <name value="MolicAVC_RaceValueSet"/>
   <title value="Patient Race Value Set"/>
   <status value="draft"/>
-  <date value="2023-08-15T15:21:17-03:00"/>
+  <date value="2023-08-16T00:27:03-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.gabriellesantosleandro.com"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
     </telecom>
   </contact>
   <description value="Value set for capturing the patient's race based on LOINC standards, as recommended by ICHOM."/>

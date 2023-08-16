@@ -2,7 +2,7 @@
   "resourceType" : "Organization",
   "id" : "MolicAVC-OrganizationExample",
   "meta" : {
-    "profile" : ["https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-organization-profile"]
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"]
   },
   "text" : {
     "status" : "generated",
@@ -41,7 +41,7 @@
     }],
     "code" : {
       "coding" : [{
-        "system" : "https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/",
+        "system" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/",
         "code" : "STROKEHOSP",
         "display" : "Public Reference Hospital (CNES - Cadastro Nacional de Estabelecimento Único)"
       }]

@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.gabriellesantosleandro.com/molic-avc/Organization/MolicAVC-OrganizationExample> a fhir:Organization ;
+<https://molic-avc.gabriellesantosleandro.com/Organization/MolicAVC-OrganizationExample> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "MolicAVC-OrganizationExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-organization-profile"^^xsd:anyURI ;
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-organization-profile>
+       fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"^^xsd:anyURI ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile>
      ] )
   ] ; # 
   fhir:text [
@@ -39,7 +39,7 @@
   fhir:name [ fhir:v "Reference Hospital for Stroke"] ; # 
   fhir:description [ fhir:v "A leading hospital specializing in stroke treatments and rehabilitation."] ; # 
   fhir:partOf [
-     fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Organization/HospitalGroupABC> ;
+     fhir:link <https://molic-avc.gabriellesantosleandro.com/Organization/HospitalGroupABC> ;
      fhir:reference [ fhir:v "Organization/HospitalGroupABC" ]
   ] ; # 
   fhir:qualification ( [
@@ -52,7 +52,7 @@
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://www.gabriellesantosleandro.com/molic-avc/ValueSet/molicavc-code_healthunit-valueset/"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "STROKEHOSP" ] ;
          fhir:display [ fhir:v "Public Reference Hospital (CNES - Cadastro Nacional de Estabelecimento Único)" ]
        ] )

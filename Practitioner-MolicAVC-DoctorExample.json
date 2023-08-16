@@ -2,7 +2,7 @@
   "resourceType" : "Practitioner",
   "id" : "MolicAVC-DoctorExample",
   "meta" : {
-    "profile" : ["https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-practitioner-profile"]
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"]
   },
   "text" : {
     "status" : "generated",

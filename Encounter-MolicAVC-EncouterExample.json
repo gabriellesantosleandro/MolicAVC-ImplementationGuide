@@ -2,7 +2,7 @@
   "resourceType" : "Encounter",
   "id" : "MolicAVC-EncouterExample",
   "meta" : {
-    "profile" : ["https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-encounter-profile"]
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"]
   },
   "text" : {
     "status" : "generated",

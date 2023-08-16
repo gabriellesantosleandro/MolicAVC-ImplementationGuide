@@ -5,13 +5,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.gabriellesantosleandro.com/molic-avc/Encounter/MolicAVC-EncouterExample> a fhir:Encounter ;
+<https://molic-avc.gabriellesantosleandro.com/Encounter/MolicAVC-EncouterExample> a fhir:Encounter ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "MolicAVC-EncouterExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-encounter-profile"^^xsd:anyURI ;
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/StructureDefinition/molicavc-encounter-profile>
+       fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"^^xsd:anyURI ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile>
      ] )
   ] ; # 
   fhir:text [
@@ -35,7 +35,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Patient/JohnDoeStrokePatient> ;
+     fhir:link <https://molic-avc.gabriellesantosleandro.com/Patient/JohnDoeStrokePatient> ;
      fhir:reference [ fhir:v "Patient/JohnDoeStrokePatient" ]
   ] ; # 
   fhir:subjectStatus [
@@ -44,15 +44,15 @@
      ] )
   ] ; # 
   fhir:episodeOfCare ( [
-     fhir:link <https://www.gabriellesantosleandro.com/molic-avc/EpisodeOfCare/JohnDoeStrokeEpisode> ;
+     fhir:link <https://molic-avc.gabriellesantosleandro.com/EpisodeOfCare/JohnDoeStrokeEpisode> ;
      fhir:reference [ fhir:v "EpisodeOfCare/JohnDoeStrokeEpisode" ]
   ] ) ; # 
   fhir:careTeam ( [
-     fhir:link <https://www.gabriellesantosleandro.com/molic-avc/CareTeam/StrokeCareTeam> ;
+     fhir:link <https://molic-avc.gabriellesantosleandro.com/CareTeam/StrokeCareTeam> ;
      fhir:reference [ fhir:v "CareTeam/StrokeCareTeam" ]
   ] ) ; # 
   fhir:serviceProvider [
-     fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Organization/StrokeCenterHospital> ;
+     fhir:link <https://molic-avc.gabriellesantosleandro.com/Organization/StrokeCenterHospital> ;
      fhir:reference [ fhir:v "Organization/StrokeCenterHospital" ]
   ] ; # 
   fhir:participant ( [
@@ -66,7 +66,7 @@
        fhir:end [ fhir:v "2023-08-15T11:00:00Z"^^xsd:dateTime ]
      ] ;
      fhir:actor [
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Practitioner/StrokeSpecialistDrSmith> ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/Practitioner/StrokeSpecialistDrSmith> ;
        fhir:reference [ fhir:v "Practitioner/StrokeSpecialistDrSmith" ]
      ]
   ] ) ; # 
@@ -84,7 +84,7 @@
        fhir:value [ fhir:v "EMERG-2023-56789" ]
      ] ;
      fhir:origin [
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Organization/LocalClinic> ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/Organization/LocalClinic> ;
        fhir:reference [ fhir:v "Organization/LocalClinic" ]
      ] ;
      fhir:admitSource [
@@ -100,7 +100,7 @@
        ] )
      ] ;
      fhir:destination [
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Organization/RehabilitationCenter> ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/Organization/RehabilitationCenter> ;
        fhir:reference [ fhir:v "Organization/RehabilitationCenter" ]
      ] ;
      fhir:dischargeDisposition [
@@ -112,7 +112,7 @@
   ] ; # 
   fhir:location ( [
      fhir:location [
-       fhir:link <https://www.gabriellesantosleandro.com/molic-avc/Location/neurologyWard> ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/Location/neurologyWard> ;
        fhir:reference [ fhir:v "Location/neurologyWard" ]
      ] ;
      fhir:status [ fhir:v "active" ] ;
