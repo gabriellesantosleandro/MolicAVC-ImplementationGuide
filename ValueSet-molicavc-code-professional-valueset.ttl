@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MolicAVC_CodeProfessionalValueSet"] ; # 
   fhir:title [ fhir:v "Professional Code ValueSet"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-25T01:55:28-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-29T02:44:39-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;

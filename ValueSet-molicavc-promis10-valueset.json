@@ -1,0 +1,152 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "molicavc-promis10-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Poor</td></tr><tr><td>2</td><td>Fair</td></tr><tr><td>3</td><td>Good</td></tr><tr><td>4</td><td>Very Good</td></tr><tr><td>5</td><td>Excellent</td></tr><tr><td>6</td><td>Completely</td></tr><tr><td>7</td><td>Mostly</td></tr><tr><td>8</td><td>Moderately</td></tr><tr><td>9</td><td>A little</td></tr><tr><td>10</td><td>Not at all</td></tr><tr><td>11</td><td>Always</td></tr><tr><td>12</td><td>Often</td></tr><tr><td>13</td><td>Sometimes</td></tr><tr><td>14</td><td>Rarely</td></tr><tr><td>15</td><td>Never</td></tr><tr><td>16</td><td>None</td></tr><tr><td>17</td><td>Mild</td></tr><tr><td>18</td><td>Moderate</td></tr><tr><td>19</td><td>Severe</td></tr><tr><td>20</td><td>Very Severe</td></tr><tr><td>21</td><td>0: No pain</td></tr><tr><td>22</td><td>1: Very mild pain</td></tr><tr><td>23</td><td>2: Discomforting</td></tr><tr><td>24</td><td>3: Tolerable</td></tr><tr><td>25</td><td>4: Distressing</td></tr><tr><td>26</td><td>5: Very distressing</td></tr><tr><td>27</td><td>6: Intense</td></tr><tr><td>28</td><td>7: Very intense</td></tr><tr><td>29</td><td>8: Utterly horrible</td></tr><tr><td>30</td><td>9: Excruciating unbearable pain</td></tr><tr><td>31</td><td>10: Unspeakable pain</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-promis10-valueset",
+  "version" : "0.1.0",
+  "name" : "MolicAVC_PROMIS10_ValueSet",
+  "title" : "PROMIS-10 Response Values",
+  "status" : "draft",
+  "date" : "2023-08-29T02:44:39-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Poor"
+      },
+      {
+        "code" : "2",
+        "display" : "Fair"
+      },
+      {
+        "code" : "3",
+        "display" : "Good"
+      },
+      {
+        "code" : "4",
+        "display" : "Very Good"
+      },
+      {
+        "code" : "5",
+        "display" : "Excellent"
+      },
+      {
+        "code" : "6",
+        "display" : "Completely"
+      },
+      {
+        "code" : "7",
+        "display" : "Mostly"
+      },
+      {
+        "code" : "8",
+        "display" : "Moderately"
+      },
+      {
+        "code" : "9",
+        "display" : "A little"
+      },
+      {
+        "code" : "10",
+        "display" : "Not at all"
+      },
+      {
+        "code" : "11",
+        "display" : "Always"
+      },
+      {
+        "code" : "12",
+        "display" : "Often"
+      },
+      {
+        "code" : "13",
+        "display" : "Sometimes"
+      },
+      {
+        "code" : "14",
+        "display" : "Rarely"
+      },
+      {
+        "code" : "15",
+        "display" : "Never"
+      },
+      {
+        "code" : "16",
+        "display" : "None"
+      },
+      {
+        "code" : "17",
+        "display" : "Mild"
+      },
+      {
+        "code" : "18",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "19",
+        "display" : "Severe"
+      },
+      {
+        "code" : "20",
+        "display" : "Very Severe"
+      },
+      {
+        "code" : "21",
+        "display" : "0: No pain"
+      },
+      {
+        "code" : "22",
+        "display" : "1: Very mild pain"
+      },
+      {
+        "code" : "23",
+        "display" : "2: Discomforting"
+      },
+      {
+        "code" : "24",
+        "display" : "3: Tolerable"
+      },
+      {
+        "code" : "25",
+        "display" : "4: Distressing"
+      },
+      {
+        "code" : "26",
+        "display" : "5: Very distressing"
+      },
+      {
+        "code" : "27",
+        "display" : "6: Intense"
+      },
+      {
+        "code" : "28",
+        "display" : "7: Very intense"
+      },
+      {
+        "code" : "29",
+        "display" : "8: Utterly horrible"
+      },
+      {
+        "code" : "30",
+        "display" : "9: Excruciating unbearable pain"
+      },
+      {
+        "code" : "31",
+        "display" : "10: Unspeakable pain"
+      }]
+    }]
+  }
+}

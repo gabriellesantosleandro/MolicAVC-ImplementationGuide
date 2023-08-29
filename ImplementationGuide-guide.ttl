@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MolicAVC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-08-25T01:55:28-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-08-29T02:44:39-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -289,6 +289,60 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-PROMIS10Questionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MolicAVC-PROMIS10Questionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Example of PROMIS-10 Questionnaire" ] ;
+       fhir:description [ fhir:v "Example of PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short \r\nform) Questionnaire for a patient admitted due to a stroke." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-VR12Questionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MolicAVC-VR12Questionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Example of VR-12 (Veterans RAND 12 Item Health Survey)" ] ;
+       fhir:description [ fhir:v "Example of VR-12 (Veterans RAND 12 Item Health Survey) for a patient admitted due to a stroke." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-WHODASQuestionnaire> ;
+         fhir:reference [ fhir:v "Questionnaire/MolicAVC-WHODASQuestionnaire" ]
+       ] ;
+       fhir:name [ fhir:v "Example of WHODAS Questionnaire" ] ;
+       fhir:description [ fhir:v "Example of WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire \r\nfor a patient admitted due to a stroke." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -556,11 +610,59 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-promis10-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/molicavc-promis10-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "PROMIS-10 Response Values" ] ;
+       fhir:description [ fhir:v "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/molicavc-questionnaire-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Questionnaire Profile" ] ;
+       fhir:description [ fhir:v "A structured set of questions intended to guide the collection of answers from end-users. \r\nQuestionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, \r\nconsistent data collection." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-sex-valueset> ;
          fhir:reference [ fhir:v "ValueSet/molicavc-sex-valueset" ]
        ] ;
        fhir:name [ fhir:v "Sex ValueSet" ] ;
        fhir:description [ fhir:v "Value set for the patient's sex at birth according to the ICHOM standard." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/molicavc-vr12-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "VR-12 Response Values" ] ;
+       fhir:description [ fhir:v "This ValueSet defines the response values for the VR-12 (Veterans RAND 12 Item Health Survey)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-whodas-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/molicavc-whodas-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "WHODAS Response Values" ] ;
+       fhir:description [ fhir:v "This ValueSet defines the response values for the WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

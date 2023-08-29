@@ -1,0 +1,657 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>GUIDE\Example of PROMIS-10 Questionnaire - JSON Representation - FHIR v5.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2.23"}
+    h3,h4,h5,h6{--heading-prefix:"2.23"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold"></span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Example of PROMIS-10 Questionnaire</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">MolicAVC - Local Development build (v0.1.0). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Questionnaire-MolicAVC-PROMIS10Questionnaire.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Questionnaire-MolicAVC-PROMIS10Questionnaire.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Questionnaire-MolicAVC-PROMIS10Questionnaire.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Example of PROMIS-10 Questionnaire - JSON Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2023-08-29
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Questionnaire-MolicAVC-PROMIS10Questionnaire.json" no-download="true">Raw json</a> | <a href="Questionnaire-MolicAVC-PROMIS10Questionnaire.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; overflow: hidden"><code>
+{
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire">resourceType</a>" : "Questionnaire",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.id">id</a>" : "MolicAVC-PROMIS10Questionnaire",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;b&gt;Structure&lt;/b&gt;&lt;table border=\&quot;1\&quot; cellpadding=\&quot;0\&quot; cellspacing=\&quot;0\&quot; style=\&quot;border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\&quot;&gt;&lt;tr style=\&quot;border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\&quot;&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;The linkId for the item\&quot;&gt;LinkId&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;Text for the item\&quot;&gt;Text&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;Minimum and Maximum # of times the the itemcan appear in the instance\&quot;&gt;Cardinality&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;The type of the item\&quot;&gt;Type&lt;/a&gt;&lt;/th&gt;&lt;th style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;Additional information about the item\&quot;&gt;Description &amp;amp; Constraints&lt;/a&gt;&lt;span style=\&quot;float: right\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt;&lt;/a&gt;&lt;/span&gt;&lt;/th&gt;&lt;/tr&gt;&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon_q_root.gif\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;QuestionnaireRoot\&quot; class=\&quot;hierarchy\&quot;/&gt; promis-10&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;The PROMIS-10 is a brief, 10-item version of the PROMIS (Patient-Reported Outcomes Measurement \r\nInformation System) questionnaire, developed and maintained by the U.S. National Institutes of Health (NIH). \r\nIt aims to provide a reliable measure of a patient's overall health, capturing physical, mental, and social \r\nwell-being aspects. Designed for diverse conditions and populations, the PROMIS-10 offers a concise instrument \r\nfor gauging health from the patient's perspective, facilitating a holistic understanding of their health status.&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Questionnaire&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-PROMIS10Questionnaire#0.1.0&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q01\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q01&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In general, would you say your health is:&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q01\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q02\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q02&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In general, would you say your quality of life is:&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q02\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q03\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q03&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In general, how would you rate your physical health?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q03\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q04\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q04&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In general, how would you rate your mental health, including your mood and your ability to think?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q04\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q05\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q05&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In general, how would you rate your satisfaction with your social activities and relationships?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q05\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q09r\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q09r&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In general, rate how well you carry out your usual social activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q09r\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q06\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q06&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q06\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Q10r\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Q10r&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Q10r\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\&quot; id=\&quot;item.PROMIS-10_Qo8r\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: #F7F7F7; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Qo8r&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In the past 7 days, how would you rate your fatigue on average?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Qo8r\&quot;&gt;5 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr style=\&quot;border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\&quot;&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\&quot; id=\&quot;item.PROMIS-10_Qo7r\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;img src=\&quot;tbl_spacer.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;tbl_vjoin_end.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: inherit\&quot; class=\&quot;hierarchy\&quot;/&gt;&lt;img src=\&quot;icon-q-question.png\&quot; alt=\&quot;.\&quot; style=\&quot;background-color: white; background-color: inherit\&quot; title=\&quot;Question\&quot; class=\&quot;hierarchy\&quot;/&gt; PROMIS-10_Qo7r&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;In the past 7 days, how would you rate your pain on average?&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;0..1&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question\&quot;&gt;question&lt;/a&gt;&lt;/td&gt;&lt;td style=\&quot;vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\&quot; class=\&quot;hierarchy\&quot;&gt;Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset&lt;br/&gt;Options: &lt;a href=\&quot;#opt-item.PROMIS-10_Qo7r\&quot;&gt;11 options&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;\r\n&lt;tr&gt;&lt;td colspan=\&quot;5\&quot; class=\&quot;hierarchy\&quot;&gt;&lt;br/&gt;&lt;a href=\&quot;http://hl7.org/fhir/R5/formats.html#table\&quot; title=\&quot;Legend for this format\&quot;&gt;&lt;img src=\&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\&quot; alt=\&quot;doco\&quot; style=\&quot;background-color: inherit\&quot;/&gt; Documentation for this format&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;hr/&gt;&lt;p&gt;&lt;b&gt;Option Sets&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q01\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q01&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#1&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#2&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#3&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#4&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#5&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q02\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q02&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#1&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#2&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#3&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#4&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#5&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q03\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q03&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#1&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#2&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#3&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#4&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#5&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q04\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q04&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#1&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#2&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#3&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#4&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#5&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q05\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q05&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#1&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#2&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#3&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#4&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#5&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q09r\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q09r&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#1&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#2&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#3&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#4&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#5&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q06\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q06&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#6&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#7&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#8&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#9&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#10&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Q10r\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Q10r&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#11&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#12&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#13&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#14&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#15&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Qo8r\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Qo8r&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#16&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#17&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#18&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#19&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#20&lt;/li&gt;&lt;/ul&gt;&lt;a name=\&quot;opt-item.PROMIS-10_Qo7r\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;Answer options for PROMIS-10_Qo7r&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#21&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#22&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#23&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#24&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#25&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#26&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#27&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#28&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#29&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#30&lt;/li&gt;&lt;li style=\&quot;font-size: 11px\&quot;&gt;null#31&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-PROMIS10Questionnaire",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.identifier">identifier</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.use">use</a>" : "official",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a>" : "PROMIS-10",
+      "<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.assigner">assigner</a>" : {
+        "<a href="http://hl7.org/fhir/R5/references.html#Reference#Reference.reference">reference</a>" : "ICHOM"
+      }
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.name">name</a>" : "promis-10",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.title">title</a>" : "PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form)",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.date">date</a>" : "2023-08-29T02:44:39-03:00",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.publisher">publisher</a>" : "Gabrielle dos Santos Leandro",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Gabrielle dos Santos Leandro",
+      "<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R5/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://molic-avc.gabriellesantosleandro.com"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.description">description</a>" : "The PROMIS-10 is a brief, 10-item version of the PROMIS (Patient-Reported Outcomes Measurement \r\nInformation System) questionnaire, developed and maintained by the U.S. National Institutes of Health (NIH). \r\nIt aims to provide a reliable measure of a patient's overall health, capturing physical, mental, and social \r\nwell-being aspects. Designed for diverse conditions and populations, the PROMIS-10 offers a concise instrument \r\nfor gauging health from the patient's perspective, facilitating a holistic understanding of their health status.",
+  "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item">item</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q01",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In general, would you say your health is:",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "3"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "4"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "5"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q02",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In general, would you say your quality of life is:",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "3"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "4"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "5"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q03",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In general, how would you rate your physical health?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "3"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "4"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "5"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q04",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In general, how would you rate your mental health, including your mood and your ability to think?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "3"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "4"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "5"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q05",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In general, how would you rate your satisfaction with your social activities and relationships?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "3"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "4"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "5"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q09r",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In general, rate how well you carry out your usual social activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "3"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "4"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "5"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q06",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "6"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "7"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "8"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "9"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "10"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Q10r",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "11"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "12"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "13"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "14"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "15"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Qo8r",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In the past 7 days, how would you rate your fatigue on average?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "16"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "17"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "18"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "19"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "20"
+          }
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.linkId">linkId</a>" : "PROMIS-10_Qo7r",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.text">text</a>" : "In the past 7 days, how would you rate your pain on average?",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.type">type</a>" : "question",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerValueSet">answerValueSet</a>" : "http://molic-avc.gabriellesantosleandro.com/ValueSet-molicavc-promis10-valueset",
+      "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption">answerOption</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "21"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "22"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "23"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "24"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "25"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "26"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "27"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "28"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "29"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "30"
+          }
+        },
+        {
+          "<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.item.answerOption.value[x]">valueCoding</a>" : {
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "31"
+          }
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Aug 29, 2023 02:44-0300">2023-08-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

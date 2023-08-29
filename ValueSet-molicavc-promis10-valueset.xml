@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-promis10-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Poor</td></tr><tr><td>2</td><td>Fair</td></tr><tr><td>3</td><td>Good</td></tr><tr><td>4</td><td>Very Good</td></tr><tr><td>5</td><td>Excellent</td></tr><tr><td>6</td><td>Completely</td></tr><tr><td>7</td><td>Mostly</td></tr><tr><td>8</td><td>Moderately</td></tr><tr><td>9</td><td>A little</td></tr><tr><td>10</td><td>Not at all</td></tr><tr><td>11</td><td>Always</td></tr><tr><td>12</td><td>Often</td></tr><tr><td>13</td><td>Sometimes</td></tr><tr><td>14</td><td>Rarely</td></tr><tr><td>15</td><td>Never</td></tr><tr><td>16</td><td>None</td></tr><tr><td>17</td><td>Mild</td></tr><tr><td>18</td><td>Moderate</td></tr><tr><td>19</td><td>Severe</td></tr><tr><td>20</td><td>Very Severe</td></tr><tr><td>21</td><td>0: No pain</td></tr><tr><td>22</td><td>1: Very mild pain</td></tr><tr><td>23</td><td>2: Discomforting</td></tr><tr><td>24</td><td>3: Tolerable</td></tr><tr><td>25</td><td>4: Distressing</td></tr><tr><td>26</td><td>5: Very distressing</td></tr><tr><td>27</td><td>6: Intense</td></tr><tr><td>28</td><td>7: Very intense</td></tr><tr><td>29</td><td>8: Utterly horrible</td></tr><tr><td>30</td><td>9: Excruciating unbearable pain</td></tr><tr><td>31</td><td>10: Unspeakable pain</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-promis10-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_PROMIS10_ValueSet"/>
+  <title value="PROMIS-10 Response Values"/>
+  <status value="draft"/>
+  <date value="2023-08-29T02:44:39-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <concept>
+        <code value="1"/>
+        <display value="Poor"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Fair"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Good"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Very Good"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="Completely"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="Mostly"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="Moderately"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="A little"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="Not at all"/>
+      </concept>
+      <concept>
+        <code value="11"/>
+        <display value="Always"/>
+      </concept>
+      <concept>
+        <code value="12"/>
+        <display value="Often"/>
+      </concept>
+      <concept>
+        <code value="13"/>
+        <display value="Sometimes"/>
+      </concept>
+      <concept>
+        <code value="14"/>
+        <display value="Rarely"/>
+      </concept>
+      <concept>
+        <code value="15"/>
+        <display value="Never"/>
+      </concept>
+      <concept>
+        <code value="16"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="17"/>
+        <display value="Mild"/>
+      </concept>
+      <concept>
+        <code value="18"/>
+        <display value="Moderate"/>
+      </concept>
+      <concept>
+        <code value="19"/>
+        <display value="Severe"/>
+      </concept>
+      <concept>
+        <code value="20"/>
+        <display value="Very Severe"/>
+      </concept>
+      <concept>
+        <code value="21"/>
+        <display value="0: No pain"/>
+      </concept>
+      <concept>
+        <code value="22"/>
+        <display value="1: Very mild pain"/>
+      </concept>
+      <concept>
+        <code value="23"/>
+        <display value="2: Discomforting"/>
+      </concept>
+      <concept>
+        <code value="24"/>
+        <display value="3: Tolerable"/>
+      </concept>
+      <concept>
+        <code value="25"/>
+        <display value="4: Distressing"/>
+      </concept>
+      <concept>
+        <code value="26"/>
+        <display value="5: Very distressing"/>
+      </concept>
+      <concept>
+        <code value="27"/>
+        <display value="6: Intense"/>
+      </concept>
+      <concept>
+        <code value="28"/>
+        <display value="7: Very intense"/>
+      </concept>
+      <concept>
+        <code value="29"/>
+        <display value="8: Utterly horrible"/>
+      </concept>
+      <concept>
+        <code value="30"/>
+        <display value="9: Excruciating unbearable pain"/>
+      </concept>
+      <concept>
+        <code value="31"/>
+        <display value="10: Unspeakable pain"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

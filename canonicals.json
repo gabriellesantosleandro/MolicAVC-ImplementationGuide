@@ -7,6 +7,27 @@
     "name" : "MolicAVC"
   },
   {
+    "id" : "MolicAVC-PROMIS10Questionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-PROMIS10Questionnaire",
+    "version" : "0.1.0",
+    "name" : "promis-10"
+  },
+  {
+    "id" : "MolicAVC-VR12Questionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-VR12Questionnaire",
+    "version" : "0.1.0",
+    "name" : "vr12"
+  },
+  {
+    "id" : "MolicAVC-WHODASQuestionnaire",
+    "type" : "Questionnaire",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-WHODASQuestionnaire",
+    "version" : "0.1.0",
+    "name" : "whodas20"
+  },
+  {
     "id" : "live-alone-pre-stroke-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
@@ -61,6 +82,13 @@
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
     "version" : "0.1.0",
     "name" : "MolicAVC_PractitionerProfile"
+  },
+  {
+    "id" : "molicavc-questionnaire-profile",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_Questionnaire"
   },
   {
     "id" : "molicavc-race-extension",
@@ -119,6 +147,13 @@
     "name" : "MolicAVC_GenderIdentityValueSet"
   },
   {
+    "id" : "molicavc-promis10-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-promis10-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_PROMIS10_ValueSet"
+  },
+  {
     "id" : "molicavc-race",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race",
@@ -131,5 +166,19 @@
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-sex-valueset",
     "version" : "0.1.0",
     "name" : "MolicAVC_SexValueSet"
+  },
+  {
+    "id" : "molicavc-vr12-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_VR-12_ValueSet"
+  },
+  {
+    "id" : "molicavc-whodas-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-whodas-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_WHODAS_ValueSet"
   }
 ]

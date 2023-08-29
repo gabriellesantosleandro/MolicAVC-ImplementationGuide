@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="MolicAVC"/>
   <status value="draft"/>
-  <date value="2023-08-25T01:55:28-03:00"/>
+  <date value="2023-08-29T02:44:39-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -246,6 +246,42 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-PROMIS10Questionnaire"/>
+      </reference>
+      <name value="Example of PROMIS-10 Questionnaire"/>
+      <description value="Example of PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short &#xD;&#xA;form) Questionnaire for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-VR12Questionnaire"/>
+      </reference>
+      <name value="Example of VR-12 (Veterans RAND 12 Item Health Survey)"/>
+      <description value="Example of VR-12 (Veterans RAND 12 Item Health Survey) for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-WHODASQuestionnaire"/>
+      </reference>
+      <name value="Example of WHODAS Questionnaire"/>
+      <description value="Example of WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire &#xD;&#xA;for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -473,10 +509,54 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/molicavc-promis10-valueset"/>
+      </reference>
+      <name value="PROMIS-10 Response Values"/>
+      <description value="This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/molicavc-questionnaire-profile"/>
+      </reference>
+      <name value="Questionnaire Profile"/>
+      <description value="A structured set of questions intended to guide the collection of answers from end-users. &#xD;&#xA;Questionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, &#xD;&#xA;consistent data collection."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/molicavc-sex-valueset"/>
       </reference>
       <name value="Sex ValueSet"/>
       <description value="Value set for the patient's sex at birth according to the ICHOM standard."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/molicavc-vr12-valueset"/>
+      </reference>
+      <name value="VR-12 Response Values"/>
+      <description value="This ValueSet defines the response values for the VR-12 (Veterans RAND 12 Item Health Survey)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/molicavc-whodas-valueset"/>
+      </reference>
+      <name value="WHODAS Response Values"/>
+      <description value="This ValueSet defines the response values for the WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire."/>
       <isExample value="false"/>
     </resource>
     <page>

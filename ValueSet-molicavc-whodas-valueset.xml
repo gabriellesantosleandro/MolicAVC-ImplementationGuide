@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-whodas-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>None</td></tr><tr><td>1</td><td>Mild</td></tr><tr><td>2</td><td>Moderate</td></tr><tr><td>3</td><td>Severe</td></tr><tr><td>4</td><td>Extreme or cannot do</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-whodas-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_WHODAS_ValueSet"/>
+  <title value="WHODAS Response Values"/>
+  <status value="draft"/>
+  <date value="2023-08-29T02:44:39-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet defines the response values for the WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <concept>
+        <code value="0"/>
+        <display value="None"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="Mild"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Moderate"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Severe"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="Extreme or cannot do"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
