@@ -1,0 +1,64 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "MolicAVC-HRHSQoL",
+  "meta" : {
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-HRHSQoL",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "hr-hsqol",
+    "assigner" : {
+      "reference" : "ICHOM"
+    }
+  }],
+  "version" : "0.1.0",
+  "name" : "hr-hsqol",
+  "title" : "Health-Related Quality of Life/Self-Reported Health Status Question",
+  "status" : "draft",
+  "subjectType" : ["Patient"],
+  "date" : "2023-08-01",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "This variable focuses on the assessment of an individual's health-related quality of life and self-reported \r\nhealth status. It specifically queries the tool being employed to measure health-related quality of life, aiming to gain \r\ninsights into the instrument used to evaluate the patient's overall well-being and perceived health condition.",
+  "item" : [{
+    "linkId" : "hr-hsqol",
+    "text" : "What Health-Related Quality of Life tool are you using?",
+    "type" : "coding",
+    "answerValueSet" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-hrhsqol-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "1",
+        "display" : "EuroQoL-5D-3L (EQ-5D-3L)"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "2",
+        "display" : "WHODAS V2.0-12"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "3",
+        "display" : "VR-12"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "4",
+        "display" : "PROMIS-10"
+      }
+    }]
+  }]
+}

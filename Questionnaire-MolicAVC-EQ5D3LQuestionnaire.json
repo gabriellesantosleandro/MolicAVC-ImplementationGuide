@@ -1,0 +1,194 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "MolicAVC-EQ5D3LQuestionnaire",
+  "meta" : {
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-EQ5D3LQuestionnaire",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "EQ-5D-3L",
+    "assigner" : {
+      "reference" : "ICHOM"
+    }
+  }],
+  "version" : "0.1.0",
+  "name" : "eq5d3l",
+  "title" : "EQ-5D-3L Questionnaire",
+  "status" : "draft",
+  "date" : "2023-08-31T16:41:42-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "The EQ-5D-3L is a widely used health assessment questionnaire that measures health-related \r\nquality of life. It assesses five major dimensions: mobility, self-care, usual activities, pain/discomfort, \r\nand anxiety/depression. Each dimension has three severity levels: no problems, moderate problems, and severe problems. \r\nThe EQ-5D-3L is often used to evaluate the impact of health conditions on daily activities and individuals' quality of life. \r\nIt's a concise and effective tool that provides valuable insights into an individual's health status and well-being.",
+  "item" : [{
+    "linkId" : "eq5d3l_Q01",
+    "text" : "Mobility",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "1"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "2"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "3"
+      }
+    }]
+  },
+  {
+    "linkId" : "eq5d3l_Q02",
+    "text" : "Self-Care",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "4"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "5"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "6"
+      }
+    }]
+  },
+  {
+    "linkId" : "eq5d3l_Q03",
+    "text" : "Usual Activities (e.g. work, study, housework, family or leisure activities)",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "7"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "8"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "9"
+      }
+    }]
+  },
+  {
+    "linkId" : "eq5d3l_Q04",
+    "text" : "Pain / Discomfort",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "10"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "11"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "12"
+      }
+    }]
+  },
+  {
+    "linkId" : "eq5d3l_Q05",
+    "text" : "Anxiety / Depression",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "13"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "14"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "15"
+      }
+    }]
+  },
+  {
+    "linkId" : "eq5d3l_Q06",
+    "text" : "We would like to know how good or bad your health is TODAY. 100 means the best health you can imagine. 0 means the worst health you can imagine.",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "16"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "17"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "18"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "19"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "20"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "21"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "22"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "23"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "24"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "25"
+      }
+    }]
+  }]
+}

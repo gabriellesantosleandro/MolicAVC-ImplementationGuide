@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="MolicAVC-EQ5D3LQuestionnaire"/>
+  <meta>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-EQ5D3LQuestionnaire"/>
+  <identifier>
+    <use value="official"/>
+    <value value="EQ-5D-3L"/>
+    <assigner>
+      <reference value="ICHOM"/>
+    </assigner>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="eq5d3l"/>
+  <title value="EQ-5D-3L Questionnaire"/>
+  <status value="draft"/>
+  <date value="2023-08-31T16:41:42-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="The EQ-5D-3L is a widely used health assessment questionnaire that measures health-related &#xD;&#xA;quality of life. It assesses five major dimensions: mobility, self-care, usual activities, pain/discomfort, &#xD;&#xA;and anxiety/depression. Each dimension has three severity levels: no problems, moderate problems, and severe problems. &#xD;&#xA;The EQ-5D-3L is often used to evaluate the impact of health conditions on daily activities and individuals' quality of life. &#xD;&#xA;It's a concise and effective tool that provides valuable insights into an individual's health status and well-being."/>
+  <item>
+    <linkId value="eq5d3l_Q01"/>
+    <text value="Mobility"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="eq5d3l_Q02"/>
+    <text value="Self-Care"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="6"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="eq5d3l_Q03"/>
+    <text value="Usual Activities (e.g. work, study, housework, family or leisure activities)"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="7"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="8"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="9"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="eq5d3l_Q04"/>
+    <text value="Pain / Discomfort"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="10"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="11"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="12"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="eq5d3l_Q05"/>
+    <text value="Anxiety / Depression"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="13"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="14"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="15"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="eq5d3l_Q06"/>
+    <text value="We would like to know how good or bad your health is TODAY. 100 means the best health you can imagine. 0 means the worst health you can imagine."/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="16"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="17"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="18"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="19"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="20"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="21"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="22"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="23"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="24"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="25"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+</Questionnaire>

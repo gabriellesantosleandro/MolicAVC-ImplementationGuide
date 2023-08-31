@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-smrsq-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smrsq-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_smRSq_ValueSet"/>
+  <title value="ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)"/>
+  <status value="draft"/>
+  <date value="2023-08-31T16:41:42-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <concept>
+        <code value="0"/>
+        <display value="0 = No symptoms at all."/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="1 = No significant disability despite symptoms; able to carry out all usual duties and activities."/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="2 = Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance."/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="3 = Moderate disability; requiring some help, but able to walk without assistance."/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="4 = Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance."/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="5 = Severe disability; bedridden, incontinent and requiring constant nursing care and attention."/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="6 = Dead."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="MolicAVC-HRHSQoL"/>
+  <meta>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-HRHSQoL"/>
+  <identifier>
+    <use value="official"/>
+    <value value="hr-hsqol"/>
+    <assigner>
+      <reference value="ICHOM"/>
+    </assigner>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="hr-hsqol"/>
+  <title value="Health-Related Quality of Life/Self-Reported Health Status Question"/>
+  <status value="draft"/>
+  <subjectType value="Patient"/>
+  <date value="2023-08-01"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This variable focuses on the assessment of an individual's health-related quality of life and self-reported &#xD;&#xA;health status. It specifically queries the tool being employed to measure health-related quality of life, aiming to gain &#xD;&#xA;insights into the instrument used to evaluate the patient's overall well-being and perceived health condition."/>
+  <item>
+    <linkId value="hr-hsqol"/>
+    <text value="What Health-Related Quality of Life tool are you using?"/>
+    <type value="coding"/>
+    <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-hrhsqol-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+        <display value="EuroQoL-5D-3L (EQ-5D-3L)"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+        <display value="WHODAS V2.0-12"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+        <display value="VR-12"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+        <display value="PROMIS-10"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+</Questionnaire>

@@ -3,13 +3,13 @@
   "id" : "guide",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MolicAVC</h2><p>The official URL for this implementation guide is: </p><pre>https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide",
   "version" : "0.1.0",
   "name" : "MolicAVC",
   "status" : "draft",
-  "date" : "2023-08-29T02:44:39-03:00",
+  "date" : "2023-08-31T16:41:42-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -313,164 +313,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/molicavc-encounter-profile"
-      },
-      "name" : "Encounter Profile",
-      "description" : "The Encounter Resource in the MOLIC-AVC project represents the actual interaction between \r\na patient and their healthcare provider(s). It's designed to document delivered health services or assess\r\nthe patient's health status.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/MolicAVC-PROMIS10Questionnaire"
-      },
-      "name" : "Example of PROMIS-10 Questionnaire",
-      "description" : "Example of PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short \r\nform) Questionnaire for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/MolicAVC-VR12Questionnaire"
-      },
-      "name" : "Example of VR-12 (Veterans RAND 12 Item Health Survey)",
-      "description" : "Example of VR-12 (Veterans RAND 12 Item Health Survey) for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/MolicAVC-WHODASQuestionnaire"
-      },
-      "name" : "Example of WHODAS Questionnaire",
-      "description" : "Example of WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire \r\nfor a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-gender-valueset"
-      },
-      "name" : "Gender Value Set",
-      "description" : "Value set for Gender identity based on LOINC.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-code-healthcare-unit-valueset"
-      },
-      "name" : "Healthcare Unit Code ValueSet",
-      "description" : "This ValueSet details codes for healthcare units serving stroke patients in Brazil. \r\nIt includes:\r\n- Public Primary Care: CNES (Cadastro Nacional de Estabelecimento Único)\r\n- Public Reference Hospital: CNES (Cadastro Nacional de Estabelecimento Único)\r\n- Public Non-Reference Hospital: CNES (Cadastro Nacional de Estabelecimento Único)\r\n- Public Emergency Unit: CNES (Cadastro Nacional de Estabelecimento Único)\r\n- Public Ambulance: CNES (Cadastro Nacional de Estabelecimento Único)\r\n- Public Rehabilitation Unit: CNES (Cadastro Nacional de Estabelecimento Único)\r\n- Private Healthcare Service: Other Code.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
         "reference" : "StructureDefinition/live-alone-pre-stroke-extension"
       },
-      "name" : "Live Alone Pre-Stroke Extension",
+      "name" : "Extension of Live Alone Pre-Stroke",
       "description" : "Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/live-alone-pre-stroke"
-      },
-      "name" : "Live Alone Pre-Stroke ValueSet",
-      "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
-      }],
-      "reference" : {
-        "reference" : "Practitioner/MolicAVC-DoctorExample"
-      },
-      "name" : "MolicAVC-DoctorExample",
-      "description" : "Example instance of a doctor in the Molic-AVC project",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
-      }],
-      "reference" : {
-        "reference" : "Encounter/MolicAVC-EncouterExample"
-      },
-      "name" : "MolicAVC-EncouterExample",
-      "description" : "Example instance of an encounter for a patient admitted due to a stroke (AVC)",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
-      }],
-      "reference" : {
-        "reference" : "Organization/MolicAVC-OrganizationExample"
-      },
-      "name" : "MolicAVC-OrganizationExample",
-      "description" : "Example instance of an Organization in the Molic-AVC project.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/123456789"
-      },
-      "name" : "MolicAVC-PatientExample",
-      "description" : "Exemplo de um paciente dentro do contexto Molic-AVC.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/molicavc-organization-profile"
-      },
-      "name" : "Organization Profile",
-      "description" : "The Organization resource in the MOLIC-AVC project encompasses all entities or groups \r\ninvolved in the healthcare process and related health services as part of their formal responsibilities. \r\nExamples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, \r\npublic ambulance transport (SAMU), private services, and others.",
       "isExample" : false
     },
     {
@@ -481,20 +330,8 @@
       "reference" : {
         "reference" : "StructureDefinition/molicavc-ethnicity-extension"
       },
-      "name" : "Patient Ethnicity Extension",
+      "name" : "Extension of Patient Ethnicity",
       "description" : "Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-ethnicity-valueset"
-      },
-      "name" : "Patient Ethnicity ValueSet",
-      "description" : "Patient's Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards.",
       "isExample" : false
     },
     {
@@ -505,20 +342,8 @@
       "reference" : {
         "reference" : "StructureDefinition/molicavc-genderidentity-extension"
       },
-      "name" : "Patient Gender Extension",
+      "name" : "Extension of Patient Gender Identity",
       "description" : "The patient's gender.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/molicavc-patient-profile"
-      },
-      "name" : "Patient Profile",
-      "description" : "The Patient Resource of the Molic-AVC Project stores demographics and other administrative information about an individual or animal receiving care or other health-related services.",
       "isExample" : false
     },
     {
@@ -529,20 +354,8 @@
       "reference" : {
         "reference" : "StructureDefinition/molicavc-race-extension"
       },
-      "name" : "Patient Race Extension",
+      "name" : "Extension of Patient Race",
       "description" : "Extension to capture the patient's race, as recommended by ICHOM.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-race"
-      },
-      "name" : "Patient Race Value Set",
-      "description" : "Value set for capturing the patient's race based on LOINC standards, as recommended by ICHOM.",
       "isExample" : false
     },
     {
@@ -553,7 +366,7 @@
       "reference" : {
         "reference" : "StructureDefinition/molicavc-sex-extension"
       },
-      "name" : "Patient Sex Extension",
+      "name" : "Extension of Patient Sex",
       "description" : "The patient's sex at birth.",
       "isExample" : false
     },
@@ -565,20 +378,44 @@
       "reference" : {
         "reference" : "StructureDefinition/living-location-pre-stroke-extension"
       },
-      "name" : "Patient's Residence Prior to a Stroke Extension",
+      "name" : "Extension of Patient's Residence Prior to a Stroke",
       "description" : "An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code.",
       "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "ValueSet/living-location-pre-stroke-valueset"
+        "reference" : "StructureDefinition/molicavc-encounter-profile"
       },
-      "name" : "Patient's Residence Prior to a Stroke ValueSet",
-      "description" : "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "name" : "Profile of Molic-AVC's Encounter",
+      "description" : "The Encounter Resource in the MOLIC-AVC project represents the actual interaction between \r\na patient and their healthcare provider(s). It's designed to document delivered health services or assess\r\nthe patient's health status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-organization-profile"
+      },
+      "name" : "Profile of Molic-AVC's Organization",
+      "description" : "The Organization resource in the MOLIC-AVC project encompasses all entities or groups \r\ninvolved in the healthcare process and related health services as part of their formal responsibilities. \r\nExamples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, \r\npublic ambulance transport (SAMU), private services, and others.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-patient-profile"
+      },
+      "name" : "Profile of Molic-AVC's Patient",
+      "description" : "The Patient Resource of the Molic-AVC Project stores demographics and other administrative information about an individual or animal receiving care or other health-related services.",
       "isExample" : false
     },
     {
@@ -589,32 +426,8 @@
       "reference" : {
         "reference" : "StructureDefinition/molicavc-practitioner-profile"
       },
-      "name" : "Practitioner Profile",
+      "name" : "Profile of Molic-AVC's Practitioner",
       "description" : "The Practitioner Resource in the MOLIC-AVC project encompasses all individuals involved in the healthcare process and related health services as part of their formal responsibilities. This Resource is utilized to assign activities and responsibilities to these individuals. Examples include: doctors, nurses, therapists, receptionists, and so on.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-code-professional-valueset"
-      },
-      "name" : "Professional Code ValueSet",
-      "description" : "This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil. It includes:\r\n- Doctors: CRM (Conselho Regional de Medicina)\r\n- Nurses: COREN (Conselho Regional de Enfermagem)\r\n- Nutritionists: CRN (Conselho Regional de Nutrição)\r\n- Occupational therapists and Physiotherapists: COFFITO (Conselho Federal de Fisioterapia e Terapia Ocupacional)\r\n- Psychologists: CRP (Conselho Regional de Psicologia)\r\n- Receptionists: Locally provided code.\r\nEach profession is associated with its respective Brazilian registration or licensing entity.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-promis10-valueset"
-      },
-      "name" : "PROMIS-10 Response Values",
-      "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
       "isExample" : false
     },
     {
@@ -625,8 +438,424 @@
       "reference" : {
         "reference" : "StructureDefinition/molicavc-questionnaire-profile"
       },
-      "name" : "Questionnaire Profile",
+      "name" : "Profile of Molic-AVC's Questionnaire",
       "description" : "A structured set of questions intended to guide the collection of answers from end-users. \r\nQuestionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, \r\nconsistent data collection.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-questionnaireresponse-profile"
+      },
+      "name" : "Profile of Molic-AVC's QuestionnaireResponse",
+      "description" : "QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-WHODASQuestionnaire"
+      },
+      "name" : "Use case of Molic-AVC WHODAS Questionnaire",
+      "description" : "Example of WHODAS Questionnaire for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-WHODAS-QuestionnaireResponse"
+      },
+      "name" : "Use case of Molic-AVC WHODAS QuestionnaireResponse",
+      "description" : "Example of WHODAS QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/MolicAVC-EncouterExample"
+      },
+      "name" : "Use case of Molic-AVC's Encounter",
+      "description" : "Example instance of an encounter for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-EQ5D3LQuestionnaire"
+      },
+      "name" : "Use case of Molic-AVC's EQ-5D-3L Questionnaire",
+      "description" : "Example of EQ-5D-3L Questionnaire for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-EQ5D3L-QuestionnaireResponse"
+      },
+      "name" : "Use case of Molic-AVC's EQ-5D-3L QuestionnaireResponse",
+      "description" : "Example of EQ-5D-3L QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-FunctionalAspectsRehabilitation"
+      },
+      "name" : "Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation",
+      "description" : "Example of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse"
+      },
+      "name" : "Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation - QuestionnaireResponse",
+      "description" : "Example of QuestionnaireResponse of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-HRHSQoL"
+      },
+      "name" : "Use case of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question.",
+      "description" : "Example of Health-related Quality of Life/Self-Reported Health Status Question.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/MolicAVC-OrganizationExample"
+      },
+      "name" : "Use case of Molic-AVC's Organization",
+      "description" : "Example instance of an Organization in the Molic-AVC project.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/123.456.789-00"
+      },
+      "name" : "Use case of Molic-AVC's Patient",
+      "description" : "This case study presents a patient profile tailored for the Molic-AVC project, an initiative \nfocused on optimizing care for Acute Ischemic Stroke patients. The profile extends the FHIR Patient \nresource with specialized extensions to capture essential data.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/MolicAVC-DoctorExample"
+      },
+      "name" : "Use case of Molic-AVC's Practitioner",
+      "description" : "Example instance of a doctor in the Molic-AVC project.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-FunctionalStatus-Questionnaire"
+      },
+      "name" : "Use case of Molic-AVC's Prestroke and Poststroke Functional Status",
+      "description" : "Example of Prestroke and Poststroke Functional Status Questionnaire for the patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-FunctionalStatus-QuestionnaireResponse"
+      },
+      "name" : "Use case of Molic-AVC's Prestroke and Poststroke Functional Status - QuestionnaireResponse",
+      "description" : "Example of Prestroke and Poststroke Functional Status QuestionnaireResponse for the patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-PROMIS10Questionnaire"
+      },
+      "name" : "Use case of Molic-AVC's PROMIS-10 Questionnaire",
+      "description" : "Example of PROMIS-10 Questionnaire for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-PROMIS10-QuestionnaireResponse"
+      },
+      "name" : "Use case of Molic-AVC's PROMIS-10 QuestionnaireResponse",
+      "description" : "Example of PROMIS-10 QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-smRSqQuestionnaire"
+      },
+      "name" : "Use case of Molic-AVC's simplified modified Rankin Scale Questionnaire (smRSq)",
+      "description" : "Example of simplified modified Rankin Scale Questionnaire for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-smRSq-QuestionnaireResponse"
+      },
+      "name" : "Use case of Molic-AVC's simplified modified Rankin Scale QuestionnaireResponse",
+      "description" : "Example of simplified modified Rankin Scale QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MolicAVC-VR12Questionnaire"
+      },
+      "name" : "Use case of Molic-AVC's VR-12 Survey",
+      "description" : "Example of VR-12 for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-HRHSQoL-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question.",
+      "description" : "Example of Health-related Quality of Life/Self-Reported Health Status QuestionnaireResponse.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-VR12-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's VR-12 Survey",
+      "description" : "Example of VR-12 QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-eq5d3l-valueset"
+      },
+      "name" : "ValueSet of EQ-5D-3L Response Questionnaire",
+      "description" : "This ValueSet defines the response values for the EQ-5D-3L Questionnaire.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-functionalstatus-valueset"
+      },
+      "name" : "ValueSet of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation",
+      "description" : "This ValueSet defines the response values for the Functional Aspects and Rehabilitation: Feeding, Communication, \r\nand Stroke Rehabilitation.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-gender-valueset"
+      },
+      "name" : "ValueSet of Gender Identity",
+      "description" : "ValueSet for Gender identity based on LOINC.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-hrhsqol-valueset"
+      },
+      "name" : "ValueSet of Health-related Quality of Life Response Question",
+      "description" : "This ValueSet defines the response values for the Health-related Quality of Life Response Question.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-code-healthcare-unit-valueset"
+      },
+      "name" : "ValueSet of Healthcare Unit Code",
+      "description" : "This ValueSet details codes for healthcare units serving stroke patients in Brazil.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/live-alone-pre-stroke"
+      },
+      "name" : "ValueSet of Live Alone Pre-Stroke",
+      "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-ethnicity-valueset"
+      },
+      "name" : "ValueSet of Patient Ethnicity",
+      "description" : "Patient's Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-race"
+      },
+      "name" : "ValueSet of Patient Race",
+      "description" : "Value set for capturing the patient's race based on LOINC standards, as recommended by ICHOM.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/living-location-pre-stroke-valueset"
+      },
+      "name" : "ValueSet of Patient's Residence Prior to a Stroke",
+      "description" : "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-functionalaspectsrehabilitation-valueset"
+      },
+      "name" : "ValueSet of Prestroke and Poststroke Functional Status questionnaire",
+      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status questionnaire.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-code-professional-valueset"
+      },
+      "name" : "ValueSet of Professional Code",
+      "description" : "This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-promis10-valueset"
+      },
+      "name" : "ValueSet of PROMIS-10 Response Questionnaire",
+      "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
       "isExample" : false
     },
     {
@@ -637,8 +866,20 @@
       "reference" : {
         "reference" : "ValueSet/molicavc-sex-valueset"
       },
-      "name" : "Sex ValueSet",
-      "description" : "Value set for the patient's sex at birth according to the ICHOM standard.",
+      "name" : "ValueSet of Sex based on ICHOM standard",
+      "description" : "ValueSet for the patient's sex at birth according to the ICHOM standard.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-smrsq-valueset"
+      },
+      "name" : "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)",
+      "description" : "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.",
       "isExample" : false
     },
     {
@@ -649,7 +890,7 @@
       "reference" : {
         "reference" : "ValueSet/molicavc-vr12-valueset"
       },
-      "name" : "VR-12 Response Values",
+      "name" : "ValueSet of VR-12 Response Questionnaire",
       "description" : "This ValueSet defines the response values for the VR-12 (Veterans RAND 12 Item Health Survey).",
       "isExample" : false
     },
@@ -661,7 +902,7 @@
       "reference" : {
         "reference" : "ValueSet/molicavc-whodas-valueset"
       },
-      "name" : "WHODAS Response Values",
+      "name" : "ValueSet of WHODAS Response Questionnaire",
       "description" : "This ValueSet defines the response values for the WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire.",
       "isExample" : false
     }],

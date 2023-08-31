@@ -1,0 +1,139 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "MolicAVC-FunctionalStatus-Questionnaire",
+  "meta" : {
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalStatus-Questionnaire",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "functional-status",
+    "assigner" : {
+      "reference" : "ICHOM"
+    }
+  }],
+  "version" : "0.1.0",
+  "name" : "functional-status",
+  "title" : "Prestroke and Poststroke Functional Status Questionnaire",
+  "status" : "draft",
+  "date" : "2023-08-31T16:41:42-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "These questions inquire about the individual's functional status before and after a stroke or transient \r\nischemic attack (TIA). The questions cover different aspects of daily living, such as ambulation (walking), toileting, \r\nand dressing. They assess whether the person required assistance in these activities before the stroke/TIA and whether \r\nthey need assistance now. By comparing pre- and post-stroke functional abilities, these questions provide insight into the \r\nimpact of the stroke on the individual's independence and daily activities.",
+  "item" : [{
+    "linkId" : "prestroke-ambulation",
+    "text" : "Prestroke functional status: Ambulation. Were you able to walk before your stroke or transient ischaemic attack?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "1"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "2"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "3"
+      }
+    }]
+  },
+  {
+    "linkId" : "prestroke-toileting",
+    "text" : "Prestroke functional status: Toileting. Did you need help from anybody to go to the toilet before your stroke or transient ischaemic attack?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "4"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "5"
+      }
+    }]
+  },
+  {
+    "linkId" : "prestroke-dressing",
+    "text" : "Prestroke functional status: Dressing. Did you need help with dressing/undressing before your stroke or transient ischaemic attack?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "6"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "7"
+      }
+    }]
+  },
+  {
+    "linkId" : "poststroke-ambulation",
+    "text" : "Poststroke functional status: Ambulation. Are you able to walk?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "1"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "2"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "3"
+      }
+    }]
+  },
+  {
+    "linkId" : "poststroke-toileting",
+    "text" : "Poststroke functional status: Toileting. Do you need help from anybody to go to the toilet?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "4"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "5"
+      }
+    }]
+  },
+  {
+    "linkId" : "poststroke-dressing",
+    "text" : "Poststroke functional status: Dressing. Do you need help with dressing/undressing?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "6"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "7"
+      }
+    }]
+  }]
+}

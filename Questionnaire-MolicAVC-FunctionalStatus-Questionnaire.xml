@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="MolicAVC-FunctionalStatus-Questionnaire"/>
+  <meta>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalStatus-Questionnaire"/>
+  <identifier>
+    <use value="official"/>
+    <value value="functional-status"/>
+    <assigner>
+      <reference value="ICHOM"/>
+    </assigner>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="functional-status"/>
+  <title value="Prestroke and Poststroke Functional Status Questionnaire"/>
+  <status value="draft"/>
+  <date value="2023-08-31T16:41:42-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="These questions inquire about the individual's functional status before and after a stroke or transient &#xD;&#xA;ischemic attack (TIA). The questions cover different aspects of daily living, such as ambulation (walking), toileting, &#xD;&#xA;and dressing. They assess whether the person required assistance in these activities before the stroke/TIA and whether &#xD;&#xA;they need assistance now. By comparing pre- and post-stroke functional abilities, these questions provide insight into the &#xD;&#xA;impact of the stroke on the individual's independence and daily activities."/>
+  <item>
+    <linkId value="prestroke-ambulation"/>
+    <text value="Prestroke functional status: Ambulation. Were you able to walk before your stroke or transient ischaemic attack?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="prestroke-toileting"/>
+    <text value="Prestroke functional status: Toileting. Did you need help from anybody to go to the toilet before your stroke or transient ischaemic attack?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="prestroke-dressing"/>
+    <text value="Prestroke functional status: Dressing. Did you need help with dressing/undressing before your stroke or transient ischaemic attack?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="6"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="7"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="poststroke-ambulation"/>
+    <text value="Poststroke functional status: Ambulation. Are you able to walk?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="2"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="3"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="poststroke-toileting"/>
+    <text value="Poststroke functional status: Toileting. Do you need help from anybody to go to the toilet?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="4"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="5"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="poststroke-dressing"/>
+    <text value="Poststroke functional status: Dressing. Do you need help with dressing/undressing?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="6"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="7"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+</Questionnaire>

@@ -1,0 +1,74 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "MolicAVC-smRSqQuestionnaire",
+  "meta" : {
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-smRSqQuestionnaire",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "smRSq",
+    "assigner" : {
+      "reference" : "ICHOM"
+    }
+  }],
+  "version" : "0.1.0",
+  "name" : "smRSq",
+  "title" : "simplified modified Rankin Scale Questionnaire",
+  "status" : "draft",
+  "date" : "2023-08-31T16:41:42-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "The Simplified Modified Rankin Scale Questionnaire (smRSq) is a tool designed to assess an individual's level \r\nof disability or dependence following a medical event, particularly strokes. The smRSq aims to quickly and effectively capture \r\nthe individual's functional status and level of independence in daily activities. By using a concise set of questions, it helps \r\nhealthcare professionals evaluate the impact of the medical event on the patient's quality of life and guide treatment decisions.",
+  "item" : [{
+    "linkId" : "smRSq",
+    "text" : "simplified modified Rankin Scale questionnaire",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smrsq-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "0"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "1"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "2"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "3"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "4"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "5"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "6"
+      }
+    }]
+  }]
+}

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "8ded48c8-7441-40f3-99a7-d979916318bc",
+  "id" : "14ea481f-9b8e-4d5e-8163-e777d799839c",
   "meta" : {
-    "lastUpdated" : "2023-08-29T02:44:39.241-03:00"
+    "lastUpdated" : "2023-08-31T16:41:42.833-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -16,16 +16,20 @@
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset",
       "version" : "0.1.0",
       "name" : "MolicAVC_EthnicityValueSet",
-      "title" : "Patient Ethnicity ValueSet",
+      "title" : "ValueSet of Patient Ethnicity",
       "status" : "draft",
-      "date" : "2023-08-29T02:44:39-03:00",
+      "date" : "2023-08-31T16:41:42-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:fa8de0af-1331-4596-8ee2-2e7f94d515c7",
-        "timestamp" : "2023-08-29T02:45:31-03:00",
+        "identifier" : "urn:uuid:171e4a29-bb7e-4f4a-afb2-d48db166eb2d",
+        "timestamp" : "2023-08-31T16:42:57-03:00",
         "total" : 10,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
         },
         {
           "name" : "limitedExpansion",
@@ -99,16 +103,20 @@
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset",
       "version" : "0.1.0",
       "name" : "MolicAVC_GenderIdentityValueSet",
-      "title" : "Gender Value Set",
+      "title" : "ValueSet of Gender Identity",
       "status" : "draft",
-      "date" : "2023-08-29T02:44:39-03:00",
+      "date" : "2023-08-31T16:41:42-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:9f415a9f-f931-4279-b9ac-be7db6ba4236",
-        "timestamp" : "2023-08-29T02:45:31-03:00",
+        "identifier" : "urn:uuid:000edeb5-2287-4ac7-8078-13c1f8ac3795",
+        "timestamp" : "2023-08-31T16:42:58-03:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
         },
         {
           "name" : "limitedExpansion",
@@ -167,16 +175,20 @@
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race",
       "version" : "0.1.0",
       "name" : "MolicAVC_RaceValueSet",
-      "title" : "Patient Race Value Set",
+      "title" : "ValueSet of Patient Race",
       "status" : "draft",
-      "date" : "2023-08-29T02:44:39-03:00",
+      "date" : "2023-08-31T16:41:42-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:356d16cb-f7c1-443c-a361-512a21eadc61",
-        "timestamp" : "2023-08-29T02:45:32-03:00",
+        "identifier" : "urn:uuid:06e48d4e-2218-46a3-98e8-4f158f5543d4",
+        "timestamp" : "2023-08-31T16:42:58-03:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
         },
         {
           "name" : "limitedExpansion",

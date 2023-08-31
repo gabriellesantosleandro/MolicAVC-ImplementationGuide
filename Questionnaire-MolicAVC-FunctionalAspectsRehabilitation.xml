@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="MolicAVC-FunctionalAspectsRehabilitation"/>
+  <meta>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalAspectsRehabilitation"/>
+  <identifier>
+    <use value="official"/>
+    <value value="fa-rehabilitation"/>
+    <assigner>
+      <reference value="ICHOM"/>
+    </assigner>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="fa-rehabilitation"/>
+  <title value="Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation"/>
+  <status value="draft"/>
+  <date value="2023-08-31T16:41:42-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This instance captures key functional aspects and rehabilitation considerations for stroke patients. &#xD;&#xA;It addresses feeding needs, including the requirement for feeding tubes such as nasogastric or gastrostomy tubes. &#xD;&#xA;It also evaluates the ability to communicate effectively and understand information. Furthermore, it investigates the &#xD;&#xA;inclusion of dedicated stroke rehabilitation during both acute inpatient care and post-acute care, encompassing hospital-based &#xD;&#xA;and outpatient/home-based settings."/>
+  <item>
+    <linkId value="feeding"/>
+    <text value="Do you need a tube for feeding? For example: a nasogastric tube or a gastrostomy tube."/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="0"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="communicate"/>
+    <text value="Do you have problems with communication or understanding?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="0"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="rehabilitation_Q01"/>
+    <text value="Rehabilitation inpatient acute care. Did the acute inpatient care include dedicated stroke rehabilitation?"/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="0"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="999"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+  <item>
+    <linkId value="rehabilitation_Q02"/>
+    <text value="Rehabilitation post-acute care. Did the post-acute care include dedicated stroke rehabilitation? Dedicated stroke rehabilitation during post-acute care, either hospital-based or out patient/home based."/>
+    <type value="question"/>
+    <answerValueSet value="http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
+    <answerOption>
+      <valueCoding>
+        <code value="0"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="1"/>
+      </valueCoding>
+    </answerOption>
+    <answerOption>
+      <valueCoding>
+        <code value="999"/>
+      </valueCoding>
+    </answerOption>
+  </item>
+</Questionnaire>

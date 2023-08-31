@@ -5,28 +5,28 @@
   "extensions": [
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
-      "title": "Live Alone Pre-Stroke Extension",
+      "title": "Extension of Live Alone Pre-Stroke",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension",
-      "title": "Patient\u0027s Residence Prior to a Stroke Extension",
+      "title": "Extension of Patient\u0027s Residence Prior to a Stroke",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
-      "title": "Patient Ethnicity Extension",
+      "title": "Extension of Patient Ethnicity",
       "types": [
         "CodeableConcept"
       ]
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
-      "title": "Patient Gender Extension",
+      "title": "Extension of Patient Gender Identity",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -34,7 +34,7 @@
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension",
-      "title": "Patient Race Extension",
+      "title": "Extension of Patient Race",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -42,7 +42,7 @@
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension",
-      "title": "Patient Sex Extension",
+      "title": "Extension of Patient Sex",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -53,31 +53,37 @@
     "Encounter": [
       {
         "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
-        "title": "Encounter Profile"
+        "title": "Profile of Molic-AVC\u0027s Encounter"
       }
     ],
     "Organization": [
       {
         "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
-        "title": "Organization Profile"
+        "title": "Profile of Molic-AVC\u0027s Organization"
       }
     ],
     "Patient": [
       {
         "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile",
-        "title": "Patient Profile"
+        "title": "Profile of Molic-AVC\u0027s Patient"
       }
     ],
     "Practitioner": [
       {
         "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
-        "title": "Practitioner Profile"
+        "title": "Profile of Molic-AVC\u0027s Practitioner"
       }
     ],
     "Questionnaire": [
       {
         "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
-        "title": "Questionnaire Profile"
+        "title": "Profile of Molic-AVC\u0027s Questionnaire"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+        "title": "Profile of Molic-AVC\u0027s QuestionnaireResponse"
       }
     ]
   },

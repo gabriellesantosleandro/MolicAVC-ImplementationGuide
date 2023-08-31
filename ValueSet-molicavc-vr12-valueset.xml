@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="molicavc-vr12-valueset"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Excellent</td></tr><tr><td>2</td><td>Very Good</td></tr><tr><td>3</td><td>Good</td></tr><tr><td>4</td><td>Fair</td></tr><tr><td>5</td><td>Poor</td></tr><tr><td>6</td><td>All of the time</td></tr><tr><td>7</td><td>Most of the time</td></tr><tr><td>8</td><td>A good bit of the time</td></tr><tr><td>9</td><td>Some of the time</td></tr><tr><td>10</td><td>A little of the time</td></tr><tr><td>11</td><td>None of the time</td></tr><tr><td>12</td><td>Yes, limited a lot</td></tr><tr><td>13</td><td>Yes, limited a little</td></tr><tr><td>14</td><td>No, not limited at all</td></tr><tr><td>15</td><td>Much better</td></tr><tr><td>16</td><td>Slightly better</td></tr><tr><td>17</td><td>About the same</td></tr><tr><td>18</td><td>Slightly worse</td></tr><tr><td>19</td><td>Much worse</td></tr><tr><td>20</td><td>No, none of the time</td></tr><tr><td>21</td><td>Yes, a little of the time</td></tr><tr><td>22</td><td>Yes, some of the time</td></tr><tr><td>23</td><td>Yes, most of the time</td></tr><tr><td>24</td><td>Yes, all of the time</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset"/>
   <version value="0.1.0"/>
   <name value="MolicAVC_VR-12_ValueSet"/>
-  <title value="VR-12 Response Values"/>
+  <title value="ValueSet of VR-12 Response Questionnaire"/>
   <status value="draft"/>
-  <date value="2023-08-29T02:44:39-03:00"/>
+  <date value="2023-08-31T16:41:42-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>

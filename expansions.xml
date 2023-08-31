@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8ded48c8-7441-40f3-99a7-d979916318bc"/>
+  <id value="14ea481f-9b8e-4d5e-8163-e777d799839c"/>
   <meta>
-    <lastUpdated value="2023-08-29T02:44:39.241-03:00"/>
+    <lastUpdated value="2023-08-31T16:41:42.833-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -113,16 +113,20 @@
         <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
         <version value="0.1.0"/>
         <name value="MolicAVC_EthnicityValueSet"/>
-        <title value="Patient Ethnicity ValueSet"/>
+        <title value="ValueSet of Patient Ethnicity"/>
         <status value="draft"/>
-        <date value="2023-08-29T02:44:39-03:00"/>
+        <date value="2023-08-31T16:41:42-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:fa8de0af-1331-4596-8ee2-2e7f94d515c7"/>
-          <timestamp value="2023-08-29T02:45:31-03:00"/>
+          <identifier value="urn:uuid:171e4a29-bb7e-4f4a-afb2-d48db166eb2d"/>
+          <timestamp value="2023-08-31T16:42:57-03:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -269,16 +273,20 @@
         <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
         <version value="0.1.0"/>
         <name value="MolicAVC_GenderIdentityValueSet"/>
-        <title value="Gender Value Set"/>
+        <title value="ValueSet of Gender Identity"/>
         <status value="draft"/>
-        <date value="2023-08-29T02:44:39-03:00"/>
+        <date value="2023-08-31T16:41:42-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:9f415a9f-f931-4279-b9ac-be7db6ba4236"/>
-          <timestamp value="2023-08-29T02:45:31-03:00"/>
+          <identifier value="urn:uuid:000edeb5-2287-4ac7-8078-13c1f8ac3795"/>
+          <timestamp value="2023-08-31T16:42:58-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>
@@ -362,16 +370,20 @@
         <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
         <version value="0.1.0"/>
         <name value="MolicAVC_RaceValueSet"/>
-        <title value="Patient Race Value Set"/>
+        <title value="ValueSet of Patient Race"/>
         <status value="draft"/>
-        <date value="2023-08-29T02:44:39-03:00"/>
+        <date value="2023-08-31T16:41:42-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:356d16cb-f7c1-443c-a361-512a21eadc61"/>
-          <timestamp value="2023-08-29T02:45:32-03:00"/>
+          <identifier value="urn:uuid:06e48d4e-2218-46a3-98e8-4f158f5543d4"/>
+          <timestamp value="2023-08-31T16:42:58-03:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
           </parameter>
           <parameter>
             <name value="limitedExpansion"/>

@@ -1,0 +1,107 @@
+{
+  "resourceType" : "Questionnaire",
+  "id" : "MolicAVC-FunctionalAspectsRehabilitation",
+  "meta" : {
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalAspectsRehabilitation",
+  "identifier" : [{
+    "use" : "official",
+    "value" : "fa-rehabilitation",
+    "assigner" : {
+      "reference" : "ICHOM"
+    }
+  }],
+  "version" : "0.1.0",
+  "name" : "fa-rehabilitation",
+  "title" : "Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation",
+  "status" : "draft",
+  "date" : "2023-08-31T16:41:42-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "This instance captures key functional aspects and rehabilitation considerations for stroke patients. \r\nIt addresses feeding needs, including the requirement for feeding tubes such as nasogastric or gastrostomy tubes. \r\nIt also evaluates the ability to communicate effectively and understand information. Furthermore, it investigates the \r\ninclusion of dedicated stroke rehabilitation during both acute inpatient care and post-acute care, encompassing hospital-based \r\nand outpatient/home-based settings.",
+  "item" : [{
+    "linkId" : "feeding",
+    "text" : "Do you need a tube for feeding? For example: a nasogastric tube or a gastrostomy tube.",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "0"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "1"
+      }
+    }]
+  },
+  {
+    "linkId" : "communicate",
+    "text" : "Do you have problems with communication or understanding?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "0"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "1"
+      }
+    }]
+  },
+  {
+    "linkId" : "rehabilitation_Q01",
+    "text" : "Rehabilitation inpatient acute care. Did the acute inpatient care include dedicated stroke rehabilitation?",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "0"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "1"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "999"
+      }
+    }]
+  },
+  {
+    "linkId" : "rehabilitation_Q02",
+    "text" : "Rehabilitation post-acute care. Did the post-acute care include dedicated stroke rehabilitation? Dedicated stroke rehabilitation during post-acute care, either hospital-based or out patient/home based.",
+    "type" : "question",
+    "answerValueSet" : "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset",
+    "answerOption" : [{
+      "valueCoding" : {
+        "code" : "0"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "1"
+      }
+    },
+    {
+      "valueCoding" : {
+        "code" : "999"
+      }
+    }]
+  }]
+}

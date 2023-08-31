@@ -1,0 +1,225 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-EQ5D3LQuestionnaire> a fhir:Questionnaire ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MolicAVC-EQ5D3LQuestionnaire"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"^^xsd:anyURI ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-EQ5D3LQuestionnaire"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:value [ fhir:v "EQ-5D-3L" ] ;
+     fhir:assigner [
+       fhir:reference [ fhir:v "ICHOM" ]
+     ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "eq5d3l"] ; # 
+  fhir:title [ fhir:v "EQ-5D-3L Questionnaire"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-08-31T16:41:42-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://molic-avc.gabriellesantosleandro.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The EQ-5D-3L is a widely used health assessment questionnaire that measures health-related \r\nquality of life. It assesses five major dimensions: mobility, self-care, usual activities, pain/discomfort, \r\nand anxiety/depression. Each dimension has three severity levels: no problems, moderate problems, and severe problems. \r\nThe EQ-5D-3L is often used to evaluate the impact of health conditions on daily activities and individuals' quality of life. \r\nIt's a concise and effective tool that provides valuable insights into an individual's health status and well-being."] ; # 
+  fhir:item ( [
+     fhir:linkId [ fhir:v "eq5d3l_Q01" ] ;
+     fhir:text [ fhir:v "Mobility" ] ;
+     fhir:type [ fhir:v "question" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"^^xsd:anyURI ;
+       fhir:link <http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset>
+     ] ;
+     fhir:answerOption ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "1" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "2" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "3" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "eq5d3l_Q02" ] ;
+     fhir:text [ fhir:v "Self-Care" ] ;
+     fhir:type [ fhir:v "question" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"^^xsd:anyURI ;
+       fhir:link <http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset>
+     ] ;
+     fhir:answerOption ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "4" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "5" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "6" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "eq5d3l_Q03" ] ;
+     fhir:text [ fhir:v "Usual Activities (e.g. work, study, housework, family or leisure activities)" ] ;
+     fhir:type [ fhir:v "question" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"^^xsd:anyURI ;
+       fhir:link <http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset>
+     ] ;
+     fhir:answerOption ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "7" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "8" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "9" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "eq5d3l_Q04" ] ;
+     fhir:text [ fhir:v "Pain / Discomfort" ] ;
+     fhir:type [ fhir:v "question" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"^^xsd:anyURI ;
+       fhir:link <http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset>
+     ] ;
+     fhir:answerOption ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "10" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "11" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "12" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "eq5d3l_Q05" ] ;
+     fhir:text [ fhir:v "Anxiety / Depression" ] ;
+     fhir:type [ fhir:v "question" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"^^xsd:anyURI ;
+       fhir:link <http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset>
+     ] ;
+     fhir:answerOption ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "13" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "14" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "15" ]
+       ]
+     ] )
+  ] [
+     fhir:linkId [ fhir:v "eq5d3l_Q06" ] ;
+     fhir:text [ fhir:v "We would like to know how good or bad your health is TODAY. 100 means the best health you can imagine. 0 means the worst health you can imagine." ] ;
+     fhir:type [ fhir:v "question" ] ;
+     fhir:answerValueSet [
+       fhir:v "http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset"^^xsd:anyURI ;
+       fhir:link <http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset>
+     ] ;
+     fhir:answerOption ( [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "16" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "17" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "18" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "19" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "20" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "21" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "22" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "23" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "24" ]
+       ]
+     ] [
+       fhir:value [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "25" ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

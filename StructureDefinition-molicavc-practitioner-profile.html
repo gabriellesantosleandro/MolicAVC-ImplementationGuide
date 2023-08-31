@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>GUIDE\Practitioner Profile - FHIR v5.0.0</title>
+    <title>GUIDE\Profile of Molic-AVC&#39;s Practitioner - FHIR v5.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -98,7 +98,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Practitioner Profile</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Profile of Molic-AVC's Practitioner</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -187,7 +187,7 @@
   <a name="root"> </a>
   <h2 id="root">Resource Profile:
 
-    Practitioner Profile
+    Profile of Molic-AVC's Practitioner
 
 
 
@@ -217,7 +217,7 @@
         
           Draft
           
-            as of 2023-08-29
+            as of 2023-08-31
           
         
       </td>
@@ -486,6 +486,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Practitioner</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Practitioner</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Practitioner</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -510,7 +515,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     <div id="tabs-json">
       <div id="json">
         <div id="json-inner">
-           // <span style="color: navy; opacity: 0.8">Practitioner Profile</span>
+           // <span style="color: navy; opacity: 0.8">Profile of Molic-AVC's Practitioner</span>
  {
    "resourceType" : "Practitioner",
     "<a href="StructureDefinition-molicavc-practitioner-profile.html#Practitioner.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -541,7 +546,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     ],
     "<a href="StructureDefinition-molicavc-practitioner-profile.html#Practitioner.qualification" title="The official qualifications, certifications, accreditations, training, licenses (and other types of educations/skills/capabilities) that authorize or otherwise pertain to the provision of care by the practitioner.
 
-For example, a medical license issued by a medical board of licensure authorizing the practitioner to practice medicine within a certain locality" class="dict"><span style="text-decoration: underline">qualification</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Qualifications, certifications, accreditations, licenses, training, etc. pertaining to the provision of care</span>
+For example, a medical license issued by a medical board of licensure authorizing the practitioner to practice medicine within a certain locality" class="dict"><span style="text-decoration: underline">qualification</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Qualifications, certifications, accreditations, licenses, training, etc. pertaining to the provision of care</span>
       "extension": [
       ],
       "<a href="StructureDefinition-molicavc-practitioner-profile.html#Practitioner.qualification.identifier" title="An identifier that applies to this person's qualification (this element must be supported)" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8">An identifier for this qualification for the practitioner</span>
@@ -794,6 +799,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Practitioner</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Practitioner</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Practitioner</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Practitioner</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -818,7 +828,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
           <b>JSON Template</b>
         </p>
         <div id="all-json-inner">
-           // <span style="color: navy; opacity: 0.8">Practitioner Profile</span>
+           // <span style="color: navy; opacity: 0.8">Profile of Molic-AVC's Practitioner</span>
  {
    "resourceType" : "Practitioner",
     "<a href="StructureDefinition-molicavc-practitioner-profile.html#Practitioner.id" title="The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes" class="dict"><span style="text-decoration: underline">id</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#id">id</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Logical id of this artifact</span>
@@ -849,7 +859,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     ],
     "<a href="StructureDefinition-molicavc-practitioner-profile.html#Practitioner.qualification" title="The official qualifications, certifications, accreditations, training, licenses (and other types of educations/skills/capabilities) that authorize or otherwise pertain to the provision of care by the practitioner.
 
-For example, a medical license issued by a medical board of licensure authorizing the practitioner to practice medicine within a certain locality" class="dict"><span style="text-decoration: underline">qualification</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Qualifications, certifications, accreditations, licenses, training, etc. pertaining to the provision of care</span>
+For example, a medical license issued by a medical board of licensure authorizing the practitioner to practice medicine within a certain locality" class="dict"><span style="text-decoration: underline">qualification</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Qualifications, certifications, accreditations, licenses, training, etc. pertaining to the provision of care</span>
       "extension": [
       ],
       "<a href="StructureDefinition-molicavc-practitioner-profile.html#Practitioner.qualification.identifier" title="An identifier that applies to this person's qualification (this element must be supported)" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8">An identifier for this qualification for the practitioner</span>
@@ -958,7 +968,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Aug 29, 2023 02:44-0300">2023-08-29</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Aug 31, 2023 16:41-0300">2023-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

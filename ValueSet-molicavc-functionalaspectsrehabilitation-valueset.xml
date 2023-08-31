@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-functionalaspectsrehabilitation-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_FunctionalAspectsRehabilitation_ValueSet"/>
+  <title value="ValueSet of Prestroke and Poststroke Functional Status questionnaire"/>
+  <status value="draft"/>
+  <date value="2023-08-31T16:41:42-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status questionnaire."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <concept>
+        <code value="1"/>
+        <display value="1 = Able to walk without help from another person with or without a device."/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="2 = Able to walk with help from another person."/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="3 = Unable to walk."/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="1 = I could manage going to the toilet without assistance."/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="2 = I needed help to go to the toilet."/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="1 = I could manage dressing/undressing without help."/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="2 = I needed help dressing/undressing."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
