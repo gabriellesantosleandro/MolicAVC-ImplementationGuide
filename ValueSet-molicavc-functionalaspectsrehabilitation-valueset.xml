@@ -10,7 +10,7 @@
   <name value="MolicAVC_FunctionalAspectsRehabilitation_ValueSet"/>
   <title value="ValueSet of Prestroke and Poststroke Functional Status questionnaire"/>
   <status value="draft"/>
-  <date value="2023-08-31T16:41:42-03:00"/>
+  <date value="2023-09-08T18:23:11-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -22,7 +22,7 @@
   <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status questionnaire."/>
   <compose>
     <include>
-      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
       <concept>
         <code value="1"/>
         <display value="1 = Able to walk without help from another person with or without a device."/>

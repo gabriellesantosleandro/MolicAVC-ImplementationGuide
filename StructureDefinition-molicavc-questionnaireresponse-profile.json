@@ -10,7 +10,7 @@
   "name" : "MolicAVC_QuestionnaireResponse",
   "title" : "Profile of Molic-AVC's QuestionnaireResponse",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -19,7 +19,7 @@
       "value" : "https://molic-avc.gabriellesantosleandro.com"
     }]
   }],
-  "description" : "QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire.",
+  "description" : "QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding\r\n to a questionnaire.",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
     "identity" : "workflow",

@@ -10,7 +10,7 @@
   "name" : "MolicAVC_CodeHealthcareUnitValueSet",
   "title" : "ValueSet of Healthcare Unit Code",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -25,31 +25,31 @@
       "system" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/",
       "concept" : [{
         "code" : "UBSF",
-        "display" : "Public Primary Care (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Primary Care (CNES)"
       },
       {
         "code" : "STROKEHOSP",
-        "display" : "Public Reference Hospital (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Reference Hospital (CNES)"
       },
       {
         "code" : "NONSTROKEHOSP",
-        "display" : "Public Non-Reference Hospital (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Non-Reference Hospital (CNES)"
       },
       {
         "code" : "UPA",
-        "display" : "Public Emergency Unit (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Emergency Unit (CNES)"
       },
       {
         "code" : "SAMU",
-        "display" : "Public Ambulance (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Ambulance (CNES)"
       },
       {
         "code" : "REAB",
-        "display" : "Public Rehabilitation Unit (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Rehabilitation Unit (CNES)"
       },
       {
         "code" : "OTHER",
-        "display" : "Public Rehabilitation Unit (CNES - Cadastro Nacional de Estabelecimento Único)"
+        "display" : "Public Rehabilitation Unit (CNES)"
       },
       {
         "code" : "PRIVATE",

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="14ea481f-9b8e-4d5e-8163-e777d799839c"/>
+  <id value="b0a6e401-0460-4bac-8238-87611c527efb"/>
   <meta>
-    <lastUpdated value="2023-08-31T16:41:42.833-03:00"/>
+    <lastUpdated value="2023-09-08T18:23:11.428-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,13 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 10 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -85,14 +91,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32627-2"> </a>  
-                  <a href="https://loinc.org/32627-2/">32627-2</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Middle Eastern Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---loinc.org-32629-8"> </a>  
                   <a href="https://loinc.org/32629-8/">32629-8</a>
                 </td>
@@ -107,6 +105,14 @@
                 <td>http://loinc.org</td>
                 <td>Other Ethnicity</td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-32627-2"> </a>  
+                  <a href="https://loinc.org/32627-2/">32627-2</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Unknown</td>
+              </tr>
             </table>
           </div>
         </text>
@@ -115,10 +121,10 @@
         <name value="MolicAVC_EthnicityValueSet"/>
         <title value="ValueSet of Patient Ethnicity"/>
         <status value="draft"/>
-        <date value="2023-08-31T16:41:42-03:00"/>
+        <date value="2023-09-08T18:23:11-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:171e4a29-bb7e-4f4a-afb2-d48db166eb2d"/>
-          <timestamp value="2023-08-31T16:42:57-03:00"/>
+          <identifier value="urn:uuid:e17306b3-324f-4c1b-8f88-2707dd4b597f"/>
+          <timestamp value="2023-09-08T18:25:12-03:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
@@ -131,6 +137,10 @@
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -173,11 +183,6 @@
           </contains>
           <contains>
             <system value="http://loinc.org"/>
-            <code value="32627-2"/>
-            <display value="Middle Eastern Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
             <code value="32629-8"/>
             <display value="Pacific Islander Ethnicity"/>
           </contains>
@@ -185,6 +190,11 @@
             <system value="http://loinc.org"/>
             <code value="2029-7"/>
             <display value="Other Ethnicity"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="32627-2"/>
+            <display value="Unknown"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -275,10 +285,10 @@
         <name value="MolicAVC_GenderIdentityValueSet"/>
         <title value="ValueSet of Gender Identity"/>
         <status value="draft"/>
-        <date value="2023-08-31T16:41:42-03:00"/>
+        <date value="2023-09-08T18:23:11-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:000edeb5-2287-4ac7-8078-13c1f8ac3795"/>
-          <timestamp value="2023-08-31T16:42:58-03:00"/>
+          <identifier value="urn:uuid:b3675e19-4ae0-4df3-b932-c97d80fbbd1a"/>
+          <timestamp value="2023-09-08T18:25:12-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -372,10 +382,10 @@
         <name value="MolicAVC_RaceValueSet"/>
         <title value="ValueSet of Patient Race"/>
         <status value="draft"/>
-        <date value="2023-08-31T16:41:42-03:00"/>
+        <date value="2023-09-08T18:23:11-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:06e48d4e-2218-46a3-98e8-4f158f5543d4"/>
-          <timestamp value="2023-08-31T16:42:58-03:00"/>
+          <identifier value="urn:uuid:120e0ef4-3f89-4ae2-9380-2be8680e2d64"/>
+          <timestamp value="2023-09-08T18:25:12-03:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>

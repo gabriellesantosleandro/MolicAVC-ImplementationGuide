@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-consciousness-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-consciousness-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_ConsciousnessValueSet"/>
+  <title value="ValueSet of Consciousness"/>
+  <status value="draft"/>
+  <date value="2023-09-08T18:23:11-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet indicates the patient’s level of consciousness measured on hospitalar arrival."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/"/>
+      <concept>
+        <code value="0"/>
+        <display value="0 = Fully awake"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="1 = Somnolent"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="2 = Coma"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="999 = Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

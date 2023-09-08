@@ -10,7 +10,7 @@
   "name" : "MolicAVC_PROMIS10_ValueSet",
   "title" : "ValueSet of PROMIS-10 Response Questionnaire",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -22,7 +22,7 @@
   "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
   "compose" : {
     "include" : [{
-      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke",
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/",
       "concept" : [{
         "code" : "1",
         "display" : "Poor"

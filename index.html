@@ -145,7 +145,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-08-31
+            as of 2023-09-08
           
         
       </td>
@@ -172,14 +172,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div class="markdown-toc">
 <ul id="markdown-toc">
   <li><a href="#molic-avc-project-monitoring-the-stroke-healthcare-pathway" id="markdown-toc-molic-avc-project-monitoring-the-stroke-healthcare-pathway">Molic-AVC Project: Monitoring the Stroke Healthcare Pathway</a>    <ul>
-      <li><a href="#1-introduction" id="markdown-toc-1-introduction">1 Introduction</a></li>
-      <li><a href="#2-methodology" id="markdown-toc-2-methodology">2 Methodology</a></li>
-      <li><a href="#3-results" id="markdown-toc-3-results">3 Results</a>        <ul>
-          <li><a href="#31-the-bpmn-representation-of-the-stroke-clinical-pathway" id="markdown-toc-31-the-bpmn-representation-of-the-stroke-clinical-pathway">3.1 The BPMN Representation of the Stroke Clinical Pathway</a></li>
-          <li><a href="#32-data-dictionary" id="markdown-toc-32-data-dictionary">3.2 Data Dictionary</a></li>
+      <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+      <li><a href="#methodology" id="markdown-toc-methodology">Methodology</a></li>
+      <li><a href="#results" id="markdown-toc-results">Results</a>        <ul>
+          <li><a href="#the-bpmn-representation-of-the-stroke-clinical-pathway" id="markdown-toc-the-bpmn-representation-of-the-stroke-clinical-pathway">The BPMN Representation of the Stroke Clinical Pathway</a></li>
+          <li><a href="#data-dictionary" id="markdown-toc-data-dictionary">Data Dictionary</a></li>
+          <li><a href="#implementation-guide" id="markdown-toc-implementation-guide">Implementation Guide</a></li>
         </ul>
       </li>
-      <li><a href="#4-discussion" id="markdown-toc-4-discussion">4 Discussion</a></li>
+      <li><a href="#discussion" id="markdown-toc-discussion">Discussion</a></li>
+      <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
       <li><a href="#references" id="markdown-toc-references">References</a></li>
     </ul>
   </li>
@@ -187,18 +189,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 </div>
 <table style="width: 60%; border-collapse: collapse;">
-<thead><tr><th><a name="l307">​</a>
+<thead><tr><th><a name="l315">​</a>
 <img src="logo_molicavc.png" alt="Logo do Projeto" style="width: 100%; display: block; margin-left: auto; margin-right: auto; clear: both;"/>
 </th></tr></thead>
 </table>
 
 <h1 id="molic-avc-project-monitoring-the-stroke-healthcare-pathway">Molic-AVC Project: Monitoring the Stroke Healthcare Pathway</h1>
-<p><b> Gabrielle dos Santos Leandro, Claudia Maria Cabral Moro, Eduardo Alves Portela Santos, Ricardo João Cruz-Correia.</b></p>
+<p><b> Gabrielle dos Santos Leandro, Eduardo Alves Portela Santos, Ricardo João Cruz-Correia, Claudia Maria Cabral Moro </b></p>
 
 <p style="text-align: justify; font-size: 10px;">This Implementation Guide was developed during the Doctoral Thesis of the student Gabrielle dos Santos Leandro. 
 <br/> * The Brazilian Research and Ethics Committee Report approved this study by # 4,917,962. </p>
 
-<h2 id="1-introduction">1 Introduction</h2>
+<h2 id="introduction">Introduction</h2>
 
 <p style="text-align: justify; font-size: 14px;"> Stroke, a non-communicable chronic disease, stands as the second-leading cause of death worldwide and the third cause of disability-adjusted life years lost [1]. Once stroke symptoms manifest, certain factors within the treatment process can significantly impact the patient's outcome, including the stroke therapeutical window. This critical window represents the optimal timeframe to intervene during the pathological process of cerebral ischemia, aiming to minimize damage to the central nervous system [2–4]. Additionally, after being discharged from the hospital, stroke survivors commonly contend with a diverse array of impairments that necessitate care across multiple healthcare institutions during their recovery phase [5]. </p>
 
@@ -209,7 +211,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p style="text-align: justify; font-size: 14px;"> However, despite the importance of clinical pathways, stroke patients may encounter barriers when attempting to navigate them. These barriers can include long waiting lines, insufficient availability of hospital beds, and challenges in dealing with different registration numbers for accessing treatment. Consequently, a gap often exists between the recommended clinical pathway and the actual patient journey. To bridge this gap and enhance the quality and efficiency of clinical administration, it becomes crucial to gain a comprehensive understanding of the actual patient journey and monitor it using reliable metrics [13–15] (Figure 1). </p>
 
 <table style="width: 100%; border-collapse: collapse;">
-<thead><tr><th><a name="l344">​</a>
+<thead><tr><th><a name="l352">​</a>
 <img src="figure1.jpg" alt="Figura 1" style="width: 60%; display: block; margin-left: auto; margin-right: auto; clear: both;"/>
 </th></tr></thead>
 </table>
@@ -224,20 +226,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p style="text-align: justify; font-size: 14px;"> The objective of this study was to model the care pathway of stroke using BPMN notation, with a focus on monitoring and analyzing outcomes, considering the ICHOM standard, mapping the stroke patient journey, and subsequently creating the FHIR Implementation Guide based on the developed model. This study contributes to enhancing our understanding of the stroke patient journey, improving outcome monitoring, establishing standardized metrics, visualizing the patient journey, and promoting interoperability in stroke care analysis. Consequently, it promotes driving evidence-based decision-making, personalized interventions, and continuous optimization of stroke care delivery, ultimately leading to improved quality and efficiency of patient care.</p>
 
-<h2 id="2-methodology">2 Methodology</h2>
+<h2 id="methodology">Methodology</h2>
 
 <p style="text-align: justify; font-size: 14px;"> We conducted the initial phase of this research by mapping the Stroke Clinical Pathway using BPMN by Camunda&reg;. The patient journey case study conducted in Joinville, Brazil, served as a fundamental basis for this representation. Joinville was specifically chosen because of its resources, including the well-established Stroke Clinical Pathway [26] and the Joinville Stroke Registry (Joinvasc), a legally mandated program that tracks stroke patients for 5 years of follow-up. Joinvasc collects comprehensive data on quality metrics, patient-reported outcomes, costs, and socioeconomic impact, making it an invaluable resource for numerous stroke-related research studies [26–29].</p>
 
 <p style="text-align: justify; font-size: 14px;"> To enrich the Joinville case study, we integrated documentation from the Brazilian Clinical Pathway for Cerebrovascular Accidents in Adults [8], the Global Stroke Guidelines and Action Plan: A Road Map for Quality Stroke Care [7], and the ICHOM Stroke Data Collection Reference Guide [30]. Additionally, we incorporated insights from the ICHOM Stroke Data Dictionary [31] into our analysis. After representing the Stroke Clinical Pathway, we derived a Data Dictionary using a spreadsheet. Subsequently, we aligned this Data Dictionary with FHIR resources to formulate Profiles. In the concluding steps, we crafted Implementation Guides based on these Profiles, utilizing FHIR Short Hand, Sushi, and the Implementation Guide Publisher. </p>
 
-<h2 id="3-results">3 Results</h2>
+<h2 id="results">Results</h2>
 
-<h3 id="31-the-bpmn-representation-of-the-stroke-clinical-pathway">3.1 The BPMN Representation of the Stroke Clinical Pathway</h3>
+<h3 id="the-bpmn-representation-of-the-stroke-clinical-pathway">The BPMN Representation of the Stroke Clinical Pathway</h3>
 
 <p style="text-align: justify; font-size: 14px;"> In order to provide a more comprehensive representation of the Stroke Clinical Pathway, it has been categorically partitioned into three distinct phases: (1) Pre-Hospital Phase, (2) Stroke Acute Hospital Phase, and (3) Follow-up and Rehabilitation Phase, as visually depicted in Figure 2. The Pre-Hospital Phase encompasses the temporal interval initiating from the manifestation of the onset of stroke symptoms and extending until the point of referral or transfer to the designated referral hospital. The Acute Hospital Phase corresponds to the duration of hospitalization at the referral facility, during which the patient undergoes comprehensive acute care encompassing diagnostic evaluations, therapeutic interventions, specialized monitoring, and continues until the patient's eventual discharge from the hospital. Lastly, the Follow-up and Rehabilitation Phase represents the subsequent period after hospital discharge, wherein the patient's progress is continually monitored, while concurrently receiving post-discharge care, rehabilitation services, and enduring support to facilitate their recovery process. </p>
 
 <table style="width: 100%; border-collapse: collapse;">
-<thead><tr><th><a name="l390">​</a>
+<thead><tr><th><a name="l398">​</a>
 <img src="figure2.jpg" alt="Figura 2" style="width: 60%; display: block; margin-left: auto; margin-right: auto; clear: both;"/>
 </th></tr></thead>
 </table>
@@ -293,15 +295,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p style="text-align: justify; font-size: 14px;"> The procedures within the pools: 'Primary Care Unit', 'Rehabilitation Unit', 'Reference Stroke Hospital', and 'Multidisciplinary Home Care Team' share a consistent operational structure. Initially, the patient is received by the receptionist and subsequently directed to the scheduled healthcare professional, which might include nurses, physicians, physiotherapists, speech therapists, nutritionists, psychologists, among others. Following this consultation, the patient may be directed either to schedule another appointment or to conclude their current care cycle. This sequence recurs in a loop until the patient's treatment concludes. </p>
 <p style="text-align: justify; font-size: 14px;"> The 'Epidemiologic Stroke Registry' pool operates on a distinct flow since its primary function is to collate data from stroke patients. This service amasses patient health data using various methods such as phone calls, mobile applications, or other communication mediums. Data collection intervals are set at 30 days, 90 days, and then annually for the first five years post-stroke (ICTUS) event, after which the patient is formally discharged from this monitoring service.</p>
 
-<h3 id="32-data-dictionary">3.2 Data Dictionary</h3>
+<h3 id="data-dictionary">Data Dictionary</h3>
 
-<p>Foi criado o dicionário de dados baseando-se nos seguintes pilares:</p>
+<p style="text-align: justify; font-size: 14px;"> The following data dictionary was created considering data from the process and ICHOM as displayed in Table 1. In the 'Variable ID' column, the variables that need to be collected are displayed. In the 'M/O' column, 'M' stands for Mandatory (meaning its presence is required) and 'O' stands for Optional. 'Definition' displays the variable's definition. 'Reference' indicates whether the variable was referenced by the Process, by ICHOM, or by both. 'Timing' indicates when the variable is collected: Pre-Hospital Phase (PPH), Acute Hospital Phase (AHP), and Follow-up and Rehabilitation Phase (FRP). 'Terminology' indicates the specified terminology. 'Type' represents the proposed data type. 'Response Options' indicates the type of response as per the proposed terminology. Lastly, 'FHIR Resource' points to the resource associated with the variable. With this mapping in mind, the Implementation Guide for this study was developed considering Profiles, Extensions, Value Sets, and Use Cases. </p>
 
-<h2 id="4-discussion">4 Discussion</h2>
+<p style="text-align: justify; font-size: 12px;"> <b> Table 1 </b> – Data Dictionary. </p>
+
+<div style="width: 100%; height: 8150px; overflow: auto;">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyWXh--8EOCdU5lkUT6K57Cr1XvJI8X9zChVUQSelGerbwqPEQ_Lws7WB-_9AiIhnhvWk0khkZXIJk/pubhtml?gid=457149530&amp;single=true&amp;widget=true&amp;headers=false" style="position:absolute; width: 155%; height: 8150px;"></iframe>
+</div>
+
+<h3 id="implementation-guide">Implementation Guide</h3>
+<p style="text-align: justify; font-size: 14px;">
+Based on the Data Dictionary mapping, we have delineated 7 Profiles, 13 Extensions, 20 ValueSets, and 20 Instances related to Molic-AVC's data framework. For detailed insights on each:
+<br/> - Profiles include: Molic-AVC's Encounter, Molic-AVC's Observation, Molic-AVC's Organization, Molic-AVC's Patient, Molic-AVC's Practitioner, Molic-AVC's Questionnaire, and Molic-AVC's QuestionnaireResponse.
+<br/> - Extensions encompass: Alcohol intake amount, Consciousness, Stroke Severity Score based on NIHSS, Estimated Stroke Severity Category based on NIHSS, Live Alone Pre-Stroke, Patient Ethnicity, Patient Gender Identity, Patient Race, Patient Sex, Patient's Residence Prior to a Stroke, Smoking Status, Stroke Window, and Stroke's Symptom Duration.
+<br/> - ValueSets: Consciousness, EQ-5D-3L Response Questionnaire, Estimated Stroke Severity Category by the NIHSS, Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation, Gender Identity, Health-related Quality of Life Response Question, Healthcare Unit Code, Live Alone Pre-Stroke, Patient Ethnicity, Patient Race, Patient's Residence Prior to a Stroke, Prestroke and Poststroke Functional Status questionnaire, Professional Code, PROMIS-10 Response Questionnaire, Sex based on ICHOM standard, simplified modified Ranking Scale questionnaire (SMRSq), Smoking Status, Symptom Duration, VR-12 Response Questionnaire, and WHODAS Response Questionnaire.
+<br/> - Instances: Specific use cases for Molic-AVC covering diverse facets like Encounter, Organization, Patient, QuestionnaireResponse, and many others. 
+<br/> For a comprehensive breakdown of these elements, visit the link: http://molic-avc.gabriellesantosleandro.com/toc.html. </p>
+
+<h2 id="discussion">Discussion</h2>
 <p>Task Planning - os desafios em representar os processos em saúde.
 Apesar de representarmos a linha do cuidado do paciente com AVC da melhor forma possível, sabe-se que ela possui limitações, como por exemplo, a decisão “Is there improvement or stabilization of the clinical status?” pode ser feita durante todo o momento do processo, sendo que o paciente pode evoluir para o óbito a qualquer momento, contudo, devido a dificuldade em representar esse cenário, optou-se em colocar o desfecho óbito apenas após o paciente ser encaminhado para a UTI.
 Desafios em estabelecer em qual momento os dados são coletados e qual profissional de saúde faz essa coleta.
 Desafios em escolher quais ferramentas utilizar para a modelagem do Implementation Guide.</p>
+
+<h2 id="conclusion">Conclusion</h2>
 
 <h2 id="references">References</h2>
 <p style="text-align: justify; font-size: 14px;">
@@ -362,7 +381,7 @@ Desafios em escolher quais ferramentas utilizar para a modelagem do Implementati
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Aug 31, 2023 16:41-0300">2023-08-31</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 8, 2023 18:23-0300">2023-09-08</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "molicavc-smokingstatus-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smokingstatus-valueset",
+  "version" : "0.1.0",
+  "name" : "MolicAVC_SmokingStatusValueSet",
+  "title" : "ValueSet of Smoking Status",
+  "status" : "draft",
+  "date" : "2023-09-08T18:23:11-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "ValueSet for Smoking Status. A person's current and past smoking behavior.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus",
+      "concept" : [{
+        "code" : "0",
+        "display" : "0 = Current every day smoker (a person who smokes daily)."
+      },
+      {
+        "code" : "1",
+        "display" : "1 = Current weekly smoker (a person who smokes at least weekly but not daily)."
+      },
+      {
+        "code" : "2",
+        "display" : "2 = Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime)."
+      },
+      {
+        "code" : "3",
+        "display" : "3 = Never smoker."
+      },
+      {
+        "code" : "4",
+        "display" : "4 = Others."
+      },
+      {
+        "code" : "999",
+        "display" : "999 = Unknown if ever smoked."
+      }]
+    }]
+  }
+}

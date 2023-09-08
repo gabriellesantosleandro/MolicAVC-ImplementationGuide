@@ -10,7 +10,7 @@
   "name" : "MolicAVC_CodeProfessionalValueSet",
   "title" : "ValueSet of Professional Code",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -24,31 +24,27 @@
     "include" : [{
       "system" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_professional-valueset/",
       "concept" : [{
-        "code" : "Doctor",
+        "code" : "CRM",
         "display" : "CRM - Conselho Regional de Medicina"
       },
       {
-        "code" : "Nurse",
+        "code" : "COREN",
         "display" : "COREN - Conselho Regional de Enfermagem"
       },
       {
-        "code" : "Nutritionist",
+        "code" : "CRN",
         "display" : "CRN - Conselho Regional de Nutrição"
       },
       {
-        "code" : "Occupational_Therapist",
+        "code" : "COFFITO",
         "display" : "COFFITO - Conselho Federal de Fisioterapia e Terapia Ocupacional"
       },
       {
-        "code" : "Physiotherapists",
-        "display" : "COFFITO - Conselho Federal de Fisioterapia e Terapia Ocupacional"
-      },
-      {
-        "code" : "Psychologists",
+        "code" : "CRP",
         "display" : "CRP - Conselho Regional de Psicologia"
       },
       {
-        "code" : "Receptionist",
+        "code" : "LocalRegister",
         "display" : "Local Register - Receptionist"
       }]
     }]

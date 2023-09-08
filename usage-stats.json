@@ -18,6 +18,21 @@
       ]
     },
     {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-alcoholamount-extension",
+      "title": "Extension of Alcohol intake amount",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-consciousness-extension",
+      "title": "Extension of Consciousness",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
       "title": "Extension of Patient Ethnicity",
       "types": [
@@ -27,6 +42,21 @@
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
       "title": "Extension of Patient Gender Identity",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihss-extension",
+      "title": "Extension of Stroke Severity Score based on NIHSS",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihsscategory-extension",
+      "title": "Extension of Estimated Stroke Severity Category based on NIHSS",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -47,6 +77,29 @@
         "CodeableConcept",
         "CodeableConcept"
       ]
+    },
+    {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-smokingstatus-extension",
+      "title": "Extension of Smoking Status",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension",
+      "title": "Extension of Stroke Window",
+      "types": [
+        "time"
+      ]
+    },
+    {
+      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-symptomduration-extension",
+      "title": "Extension of Stroke\u0027s Symptom Duration",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
     }
   ],
   "profiles": {
@@ -54,6 +107,12 @@
       {
         "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
         "title": "Profile of Molic-AVC\u0027s Encounter"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-observation-profile",
+        "title": "Profile of Molic-AVC\u0027s Observation"
       }
     ],
     "Organization": [
@@ -103,6 +162,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"
     ],
@@ -139,17 +201,38 @@
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension": [
       "Patient"
     ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-alcoholamount-extension": [
+      "Observation"
+    ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-consciousness-extension": [
+      "Observation"
+    ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension": [
       "Patient"
     ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension": [
       "Patient"
     ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihss-extension": [
+      "Observation"
+    ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihsscategory-extension": [
+      "Observation"
+    ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension": [
       "Patient"
     ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension": [
       "Patient"
+    ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-smokingstatus-extension": [
+      "Observation"
+    ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension": [
+      "Observation"
+    ],
+    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-symptomduration-extension": [
+      "Observation"
     ]
   }
 }

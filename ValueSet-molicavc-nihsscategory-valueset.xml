@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-nihsscategory-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-nihsscategory-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_NIHSSCategoryValueSet"/>
+  <title value="ValueSet of Estimated Stroke Severity Category by the NIHSS"/>
+  <status value="draft"/>
+  <date value="2023-09-08T18:23:11-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for Estimated Stroke Severity Category by the NIHSS based on ICHOM."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/"/>
+      <concept>
+        <code value="1"/>
+        <display value="1 = NIHSS score 0 – No stroke symptoms."/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="2 = NIHSS score 1-4 – Minor."/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="3 = NIHSS score 5 – 15 – Moderate."/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="4 = NIHSS score 16 – 20 – Moderate to severe."/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="5 = NIHSS score 21 – 42 – Severe."/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="999 = Unknown."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

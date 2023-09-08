@@ -77,6 +77,20 @@
     "name" : "MolicAVC_LivingLocationPreStrokeExtension"
   },
   {
+    "id" : "molicavc-alcoholamount-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-alcoholamount-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_AlcoholAmountExtension"
+  },
+  {
+    "id" : "molicavc-consciousness-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-consciousness-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_ConsciousnessExtension"
+  },
+  {
     "id" : "molicavc-encounter-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
@@ -96,6 +110,27 @@
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
     "version" : "0.1.0",
     "name" : "MolicAVC_GenderIdentityExtension"
+  },
+  {
+    "id" : "molicavc-nihss-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihss-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_NIHSSExtension"
+  },
+  {
+    "id" : "molicavc-nihsscategory-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihsscategory-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_NIHSSCategoryExtension"
+  },
+  {
+    "id" : "molicavc-observation-profile",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-observation-profile",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_Observation"
   },
   {
     "id" : "molicavc-organization-profile",
@@ -147,6 +182,27 @@
     "name" : "MolicAVC_SexExtension"
   },
   {
+    "id" : "molicavc-smokingstatus-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-smokingstatus-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_SmokingStatusExtension"
+  },
+  {
+    "id" : "molicavc-strokewindow-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_StrokeWindowExtension"
+  },
+  {
+    "id" : "molicavc-symptomduration-extension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-symptomduration-extension",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_SymptomDurationExtension"
+  },
+  {
     "id" : "live-alone-pre-stroke",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/live-alone-pre-stroke",
@@ -173,6 +229,13 @@
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code-professional-valueset",
     "version" : "0.1.0",
     "name" : "MolicAVC_CodeProfessionalValueSet"
+  },
+  {
+    "id" : "molicavc-consciousness-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-consciousness-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_ConsciousnessValueSet"
   },
   {
     "id" : "molicavc-eq5d3l-valueset",
@@ -214,7 +277,14 @@
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-hrhsqol-valueset",
     "version" : "0.1.0",
-    "name" : "MolicAVC_HR-HSQoL_ValueSet"
+    "name" : "MolicAVC_HRHSQoL_ValueSet"
+  },
+  {
+    "id" : "molicavc-nihsscategory-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-nihsscategory-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_NIHSSCategoryValueSet"
   },
   {
     "id" : "molicavc-promis10-valueset",
@@ -238,6 +308,13 @@
     "name" : "MolicAVC_SexValueSet"
   },
   {
+    "id" : "molicavc-smokingstatus-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smokingstatus-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_SmokingStatusValueSet"
+  },
+  {
     "id" : "molicavc-smrsq-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smrsq-valueset",
@@ -245,11 +322,18 @@
     "name" : "MolicAVC_smRSq_ValueSet"
   },
   {
+    "id" : "molicavc-symptomduration-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-symptomduration-valueset",
+    "version" : "0.1.0",
+    "name" : "MolicAVC_SymptomDurationValueSet"
+  },
+  {
     "id" : "molicavc-vr12-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset",
     "version" : "0.1.0",
-    "name" : "MolicAVC_VR-12_ValueSet"
+    "name" : "MolicAVC_VR12_ValueSet"
   },
   {
     "id" : "molicavc-whodas-valueset",

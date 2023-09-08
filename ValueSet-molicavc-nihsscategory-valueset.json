@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "molicavc-nihsscategory-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-nihsscategory-valueset",
+  "version" : "0.1.0",
+  "name" : "MolicAVC_NIHSSCategoryValueSet",
+  "title" : "ValueSet of Estimated Stroke Severity Category by the NIHSS",
+  "status" : "draft",
+  "date" : "2023-09-08T18:23:11-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "ValueSet for Estimated Stroke Severity Category by the NIHSS based on ICHOM.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/",
+      "concept" : [{
+        "code" : "1",
+        "display" : "1 = NIHSS score 0 – No stroke symptoms."
+      },
+      {
+        "code" : "2",
+        "display" : "2 = NIHSS score 1-4 – Minor."
+      },
+      {
+        "code" : "3",
+        "display" : "3 = NIHSS score 5 – 15 – Moderate."
+      },
+      {
+        "code" : "4",
+        "display" : "4 = NIHSS score 16 – 20 – Moderate to severe."
+      },
+      {
+        "code" : "5",
+        "display" : "5 = NIHSS score 21 – 42 – Severe."
+      },
+      {
+        "code" : "999",
+        "display" : "999 = Unknown."
+      }]
+    }]
+  }
+}

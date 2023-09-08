@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "14ea481f-9b8e-4d5e-8163-e777d799839c",
+  "id" : "b0a6e401-0460-4bac-8238-87611c527efb",
   "meta" : {
-    "lastUpdated" : "2023-08-31T16:41:42.833-03:00"
+    "lastUpdated" : "2023-09-08T18:23:11.428-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,17 +11,17 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 10 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.74</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21028-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/21028-6/\">21028-6</a></td><td>http://loinc.org</td><td>Hispanic or Latino Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2028-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2028-9/\">2028-9</a></td><td>http://loinc.org</td><td>Non-Hispanic or Latino Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32626-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32626-4/\">32626-4</a></td><td>http://loinc.org</td><td>White Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32623-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32623-1/\">32623-1</a></td><td>http://loinc.org</td><td>African Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32620-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32620-7/\">32620-7</a></td><td>http://loinc.org</td><td>Indigenous Ethnicity (Global)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32622-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32622-3/\">32622-3</a></td><td>http://loinc.org</td><td>Asian Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32621-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32621-5/\">32621-5</a></td><td>http://loinc.org</td><td>Aboriginal Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32627-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32627-2/\">32627-2</a></td><td>http://loinc.org</td><td>Middle Eastern Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32629-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32629-8/\">32629-8</a></td><td>http://loinc.org</td><td>Pacific Islander Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2029-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2029-7/\">2029-7</a></td><td>http://loinc.org</td><td>Other Ethnicity</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 10 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>Loinc v2.74</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21028-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/21028-6/\">21028-6</a></td><td>http://loinc.org</td><td>Hispanic or Latino Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2028-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2028-9/\">2028-9</a></td><td>http://loinc.org</td><td>Non-Hispanic or Latino Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32626-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32626-4/\">32626-4</a></td><td>http://loinc.org</td><td>White Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32623-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32623-1/\">32623-1</a></td><td>http://loinc.org</td><td>African Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32620-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32620-7/\">32620-7</a></td><td>http://loinc.org</td><td>Indigenous Ethnicity (Global)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32622-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32622-3/\">32622-3</a></td><td>http://loinc.org</td><td>Asian Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32621-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32621-5/\">32621-5</a></td><td>http://loinc.org</td><td>Aboriginal Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32629-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32629-8/\">32629-8</a></td><td>http://loinc.org</td><td>Pacific Islander Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2029-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2029-7/\">2029-7</a></td><td>http://loinc.org</td><td>Other Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32627-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32627-2/\">32627-2</a></td><td>http://loinc.org</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset",
       "version" : "0.1.0",
       "name" : "MolicAVC_EthnicityValueSet",
       "title" : "ValueSet of Patient Ethnicity",
       "status" : "draft",
-      "date" : "2023-08-31T16:41:42-03:00",
+      "date" : "2023-09-08T18:23:11-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:171e4a29-bb7e-4f4a-afb2-d48db166eb2d",
-        "timestamp" : "2023-08-31T16:42:57-03:00",
+        "identifier" : "urn:uuid:e17306b3-324f-4c1b-8f88-2707dd4b597f",
+        "timestamp" : "2023-09-08T18:25:12-03:00",
         "total" : 10,
         "parameter" : [{
           "name" : "excludeNested",
@@ -34,6 +34,10 @@
         {
           "name" : "limitedExpansion",
           "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.74"
         },
         {
           "name" : "version",
@@ -76,11 +80,6 @@
         },
         {
           "system" : "http://loinc.org",
-          "code" : "32627-2",
-          "display" : "Middle Eastern Ethnicity"
-        },
-        {
-          "system" : "http://loinc.org",
           "code" : "32629-8",
           "display" : "Pacific Islander Ethnicity"
         },
@@ -88,6 +87,11 @@
           "system" : "http://loinc.org",
           "code" : "2029-7",
           "display" : "Other Ethnicity"
+        },
+        {
+          "system" : "http://loinc.org",
+          "code" : "32627-2",
+          "display" : "Unknown"
         }]
       }
     }
@@ -105,10 +109,10 @@
       "name" : "MolicAVC_GenderIdentityValueSet",
       "title" : "ValueSet of Gender Identity",
       "status" : "draft",
-      "date" : "2023-08-31T16:41:42-03:00",
+      "date" : "2023-09-08T18:23:11-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:000edeb5-2287-4ac7-8078-13c1f8ac3795",
-        "timestamp" : "2023-08-31T16:42:58-03:00",
+        "identifier" : "urn:uuid:b3675e19-4ae0-4df3-b932-c97d80fbbd1a",
+        "timestamp" : "2023-09-08T18:25:12-03:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -177,10 +181,10 @@
       "name" : "MolicAVC_RaceValueSet",
       "title" : "ValueSet of Patient Race",
       "status" : "draft",
-      "date" : "2023-08-31T16:41:42-03:00",
+      "date" : "2023-09-08T18:23:11-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:06e48d4e-2218-46a3-98e8-4f158f5543d4",
-        "timestamp" : "2023-08-31T16:42:58-03:00",
+        "identifier" : "urn:uuid:120e0ef4-3f89-4ae2-9380-2be8680e2d64",
+        "timestamp" : "2023-09-08T18:25:12-03:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",

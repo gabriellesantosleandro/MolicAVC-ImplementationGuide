@@ -7,10 +7,10 @@
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset"/>
   <version value="0.1.0"/>
-  <name value="MolicAVC_VR-12_ValueSet"/>
+  <name value="MolicAVC_VR12_ValueSet"/>
   <title value="ValueSet of VR-12 Response Questionnaire"/>
   <status value="draft"/>
-  <date value="2023-08-31T16:41:42-03:00"/>
+  <date value="2023-09-08T18:23:11-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -22,7 +22,7 @@
   <description value="This ValueSet defines the response values for the VR-12 (Veterans RAND 12 Item Health Survey)."/>
   <compose>
     <include>
-      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke"/>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/vr12/"/>
       <concept>
         <code value="1"/>
         <display value="Excellent"/>

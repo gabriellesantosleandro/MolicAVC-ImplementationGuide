@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "MolicAVC",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -29,7 +29,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r5",
-    "version" : "5.0.0"
+    "version" : "5.2.0"
   },
   {
     "id" : "hl7ext",
@@ -316,6 +316,42 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/molicavc-alcoholamount-extension"
+      },
+      "name" : "Extension of Alcohol intake amount",
+      "description" : "One standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-consciousness-extension"
+      },
+      "name" : "Extension of Consciousness",
+      "description" : "Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-nihsscategory-extension"
+      },
+      "name" : "Extension of Estimated Stroke Severity Category based on NIHSS",
+      "description" : "Estimated Stroke Severity: Category. Indicate the estimated stroke severity category \r\nby the NIH Stroke Scale (NIHSS).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/live-alone-pre-stroke-extension"
       },
       "name" : "Extension of Live Alone Pre-Stroke",
@@ -385,6 +421,54 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-smokingstatus-extension"
+      },
+      "name" : "Extension of Smoking Status",
+      "description" : "Extension to capture the patient's smoking status, as recommended by ICHOM.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-nihss-extension"
+      },
+      "name" : "Extension of Stroke Severity Score based on NIHSS",
+      "description" : "Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-strokewindow-extension"
+      },
+      "name" : "Extension of Stroke Window",
+      "description" : "Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-symptomduration-extension"
+      },
+      "name" : "Extension of Stroke's Symptom Duration",
+      "description" : "Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -392,6 +476,18 @@
       },
       "name" : "Profile of Molic-AVC's Encounter",
       "description" : "The Encounter Resource in the MOLIC-AVC project represents the actual interaction between \r\na patient and their healthcare provider(s). It's designed to document delivered health services or assess\r\nthe patient's health status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/molicavc-observation-profile"
+      },
+      "name" : "Profile of Molic-AVC's Observation",
+      "description" : "Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines \r\nand patterns and even capture demographic characteristics, as well as capture results of tests performed on products and substances. \r\nMost observations are simple name/value pair assertions with some metadata, but some observations group other observations together \r\nlogically, or even are multi-component observations.",
       "isExample" : false
     },
     {
@@ -451,7 +547,7 @@
         "reference" : "StructureDefinition/molicavc-questionnaireresponse-profile"
       },
       "name" : "Profile of Molic-AVC's QuestionnaireResponse",
-      "description" : "QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding to a questionnaire.",
+      "description" : "QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding\r\n to a questionnaire.",
       "isExample" : false
     },
     {
@@ -466,19 +562,6 @@
       "description" : "Example of WHODAS Questionnaire for a patient admitted due to a stroke.",
       "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
       "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/MolicAVC-WHODAS-QuestionnaireResponse"
-      },
-      "name" : "Use case of Molic-AVC WHODAS QuestionnaireResponse",
-      "description" : "Example of WHODAS QuestionnaireResponse for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
     },
     {
       "extension" : [{
@@ -509,19 +592,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/MolicAVC-EQ5D3L-QuestionnaireResponse"
-      },
-      "name" : "Use case of Molic-AVC's EQ-5D-3L QuestionnaireResponse",
-      "description" : "Example of EQ-5D-3L QuestionnaireResponse for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -531,19 +601,6 @@
       "description" : "Example of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.",
       "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
       "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse"
-      },
-      "name" : "Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation - QuestionnaireResponse",
-      "description" : "Example of QuestionnaireResponse of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
     },
     {
       "extension" : [{
@@ -613,19 +670,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/MolicAVC-FunctionalStatus-QuestionnaireResponse"
-      },
-      "name" : "Use case of Molic-AVC's Prestroke and Poststroke Functional Status - QuestionnaireResponse",
-      "description" : "Example of Prestroke and Poststroke Functional Status QuestionnaireResponse for the patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -639,19 +683,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/MolicAVC-PROMIS10-QuestionnaireResponse"
-      },
-      "name" : "Use case of Molic-AVC's PROMIS-10 QuestionnaireResponse",
-      "description" : "Example of PROMIS-10 QuestionnaireResponse for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Questionnaire"
       }],
       "reference" : {
@@ -661,19 +692,6 @@
       "description" : "Example of simplified modified Rankin Scale Questionnaire for a patient admitted due to a stroke.",
       "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
       "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "QuestionnaireResponse"
-      }],
-      "reference" : {
-        "reference" : "QuestionnaireResponse/MolicAVC-smRSq-QuestionnaireResponse"
-      },
-      "name" : "Use case of Molic-AVC's simplified modified Rankin Scale QuestionnaireResponse",
-      "description" : "Example of simplified modified Rankin Scale QuestionnaireResponse for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
     },
     {
       "extension" : [{
@@ -694,10 +712,88 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-WHODAS-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC WHODAS questionnaire",
+      "description" : "Example of WHODAS QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-EQ5D3L-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's EQ-5D-3L questionnaire",
+      "description" : "Example of EQ-5D-3L QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.",
+      "description" : "Example of QuestionnaireResponse of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
         "reference" : "QuestionnaireResponse/MolicAVC-HRHSQoL-QuestionnaireResponse"
       },
       "name" : "Use case of QuestionnaireResponse of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question.",
       "description" : "Example of Health-related Quality of Life/Self-Reported Health Status QuestionnaireResponse.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-FunctionalStatus-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's Prestroke and Poststroke Functional Status",
+      "description" : "Example of Prestroke and Poststroke Functional Status QuestionnaireResponse for the patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-PROMIS10-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's PROMIS-10",
+      "description" : "Example of PROMIS-10 QuestionnaireResponse for a patient admitted due to a stroke.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/MolicAVC-smRSq-QuestionnaireResponse"
+      },
+      "name" : "Use case of QuestionnaireResponse of Molic-AVC's simplified modified Rankin Scale questionnaire",
+      "description" : "Example of simplified modified Rankin Scale QuestionnaireResponse for a patient admitted due to a stroke.",
       "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
       "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"]
     },
@@ -720,10 +816,34 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
+        "reference" : "ValueSet/molicavc-consciousness-valueset"
+      },
+      "name" : "ValueSet of Consciousness",
+      "description" : "This ValueSet indicates the patient’s level of consciousness measured on hospitalar arrival.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
         "reference" : "ValueSet/molicavc-eq5d3l-valueset"
       },
       "name" : "ValueSet of EQ-5D-3L Response Questionnaire",
       "description" : "This ValueSet defines the response values for the EQ-5D-3L Questionnaire.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-nihsscategory-valueset"
+      },
+      "name" : "ValueSet of Estimated Stroke Severity Category by the NIHSS",
+      "description" : "ValueSet for Estimated Stroke Severity Category by the NIHSS based on ICHOM.",
       "isExample" : false
     },
     {
@@ -880,6 +1000,30 @@
       },
       "name" : "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)",
       "description" : "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-smokingstatus-valueset"
+      },
+      "name" : "ValueSet of Smoking Status",
+      "description" : "ValueSet for Smoking Status. A person's current and past smoking behavior.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/molicavc-symptomduration-valueset"
+      },
+      "name" : "ValueSet of Symptom Duration",
+      "description" : "ValueSet for Symptom Duration based on ICHOM.",
       "isExample" : false
     },
     {

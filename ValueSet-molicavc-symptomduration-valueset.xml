@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-symptomduration-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-symptomduration-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_SymptomDurationValueSet"/>
+  <title value="ValueSet of Symptom Duration"/>
+  <status value="draft"/>
+  <date value="2023-09-08T18:23:11-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for Symptom Duration based on ICHOM."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/"/>
+      <concept>
+        <code value="0"/>
+        <display value="0 = Less than 4.5 hours"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="1 = More than 4.5 hours"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="999 = Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

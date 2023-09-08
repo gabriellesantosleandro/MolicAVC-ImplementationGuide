@@ -10,7 +10,7 @@
   "name" : "MolicAVC_EQ5D3L_ValueSet",
   "title" : "ValueSet of EQ-5D-3L Response Questionnaire",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -22,7 +22,7 @@
   "description" : "This ValueSet defines the response values for the EQ-5D-3L Questionnaire.",
   "compose" : {
     "include" : [{
-      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke",
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/eq5d3l/",
       "concept" : [{
         "code" : "1",
         "display" : "I have no problems in walking about."

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-smokingstatus-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smokingstatus-valueset"/>
+  <version value="0.1.0"/>
+  <name value="MolicAVC_SmokingStatusValueSet"/>
+  <title value="ValueSet of Smoking Status"/>
+  <status value="draft"/>
+  <date value="2023-09-08T18:23:11-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet for Smoking Status. A person's current and past smoking behavior."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus"/>
+      <concept>
+        <code value="0"/>
+        <display value="0 = Current every day smoker (a person who smokes daily)."/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="1 = Current weekly smoker (a person who smokes at least weekly but not daily)."/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="2 = Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime)."/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="3 = Never smoker."/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="4 = Others."/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="999 = Unknown if ever smoked."/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

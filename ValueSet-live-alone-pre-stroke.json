@@ -10,7 +10,7 @@
   "name" : "MolicAVC_LiveAlonePreStrokeValueSet",
   "title" : "ValueSet of Live Alone Pre-Stroke",
   "status" : "draft",
-  "date" : "2023-08-31T16:41:42-03:00",
+  "date" : "2023-09-08T18:23:11-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -22,7 +22,7 @@
   "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
   "compose" : {
     "include" : [{
-      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke",
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/livealoneprestroke/",
       "concept" : [{
         "code" : "1",
         "display" : "Yes, I lived alone"

@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "molicavc-symptomduration-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-symptomduration-valueset",
+  "version" : "0.1.0",
+  "name" : "MolicAVC_SymptomDurationValueSet",
+  "title" : "ValueSet of Symptom Duration",
+  "status" : "draft",
+  "date" : "2023-09-08T18:23:11-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://molic-avc.gabriellesantosleandro.com"
+    }]
+  }],
+  "description" : "ValueSet for Symptom Duration based on ICHOM.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/",
+      "concept" : [{
+        "code" : "0",
+        "display" : "0 = Less than 4.5 hours"
+      },
+      {
+        "code" : "1",
+        "display" : "1 = More than 4.5 hours"
+      },
+      {
+        "code" : "999",
+        "display" : "999 = Unknown"
+      }]
+    }]
+  }
+}
