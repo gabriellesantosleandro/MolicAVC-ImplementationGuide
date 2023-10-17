@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>GUIDE\Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation - FHIR v5.0.0</title>
+    <title>Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,17 +39,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.44"}
-    h3,h4,h5,h6{--heading-prefix:"2.44"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.53"}
+    h3,h4,h5,h6{--heading-prefix:"7.53"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">1.0.1 - ci-build
 
 
             </span>
@@ -80,7 +80,25 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="ichom.html">ICHOM</a>
+  </li>
+  <li>
+    <a href="fhir-basics.html">FHIR basics</a>
+  </li>
+  <li>
+    <a href="paper.html">Paper</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="security.html">Segurança</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -96,6 +114,16 @@
         <ul class="breadcrumb">
           <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation</b></li>
 
+          <span style="float:right;">
+
+            <a href="Encounter-MolicAVC-EncouterExample.ttl.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="Questionnaire-MolicAVC-FunctionalAspectsRehabilitation.xml.html">next&gt;</a>
+
+          </span>
+
         </ul>
       </div>    <!-- /container -->
     </div>    <!-- /segment-breadcrumb -->
@@ -107,7 +135,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">MolicAVC - Local Development build (v0.1.0). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
   
 
@@ -164,7 +192,7 @@
         
           Draft
           
-            as of 2023-09-08
+            as of 2023-10-17
           
         
       </td>
@@ -183,11 +211,11 @@
 It addresses feeding needs, including the requirement for feeding tubes such as nasogastric or gastrostomy tubes. 
 It also evaluates the ability to communicate effectively and understand information. Furthermore, it investigates the 
 inclusion of dedicated stroke rehabilitation during both acute inpatient care and post-acute care, encompassing hospital-based 
-and outpatient/home-based settings.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalAspectsRehabilitation#0.1.0</td></tr>
-<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.feeding" class="hierarchy"><a name="l296">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> feeding</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you need a tube for feeding? For example: a nasogastric tube or a gastrostomy tube.</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.feeding">2 options</a></td></tr>
-<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.communicate" class="hierarchy"><a name="l316">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> communicate</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you have problems with communication or understanding?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.communicate">2 options</a></td></tr>
-<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.rehabilitation_Q01" class="hierarchy"><a name="l336">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> rehabilitation_Q01</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rehabilitation inpatient acute care. Did the acute inpatient care include dedicated stroke rehabilitation?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.rehabilitation_Q01">3 options</a></td></tr>
-<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.rehabilitation_Q02" class="hierarchy"><a name="l356">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> rehabilitation_Q02</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rehabilitation post-acute care. Did the post-acute care include dedicated stroke rehabilitation? Dedicated stroke rehabilitation during post-acute care, either hospital-based or out patient/home based.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.rehabilitation_Q02">3 options</a></td></tr>
+and outpatient/home-based settings.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalAspectsRehabilitation#1.0.1</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.feeding" class="hierarchy"><a name="l345">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> feeding</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you need a tube for feeding? For example: a nasogastric tube or a gastrostomy tube.</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.feeding">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.communicate" class="hierarchy"><a name="l365">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> communicate</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you have problems with communication or understanding?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.communicate">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.rehabilitation_Q01" class="hierarchy"><a name="l385">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> rehabilitation_Q01</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rehabilitation inpatient acute care. Did the acute inpatient care include dedicated stroke rehabilitation?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.rehabilitation_Q01">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" id="item.rehabilitation_Q02" class="hierarchy"><a name="l405">​</a><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> rehabilitation_Q02</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Rehabilitation post-acute care. Did the post-acute care include dedicated stroke rehabilitation? Dedicated stroke rehabilitation during post-acute care, either hospital-based or out patient/home based.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: http://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset<br/>Options: <a href="#opt-item.rehabilitation_Q02">3 options</a></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R5/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name="opt-item.feeding"> </a><p><b>Answer options for feeding</b></p><ul><li style="font-size: 11px">null#0</li><li style="font-size: 11px">null#1</li></ul><a name="opt-item.communicate"> </a><p><b>Answer options for communicate</b></p><ul><li style="font-size: 11px">null#0</li><li style="font-size: 11px">null#1</li></ul><a name="opt-item.rehabilitation_Q01"> </a><p><b>Answer options for rehabilitation_Q01</b></p><ul><li style="font-size: 11px">null#0</li><li style="font-size: 11px">null#1</li><li style="font-size: 11px">null#999</li></ul><a name="opt-item.rehabilitation_Q02"> </a><p><b>Answer options for rehabilitation_Q02</b></p><ul><li style="font-size: 11px">null#0</li><li style="font-size: 11px">null#1</li><li style="font-size: 11px">null#999</li></ul></div>
 
   
@@ -217,9 +245,31 @@ and outpatient/home-based settings.</td><td style="vertical-align: top; text-ali
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&nbsp;
+
+                <a href="Encounter-MolicAVC-EncouterExample.ttl.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&nbsp;
+
+                <a href="Questionnaire-MolicAVC-FunctionalAspectsRehabilitation.xml.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 8, 2023 18:23-0300">2023-09-08</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,11 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b0a6e401-0460-4bac-8238-87611c527efb"/>
+  <id value="034d6ef4-dad0-4376-be34-cec90ad245db"/>
   <meta>
-    <lastUpdated value="2023-09-08T18:23:11.428-03:00"/>
+    <lastUpdated value="2023-10-17T16:55:27.495-03:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html">codesystem expandedYes-NoIndicator v2.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-Y"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y">Y</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
+                <td>Sim | Yes</td>
+                <td>
+                  <div>
+                    <p>Yes</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-N"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N">N</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
+                <td>Não | No</td>
+                <td>
+                  <div>
+                    <p>No</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
+                <td>Desconhecido | Unknown</td>
+                <td>
+                  <div>
+                    <p>unknown</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
+        <version value="1.0.1"/>
+        <name value="NoYesUnknownVS"/>
+        <title value="ValueSet Sim, Não e Desconhecido"/>
+        <status value="active"/>
+        <experimental value="false"/>
+        <date value="2023-10-17T16:55:27-03:00"/>
+        <expansion>
+          <identifier value="urn:uuid:bec5e8cb-f547-485e-a017-4d04f7c08778"/>
+          <timestamp value="2023-10-17T16:56:33-03:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0532|2.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="Y"/>
+            <display value="Sim | Yes"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="N"/>
+            <display value="Não | No"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="UNK"/>
+            <display value="Desconhecido | Unknown"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
     <resource>
@@ -117,14 +226,14 @@
           </div>
         </text>
         <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
-        <version value="0.1.0"/>
+        <version value="1.0.1"/>
         <name value="MolicAVC_EthnicityValueSet"/>
         <title value="ValueSet of Patient Ethnicity"/>
-        <status value="draft"/>
-        <date value="2023-09-08T18:23:11-03:00"/>
+        <status value="active"/>
+        <date value="2023-10-17T16:55:27-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:e17306b3-324f-4c1b-8f88-2707dd4b597f"/>
-          <timestamp value="2023-09-08T18:25:12-03:00"/>
+          <identifier value="urn:uuid:be138bb2-f40c-4888-9dcf-c921c0b530b7"/>
+          <timestamp value="2023-10-17T16:56:37-03:00"/>
           <total value="10"/>
           <parameter>
             <name value="excludeNested"/>
@@ -281,14 +390,14 @@
           </div>
         </text>
         <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
-        <version value="0.1.0"/>
+        <version value="1.0.1"/>
         <name value="MolicAVC_GenderIdentityValueSet"/>
         <title value="ValueSet of Gender Identity"/>
-        <status value="draft"/>
-        <date value="2023-09-08T18:23:11-03:00"/>
+        <status value="active"/>
+        <date value="2023-10-17T16:55:27-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:b3675e19-4ae0-4df3-b932-c97d80fbbd1a"/>
-          <timestamp value="2023-09-08T18:25:12-03:00"/>
+          <identifier value="urn:uuid:b845f333-a794-479e-8018-bc4f53ebc514"/>
+          <timestamp value="2023-10-17T16:56:37-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -378,14 +487,14 @@
           </div>
         </text>
         <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
-        <version value="0.1.0"/>
+        <version value="1.0.1"/>
         <name value="MolicAVC_RaceValueSet"/>
         <title value="ValueSet of Patient Race"/>
-        <status value="draft"/>
-        <date value="2023-09-08T18:23:11-03:00"/>
+        <status value="active"/>
+        <date value="2023-10-17T16:55:27-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:120e0ef4-3f89-4ae2-9380-2be8680e2d64"/>
-          <timestamp value="2023-09-08T18:25:12-03:00"/>
+          <identifier value="urn:uuid:5ef9a834-1070-4ad5-bb0b-7b2df451cc39"/>
+          <timestamp value="2023-10-17T16:56:37-03:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>

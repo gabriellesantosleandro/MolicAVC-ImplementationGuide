@@ -3,21 +3,41 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="guide"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>MolicAVC</h2><p>The official URL for this implementation guide is: </p><pre>https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide</pre><div><p>FHIR Implementation Guide for Stroke: A Dual Focus on the Patient's Journey and Outcome Measures</p>
+</div></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide"/>
-  <version value="0.1.0"/>
+  <version value="1.0.1"/>
   <name value="MolicAVC"/>
+  <title value="Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC"/>
   <status value="draft"/>
-  <date value="2023-09-08T18:23:11-03:00"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
     <telecom>
       <system value="url"/>
-      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
     </telecom>
   </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="FHIR Implementation Guide for Stroke: A Dual Focus on the Patient's Journey and Outcome Measures"/>
   <packageId value="guide"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0"/>
@@ -27,7 +47,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -38,344 +58,9 @@
     <version value="1.0.0"/>
   </dependsOn>
   <definition>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="copyrightyear"/>
-      </extension>
-      <extension url="value">
-        <valueString value="2023+"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="releaselabel"/>
-      </extension>
-      <extension url="value">
-        <valueString value="ci-build"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="autoload-resources"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-liquid"/>
-      </extension>
-      <extension url="value">
-        <valueString value="template/liquid"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-liquid"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/liquid"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-qa"/>
-      </extension>
-      <extension url="value">
-        <valueString value="temp/qa"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-temp"/>
-      </extension>
-      <extension url="value">
-        <valueString value="temp/pages"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-output"/>
-      </extension>
-      <extension url="value">
-        <valueString value="output"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-suppressed-warnings"/>
-      </extension>
-      <extension url="value">
-        <valueString value="input/ignoreWarnings.txt"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="path-history"/>
-      </extension>
-      <extension url="value">
-        <valueString value="https://molic-avc.gabriellesantosleandro.com/history.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="template-html"/>
-      </extension>
-      <extension url="value">
-        <valueString value="template-page.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="template-md"/>
-      </extension>
-      <extension url="value">
-        <valueString value="template-page-md.html"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-contact"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-context"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-copyright"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-jurisdiction"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-license"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-publisher"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="apply-version"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="active-tables"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="fmm-definition"/>
-      </extension>
-      <extension url="value">
-        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="propagate-status"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="excludelogbinaryformat"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
-    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
-      <extension url="code">
-        <valueString value="tabbed-snapshots"/>
-      </extension>
-      <extension url="value">
-        <valueString value="true"/>
-      </extension>
-    </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
       <valueCode value="hl7.fhir.uv.tools#current"/>
     </extension>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-alcoholamount-extension"/>
-      </reference>
-      <name value="Extension of Alcohol intake amount"/>
-      <description value="One standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-consciousness-extension"/>
-      </reference>
-      <name value="Extension of Consciousness"/>
-      <description value="Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-nihsscategory-extension"/>
-      </reference>
-      <name value="Extension of Estimated Stroke Severity Category based on NIHSS"/>
-      <description value="Estimated Stroke Severity: Category. Indicate the estimated stroke severity category &#xD;&#xA;by the NIH Stroke Scale (NIHSS)."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/live-alone-pre-stroke-extension"/>
-      </reference>
-      <name value="Extension of Live Alone Pre-Stroke"/>
-      <description value="Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-ethnicity-extension"/>
-      </reference>
-      <name value="Extension of Patient Ethnicity"/>
-      <description value="Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-genderidentity-extension"/>
-      </reference>
-      <name value="Extension of Patient Gender Identity"/>
-      <description value="The patient's gender."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-race-extension"/>
-      </reference>
-      <name value="Extension of Patient Race"/>
-      <description value="Extension to capture the patient's race, as recommended by ICHOM."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-sex-extension"/>
-      </reference>
-      <name value="Extension of Patient Sex"/>
-      <description value="The patient's sex at birth."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/living-location-pre-stroke-extension"/>
-      </reference>
-      <name value="Extension of Patient's Residence Prior to a Stroke"/>
-      <description value="An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-smokingstatus-extension"/>
-      </reference>
-      <name value="Extension of Smoking Status"/>
-      <description value="Extension to capture the patient's smoking status, as recommended by ICHOM."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-nihss-extension"/>
-      </reference>
-      <name value="Extension of Stroke Severity Score based on NIHSS"/>
-      <description value="Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-strokewindow-extension"/>
-      </reference>
-      <name value="Extension of Stroke Window"/>
-      <description value="Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-symptomduration-extension"/>
-      </reference>
-      <name value="Extension of Stroke's Symptom Duration"/>
-      <description value="Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival."/>
-      <isExample value="false"/>
-    </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -455,253 +140,222 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-WHODASQuestionnaire"/>
+        <reference value="StructureDefinition/molicavc-alcoholamount-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC WHODAS Questionnaire"/>
-      <description value="Example of WHODAS Questionnaire for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Alcohol intake amount"/>
+      <description value="One standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol)."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Encounter/MolicAVC-EncouterExample"/>
+        <reference value="StructureDefinition/molicavc-consciousness-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Encounter"/>
-      <description value="Example instance of an encounter for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"/>
+      <name value="Extension of Consciousness"/>
+      <description value="Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-EQ5D3LQuestionnaire"/>
+        <reference value="StructureDefinition/molicavc-ethnicity-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's EQ-5D-3L Questionnaire"/>
-      <description value="Example of EQ-5D-3L Questionnaire for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Patient Ethnicity"/>
+      <description value="Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-FunctionalAspectsRehabilitation"/>
+        <reference value="StructureDefinition/molicavc-genderidentity-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation"/>
-      <description value="Example of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Patient Gender Identity"/>
+      <description value="The patient's gender."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-HRHSQoL"/>
+        <reference value="StructureDefinition/live-alone-pre-stroke-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question."/>
-      <description value="Example of Health-related Quality of Life/Self-Reported Health Status Question."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Live Alone Pre-Stroke"/>
+      <description value="Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Organization/MolicAVC-OrganizationExample"/>
+        <reference value="StructureDefinition/living-location-pre-stroke-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Organization"/>
-      <description value="Example instance of an Organization in the Molic-AVC project."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"/>
+      <name value="Extension of Patient's Residence Prior to a Stroke"/>
+      <description value="An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Patient/123.456.789-00"/>
+        <reference value="StructureDefinition/molicavc-nihsscategory-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Patient"/>
-      <description value="This case study presents a patient profile tailored for the Molic-AVC project, an initiative &#xA;focused on optimizing care for Acute Ischemic Stroke patients. The profile extends the FHIR Patient &#xA;resource with specialized extensions to capture essential data."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"/>
+      <name value="Extension of Estimated Stroke Severity Category based on NIHSS"/>
+      <description value="Estimated Stroke Severity: Category. Indicate the estimated stroke severity category &#xD;&#xA;by the NIH Stroke Scale (NIHSS)."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Practitioner/MolicAVC-DoctorExample"/>
+        <reference value="StructureDefinition/molicavc-nihss-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Practitioner"/>
-      <description value="Example instance of a doctor in the Molic-AVC project."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"/>
+      <name value="Extension of Stroke Severity Score based on NIHSS"/>
+      <description value="Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-FunctionalStatus-Questionnaire"/>
+        <reference value="StructureDefinition/molicavc-race-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's Prestroke and Poststroke Functional Status"/>
-      <description value="Example of Prestroke and Poststroke Functional Status Questionnaire for the patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Patient Race"/>
+      <description value="Extension to capture the patient's race, as recommended by ICHOM."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-PROMIS10Questionnaire"/>
+        <reference value="StructureDefinition/molicavc-sex-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's PROMIS-10 Questionnaire"/>
-      <description value="Example of PROMIS-10 Questionnaire for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Patient Sex"/>
+      <description value="The patient's sex at birth."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-smRSqQuestionnaire"/>
+        <reference value="StructureDefinition/molicavc-smokingstatus-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's simplified modified Rankin Scale Questionnaire (smRSq)"/>
-      <description value="Example of simplified modified Rankin Scale Questionnaire for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Smoking Status"/>
+      <description value="Extension to capture the patient's smoking status, as recommended by ICHOM."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="Questionnaire/MolicAVC-VR12Questionnaire"/>
+        <reference value="StructureDefinition/molicavc-strokewindow-extension"/>
       </reference>
-      <name value="Use case of Molic-AVC's VR-12 Survey"/>
-      <description value="Example of VR-12 for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <name value="Extension of Stroke Window"/>
+      <description value="Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-WHODAS-QuestionnaireResponse"/>
+        <reference value="StructureDefinition/molicavc-symptomduration-extension"/>
       </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC WHODAS questionnaire"/>
-      <description value="Example of WHODAS QuestionnaireResponse for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-EQ5D3L-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's EQ-5D-3L questionnaire"/>
-      <description value="Example of EQ-5D-3L QuestionnaireResponse for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation."/>
-      <description value="Example of QuestionnaireResponse of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-HRHSQoL-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question."/>
-      <description value="Example of Health-related Quality of Life/Self-Reported Health Status QuestionnaireResponse."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-FunctionalStatus-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's Prestroke and Poststroke Functional Status"/>
-      <description value="Example of Prestroke and Poststroke Functional Status QuestionnaireResponse for the patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-PROMIS10-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's PROMIS-10"/>
-      <description value="Example of PROMIS-10 QuestionnaireResponse for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-smRSq-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's simplified modified Rankin Scale questionnaire"/>
-      <description value="Example of simplified modified Rankin Scale QuestionnaireResponse for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/MolicAVC-VR12-QuestionnaireResponse"/>
-      </reference>
-      <name value="Use case of QuestionnaireResponse of Molic-AVC's VR-12 Survey"/>
-      <description value="Example of VR-12 QuestionnaireResponse for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <name value="Extension of Stroke's Symptom Duration"/>
+      <description value="Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-consciousness-valueset"/>
+        <reference value="ValueSet/cnes-valueset"/>
       </reference>
-      <name value="ValueSet of Consciousness"/>
-      <description value="This ValueSet indicates the patient’s level of consciousness measured on hospitalar arrival."/>
+      <name value="ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)"/>
+      <description value="This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/molicavc-cvdcomorbidities-valueset"/>
+      </reference>
+      <name value="ValueSet of Cardiovascular Comorbidities"/>
+      <description value=" Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DiagnosisVS"/>
+      </reference>
+      <name value="ValueSet da Base de Evidência Diagnóstica"/>
+      <description value="Este ValueSet indica qual base de evidência diagnóstica foi utilizada para sua realização."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/EstStrokeSevNIHSSCatVS"/>
+      </reference>
+      <name value="ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS"/>
+      <description value="Este ValueSet tem por finalidade categorizar a gravidade do AVC baseando-se no National Institute of Health Stroke Scale (NIHSS)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/hospital-department-valueset"/>
+      </reference>
+      <name value="ValueSet for Hospital Department"/>
+      <description value="This ValueSet includes the hospital departments responsible for taking care of stroke patients."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/type-healthcare-unit-valueset"/>
+      </reference>
+      <name value="Type of Healthcare Unit ValueSet"/>
+      <description value="This ValueSet details codes for healthcare units serving stroke patients in Brazil."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/molicavc-dischargelocation-valueset"/>
+      </reference>
+      <name value="ValueSet of Discharge Location"/>
+      <description value="Discharge destination following acute care hospitalization. What type of place was the patient discharged to?"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -720,10 +374,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-nihsscategory-valueset"/>
+        <reference value="ValueSet/molicavc-ethnicity-valueset"/>
       </reference>
-      <name value="ValueSet of Estimated Stroke Severity Category by the NIHSS"/>
-      <description value="ValueSet for Estimated Stroke Severity Category by the NIHSS based on ICHOM."/>
+      <name value="ValueSet of Patient Ethnicity"/>
+      <description value="Patient's Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -731,10 +385,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-functionalstatus-valueset"/>
+        <reference value="ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
       </reference>
-      <name value="ValueSet of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation"/>
-      <description value="This ValueSet defines the response values for the Functional Aspects and Rehabilitation: Feeding, Communication, &#xD;&#xA;and Stroke Rehabilitation."/>
+      <name value="ValueSet of Prestroke and Poststroke Functional Status questionnaire"/>
+      <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status questionnaire."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -764,43 +418,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-code-healthcare-unit-valueset"/>
-      </reference>
-      <name value="ValueSet of Healthcare Unit Code"/>
-      <description value="This ValueSet details codes for healthcare units serving stroke patients in Brazil."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/live-alone-pre-stroke"/>
       </reference>
       <name value="ValueSet of Live Alone Pre-Stroke"/>
       <description value="ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/molicavc-ethnicity-valueset"/>
-      </reference>
-      <name value="ValueSet of Patient Ethnicity"/>
-      <description value="Patient's Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/molicavc-race"/>
-      </reference>
-      <name value="ValueSet of Patient Race"/>
-      <description value="Value set for capturing the patient's race based on LOINC standards, as recommended by ICHOM."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -819,28 +440,6 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-functionalaspectsrehabilitation-valueset"/>
-      </reference>
-      <name value="ValueSet of Prestroke and Poststroke Functional Status questionnaire"/>
-      <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status questionnaire."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/molicavc-code-professional-valueset"/>
-      </reference>
-      <name value="ValueSet of Professional Code"/>
-      <description value="This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
         <reference value="ValueSet/molicavc-promis10-valueset"/>
       </reference>
       <name value="ValueSet of PROMIS-10 Response Questionnaire"/>
@@ -852,10 +451,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-sex-valueset"/>
+        <reference value="ValueSet/molicavc-race"/>
       </reference>
-      <name value="ValueSet of Sex based on ICHOM standard"/>
-      <description value="ValueSet for the patient's sex at birth according to the ICHOM standard."/>
+      <name value="ValueSet of Patient Race"/>
+      <description value="Value set for capturing the patient's race based on LOINC standards, as recommended by ICHOM."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -863,10 +462,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-smrsq-valueset"/>
+        <reference value="ValueSet/molicavc-referencelocation-valueset"/>
       </reference>
-      <name value="ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)"/>
-      <description value="This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire."/>
+      <name value="ValueSet of Reference Location"/>
+      <description value="Indicate and classify where the patient was referred."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -878,17 +477,6 @@
       </reference>
       <name value="ValueSet of Smoking Status"/>
       <description value="ValueSet for Smoking Status. A person's current and past smoking behavior."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/molicavc-symptomduration-valueset"/>
-      </reference>
-      <name value="ValueSet of Symptom Duration"/>
-      <description value="ValueSet for Symptom Duration based on ICHOM."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -913,6 +501,323 @@
       <description value="This ValueSet defines the response values for the WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire."/>
       <isExample value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/molicavc-smrsq-valueset"/>
+      </reference>
+      <name value="ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)"/>
+      <description value="This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NoYesUnknownVS"/>
+      </reference>
+      <name value="ValueSet Sim, Não e Desconhecido"/>
+      <description value="Valueset com respostas Sim, Não e Desconhecido (yes, no and unknown)"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/professionalcode-valueset"/>
+      </reference>
+      <name value="ValueSet of Professional Code"/>
+      <description value="This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/StrokeSevLocVS"/>
+      </reference>
+      <name value="ValueSet que Categoriza o Estado de Consciência"/>
+      <description value="Este ValueSet indica o estado de consciência do paciente aferido na chegada ao Hospital de Referência."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/StrokeTypeVS"/>
+      </reference>
+      <name value="ValueSet que categoriza o tipo de AVC"/>
+      <description value="Este ValueSet tem por finalidade categorizar o tipo do AVC"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SymtDurVS"/>
+      </reference>
+      <name value="ValueSet que categoriza a Duração dos Sintomas do AVC"/>
+      <description value="ValueSet que categoriza a duração dos sintomas do AVC considerando o início dos sintomas até a admissão no hospital de referência"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/123.456.789-00"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Patient"/>
+      <description value="This case study presents a patient profile tailored for the Molic-AVC project, an initiative &#xA;focused on optimizing care for Acute Ischemic Stroke patients. The profile extends the FHIR Patient &#xA;resource with specialized extensions to capture essential data."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/ClinicalResponseBaseline"/>
+      </reference>
+      <name value="ClinicalResponseBaseline"/>
+      <description value="Questionário aplicado pelo profissional médico ou profissional de saúde no Primeiro atendimento ao AVC"/>
+      <isExample value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/MolicAVC-DoctorExample"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Practitioner"/>
+      <description value="Example instance of a doctor in the Molic-AVC project."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-EQ5D3L-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's EQ-5D-3L questionnaire"/>
+      <description value="Example of EQ-5D-3L QuestionnaireResponse for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-EQ5D3LQuestionnaire"/>
+      </reference>
+      <name value="Use case of Molic-AVC's EQ-5D-3L Questionnaire"/>
+      <description value="Example of EQ-5D-3L Questionnaire for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/MolicAVC-EncouterExample"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Encounter"/>
+      <description value="Example instance of an encounter for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-FunctionalAspectsRehabilitation"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation"/>
+      <description value="Example of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation."/>
+      <description value="Example of QuestionnaireResponse of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-FunctionalStatus-Questionnaire"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Prestroke and Poststroke Functional Status"/>
+      <description value="Example of Prestroke and Poststroke Functional Status Questionnaire for the patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-FunctionalStatus-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's Prestroke and Poststroke Functional Status"/>
+      <description value="Example of Prestroke and Poststroke Functional Status QuestionnaireResponse for the patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-HRHSQoL"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question."/>
+      <description value="Example of Health-related Quality of Life/Self-Reported Health Status Question."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-HRHSQoL-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question."/>
+      <description value="Example of Health-related Quality of Life/Self-Reported Health Status QuestionnaireResponse."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/MolicAVC-OrganizationExample"/>
+      </reference>
+      <name value="Use case of Molic-AVC's Organization"/>
+      <description value="Example instance of an Organization in the Molic-AVC project."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-PROMIS10-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's PROMIS-10"/>
+      <description value="Example of PROMIS-10 QuestionnaireResponse for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-PROMIS10Questionnaire"/>
+      </reference>
+      <name value="Use case of Molic-AVC's PROMIS-10 Questionnaire"/>
+      <description value="Example of PROMIS-10 Questionnaire for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-VR12-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's VR-12 Survey"/>
+      <description value="Example of VR-12 QuestionnaireResponse for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-VR12Questionnaire"/>
+      </reference>
+      <name value="Use case of Molic-AVC's VR-12 Survey"/>
+      <description value="Example of VR-12 for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-WHODAS-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC WHODAS questionnaire"/>
+      <description value="Example of WHODAS QuestionnaireResponse for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-WHODASQuestionnaire"/>
+      </reference>
+      <name value="Use case of Molic-AVC WHODAS Questionnaire"/>
+      <description value="Example of WHODAS Questionnaire for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/MolicAVC-smRSq-QuestionnaireResponse"/>
+      </reference>
+      <name value="Use case of QuestionnaireResponse of Molic-AVC's simplified modified Rankin Scale questionnaire"/>
+      <description value="Example of simplified modified Rankin Scale QuestionnaireResponse for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/MolicAVC-smRSqQuestionnaire"/>
+      </reference>
+      <name value="Use case of Molic-AVC's simplified modified Rankin Scale Questionnaire (smRSq)"/>
+      <description value="Example of simplified modified Rankin Scale Questionnaire for a patient admitted due to a stroke."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile"/>
+    </resource>
     <page>
       <sourceUrl value="toc.html"/>
       <name value="toc.html"/>
@@ -924,7 +829,79 @@
         <title value="Home"/>
         <generation value="markdown"/>
       </page>
+      <page>
+        <sourceUrl value="ichom.html"/>
+        <name value="ichom.html"/>
+        <title value="ICHOM"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="fhir-basics.html"/>
+        <name value="fhir-basics.html"/>
+        <title value="FHIR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="paper.html"/>
+        <name value="paper.html"/>
+        <title value="Paper"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="downloads.html"/>
+        <name value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="security.html"/>
+        <name value="security.html"/>
+        <title value="Segurança"/>
+        <generation value="markdown"/>
+      </page>
     </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2023+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="ci-build"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="usage-stats-opt-out"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="show-inherited-invariants"/>
+      </code>
+      <value value="false"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="shownav"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
     <parameter>
       <code>
         <system value="http://hl7.org/fhir/guide-parameter-code"/>
@@ -1025,34 +1002,6 @@
     </parameter>
     <parameter>
       <code>
-        <system value="http://hl7.org/fhir/guide-parameter-code"/>
-        <code value="path-tx-cache"/>
-      </code>
-      <value value="input-cache/txcache"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="copyrightyear"/>
-      </code>
-      <value value="2023+"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="releaselabel"/>
-      </code>
-      <value value="ci-build"/>
-    </parameter>
-    <parameter>
-      <code>
-        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
-        <code value="autoload-resources"/>
-      </code>
-      <value value="true"/>
-    </parameter>
-    <parameter>
-      <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="path-liquid"/>
       </code>
@@ -1085,6 +1034,13 @@
         <code value="path-output"/>
       </code>
       <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
     </parameter>
     <parameter>
       <code>
@@ -1160,6 +1116,13 @@
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
       </code>
       <value value="true"/>
     </parameter>

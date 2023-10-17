@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>GUIDE\Artifacts Summary - FHIR v5.0.0</title>
+    <title>Artifacts Summary - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,17 +39,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">1.0.1 - ci-build
 
 
             </span>
@@ -80,7 +80,25 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="ichom.html">ICHOM</a>
+  </li>
+  <li>
+    <a href="fhir-basics.html">FHIR basics</a>
+  </li>
+  <li>
+    <a href="paper.html">Paper</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="security.html">Segurança</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -95,6 +113,16 @@
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+          <span style="float:right;">
+
+            <a href="security.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-molicavc-encounter-profile.html">next&gt;</a>
+
+          </span>
 
         </ul>
       </div>  <!-- /container -->
@@ -114,7 +142,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MolicAVC - Local Development build (v0.1.0). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -370,11 +398,54 @@ by the NIH Stroke Scale (NIHSS).</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-consciousness-valueset.html"
-                     title="ValueSet/molicavc-consciousness-valueset">ValueSet of Consciousness</a>
+                  <a href="ValueSet-type-healthcare-unit-valueset.html"
+                     title="ValueSet/type-healthcare-unit-valueset">Type of Healthcare Unit ValueSet</a>
                </td>
                <td>
-<p>This ValueSet indicates the patient’s level of consciousness measured on hospitalar arrival.</p>
+<p>This ValueSet details codes for healthcare units serving stroke patients in Brazil.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-NoYesUnknownVS.html" title="ValueSet/NoYesUnknownVS">ValueSet Sim, Não e Desconhecido</a>
+               </td>
+               <td>
+<p>Valueset com respostas Sim, Não e Desconhecido (yes, no and unknown)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-DiagnosisVS.html" title="ValueSet/DiagnosisVS">ValueSet da Base de Evidência Diagnóstica</a>
+               </td>
+               <td>
+<p>Este ValueSet indica qual base de evidência diagnóstica foi utilizada para sua realização.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-hospital-department-valueset.html"
+                     title="ValueSet/hospital-department-valueset">ValueSet for Hospital Department</a>
+               </td>
+               <td>
+<p>This ValueSet includes the hospital departments responsible for taking care of stroke patients.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-cvdcomorbidities-valueset.html"
+                     title="ValueSet/molicavc-cvdcomorbidities-valueset">ValueSet of Cardiovascular Comorbidities</a>
+               </td>
+               <td>
+<p>Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-molicavc-dischargelocation-valueset.html"
+                     title="ValueSet/molicavc-dischargelocation-valueset">ValueSet of Discharge Location</a>
+               </td>
+               <td>
+<p>Discharge destination following acute care hospitalization. What type of place was the patient discharged to?</p>
 </td>
             </tr>
             <tr>
@@ -384,25 +455,6 @@ by the NIH Stroke Scale (NIHSS).</p>
                </td>
                <td>
 <p>This ValueSet defines the response values for the EQ-5D-3L Questionnaire.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-nihsscategory-valueset.html"
-                     title="ValueSet/molicavc-nihsscategory-valueset">ValueSet of Estimated Stroke Severity Category by the NIHSS</a>
-               </td>
-               <td>
-<p>ValueSet for Estimated Stroke Severity Category by the NIHSS based on ICHOM.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-functionalstatus-valueset.html"
-                     title="ValueSet/molicavc-functionalstatus-valueset">ValueSet of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation</a>
-               </td>
-               <td>
-<p>This ValueSet defines the response values for the Functional Aspects and Rehabilitation: Feeding, Communication, 
-and Stroke Rehabilitation.</p>
 </td>
             </tr>
             <tr>
@@ -425,20 +477,19 @@ and Stroke Rehabilitation.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-code-healthcare-unit-valueset.html"
-                     title="ValueSet/molicavc-code-healthcare-unit-valueset">ValueSet of Healthcare Unit Code</a>
-               </td>
-               <td>
-<p>This ValueSet details codes for healthcare units serving stroke patients in Brazil.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-live-alone-pre-stroke.html"
                      title="ValueSet/live-alone-pre-stroke">ValueSet of Live Alone Pre-Stroke</a>
                </td>
                <td>
 <p>ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-cnes-valueset.html" title="ValueSet/cnes-valueset">ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)</a>
+               </td>
+               <td>
+<p>This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde).</p>
 </td>
             </tr>
             <tr>
@@ -487,8 +538,8 @@ and Stroke Rehabilitation.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-code-professional-valueset.html"
-                     title="ValueSet/molicavc-code-professional-valueset">ValueSet of Professional Code</a>
+                  <a href="ValueSet-professionalcode-valueset.html"
+                     title="ValueSet/professionalcode-valueset">ValueSet of Professional Code</a>
                </td>
                <td>
 <p>This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil.</p>
@@ -496,11 +547,11 @@ and Stroke Rehabilitation.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-sex-valueset.html"
-                     title="ValueSet/molicavc-sex-valueset">ValueSet of Sex based on ICHOM standard</a>
+                  <a href="ValueSet-molicavc-referencelocation-valueset.html"
+                     title="ValueSet/molicavc-referencelocation-valueset">ValueSet of Reference Location</a>
                </td>
                <td>
-<p>ValueSet for the patient’s sex at birth according to the ICHOM standard.</p>
+<p>Indicate and classify where the patient was referred.</p>
 </td>
             </tr>
             <tr>
@@ -510,15 +561,6 @@ and Stroke Rehabilitation.</p>
                </td>
                <td>
 <p>ValueSet for Smoking Status. A person’s current and past smoking behavior.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-molicavc-symptomduration-valueset.html"
-                     title="ValueSet/molicavc-symptomduration-valueset">ValueSet of Symptom Duration</a>
-               </td>
-               <td>
-<p>ValueSet for Symptom Duration based on ICHOM.</p>
 </td>
             </tr>
             <tr>
@@ -548,6 +590,39 @@ and Stroke Rehabilitation.</p>
 <p>This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-StrokeSevLocVS.html" title="ValueSet/StrokeSevLocVS">ValueSet que Categoriza o Estado de Consciência</a>
+               </td>
+               <td>
+<p>Este ValueSet indica o estado de consciência do paciente aferido na chegada ao Hospital de Referência.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-SymtDurVS.html" title="ValueSet/SymtDurVS">ValueSet que categoriza a Duração dos Sintomas do AVC</a>
+               </td>
+               <td>
+<p>ValueSet que categoriza a duração dos sintomas do AVC considerando o início dos sintomas até a admissão no hospital de referência</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-EstStrokeSevNIHSSCatVS.html"
+                     title="ValueSet/EstStrokeSevNIHSSCatVS">ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS</a>
+               </td>
+               <td>
+<p>Este ValueSet tem por finalidade categorizar a gravidade do AVC baseando-se no National Institute of Health Stroke Scale (NIHSS)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-StrokeTypeVS.html" title="ValueSet/StrokeTypeVS">ValueSet que categoriza o tipo de AVC</a>
+               </td>
+               <td>
+<p>Este ValueSet tem por finalidade categorizar o tipo do AVC</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -560,6 +635,15 @@ and Stroke Rehabilitation.</p>
       <table class="grid">
          <col style="width:20%"/>
          <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-ClinicalResponseBaseline.html"
+                     title="Questionnaire/ClinicalResponseBaseline">ClinicalResponseBaseline</a>
+               </td>
+               <td>
+<p>Questionário aplicado pelo profissional médico ou profissional de saúde no Primeiro atendimento ao AVC</p>
+</td>
+            </tr>
             <tr>
                <td style="column-width:30%">
                   <a href="Questionnaire-MolicAVC-WHODASQuestionnaire.html"
@@ -766,9 +850,31 @@ resource with specialized extensions to capture essential data.</p>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="security.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="StructureDefinition-molicavc-encounter-profile.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 8, 2023 18:23-0300">2023-09-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

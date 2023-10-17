@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="StrokeSevLocVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Completamente acordado | Fully awake</td></tr><tr><td>1</td><td>Sonolento | Somnolent</td></tr><tr><td>2</td><td>Coma | Coma</td></tr><tr><td>999</td><td>Desconhecido | Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS"/>
+  <version value="1.0.1"/>
+  <name value="StrokeSevLocVS"/>
+  <title value="ValueSet que Categoriza o Estado de Consciência"/>
+  <status value="active"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Este ValueSet indica o estado de consciência do paciente aferido na chegada ao Hospital de Referência."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/"/>
+      <concept>
+        <code value="0"/>
+        <display value="Completamente acordado | Fully awake"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="Sonolento | Somnolent"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Coma | Coma"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="Desconhecido | Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

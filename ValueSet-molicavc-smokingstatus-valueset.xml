@@ -3,20 +3,37 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="molicavc-smokingstatus-valueset"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Current every day smoker (a person who smokes daily).</td></tr><tr><td>1</td><td>Current weekly smoker (a person who smokes at least weekly but not daily).</td></tr><tr><td>2</td><td>Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime).</td></tr><tr><td>3</td><td>Never smoker.</td></tr><tr><td>4</td><td>Others.</td></tr><tr><td>999</td><td>Unknown if ever smoked.</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smokingstatus-valueset"/>
-  <version value="0.1.0"/>
+  <version value="1.0.1"/>
   <name value="MolicAVC_SmokingStatusValueSet"/>
   <title value="ValueSet of Smoking Status"/>
-  <status value="draft"/>
-  <date value="2023-09-08T18:23:11-03:00"/>
+  <status value="active"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
     <telecom>
       <system value="url"/>
-      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
     </telecom>
   </contact>
   <description value="ValueSet for Smoking Status. A person's current and past smoking behavior."/>
@@ -25,27 +42,27 @@
       <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus"/>
       <concept>
         <code value="0"/>
-        <display value="0 = Current every day smoker (a person who smokes daily)."/>
+        <display value="Current every day smoker (a person who smokes daily)."/>
       </concept>
       <concept>
         <code value="1"/>
-        <display value="1 = Current weekly smoker (a person who smokes at least weekly but not daily)."/>
+        <display value="Current weekly smoker (a person who smokes at least weekly but not daily)."/>
       </concept>
       <concept>
         <code value="2"/>
-        <display value="2 = Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime)."/>
+        <display value="Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime)."/>
       </concept>
       <concept>
         <code value="3"/>
-        <display value="3 = Never smoker."/>
+        <display value="Never smoker."/>
       </concept>
       <concept>
         <code value="4"/>
-        <display value="4 = Others."/>
+        <display value="Others."/>
       </concept>
       <concept>
         <code value="999"/>
-        <display value="999 = Unknown if ever smoked."/>
+        <display value="Unknown if ever smoked."/>
       </concept>
     </include>
   </compose>

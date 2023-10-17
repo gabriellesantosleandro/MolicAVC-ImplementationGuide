@@ -1,0 +1,59 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "NoYesUnknownVS",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a></td><td>Sim | Yes</td><td>Yes</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>Não | No</td><td>No</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Desconhecido | Unknown</td><td>unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
+  "version" : "1.0.1",
+  "name" : "NoYesUnknownVS",
+  "title" : "ValueSet Sim, Não e Desconhecido",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2023-10-17T16:55:27-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Valueset com respostas Sim, Não e Desconhecido (yes, no and unknown)",
+  "copyright" : "Copyright HL7. Licensed under creative commons public domain",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "concept" : [{
+        "code" : "Y",
+        "display" : "Sim | Yes"
+      },
+      {
+        "code" : "N",
+        "display" : "Não | No"
+      },
+      {
+        "code" : "UNK",
+        "display" : "Desconhecido | Unknown"
+      }]
+    }]
+  }
+}

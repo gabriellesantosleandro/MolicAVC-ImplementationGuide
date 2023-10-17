@@ -12,6 +12,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "live-alone-pre-stroke-extension","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "live-alone-pre-stroke-extension","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"live-alone-pre-stroke-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/live-alone-pre-stroke","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -28,6 +33,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "living-location-pre-stroke-extension","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "living-location-pre-stroke-extension","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"living-location-pre-stroke-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"extensible","","https://molic-avc.gabriellesantosleandro.com/ValueSet/living-location-pre-stroke-valueset","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -65,7 +75,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-consciousness-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-consciousness-valueset","",,,,"Extension.value[x]",0,1,"ext-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-encounter-profile","Encounter","Encounter","","Visit
@@ -355,6 +365,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "molicavc-ethnicity-extension","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
 ","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
 "molicavc-ethnicity-extension","Extension.value[x]","Extension.value[x]","","","",0,1,"","","","CodeableConcept {[]} {[]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","Extension.value[x]",0,1,"ext-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
+"molicavc-ethnicity-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -414,7 +429,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-nihsscategory-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-nihsscategory-valueset","",,,,"Extension.value[x]",0,1,"ext-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-observation-profile","Observation","Observation","","Vital Signs
@@ -2497,7 +2512,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-sex-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-sex-valueset","",,,,"Extension.value[x]",0,1,"ext-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","http://hl7.org/fhir/ValueSet/administrative-gender","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-smokingstatus-extension","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
@@ -2555,6 +2570,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "molicavc-symptomduration-extension","Extension.value[x]:valueCodeableConcept","Extension.value[x]","valueCodeableConcept","","",0,1,"","","","CodeableConcept {[]} {[]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-symptomduration-valueset","",,,,"Extension.value[x]",0,1,"ext-1
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R5/extensibility.html) for a list).","","","","","","","","","",,"required","","https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS","",,,,"Extension.value[x]",0,1,"ext-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

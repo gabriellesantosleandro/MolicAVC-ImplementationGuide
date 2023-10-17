@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "molicavc-referencelocation-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/reference-location/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Home</td></tr><tr><td>2</td><td>Long-Term Hospital</td></tr><tr><td>3</td><td>Other</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset",
+  "version" : "1.0.1",
+  "name" : "MolicAVC_ReferenceLocation_ValueSet",
+  "title" : "ValueSet of Reference Location",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Indicate and classify where the patient was referred.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/reference-location/",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Home"
+      },
+      {
+        "code" : "2",
+        "display" : "Long-Term Hospital"
+      },
+      {
+        "code" : "3",
+        "display" : "Other"
+      },
+      {
+        "code" : "999",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

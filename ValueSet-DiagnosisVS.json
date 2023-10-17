@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "DiagnosisVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Clinical symptoms alone</td></tr><tr><td>1</td><td>Clinical and Tomography</td></tr><tr><td>2</td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
+  "version" : "1.0.1",
+  "name" : "DiagnosisVS",
+  "title" : "ValueSet da Base de Evidência Diagnóstica",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Este ValueSet indica qual base de evidência diagnóstica foi utilizada para sua realização.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/",
+      "concept" : [{
+        "code" : "0",
+        "display" : "Clinical symptoms alone"
+      },
+      {
+        "code" : "1",
+        "display" : "Clinical and Tomography"
+      },
+      {
+        "code" : "2",
+        "display" : "Clinical and Magnetic Resonance Imaging"
+      }]
+    }]
+  }
+}

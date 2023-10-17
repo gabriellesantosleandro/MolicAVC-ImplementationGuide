@@ -1,0 +1,77 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "hospital-department-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Emergency Unit</td></tr><tr><td>2</td><td>Accute Stroke Unit</td></tr><tr><td>3</td><td>Intensive Care Unit</td></tr><tr><td>4</td><td>Surgery Unit</td></tr><tr><td>5</td><td>Integral Stroke Unit</td></tr><tr><td>6</td><td>Imaging Department</td></tr><tr><td>7</td><td>Other Department in the Hospital</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset",
+  "version" : "1.0.1",
+  "name" : "HospitalDepartment_ValueSet",
+  "title" : "ValueSet for Hospital Department",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This ValueSet includes the hospital departments responsible for taking care of stroke patients.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset/",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Emergency Unit"
+      },
+      {
+        "code" : "2",
+        "display" : "Accute Stroke Unit"
+      },
+      {
+        "code" : "3",
+        "display" : "Intensive Care Unit"
+      },
+      {
+        "code" : "4",
+        "display" : "Surgery Unit"
+      },
+      {
+        "code" : "5",
+        "display" : "Integral Stroke Unit"
+      },
+      {
+        "code" : "6",
+        "display" : "Imaging Department"
+      },
+      {
+        "code" : "7",
+        "display" : "Other Department in the Hospital"
+      },
+      {
+        "code" : "999",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

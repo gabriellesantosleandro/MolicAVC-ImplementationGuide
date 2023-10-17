@@ -3,20 +3,37 @@
   "id" : "molicavc-vr12-valueset",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/vr12/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Excellent</td></tr><tr><td>2</td><td>Very Good</td></tr><tr><td>3</td><td>Good</td></tr><tr><td>4</td><td>Fair</td></tr><tr><td>5</td><td>Poor</td></tr><tr><td>6</td><td>All of the time</td></tr><tr><td>7</td><td>Most of the time</td></tr><tr><td>8</td><td>A good bit of the time</td></tr><tr><td>9</td><td>Some of the time</td></tr><tr><td>10</td><td>A little of the time</td></tr><tr><td>11</td><td>None of the time</td></tr><tr><td>12</td><td>Yes, limited a lot</td></tr><tr><td>13</td><td>Yes, limited a little</td></tr><tr><td>14</td><td>No, not limited at all</td></tr><tr><td>15</td><td>Much better</td></tr><tr><td>16</td><td>Slightly better</td></tr><tr><td>17</td><td>About the same</td></tr><tr><td>18</td><td>Slightly worse</td></tr><tr><td>19</td><td>Much worse</td></tr><tr><td>20</td><td>No, none of the time</td></tr><tr><td>21</td><td>Yes, a little of the time</td></tr><tr><td>22</td><td>Yes, some of the time</td></tr><tr><td>23</td><td>Yes, most of the time</td></tr><tr><td>24</td><td>Yes, all of the time</td></tr></table></li></ul></div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "MolicAVC_VR12_ValueSet",
   "title" : "ValueSet of VR-12 Response Questionnaire",
-  "status" : "draft",
-  "date" : "2023-09-08T18:23:11-03:00",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://molic-avc.gabriellesantosleandro.com"
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
     }]
   }],
   "description" : "This ValueSet defines the response values for the VR-12 (Veterans RAND 12 Item Health Survey).",

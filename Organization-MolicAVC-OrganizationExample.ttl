@@ -52,7 +52,7 @@
      ] ) ;
      fhir:code [
        fhir:coding ( [
-         fhir:system [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/"^^xsd:anyURI ] ;
+         fhir:system [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset/"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "STROKEHOSP" ] ;
          fhir:display [ fhir:v "Public Reference Hospital (CNES - Cadastro Nacional de Estabelecimento Único)" ]
        ] )

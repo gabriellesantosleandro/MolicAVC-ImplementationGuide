@@ -7,7 +7,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>GUIDE\Profile of Molic-AVC&#39;s Patient - Definitions - FHIR v5.0.0</title>
+    <title>Profile of Molic-AVC&#39;s Patient - Definitions - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,17 +43,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.4"}
-    h3,h4,h5,h6{--heading-prefix:"2.4"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.4"}
+    h3,h4,h5,h6{--heading-prefix:"7.4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold"></span>
+          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
             <br/>
-            <span style="display:inline-block;">0.1.0 - ci-build
+            <span style="display:inline-block;">1.0.1 - ci-build
 
 
             </span>
@@ -84,7 +84,25 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="ichom.html">ICHOM</a>
+  </li>
+  <li>
+    <a href="fhir-basics.html">FHIR basics</a>
+  </li>
+  <li>
+    <a href="paper.html">Paper</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="security.html">Segurança</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -100,6 +118,16 @@
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Profile of Molic-AVC's Patient</b></li>
 
+          <span style="float:right;">
+
+            <a href="StructureDefinition-molicavc-patient-profile.html">&lt;prev</a> | 
+
+            <a href="#bottom">bottom</a>
+
+          | <a href="StructureDefinition-molicavc-patient-profile-mappings.html">next&gt;</a>
+
+          </span>
+
         </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -111,7 +139,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">MolicAVC - Local Development build (v0.1.0). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -187,14 +215,14 @@
 <a name="root"> </a>
 <h2 id="root">Resource Profile: MolicAVC_PatientProfile - Detailed Descriptions</h2>
 
-  <table class="colsd">
+  <table class="colsi">
     <tr>
 
       <td colspan="2">
         
-          Draft
+          Active
           
-            as of 2023-09-08
+            as of 2023-10-17
           
         
       </td>
@@ -270,26 +298,23 @@
 
 <tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.birthDate">  </a><span style="color: grey">42</span><b>. Patient.birthDate</b><a href="#diff_Patient.birthDate" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>1..?</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.deceased[x]">  </a><span style="color: grey">44</span><b>. Patient.deceased[x]</b><a href="#diff_Patient.deceased[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap">[x] Note</td><td>See <a href="http://hl7.org/fhir/R5/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
-<tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/profiling.html#slicing">Slicing</a></td><td>This element introduces a set of slices on <code>Patient.deceased[x]</code>. The slices are unordered and Open, and can be differentiated using the following discriminators: , and can be differentiated using the following discriminators: <ul/><li><span style="color:DarkGray">type @ $this</span></li></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.deceasedDateTime">  </a><span style="color: grey">44</span><b>. Patient.deceasedDateTime</b><a href="#diff_Patient.deceasedDateTime" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.deceased[x]:deceasedDateTime">  </a><a name="diff_Patient.deceasedDateTime">  </a><span style="color: grey">46</span><b>. Patient.deceased[x]:deceasedDateTime</b><a href="#diff_Patient.deceased[x]:deceasedDateTime" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/profiling.html#slicing">Slice Name</a></td><td>deceasedDateTime</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td></tr><tr><td style="white-space: nowrap">[x] Note</td><td>See <a href="http://hl7.org/fhir/R5/formats.html#choice">Choice of Data Types</a> for further information about how to use [x]</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/elementdefinition.html#primitives">Primitive Value</a></td><td>This primitive element may be present, or absent, or replaced by an extension</td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.address">  </a><span style="color: grey">46</span><b>. Patient.address</b><a href="#diff_Patient.address" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.address">  </a><span style="color: grey">48</span><b>. Patient.address</b><a href="#diff_Patient.address" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.maritalStatus">  </a><span style="color: grey">48</span><b>. Patient.maritalStatus</b><a href="#diff_Patient.maritalStatus" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.maritalStatus">  </a><span style="color: grey">50</span><b>. Patient.maritalStatus</b><a href="#diff_Patient.maritalStatus" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.multipleBirth[x]">  </a><span style="color: grey">50</span><b>. Patient.multipleBirth[x]</b><a href="#diff_Patient.multipleBirth[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.multipleBirth[x]">  </a><span style="color: grey">52</span><b>. Patient.multipleBirth[x]</b><a href="#diff_Patient.multipleBirth[x]" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.photo">  </a><span style="color: grey">52</span><b>. Patient.photo</b><a href="#diff_Patient.photo" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.photo">  </a><span style="color: grey">54</span><b>. Patient.photo</b><a href="#diff_Patient.photo" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.contact">  </a><span style="color: grey">54</span><b>. Patient.contact</b><a href="#diff_Patient.contact" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.contact">  </a><span style="color: grey">56</span><b>. Patient.contact</b><a href="#diff_Patient.contact" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.communication">  </a><span style="color: grey">56</span><b>. Patient.communication</b><a href="#diff_Patient.communication" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.communication">  </a><span style="color: grey">58</span><b>. Patient.communication</b><a href="#diff_Patient.communication" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.generalPractitioner">  </a><span style="color: grey">58</span><b>. Patient.generalPractitioner</b><a href="#diff_Patient.generalPractitioner" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.generalPractitioner">  </a><span style="color: grey">60</span><b>. Patient.generalPractitioner</b><a href="#diff_Patient.generalPractitioner" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
-
-<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.managingOrganization">  </a><span style="color: grey">62</span><b>. Patient.managingOrganization</b><a href="#diff_Patient.managingOrganization" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
+<tr><td colspan="2" class="structure"><span class="self-link-parent"><a name="diff_Patient.managingOrganization">  </a><span style="color: grey">60</span><b>. Patient.managingOrganization</b><a href="#diff_Patient.managingOrganization" title="link to here" class="self-link"><svg viewBox="0 0 1792 1792" width="16" class="self-link" height="16"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg></a></span></td></tr><tr><td style="white-space: nowrap"><a href="http://hl7.org/fhir/R5/conformance-rules.html#conformance">Control</a></td><td>0..0</td></tr><tr><td style="white-space: nowrap">LOINC Code</td><td></td></tr>
 
 </table>
     </div>
@@ -700,9 +725,31 @@ Multiple GPs may be recorded against the patient for various reasons, such as a 
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
 
+      <div style="background-color:var(--footer-nav-bg-color)">
+        <table style="width:100%">
+          <tbody>
+            <tr>
+              <td style="text-align:left">&#xA0;
+
+                <a href="StructureDefinition-molicavc-patient-profile.html">&lt;prev</a>
+
+              </td>
+              <td style="text-align:center">
+                <a href="#top">top</a>
+              </td>
+              <td style="text-align:right">&#xA0;
+
+                <a href="StructureDefinition-molicavc-patient-profile-mappings.html">next&gt;</a>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://molic-avc.gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Fri, Sep 8, 2023 18:23-0300">2023-09-08</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

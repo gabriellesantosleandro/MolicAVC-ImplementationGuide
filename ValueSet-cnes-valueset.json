@@ -1,0 +1,281 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "cnes-valueset",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://cnes2.datasus.gov.br/Exibe_Ficha_Estabelecimento.asp?VCo_Unidade=4209102511959</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>7911467</td><td>7911467\t- UBS UNIDADE DE SAÚDE PRISIONAL DE JOINVILLE</td></tr><tr><td>2511568</td><td>2511568 - UBSF ADHEMAR GARCIA PEDRO CELESTINO DA SILVA JUNIOR</td></tr><tr><td>3001164</td><td>3001164 - UBSF ANABURGO</td></tr><tr><td>2511487</td><td>2511487 - UBSF AVENTUREIRO I</td></tr><tr><td>2511525</td><td>2511525 - UBSF AVENTUREIRO II</td></tr><tr><td>9538461</td><td>9538461 - UBSF AVENTUREIRO III</td></tr><tr><td>2511347</td><td>2511347 - UBSF BAKHITA</td></tr><tr><td>2511541</td><td>2511541 - UBSF BOEHMERWALD</td></tr><tr><td>2511320</td><td>2511320 - UBSF BOM RETIRO</td></tr><tr><td>2511681</td><td>2511681 - UBSF BUCAREIN</td></tr><tr><td>2511851</td><td>2511681 - UBSF CAIC VILA PARANAENSE</td></tr><tr><td>3101711</td><td>3101711 - UBSF CANELA</td></tr><tr><td>2511517</td><td>2511517 - UBSF COMASA</td></tr><tr><td>2511592</td><td>2511592 - UBSF COSTA E SILVA</td></tr><tr><td>2436434</td><td>2436434 - UBSF CUBATÃO</td></tr><tr><td>3004007</td><td>3004007 - UBSF DA ILHA</td></tr><tr><td>3101150</td><td>3101150 - UBSF DOM GREGÓRIO</td></tr><tr><td>2512017</td><td>2512017 - UBSF EDLA JORDAN</td></tr><tr><td>2511746</td><td>2511746 - UBSF ESTEVÃO DE MATOS</td></tr><tr><td>2511614</td><td>2511614 - UBSF FÁTIMA</td></tr><tr><td>2511878</td><td>2511878 - UBSF FLORESTA</td></tr><tr><td>2511711</td><td>2511711 - UBSF GLÓRIA</td></tr><tr><td>2511479</td><td>2511479 - UBSF ITAUM</td></tr><tr><td>2511509</td><td>2511509 - UBSF ITINGA</td></tr><tr><td>3062724</td><td>3062724 - UBSF JARDIM EDILENE</td></tr><tr><td>2511843</td><td>2511843 - UBSF JARDIM PARAISO I E II</td></tr><tr><td>2512009</td><td>2512009 - UBSF JARDIM PARAISO III</td></tr><tr><td>2622955</td><td>2622955 - UBSF JARDIM PARAISO IV</td></tr><tr><td>3400069</td><td>3400069 - UBSF JARDIM PARAISO V E VI</td></tr><tr><td>2511835</td><td>2511835 - UBSF JARDIM SOFIA</td></tr><tr><td>2622971</td><td>2622971 - UBSF JARIVATUBA BELQUISE ANA QUINTERO</td></tr><tr><td>2436426</td><td>2436426 - UBSF JATIVOCA</td></tr><tr><td>416940</td><td>416940 - UBSF JOÃO COSTA</td></tr><tr><td>2511371</td><td>2511371 - UBSF KM 4</td></tr><tr><td>8007535</td><td>8007535 - UBSF LAGOINHA</td></tr><tr><td>2511355</td><td>2511355 - UBSF LEONARDO SCHILICKMANN</td></tr><tr><td>2511452</td><td>2511452 - UBSF MOINHO DOS VENTOS</td></tr><tr><td>2511770</td><td>2511770 - UBSF MORRO DO AMARAL</td></tr><tr><td>2511495</td><td>2511495 - UBSF MORRO DO MEIO</td></tr><tr><td>2511304</td><td>2511304 - UBSF NOVA BRASILIA</td></tr><tr><td>2511576</td><td>2511576 - UBSF PARANAGUAMIRIM</td></tr><tr><td>7704550</td><td>7704550 - UBSF PARQUE DOUAT</td></tr><tr><td>2511819</td><td>2511819 - UBSF PARQUE GUARANI</td></tr><tr><td>2511606</td><td>2511606 - UBSF PARQUE JOINVILLE</td></tr><tr><td>2511290</td><td>2511290 - UBSF PIRABEIRABA OSMAR DALONSO</td></tr><tr><td>2511363</td><td>2511363 - UBSF PROFIPO</td></tr><tr><td>2511282</td><td>2511282 - UBSF RIO BONITO</td></tr><tr><td>2511274</td><td>2511274 - UBSF RIO DA PRATA ADALBERTO LARSEN</td></tr><tr><td>3781194</td><td>3781194 - UBSF SAGUAÇU</td></tr><tr><td>2511312</td><td>2511312 - UBSF SÃO MARCOS</td></tr><tr><td>9075712</td><td>9075712 - UBSF ULYSSES GUIMARÃES</td></tr><tr><td>2511703</td><td>2511703 - UBSF VILA NOVA</td></tr><tr><td>9529888</td><td>9529888 - UBSF VILA NOVA I DAGOBERTO JOSÉ DE CAMPOS</td></tr><tr><td>2568667</td><td>2568667 - UBSF VILA NOVA RURAL</td></tr><tr><td>2511959</td><td>2511959 - UBSF WILLY SCHOSSLAND</td></tr><tr><td>6439993</td><td>6439993 - PA LESTE 24 HORAS AVENTUREIRO</td></tr><tr><td>8007527</td><td>8007527 - PA NORTE 24 HORAS COSTA E SILVA LUIZA SCHULTZ DOHLER</td></tr><tr><td>2511738</td><td>2511738 - PA SUL 24 HORAS ITAUM</td></tr><tr><td>2436469</td><td>2436469 - HOSPITAL MUNICIPAL SÃO JOSÉ</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/cnes-valueset",
+  "version" : "1.0.1",
+  "name" : "CNES_ValueSet",
+  "title" : "ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde).",
+  "compose" : {
+    "include" : [{
+      "system" : "http://cnes2.datasus.gov.br/Exibe_Ficha_Estabelecimento.asp?VCo_Unidade=4209102511959",
+      "concept" : [{
+        "code" : "7911467",
+        "display" : "7911467\t- UBS UNIDADE DE SAÚDE PRISIONAL DE JOINVILLE"
+      },
+      {
+        "code" : "2511568",
+        "display" : "2511568 - UBSF ADHEMAR GARCIA PEDRO CELESTINO DA SILVA JUNIOR"
+      },
+      {
+        "code" : "3001164",
+        "display" : "3001164 - UBSF ANABURGO"
+      },
+      {
+        "code" : "2511487",
+        "display" : "2511487 - UBSF AVENTUREIRO I"
+      },
+      {
+        "code" : "2511525",
+        "display" : "2511525 - UBSF AVENTUREIRO II"
+      },
+      {
+        "code" : "9538461",
+        "display" : "9538461 - UBSF AVENTUREIRO III"
+      },
+      {
+        "code" : "2511347",
+        "display" : "2511347 - UBSF BAKHITA"
+      },
+      {
+        "code" : "2511541",
+        "display" : "2511541 - UBSF BOEHMERWALD"
+      },
+      {
+        "code" : "2511320",
+        "display" : "2511320 - UBSF BOM RETIRO"
+      },
+      {
+        "code" : "2511681",
+        "display" : "2511681 - UBSF BUCAREIN"
+      },
+      {
+        "code" : "2511851",
+        "display" : "2511681 - UBSF CAIC VILA PARANAENSE"
+      },
+      {
+        "code" : "3101711",
+        "display" : "3101711 - UBSF CANELA"
+      },
+      {
+        "code" : "2511517",
+        "display" : "2511517 - UBSF COMASA"
+      },
+      {
+        "code" : "2511592",
+        "display" : "2511592 - UBSF COSTA E SILVA"
+      },
+      {
+        "code" : "2436434",
+        "display" : "2436434 - UBSF CUBATÃO"
+      },
+      {
+        "code" : "3004007",
+        "display" : "3004007 - UBSF DA ILHA"
+      },
+      {
+        "code" : "3101150",
+        "display" : "3101150 - UBSF DOM GREGÓRIO"
+      },
+      {
+        "code" : "2512017",
+        "display" : "2512017 - UBSF EDLA JORDAN"
+      },
+      {
+        "code" : "2511746",
+        "display" : "2511746 - UBSF ESTEVÃO DE MATOS"
+      },
+      {
+        "code" : "2511614",
+        "display" : "2511614 - UBSF FÁTIMA"
+      },
+      {
+        "code" : "2511878",
+        "display" : "2511878 - UBSF FLORESTA"
+      },
+      {
+        "code" : "2511711",
+        "display" : "2511711 - UBSF GLÓRIA"
+      },
+      {
+        "code" : "2511479",
+        "display" : "2511479 - UBSF ITAUM"
+      },
+      {
+        "code" : "2511509",
+        "display" : "2511509 - UBSF ITINGA"
+      },
+      {
+        "code" : "3062724",
+        "display" : "3062724 - UBSF JARDIM EDILENE"
+      },
+      {
+        "code" : "2511843",
+        "display" : "2511843 - UBSF JARDIM PARAISO I E II"
+      },
+      {
+        "code" : "2512009",
+        "display" : "2512009 - UBSF JARDIM PARAISO III"
+      },
+      {
+        "code" : "2622955",
+        "display" : "2622955 - UBSF JARDIM PARAISO IV"
+      },
+      {
+        "code" : "3400069",
+        "display" : "3400069 - UBSF JARDIM PARAISO V E VI"
+      },
+      {
+        "code" : "2511835",
+        "display" : "2511835 - UBSF JARDIM SOFIA"
+      },
+      {
+        "code" : "2622971",
+        "display" : "2622971 - UBSF JARIVATUBA BELQUISE ANA QUINTERO"
+      },
+      {
+        "code" : "2436426",
+        "display" : "2436426 - UBSF JATIVOCA"
+      },
+      {
+        "code" : "416940",
+        "display" : "416940 - UBSF JOÃO COSTA"
+      },
+      {
+        "code" : "2511371",
+        "display" : "2511371 - UBSF KM 4"
+      },
+      {
+        "code" : "8007535",
+        "display" : "8007535 - UBSF LAGOINHA"
+      },
+      {
+        "code" : "2511355",
+        "display" : "2511355 - UBSF LEONARDO SCHILICKMANN"
+      },
+      {
+        "code" : "2511452",
+        "display" : "2511452 - UBSF MOINHO DOS VENTOS"
+      },
+      {
+        "code" : "2511770",
+        "display" : "2511770 - UBSF MORRO DO AMARAL"
+      },
+      {
+        "code" : "2511495",
+        "display" : "2511495 - UBSF MORRO DO MEIO"
+      },
+      {
+        "code" : "2511304",
+        "display" : "2511304 - UBSF NOVA BRASILIA"
+      },
+      {
+        "code" : "2511576",
+        "display" : "2511576 - UBSF PARANAGUAMIRIM"
+      },
+      {
+        "code" : "7704550",
+        "display" : "7704550 - UBSF PARQUE DOUAT"
+      },
+      {
+        "code" : "2511819",
+        "display" : "2511819 - UBSF PARQUE GUARANI"
+      },
+      {
+        "code" : "2511606",
+        "display" : "2511606 - UBSF PARQUE JOINVILLE"
+      },
+      {
+        "code" : "2511290",
+        "display" : "2511290 - UBSF PIRABEIRABA OSMAR DALONSO"
+      },
+      {
+        "code" : "2511363",
+        "display" : "2511363 - UBSF PROFIPO"
+      },
+      {
+        "code" : "2511282",
+        "display" : "2511282 - UBSF RIO BONITO"
+      },
+      {
+        "code" : "2511274",
+        "display" : "2511274 - UBSF RIO DA PRATA ADALBERTO LARSEN"
+      },
+      {
+        "code" : "3781194",
+        "display" : "3781194 - UBSF SAGUAÇU"
+      },
+      {
+        "code" : "2511312",
+        "display" : "2511312 - UBSF SÃO MARCOS"
+      },
+      {
+        "code" : "9075712",
+        "display" : "9075712 - UBSF ULYSSES GUIMARÃES"
+      },
+      {
+        "code" : "2511703",
+        "display" : "2511703 - UBSF VILA NOVA"
+      },
+      {
+        "code" : "9529888",
+        "display" : "9529888 - UBSF VILA NOVA I DAGOBERTO JOSÉ DE CAMPOS"
+      },
+      {
+        "code" : "2568667",
+        "display" : "2568667 - UBSF VILA NOVA RURAL"
+      },
+      {
+        "code" : "2511959",
+        "display" : "2511959 - UBSF WILLY SCHOSSLAND"
+      },
+      {
+        "code" : "6439993",
+        "display" : "6439993 - PA LESTE 24 HORAS AVENTUREIRO"
+      },
+      {
+        "code" : "8007527",
+        "display" : "8007527 - PA NORTE 24 HORAS COSTA E SILVA LUIZA SCHULTZ DOHLER"
+      },
+      {
+        "code" : "2511738",
+        "display" : "2511738 - PA SUL 24 HORAS ITAUM"
+      },
+      {
+        "code" : "2436469",
+        "display" : "2436469 - HOSPITAL MUNICIPAL SÃO JOSÉ"
+      }]
+    }]
+  }
+}

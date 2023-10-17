@@ -3,20 +3,37 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="molicavc-smrsq-valueset"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>0 = No symptoms at all.</td></tr><tr><td>1</td><td>1 = No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td>2</td><td>2 = Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance.</td></tr><tr><td>3</td><td>3 = Moderate disability; requiring some help, but able to walk without assistance.</td></tr><tr><td>4</td><td>4 = Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td>5</td><td>5 = Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td>6</td><td>6 = Dead.</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smrsq-valueset"/>
-  <version value="0.1.0"/>
+  <version value="1.0.1"/>
   <name value="MolicAVC_smRSq_ValueSet"/>
   <title value="ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)"/>
-  <status value="draft"/>
-  <date value="2023-09-08T18:23:11-03:00"/>
+  <status value="active"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
     <telecom>
       <system value="url"/>
-      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
     </telecom>
   </contact>
   <description value="This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire."/>

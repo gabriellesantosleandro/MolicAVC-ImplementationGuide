@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-dischargelocation-valueset> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "molicavc-dischargelocation-valueset"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Home or community-dwelling (not home hospice)</td></tr><tr><td>2</td><td>Residential facility</td></tr><tr><td>3</td><td>Dedicated inpatient rehabilitation facility</td></tr><tr><td>4</td><td>Another acute care hospital</td></tr><tr><td>5</td><td>Patient died in hospital</td></tr><tr><td>888</td><td>Other</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-dischargelocation-valueset"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "MolicAVC_DischargeLocation_ValueSet"] ; # 
+  fhir:title [ fhir:v "ValueSet of Discharge Location"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T16:55:27-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com.br" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Discharge destination following acute care hospitalization. What type of place was the patient discharged to?"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Home or community-dwelling (not home hospice)" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "Residential facility" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Dedicated inpatient rehabilitation facility" ]
+       ] [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Another acute care hospital" ]
+       ] [
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Patient died in hospital" ]
+       ] [
+         fhir:code [ fhir:v "888" ] ;
+         fhir:display [ fhir:v "Other" ]
+       ] [
+         fhir:code [ fhir:v "999" ] ;
+         fhir:display [ fhir:v "Unknown" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

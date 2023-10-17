@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="NoYesUnknownVS"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y">Y</a></td><td>Sim | Yes</td><td>Yes</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N">N</a></td><td>Não | No</td><td>No</td></tr><tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a></td><td>Desconhecido | Unknown</td><td>unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
+  <version value="1.0.1"/>
+  <name value="NoYesUnknownVS"/>
+  <title value="ValueSet Sim, Não e Desconhecido"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Valueset com respostas Sim, Não e Desconhecido (yes, no and unknown)"/>
+  <copyright value="Copyright HL7. Licensed under creative commons public domain"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <concept>
+        <code value="Y"/>
+        <display value="Sim | Yes"/>
+      </concept>
+      <concept>
+        <code value="N"/>
+        <display value="Não | No"/>
+      </concept>
+      <concept>
+        <code value="UNK"/>
+        <display value="Desconhecido | Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,69 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EstStrokeSevNIHSSCatVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Sem sintomas de AVC | No stroke symptoms (NIHSS score = 0)</td></tr><tr><td>2</td><td>Menor | Minor (NIHSS score 1-4)</td></tr><tr><td>3</td><td>Moderado | Moderate (NIHSS score 5 – 15)</td></tr><tr><td>4</td><td>Moderado a Severo | Moderate to severe (NIHSS score 16 – 20)</td></tr><tr><td>5</td><td>Severo | Severe (NIHSS score 21 – 42)</td></tr><tr><td>999</td><td>Desconhecido | Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
+  "version" : "1.0.1",
+  "name" : "EstStrokeSevNIHSSCatVS",
+  "title" : "ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Este ValueSet tem por finalidade categorizar a gravidade do AVC baseando-se no National Institute of Health Stroke Scale (NIHSS)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Sem sintomas de AVC | No stroke symptoms (NIHSS score = 0)"
+      },
+      {
+        "code" : "2",
+        "display" : "Menor | Minor (NIHSS score 1-4)"
+      },
+      {
+        "code" : "3",
+        "display" : "Moderado | Moderate (NIHSS score 5 – 15)"
+      },
+      {
+        "code" : "4",
+        "display" : "Moderado a Severo | Moderate to severe (NIHSS score 16 – 20)"
+      },
+      {
+        "code" : "5",
+        "display" : "Severo | Severe (NIHSS score 21 – 42)"
+      },
+      {
+        "code" : "999",
+        "display" : "Desconhecido | Unknown"
+      }]
+    }]
+  }
+}

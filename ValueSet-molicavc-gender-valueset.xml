@@ -3,20 +3,37 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="molicavc-gender-valueset"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA22878-5/">LA22878-5</a></td><td>Identifies as male</td></tr><tr><td><a href="https://loinc.org/LA22879-3/">LA22879-3</a></td><td>Identifies as female</td></tr><tr><td><a href="https://loinc.org/LA76696-4:/">LA76696-4:</a></td><td>Non-binary</td></tr><tr><td><a href="https://loinc.org/LA22880-1/">LA22880-1</a></td><td>Female-to-male transsexual</td></tr><tr><td><a href="https://loinc.org/LA22881-9/">LA22881-9</a></td><td>Male-to-female transsexual</td></tr><tr><td><a href="https://loinc.org/LA22882-7/">LA22882-7</a></td><td>Identifies as non-conforming</td></tr><tr><td><a href="https://loinc.org/LA46-8/">LA46-8</a></td><td>Other</td></tr><tr><td><a href="https://loinc.org/LA20384-6/">LA20384-6</a></td><td>Asked but unknown</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
-  <version value="0.1.0"/>
+  <version value="1.0.1"/>
   <name value="MolicAVC_GenderIdentityValueSet"/>
   <title value="ValueSet of Gender Identity"/>
-  <status value="draft"/>
-  <date value="2023-09-08T18:23:11-03:00"/>
+  <status value="active"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
     <telecom>
       <system value="url"/>
-      <value value="https://molic-avc.gabriellesantosleandro.com"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
     </telecom>
   </contact>
   <description value="ValueSet for Gender identity based on LOINC."/>

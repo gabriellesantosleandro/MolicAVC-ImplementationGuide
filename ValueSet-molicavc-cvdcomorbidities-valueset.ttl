@@ -1,0 +1,124 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "molicavc-cvdcomorbidities-valueset"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/cvdcomorbidities/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>No other diseases</td></tr><tr><td>1</td><td>Heart Disease (angina, heart attack, or HF)</td></tr><tr><td>2</td><td>High Blood Pressure</td></tr><tr><td>3</td><td>Atrial Fibrillation or Flutter</td></tr><tr><td>4</td><td>Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)</td></tr><tr><td>5</td><td>Diabetes</td></tr><tr><td>6</td><td>Peripheral Artery Disease</td></tr><tr><td>7</td><td>Myocardial Infarction</td></tr><tr><td>8</td><td>Obesity</td></tr><tr><td>9</td><td>Stroke</td></tr><tr><td>10</td><td>Ulcer or Stomach disease</td></tr><tr><td>11</td><td>Renan Insufficiency</td></tr><tr><td>12</td><td>Liver Disease</td></tr><tr><td>13</td><td>Anemia or other blood disease</td></tr><tr><td>14</td><td>Cancer/Other Cancer in last 5 years</td></tr><tr><td>15</td><td>AIDS/Immunodeficiency</td></tr><tr><td>16</td><td>Presence/ History of Depression</td></tr><tr><td>17</td><td>Anxiety or Neuroses</td></tr><tr><td>18</td><td>Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)</td></tr><tr><td>19</td><td>Substance Abuse</td></tr><tr><td>20</td><td>Osteoarthritis, degenerative arthritis</td></tr><tr><td>21</td><td>Rheumatoid Arthritis</td></tr><tr><td>22</td><td>Periodontal Disease</td></tr><tr><td>888</td><td>Other Medical Problems</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "CardiovascularComorbidities_ValueSet"] ; # 
+  fhir:title [ fhir:v "ValueSet of Cardiovascular Comorbidities"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T16:55:27-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com.br" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v " Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://connect.ichom.org/patient-centered-outcome-measures/stroke/cvdcomorbidities/"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "No other diseases" ]
+       ] [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Heart Disease (angina, heart attack, or HF)" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "High Blood Pressure" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Atrial Fibrillation or Flutter" ]
+       ] [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)" ]
+       ] [
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Diabetes" ]
+       ] [
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "Peripheral Artery Disease" ]
+       ] [
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "Myocardial Infarction" ]
+       ] [
+         fhir:code [ fhir:v "8" ] ;
+         fhir:display [ fhir:v "Obesity" ]
+       ] [
+         fhir:code [ fhir:v "9" ] ;
+         fhir:display [ fhir:v "Stroke" ]
+       ] [
+         fhir:code [ fhir:v "10" ] ;
+         fhir:display [ fhir:v "Ulcer or Stomach disease" ]
+       ] [
+         fhir:code [ fhir:v "11" ] ;
+         fhir:display [ fhir:v "Renan Insufficiency" ]
+       ] [
+         fhir:code [ fhir:v "12" ] ;
+         fhir:display [ fhir:v "Liver Disease" ]
+       ] [
+         fhir:code [ fhir:v "13" ] ;
+         fhir:display [ fhir:v "Anemia or other blood disease" ]
+       ] [
+         fhir:code [ fhir:v "14" ] ;
+         fhir:display [ fhir:v "Cancer/Other Cancer in last 5 years" ]
+       ] [
+         fhir:code [ fhir:v "15" ] ;
+         fhir:display [ fhir:v "AIDS/Immunodeficiency" ]
+       ] [
+         fhir:code [ fhir:v "16" ] ;
+         fhir:display [ fhir:v "Presence/ History of Depression" ]
+       ] [
+         fhir:code [ fhir:v "17" ] ;
+         fhir:display [ fhir:v "Anxiety or Neuroses" ]
+       ] [
+         fhir:code [ fhir:v "18" ] ;
+         fhir:display [ fhir:v "Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)" ]
+       ] [
+         fhir:code [ fhir:v "19" ] ;
+         fhir:display [ fhir:v "Substance Abuse" ]
+       ] [
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "Osteoarthritis, degenerative arthritis" ]
+       ] [
+         fhir:code [ fhir:v "21" ] ;
+         fhir:display [ fhir:v "Rheumatoid Arthritis" ]
+       ] [
+         fhir:code [ fhir:v "22" ] ;
+         fhir:display [ fhir:v "Periodontal Disease" ]
+       ] [
+         fhir:code [ fhir:v "888" ] ;
+         fhir:display [ fhir:v "Other Medical Problems" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

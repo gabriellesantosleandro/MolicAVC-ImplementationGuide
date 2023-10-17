@@ -1,12 +1,13 @@
 {
   "package": "guide",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "fhirVersion": "5.0.0",
   "extensions": [
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
       "title": "Extension of Live Alone Pre-Stroke",
       "types": [
+        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -14,6 +15,7 @@
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension",
       "title": "Extension of Patient\u0027s Residence Prior to a Stroke",
       "types": [
+        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -36,6 +38,7 @@
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
       "title": "Extension of Patient Ethnicity",
       "types": [
+        "CodeableConcept",
         "CodeableConcept"
       ]
     },
@@ -180,13 +183,13 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
       "StructureDefinition"
     ],
+    "http://hl7.org/fhir/StructureDefinition/variable": [
+      "Questionnaire.item.item"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/binding-definition": [
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
-      "ImplementationGuide.definition"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
@@ -194,6 +197,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
+      "Questionnaire.item.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext": [
+      "Questionnaire"
     ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension": [
       "Patient"

@@ -3,20 +3,37 @@
   "id" : "live-alone-pre-stroke",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/livealoneprestroke/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Yes, I lived alone</td></tr><tr><td>2</td><td>No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/live-alone-pre-stroke",
-  "version" : "0.1.0",
+  "version" : "1.0.1",
   "name" : "MolicAVC_LiveAlonePreStrokeValueSet",
   "title" : "ValueSet of Live Alone Pre-Stroke",
-  "status" : "draft",
-  "date" : "2023-09-08T18:23:11-03:00",
+  "status" : "active",
+  "date" : "2023-10-17T16:55:27-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://molic-avc.gabriellesantosleandro.com"
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
     }]
   }],
   "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",

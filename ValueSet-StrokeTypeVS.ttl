@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StrokeTypeVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>IS</td><td>Ischemic stroke (IS)</td></tr><tr><td>ICH</td><td>Intracerebral hemorrhage (ICH)</td></tr><tr><td>TIA</td><td>Transient ischemic attack (TIA)</td></tr><tr><td>UNK</td><td>Stroke of unknown type</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "StrokeTypeVS"] ; # 
+  fhir:title [ fhir:v "ValueSet que categoriza o tipo de AVC"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-10-17T16:55:27-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com.br" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Este ValueSet tem por finalidade categorizar o tipo do AVC"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "IS" ] ;
+         fhir:display [ fhir:v "Ischemic stroke (IS)" ]
+       ] [
+         fhir:code [ fhir:v "ICH" ] ;
+         fhir:display [ fhir:v "Intracerebral hemorrhage (ICH)" ]
+       ] [
+         fhir:code [ fhir:v "TIA" ] ;
+         fhir:display [ fhir:v "Transient ischemic attack (TIA)" ]
+       ] [
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "Stroke of unknown type" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

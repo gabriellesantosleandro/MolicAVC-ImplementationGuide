@@ -3,343 +3,392 @@
     "id" : "guide",
     "type" : "ImplementationGuide",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC"
+  },
+  {
+    "id" : "ClinicalResponseBaseline",
+    "type" : "Questionnaire",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/ClinicalResponseBaseline",
+    "version" : "1.0.1",
+    "name" : "ClinicalResponseBaseline"
   },
   {
     "id" : "MolicAVC-EQ5D3LQuestionnaire",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-EQ5D3LQuestionnaire",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "eq5d3l"
   },
   {
     "id" : "MolicAVC-FunctionalAspectsRehabilitation",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalAspectsRehabilitation",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "fa-rehabilitation"
   },
   {
     "id" : "MolicAVC-FunctionalStatus-Questionnaire",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-FunctionalStatus-Questionnaire",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "functional-status"
   },
   {
     "id" : "MolicAVC-HRHSQoL",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-HRHSQoL",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "hr-hsqol"
   },
   {
     "id" : "MolicAVC-PROMIS10Questionnaire",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-PROMIS10Questionnaire",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "promis-10"
   },
   {
     "id" : "MolicAVC-VR12Questionnaire",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-VR12Questionnaire",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "vr12"
   },
   {
     "id" : "MolicAVC-WHODASQuestionnaire",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-WHODASQuestionnaire",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "whodas20"
   },
   {
     "id" : "MolicAVC-smRSqQuestionnaire",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/MolicAVC-smRSqQuestionnaire",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "smRSq"
   },
   {
     "id" : "live-alone-pre-stroke-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_LiveAlonePreStrokeExtension"
   },
   {
     "id" : "living-location-pre-stroke-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_LivingLocationPreStrokeExtension"
   },
   {
     "id" : "molicavc-alcoholamount-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-alcoholamount-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_AlcoholAmountExtension"
   },
   {
     "id" : "molicavc-consciousness-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-consciousness-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_ConsciousnessExtension"
   },
   {
     "id" : "molicavc-encounter-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_EncounterProfile"
   },
   {
     "id" : "molicavc-ethnicity-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_EthnicityExtension"
   },
   {
     "id" : "molicavc-genderidentity-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_GenderIdentityExtension"
   },
   {
     "id" : "molicavc-nihss-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihss-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_NIHSSExtension"
   },
   {
     "id" : "molicavc-nihsscategory-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-nihsscategory-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_NIHSSCategoryExtension"
   },
   {
     "id" : "molicavc-observation-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-observation-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_Observation"
   },
   {
     "id" : "molicavc-organization-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_OrganizationProfile"
   },
   {
     "id" : "molicavc-patient-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_PatientProfile"
   },
   {
     "id" : "molicavc-practitioner-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_PractitionerProfile"
   },
   {
     "id" : "molicavc-questionnaire-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaire-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_Questionnaire"
   },
   {
     "id" : "molicavc-questionnaireresponse-profile",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-questionnaireresponse-profile",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_QuestionnaireResponse"
   },
   {
     "id" : "molicavc-race-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_RaceExtension"
   },
   {
     "id" : "molicavc-sex-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_SexExtension"
   },
   {
     "id" : "molicavc-smokingstatus-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-smokingstatus-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_SmokingStatusExtension"
   },
   {
     "id" : "molicavc-strokewindow-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_StrokeWindowExtension"
   },
   {
     "id" : "molicavc-symptomduration-extension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-symptomduration-extension",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_SymptomDurationExtension"
+  },
+  {
+    "id" : "DiagnosisVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
+    "version" : "1.0.1",
+    "name" : "DiagnosisVS"
+  },
+  {
+    "id" : "EstStrokeSevNIHSSCatVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
+    "version" : "1.0.1",
+    "name" : "EstStrokeSevNIHSSCatVS"
+  },
+  {
+    "id" : "NoYesUnknownVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
+    "version" : "1.0.1",
+    "name" : "NoYesUnknownVS"
+  },
+  {
+    "id" : "StrokeSevLocVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS",
+    "version" : "1.0.1",
+    "name" : "StrokeSevLocVS"
+  },
+  {
+    "id" : "StrokeTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",
+    "version" : "1.0.1",
+    "name" : "StrokeTypeVS"
+  },
+  {
+    "id" : "SymtDurVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
+    "version" : "1.0.1",
+    "name" : "SymtDurVS"
+  },
+  {
+    "id" : "cnes-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/cnes-valueset",
+    "version" : "1.0.1",
+    "name" : "CNES_ValueSet"
+  },
+  {
+    "id" : "hospital-department-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset",
+    "version" : "1.0.1",
+    "name" : "HospitalDepartment_ValueSet"
   },
   {
     "id" : "live-alone-pre-stroke",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/live-alone-pre-stroke",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_LiveAlonePreStrokeValueSet"
   },
   {
     "id" : "living-location-pre-stroke-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/living-location-pre-stroke-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_LivingLocationPreStrokeValueSet"
   },
   {
-    "id" : "molicavc-code-healthcare-unit-valueset",
+    "id" : "molicavc-cvdcomorbidities-valueset",
     "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code-healthcare-unit-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_CodeHealthcareUnitValueSet"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset",
+    "version" : "1.0.1",
+    "name" : "CardiovascularComorbidities_ValueSet"
   },
   {
-    "id" : "molicavc-code-professional-valueset",
+    "id" : "molicavc-dischargelocation-valueset",
     "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code-professional-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_CodeProfessionalValueSet"
-  },
-  {
-    "id" : "molicavc-consciousness-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-consciousness-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_ConsciousnessValueSet"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-dischargelocation-valueset",
+    "version" : "1.0.1",
+    "name" : "MolicAVC_DischargeLocation_ValueSet"
   },
   {
     "id" : "molicavc-eq5d3l-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-eq5d3l-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_EQ5D3L_ValueSet"
   },
   {
     "id" : "molicavc-ethnicity-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_EthnicityValueSet"
   },
   {
     "id" : "molicavc-functionalaspectsrehabilitation-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalaspectsrehabilitation-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_FunctionalAspectsRehabilitation_ValueSet"
-  },
-  {
-    "id" : "molicavc-functionalstatus-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-functionalstatus-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_FunctionalStatus_ValueSet"
   },
   {
     "id" : "molicavc-gender-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_GenderIdentityValueSet"
   },
   {
     "id" : "molicavc-hrhsqol-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-hrhsqol-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_HRHSQoL_ValueSet"
-  },
-  {
-    "id" : "molicavc-nihsscategory-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-nihsscategory-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_NIHSSCategoryValueSet"
   },
   {
     "id" : "molicavc-promis10-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-promis10-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_PROMIS10_ValueSet"
   },
   {
     "id" : "molicavc-race",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_RaceValueSet"
   },
   {
-    "id" : "molicavc-sex-valueset",
+    "id" : "molicavc-referencelocation-valueset",
     "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-sex-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_SexValueSet"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset",
+    "version" : "1.0.1",
+    "name" : "MolicAVC_ReferenceLocation_ValueSet"
   },
   {
     "id" : "molicavc-smokingstatus-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smokingstatus-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_SmokingStatusValueSet"
   },
   {
     "id" : "molicavc-smrsq-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-smrsq-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_smRSq_ValueSet"
-  },
-  {
-    "id" : "molicavc-symptomduration-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-symptomduration-valueset",
-    "version" : "0.1.0",
-    "name" : "MolicAVC_SymptomDurationValueSet"
   },
   {
     "id" : "molicavc-vr12-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-vr12-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_VR12_ValueSet"
   },
   {
     "id" : "molicavc-whodas-valueset",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-whodas-valueset",
-    "version" : "0.1.0",
+    "version" : "1.0.1",
     "name" : "MolicAVC_WHODAS_ValueSet"
+  },
+  {
+    "id" : "professionalcode-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset",
+    "version" : "1.0.1",
+    "name" : "ProfessionalCode_ValueSet"
+  },
+  {
+    "id" : "type-healthcare-unit-valueset",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset",
+    "version" : "1.0.1",
+    "name" : "MolicAVC_CodeHealthcareUnitValueSet"
   }
 ]

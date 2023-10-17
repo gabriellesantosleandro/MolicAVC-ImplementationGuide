@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="DiagnosisVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Clinical symptoms alone</td></tr><tr><td>1</td><td>Clinical and Tomography</td></tr><tr><td>2</td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS"/>
+  <version value="1.0.1"/>
+  <name value="DiagnosisVS"/>
+  <title value="ValueSet da Base de Evidência Diagnóstica"/>
+  <status value="active"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Este ValueSet indica qual base de evidência diagnóstica foi utilizada para sua realização."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/"/>
+      <concept>
+        <code value="0"/>
+        <display value="Clinical symptoms alone"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="Clinical and Tomography"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Clinical and Magnetic Resonance Imaging"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

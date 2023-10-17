@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="molicavc-referencelocation-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/reference-location/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Home</td></tr><tr><td>2</td><td>Long-Term Hospital</td></tr><tr><td>3</td><td>Other</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset"/>
+  <version value="1.0.1"/>
+  <name value="MolicAVC_ReferenceLocation_ValueSet"/>
+  <title value="ValueSet of Reference Location"/>
+  <status value="active"/>
+  <date value="2023-10-17T16:55:27-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Indicate and classify where the patient was referred."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/reference-location/"/>
+      <concept>
+        <code value="1"/>
+        <display value="Home"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Long-Term Hospital"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="Other"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

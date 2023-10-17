@@ -41,7 +41,7 @@
     }],
     "code" : {
       "coding" : [{
-        "system" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-code_healthunit-valueset/",
+        "system" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset/",
         "code" : "STROKEHOSP",
         "display" : "Public Reference Hospital (CNES - Cadastro Nacional de Estabelecimento Único)"
       }]

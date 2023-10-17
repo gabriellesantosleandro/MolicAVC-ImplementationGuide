@@ -1,11 +1,56 @@
 {
   "resourceType" : "Bundle",
-  "id" : "b0a6e401-0460-4bac-8238-87611c527efb",
+  "id" : "034d6ef4-dad0-4376-be34-cec90ad245db",
   "meta" : {
-    "lastUpdated" : "2023-09-08T18:23:11.428-03:00"
+    "lastUpdated" : "2023-10-17T16:55:27.495-03:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html\">codesystem expandedYes-NoIndicator v2.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-Y\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Sim | Yes</td><td><div><p>Yes</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-N\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Não | No</td><td><div><p>No</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-UNK\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Desconhecido | Unknown</td><td><div><p>unknown</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
+      "version" : "1.0.1",
+      "name" : "NoYesUnknownVS",
+      "title" : "ValueSet Sim, Não e Desconhecido",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2023-10-17T16:55:27-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:bec5e8cb-f547-485e-a017-4d04f7c08778",
+        "timestamp" : "2023-10-17T16:56:33-03:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://terminology.hl7.org/CodeSystem/v2-0532|2.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "Y",
+          "display" : "Sim | Yes"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "N",
+          "display" : "Não | No"
+        },
+        {
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+          "code" : "UNK",
+          "display" : "Desconhecido | Unknown"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -14,14 +59,14 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 10 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>Loinc v2.74</li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21028-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/21028-6/\">21028-6</a></td><td>http://loinc.org</td><td>Hispanic or Latino Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2028-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2028-9/\">2028-9</a></td><td>http://loinc.org</td><td>Non-Hispanic or Latino Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32626-4\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32626-4/\">32626-4</a></td><td>http://loinc.org</td><td>White Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32623-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32623-1/\">32623-1</a></td><td>http://loinc.org</td><td>African Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32620-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32620-7/\">32620-7</a></td><td>http://loinc.org</td><td>Indigenous Ethnicity (Global)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32622-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32622-3/\">32622-3</a></td><td>http://loinc.org</td><td>Asian Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32621-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32621-5/\">32621-5</a></td><td>http://loinc.org</td><td>Aboriginal Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32629-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32629-8/\">32629-8</a></td><td>http://loinc.org</td><td>Pacific Islander Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2029-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2029-7/\">2029-7</a></td><td>http://loinc.org</td><td>Other Ethnicity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-32627-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/32627-2/\">32627-2</a></td><td>http://loinc.org</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset",
-      "version" : "0.1.0",
+      "version" : "1.0.1",
       "name" : "MolicAVC_EthnicityValueSet",
       "title" : "ValueSet of Patient Ethnicity",
-      "status" : "draft",
-      "date" : "2023-09-08T18:23:11-03:00",
+      "status" : "active",
+      "date" : "2023-10-17T16:55:27-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e17306b3-324f-4c1b-8f88-2707dd4b597f",
-        "timestamp" : "2023-09-08T18:25:12-03:00",
+        "identifier" : "urn:uuid:be138bb2-f40c-4888-9dcf-c921c0b530b7",
+        "timestamp" : "2023-10-17T16:56:37-03:00",
         "total" : 10,
         "parameter" : [{
           "name" : "excludeNested",
@@ -105,14 +150,14 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.74</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22878-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22878-5/\">LA22878-5</a></td><td>http://loinc.org</td><td>Identifies as male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22879-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22879-3/\">LA22879-3</a></td><td>http://loinc.org</td><td>Identifies as female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22880-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22880-1/\">LA22880-1</a></td><td>http://loinc.org</td><td>Female-to-male transsexual</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22881-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22881-9/\">LA22881-9</a></td><td>http://loinc.org</td><td>Male-to-female transsexual</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22882-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22882-7/\">LA22882-7</a></td><td>http://loinc.org</td><td>Identifies as non-conforming</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA46-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>http://loinc.org</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20384-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA20384-6/\">LA20384-6</a></td><td>http://loinc.org</td><td>Asked but unknown</td></tr></table></div>"
       },
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset",
-      "version" : "0.1.0",
+      "version" : "1.0.1",
       "name" : "MolicAVC_GenderIdentityValueSet",
       "title" : "ValueSet of Gender Identity",
-      "status" : "draft",
-      "date" : "2023-09-08T18:23:11-03:00",
+      "status" : "active",
+      "date" : "2023-10-17T16:55:27-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:b3675e19-4ae0-4df3-b932-c97d80fbbd1a",
-        "timestamp" : "2023-09-08T18:25:12-03:00",
+        "identifier" : "urn:uuid:b845f333-a794-479e-8018-bc4f53ebc514",
+        "timestamp" : "2023-10-17T16:56:37-03:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -177,14 +222,14 @@
         "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.74</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-2135-2\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/2135-2/\">2135-2</a></td><td>http://loinc.org</td><td>Unknown</td></tr></table></div>"
       },
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race",
-      "version" : "0.1.0",
+      "version" : "1.0.1",
       "name" : "MolicAVC_RaceValueSet",
       "title" : "ValueSet of Patient Race",
-      "status" : "draft",
-      "date" : "2023-09-08T18:23:11-03:00",
+      "status" : "active",
+      "date" : "2023-10-17T16:55:27-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:120e0ef4-3f89-4ae2-9380-2be8680e2d64",
-        "timestamp" : "2023-09-08T18:25:12-03:00",
+        "identifier" : "urn:uuid:5ef9a834-1070-4ad5-bb0b-7b2df451cc39",
+        "timestamp" : "2023-10-17T16:56:37-03:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
