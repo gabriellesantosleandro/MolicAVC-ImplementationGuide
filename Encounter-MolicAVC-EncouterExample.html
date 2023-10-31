@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.52"}
-    h3,h4,h5,h6{--heading-prefix:"7.52"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.52"}
+    h3,h4,h5,h6{--heading-prefix:"9.52"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -80,25 +80,31 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="fhir.html">FHIR</a>
+  </li>
+  <li>
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="fhir-basics.html">FHIR basics</a>
+    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
   </li>
   <li>
-    <a href="paper.html">Paper</a>
+    <a href="data-dictionary.html">Dicionário de Dados</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
-  </li>
-  <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="paper.html">Artigo</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="security.html">Segurança</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -192,7 +198,7 @@
 
 
 
-  <div><p><b>Generated Narrative: Encounter</b><a name="MolicAVC-EncouterExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter "MolicAVC-EncouterExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-molicavc-encounter-profile.html">Profile of Molic-AVC's Encounter</a></p></div><p><b>identifier</b>: id:&nbsp;AVC2023-123456&nbsp;(use:&nbsp;USUAL)</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#inpatient)</span></p><p><b>priority</b>: EM <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ValueSet-v3-ActPriority.html#EM)</span></p><p><a name="l332">​</a><b>subject</b>: <a href="Patient/JohnDoeStrokePatient">Patient/JohnDoeStrokePatient</a></p><p><b>subjectStatus</b>: receiving-care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#receiving-care)</span></p><p><a name="l344">​</a><b>episodeOfCare</b>: <a href="EpisodeOfCare/JohnDoeStrokeEpisode">EpisodeOfCare/JohnDoeStrokeEpisode</a></p><p><a name="l350">​</a><b>careTeam</b>: <a href="CareTeam/StrokeCareTeam">CareTeam/StrokeCareTeam</a></p><p><a name="l356">​</a><b>serviceProvider</b>: <a href="Organization/StrokeCenterHospital">Organization/StrokeCenterHospital</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td>doctor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#doctor)</span></td><td>2023-08-15 09:00:00+0000 --&gt; 2023-08-15 11:00:00+0000</td><td><a name="l386">​</a><a href="Practitioner/StrokeSpecialistDrSmith">Practitioner/StrokeSpecialistDrSmith</a></td></tr></table><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Use</b></td></tr><tr><td style="display: none">*</td><td>working <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (valueset-encounter-diagnosis-use.html#working)</span></td></tr></table><h3>Admissions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>PreAdmissionIdentifier</b></td><td><b>Origin</b></td><td><b>AdmitSource</b></td><td><b>ReAdmission</b></td><td><b>Destination</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td>id:&nbsp;EMERG-2023-56789</td><td><a name="l434">​</a><a href="Organization/LocalClinic">Organization/LocalClinic</a></td><td>emd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (admit-source#emd)</span></td><td>R <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (re-admission#R)</span></td><td><a name="l445">​</a><a href="Organization/RehabilitationCenter">Organization/RehabilitationCenter</a></td><td>rehab <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (discharge-disposition#rehab)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a name="l470">​</a><a href="Location/neurologyWard">Location/neurologyWard</a></td><td>active</td><td>2023-08-15 09:00:00+0000 --&gt; 2023-08-25 11:00:00+0000</td></tr></table></div>
+  <div><p><b>Generated Narrative: Encounter</b><a name="MolicAVC-EncouterExample"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Encounter "MolicAVC-EncouterExample" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-molicavc-encounter-profile.html">Profile of Molic-AVC's Encounter</a></p></div><p><b>identifier</b>: id:&nbsp;AVC2023-123456&nbsp;(use:&nbsp;USUAL)</p><p><b>status</b>: in-progress</p><p><b>class</b>: inpatient <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#inpatient)</span></p><p><b>priority</b>: EM <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (ValueSet-v3-ActPriority.html#EM)</span></p><p><a name="l344">​</a><b>subject</b>: <a href="Patient/JohnDoeStrokePatient">Patient/JohnDoeStrokePatient</a></p><p><b>subjectStatus</b>: receiving-care <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#receiving-care)</span></p><p><a name="l356">​</a><b>episodeOfCare</b>: <a href="EpisodeOfCare/JohnDoeStrokeEpisode">EpisodeOfCare/JohnDoeStrokeEpisode</a></p><p><a name="l362">​</a><b>careTeam</b>: <a href="CareTeam/StrokeCareTeam">CareTeam/StrokeCareTeam</a></p><p><a name="l368">​</a><b>serviceProvider</b>: <a href="Organization/StrokeCenterHospital">Organization/StrokeCenterHospital</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Period</b></td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td>doctor <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#doctor)</span></td><td>2023-08-15 09:00:00+0000 --&gt; 2023-08-15 11:00:00+0000</td><td><a name="l398">​</a><a href="Practitioner/StrokeSpecialistDrSmith">Practitioner/StrokeSpecialistDrSmith</a></td></tr></table><h3>Diagnoses</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Use</b></td></tr><tr><td style="display: none">*</td><td>working <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (valueset-encounter-diagnosis-use.html#working)</span></td></tr></table><h3>Admissions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>PreAdmissionIdentifier</b></td><td><b>Origin</b></td><td><b>AdmitSource</b></td><td><b>ReAdmission</b></td><td><b>Destination</b></td><td><b>DischargeDisposition</b></td></tr><tr><td style="display: none">*</td><td>id:&nbsp;EMERG-2023-56789</td><td><a name="l446">​</a><a href="Organization/LocalClinic">Organization/LocalClinic</a></td><td>emd <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (admit-source#emd)</span></td><td>R <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (re-admission#R)</span></td><td><a name="l457">​</a><a href="Organization/RehabilitationCenter">Organization/RehabilitationCenter</a></td><td>rehab <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (discharge-disposition#rehab)</span></td></tr></table><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style="display: none">*</td><td><a name="l482">​</a><a href="Location/neurologyWard">Location/neurologyWard</a></td><td>active</td><td>2023-08-15 09:00:00+0000 --&gt; 2023-08-25 11:00:00+0000</td></tr></table></div>
 
   
 
@@ -245,7 +251,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

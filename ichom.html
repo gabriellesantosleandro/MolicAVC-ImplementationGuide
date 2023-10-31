@@ -39,8 +39,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -80,25 +80,31 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="fhir.html">FHIR</a>
+  </li>
+  <li>
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="fhir-basics.html">FHIR basics</a>
+    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
   </li>
   <li>
-    <a href="paper.html">Paper</a>
+    <a href="data-dictionary.html">Dicionário de Dados</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
-  </li>
-  <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="paper.html">Artigo</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="security.html">Segurança</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -116,11 +122,11 @@
 
           <span style="float:right;">
 
-            <a href="index.html">&lt;prev</a> | 
+            <a href="fhir.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="fhir-basics.html">next&gt;</a>
+          | <a href="lc-avc-bpmn.html">next&gt;</a>
 
           </span>
 
@@ -192,13 +198,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Este Guia de Implementação (IG) no domínio do conhecimento concentra-se em representar as mesmas variáveis do Conjunto de Medidas de Resultados de Saúde Centrados no Paciente para o Acidente Vascular Cerebral de duas maneiras diferentes:</p>
 <ul>
-  <li><a name="l352">​</a>1) como <a href="artifacts.html#structures-questionnaires">‘Questionários FHIR’ - FHIR Questionnaires</a> para resultados relatados pelo paciente e resultados relatados clinicamente, e</li>
+  <li><a name="l364">​</a>1) como <a href="artifacts.html#structures-questionnaires">‘Questionários FHIR’ - FHIR Questionnaires</a> para resultados relatados pelo paciente e resultados relatados clinicamente, e</li>
   <li>2) como <a href="artifacts.html#structures-resource-profiles">‘Recursos FHIR Pessoais’ - discrete FHIR resources</a> para resultados relatados clinicamente. 
  Os implementadores têm a liberdade de escolher se desejam implementar os questionários, os perfis ou ambos.</li>
 </ul>
 
 <h3 id="questionários-questionnaires">Questionários (Questionnaires)</h3>
-<p><a name="l368">​</a>Os <a href="artifacts.html#structures-questionnaires">Questionários (Questionnaires)</a> neste IG possuem uma organização diferente em comparação ao Guia de Referência e ao Dicionário de Dados do ICHOM, e isso se deve às diferentes ênfases ou usos pretendidos. O Guia de Referência e o Dicionário de Dados têm o propósito de descrever todos os elementos de dados incluídos no conjunto, por isso são organizados por tipo de dado ou variável (por exemplo, Demografia, ‘Condições Clínicas Iniciais’ (Baseline Clinical Factors)). Em contraste, este IG tem a finalidade de facilitar a coleta dos elementos de dados. Portanto, ele é organizado com base no momento da coleta de dados em saúde do paciente considerando sua jornada de atendimento; por exemplo, no ‘início’ (baseline), no ‘Seguimento de 1 ano’ (1 year follow-up) e na fonte dos dados (clínicos ou relatados pelo paciente). Apesar dessa diferença na organização, os elementos de dados no IG FHIR e no Guia de Referência e Dicionário de Dados do ICHOM estão completamente alinhados.</p>
+<p><a name="l380">​</a>Os <a href="artifacts.html#structures-questionnaires">Questionários (Questionnaires)</a> neste IG possuem uma organização diferente em comparação ao Guia de Referência e ao Dicionário de Dados do ICHOM, e isso se deve às diferentes ênfases ou usos pretendidos. O Guia de Referência e o Dicionário de Dados têm o propósito de descrever todos os elementos de dados incluídos no conjunto, por isso são organizados por tipo de dado ou variável (por exemplo, Demografia, ‘Condições Clínicas Iniciais’ (Baseline Clinical Factors)). Em contraste, este IG tem a finalidade de facilitar a coleta dos elementos de dados. Portanto, ele é organizado com base no momento da coleta de dados em saúde do paciente considerando sua jornada de atendimento; por exemplo, no ‘início’ (baseline), no ‘Seguimento de 1 ano’ (1 year follow-up) e na fonte dos dados (clínicos ou relatados pelo paciente). Apesar dessa diferença na organização, os elementos de dados no IG FHIR e no Guia de Referência e Dicionário de Dados do ICHOM estão completamente alinhados.</p>
 
 <h3 id="perfis-profiles">‘Perfis’ (Profiles)</h3>
 
@@ -223,62 +229,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">yearofbirth</td>
       <td style="text-align: left">Year of birth - ‘Ano do nascimento’</td>
-      <td style="text-align: left"><a name="l432">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l444">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">sex</td>
       <td style="text-align: left">Sex - ‘Sexo’</td>
-      <td style="text-align: left"><a name="l445">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l457">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">gender</td>
       <td style="text-align: left">Gender identity - ‘Identidade de Gênero’</td>
-      <td style="text-align: left"><a name="l458">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l470">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">ethnicity</td>
       <td style="text-align: left">Ethnicity - ‘Etnia’</td>
-      <td style="text-align: left"><a name="l471">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l483">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">race</td>
       <td style="text-align: left">Race - ‘Raçã’</td>
-      <td style="text-align: left"><a name="l484">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l496">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">livinglocpre</td>
       <td style="text-align: left">Living location pre index event - ‘Local de Moradia antes do AVC’</td>
-      <td style="text-align: left"><a name="l497">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l509">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">livinglocpost</td>
       <td style="text-align: left">Living location post index event - ‘Local de Moradia depois do AVC’</td>
-      <td style="text-align: left"><a name="l510">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l522">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">livealonepre</td>
       <td style="text-align: left">Living alone pre-index event - ‘Morava sozinho antes do AVC’</td>
-      <td style="text-align: left"><a name="l523">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l535">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">livealonepost</td>
       <td style="text-align: left">Living alone post-index event - ‘Mora sozinho depois do AVC’</td>
-      <td style="text-align: left"><a name="l536">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l548">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">prestrokeamb</td>
       <td style="text-align: left">Prestroke functional status - Ambulation - ‘Status funcional antes do AVC - Deambulação’</td>
-      <td style="text-align: left"><a name="l549">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l561">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">prestroketoilet</td>
       <td style="text-align: left">Prestroke functional status - Toileting - ‘Status funcional antes do AVC - Higienização’</td>
-      <td style="text-align: left"><a name="l562">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l574">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">prestrokedress</td>
       <td style="text-align: left">Prestroke functional status - Dressing - ‘Status funcional antes do AVC - Vestir-se’</td>
-      <td style="text-align: left"><a name="l575">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l587">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Stroke type and severity - ‘Tipo do AVC e gravidade’</strong></td>
@@ -288,27 +294,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">stroketype</td>
       <td style="text-align: left">Stroke type - ‘Tipo do AVC’</td>
-      <td style="text-align: left"><a name="l601">​</a><a href="StructureDefinition-ichom-body-height.html">BodyHeight</a></td>
+      <td style="text-align: left"><a name="l613">​</a><a href="StructureDefinition-ichom-body-height.html">BodyHeight</a></td>
     </tr>
     <tr>
       <td style="text-align: left">strokesev-nihss</td>
       <td style="text-align: left">Stroke severity: score - ‘Gravidade do AVC (NIHSS)’</td>
-      <td style="text-align: left"><a name="l614">​</a><a href="StructureDefinition-ichom-body-height.html">BodyHeight</a></td>
+      <td style="text-align: left"><a name="l626">​</a><a href="StructureDefinition-ichom-body-height.html">BodyHeight</a></td>
     </tr>
     <tr>
       <td style="text-align: left">est-strokesev-nihss-cat</td>
       <td style="text-align: left">Estimated stroke severity: category - ‘Gravidade estimada do AVC: categoria’</td>
-      <td style="text-align: left"><a name="l627">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
+      <td style="text-align: left"><a name="l639">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
     </tr>
     <tr>
       <td style="text-align: left">strokesev-loc</td>
       <td style="text-align: left">Stroke severity: consciousness - ‘Gravidade do AVC: estado de consciência’</td>
-      <td style="text-align: left"><a name="l640">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
+      <td style="text-align: left"><a name="l652">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
     </tr>
     <tr>
       <td style="text-align: left">symtdur</td>
       <td style="text-align: left">Duration of symptoms - ‘Duração dos sintomas’</td>
-      <td style="text-align: left"><a name="l653">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
+      <td style="text-align: left"><a name="l665">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Vascular and systemic - ‘Vascular e Sistêmico’</strong></td>
@@ -318,52 +324,52 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">priorstrokeexcltia</td>
       <td style="text-align: left">Prior&nbsp;stroke excluding transient ischemic attacks - ‘AVC anterior excluindo Ataque Isquêmico Transitório’</td>
-      <td style="text-align: left"><a name="l679">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
+      <td style="text-align: left"><a name="l691">​</a><a href="StructureDefinition-ichom-body-weight.html">BodyWeight</a></td>
     </tr>
     <tr>
       <td style="text-align: left">priortia</td>
       <td style="text-align: left">Prior TIA - ‘Ataque Isquêmico Transitório anterior’</td>
-      <td style="text-align: left"><a name="l692">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l704">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">myocardialinfarction</td>
       <td style="text-align: left">Myocardial infarction - ‘Infarto do Miocárdio’</td>
-      <td style="text-align: left"><a name="l705">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l717">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">ischemicheartdisease</td>
       <td style="text-align: left">Ischemic Heart Disease - ‘Doença Isquêmica Cardíaca’</td>
-      <td style="text-align: left"><a name="l718">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l730">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">atrialfibflut</td>
       <td style="text-align: left">Atrial fibrillation or flutter - ‘Fibrilação ou flutter atrial’</td>
-      <td style="text-align: left"><a name="l731">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l743">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">diabetesmellitus</td>
       <td style="text-align: left">Diabetes Mellitus  - ‘Diabetes Mellitus’</td>
-      <td style="text-align: left"><a name="l744">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l756">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">hypertensivedisease</td>
       <td style="text-align: left">Hypertension - ‘Hipertensão’</td>
-      <td style="text-align: left"><a name="l757">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l769">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">hyperlip</td>
       <td style="text-align: left">Hyperlipidemia - ‘Hiperlipidemia’</td>
-      <td style="text-align: left"><a name="l770">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l782">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">smokingstatus</td>
       <td style="text-align: left">Smoking status - ‘Status do uso de tabaco’</td>
-      <td style="text-align: left"><a name="l783">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l795">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">alcoholamount</td>
       <td style="text-align: left">Alcohol intake amount - ‘Quantidade de ingestão de álcool’</td>
-      <td style="text-align: left"><a name="l796">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l808">​</a><a href="StructureDefinition-secondary-breastcancer.html">SecondaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Treatment/care related - ‘Tratamento/ cuidados relacionados’</strong></td>
@@ -373,32 +379,32 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">diagnosis</td>
       <td style="text-align: left">Diagnostic evidence base - ‘Base de evidência diagnóstica’</td>
-      <td style="text-align: left"><a name="l822">​</a><a href="StructureDefinition-histo-type.html">Histotype</a></td>
+      <td style="text-align: left"><a name="l834">​</a><a href="StructureDefinition-histo-type.html">Histotype</a></td>
     </tr>
     <tr>
       <td style="text-align: left">admdate</td>
       <td style="text-align: left">Date of index admission - ‘Data da admissão hospitalar devido ao AVC’</td>
-      <td style="text-align: left"><a name="l835">​</a><a href="StructureDefinition-histo-type.html">Histotype</a></td>
+      <td style="text-align: left"><a name="l847">​</a><a href="StructureDefinition-histo-type.html">Histotype</a></td>
     </tr>
     <tr>
       <td style="text-align: left">disdate-acute</td>
       <td style="text-align: left">Date of discharge from acute care hospital - ‘Data da alta do hospital de cuidados intensivos’</td>
-      <td style="text-align: left"><a name="l848">​</a><a href="StructureDefinition-germline-mutation.html">GermlineMutation</a></td>
+      <td style="text-align: left"><a name="l860">​</a><a href="StructureDefinition-germline-mutation.html">GermlineMutation</a></td>
     </tr>
     <tr>
       <td style="text-align: left">rehab-in</td>
       <td style="text-align: left">Rehabilitation inpatient acute care - ‘Reabilitação incluida durante a internação’</td>
-      <td style="text-align: left"><a name="l861">​</a><a href="StructureDefinition-invasion-grade.html">InvasionGrade</a></td>
+      <td style="text-align: left"><a name="l873">​</a><a href="StructureDefinition-invasion-grade.html">InvasionGrade</a></td>
     </tr>
     <tr>
       <td style="text-align: left">rehab-out</td>
       <td style="text-align: left">Rehabilitation post acute care - ‘Reabilitação após os cuidados agudos hospitalares’</td>
-      <td style="text-align: left"><a name="l874">​</a><a href="StructureDefinition-tumor-grade.html">TumorGrade</a></td>
+      <td style="text-align: left"><a name="l886">​</a><a href="StructureDefinition-tumor-grade.html">TumorGrade</a></td>
     </tr>
     <tr>
       <td style="text-align: left">dischdest</td>
       <td style="text-align: left">Discharge destination following acute care hospitalization - ‘Destino de alta após hospitalização de cuidados agudos’</td>
-      <td style="text-align: left"><a name="l887">​</a><a href="StructureDefinition-tnm-primary-tumor-stage.html">TNMPrimaryTumorStage</a> and <a href="StructureDefinition-breast-cancer-stage-group.html">TNMStageGroup</a></td>
+      <td style="text-align: left"><a name="l899">​</a><a href="StructureDefinition-tnm-primary-tumor-stage.html">TNMPrimaryTumorStage</a> and <a href="StructureDefinition-breast-cancer-stage-group.html">TNMStageGroup</a></td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Treatment variables - ‘Variáveis de Tratamento’</strong></td>
@@ -413,42 +419,42 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">thrombolytictxdate</td>
       <td style="text-align: left">Date of thrombolytic therapy - ‘Data da terapia trombolítica’</td>
-      <td style="text-align: left"><a name="l928">​</a><a href="StructureDefinition-breast-cancer-surgery.html">BreastCancerSurgery</a></td>
+      <td style="text-align: left"><a name="l940">​</a><a href="StructureDefinition-breast-cancer-surgery.html">BreastCancerSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">thrombecttx</td>
       <td style="text-align: left">Thrombectomy - ‘Trombectomia’</td>
-      <td style="text-align: left"><a name="l941">​</a><a href="StructureDefinition-breast-cancer-surgery.html">BreastCancerSurgery</a></td>
+      <td style="text-align: left"><a name="l953">​</a><a href="StructureDefinition-breast-cancer-surgery.html">BreastCancerSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">thrombecttxdate</td>
       <td style="text-align: left">Date of thrombectomy - ‘Data da trombectomia’</td>
-      <td style="text-align: left"><a name="l954">​</a><a href="StructureDefinition-axilla-surgery.html">AxillaSurgery</a></td>
+      <td style="text-align: left"><a name="l966">​</a><a href="StructureDefinition-axilla-surgery.html">AxillaSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">hemicranitx</td>
       <td style="text-align: left">Hemicraniectomy - ‘Hemicraniectomia’</td>
-      <td style="text-align: left"><a name="l967">​</a><a href="StructureDefinition-axilla-surgery.html">AxillaSurgery</a></td>
+      <td style="text-align: left"><a name="l979">​</a><a href="StructureDefinition-axilla-surgery.html">AxillaSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">hemicranitxdate</td>
       <td style="text-align: left">Date of hemocraniectomy - ‘Data da hemicraniectomia’</td>
-      <td style="text-align: left"><a name="l980">​</a><a href="StructureDefinition-axillary-clearance.html">AxillaryClearance</a></td>
+      <td style="text-align: left"><a name="l992">​</a><a href="StructureDefinition-axillary-clearance.html">AxillaryClearance</a></td>
     </tr>
     <tr>
       <td style="text-align: left">procoagreversaltx</td>
       <td style="text-align: left">Procoagulant reversal therapy - Terapia de reversão procoagulante’</td>
-      <td style="text-align: left"><a name="l993">​</a><a href="StructureDefinition-axillary-clearance.html">AxillaryClearance</a></td>
+      <td style="text-align: left"><a name="l1005">​</a><a href="StructureDefinition-axillary-clearance.html">AxillaryClearance</a></td>
     </tr>
     <tr>
       <td style="text-align: left">procoagreversaltxdate</td>
       <td style="text-align: left">Date of procoagulant reversal therapy - ‘Data da terapia de reversão procoagulante’</td>
-      <td style="text-align: left"><a name="l1006">​</a><a href="StructureDefinition-reconstruction-surgery.html">ReconstructionSurgery</a></td>
+      <td style="text-align: left"><a name="l1018">​</a><a href="StructureDefinition-reconstruction-surgery.html">ReconstructionSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">sympich</td>
       <td style="text-align: left">Symptomatic intracranial hemorrhage - ‘Hemorragia intracraniana sintomática’</td>
-      <td style="text-align: left"><a name="l1019">​</a><a href="StructureDefinition-reconstruction-surgery.html">ReconstructionSurgery</a></td>
+      <td style="text-align: left"><a name="l1031">​</a><a href="StructureDefinition-reconstruction-surgery.html">ReconstructionSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Survival and disease control - ‘Sobrevida e Monitoramento da doença’</strong></td>
@@ -458,17 +464,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">vitalstatus</td>
       <td style="text-align: left">Vital status - ‘Estado vital’</td>
-      <td style="text-align: left"><a name="l1045">​</a><a href="StructureDefinition-reoperation-surgery.html">ReoperationSurgery</a></td>
+      <td style="text-align: left"><a name="l1057">​</a><a href="StructureDefinition-reoperation-surgery.html">ReoperationSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">deceaseddate</td>
       <td style="text-align: left">Date of death - ‘Data do óbito’</td>
-      <td style="text-align: left"><a name="l1058">​</a><a href="StructureDefinition-reconstruction-surgery.html">ReconstructionSurgery</a></td>
+      <td style="text-align: left"><a name="l1070">​</a><a href="StructureDefinition-reconstruction-surgery.html">ReconstructionSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">strokerecur</td>
       <td style="text-align: left">Report of new stroke within 90 days after discharge for stroke - ‘Relato de recorrência de AVC dentro de 90 dias após alta do AVC’</td>
-      <td style="text-align: left"><a name="l1071">​</a><a href="StructureDefinition-reoperation-surgery.html">ReoperationSurgery</a></td>
+      <td style="text-align: left"><a name="l1083">​</a><a href="StructureDefinition-reoperation-surgery.html">ReoperationSurgery</a></td>
     </tr>
     <tr>
       <td style="text-align: left">smokecess-stroke</td>
@@ -483,77 +489,77 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">postsrokeamb</td>
       <td style="text-align: left">Poststroke functional status - Ambulation - ‘Status funcional depois do AVC - Deambulação’</td>
-      <td style="text-align: left"><a name="l1109">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1121">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">poststroketoilet</td>
       <td style="text-align: left">Poststroke functional status - Toileting - ‘Status funcional depois do AVC - Higienização’</td>
-      <td style="text-align: left"><a name="l1122">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1134">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">poststrokedress</td>
       <td style="text-align: left">Poststroke functional status - Dressing - ‘Status funcional depois do AVC - Vestir-se’</td>
-      <td style="text-align: left"><a name="l1135">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1147">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">feeding</td>
       <td style="text-align: left">Feeding - ‘Alimentação’</td>
-      <td style="text-align: left"><a name="l1148">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l1160">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">communic</td>
       <td style="text-align: left">Ability to communicate - ‘Comunicação’</td>
-      <td style="text-align: left"><a name="l1161">​</a><a href="StructureDefinition-recr-method.html">RecurrenceMethod</a></td>
+      <td style="text-align: left"><a name="l1173">​</a><a href="StructureDefinition-recr-method.html">RecurrenceMethod</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q01</td>
       <td style="text-align: left">Global01</td>
-      <td style="text-align: left"><a name="l1174">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l1186">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q02</td>
       <td style="text-align: left">Global02</td>
-      <td style="text-align: left"><a name="l1187">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1199">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q03</td>
       <td style="text-align: left">Global03</td>
-      <td style="text-align: left"><a name="l1200">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1212">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q04</td>
       <td style="text-align: left">Global04</td>
-      <td style="text-align: left"><a name="l1213">​</a><a href="StructureDefinition-death-attr-bc.html">DeathAttributableBC</a></td>
+      <td style="text-align: left"><a name="l1225">​</a><a href="StructureDefinition-death-attr-bc.html">DeathAttributableBC</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q05</td>
       <td style="text-align: left">Global05</td>
-      <td style="text-align: left"><a name="l1226">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l1238">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q09r</td>
       <td style="text-align: left">Global09r</td>
-      <td style="text-align: left"><a name="l1239">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1251">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q06</td>
       <td style="text-align: left">Global06</td>
-      <td style="text-align: left"><a name="l1252">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1264">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q10r</td>
       <td style="text-align: left">Global10r</td>
-      <td style="text-align: left"><a name="l1265">​</a><a href="StructureDefinition-death-attr-bc.html">DeathAttributableBC</a></td>
+      <td style="text-align: left"><a name="l1277">​</a><a href="StructureDefinition-death-attr-bc.html">DeathAttributableBC</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q08r</td>
       <td style="text-align: left">Global08r</td>
-      <td style="text-align: left"><a name="l1278">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
+      <td style="text-align: left"><a name="l1290">​</a><a href="StructureDefinition-primary-breastcancer.html">PrimaryBreastCancerCondition</a></td>
     </tr>
     <tr>
       <td style="text-align: left">promis-10-q07r</td>
       <td style="text-align: left">Global07r</td>
-      <td style="text-align: left"><a name="l1291">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1303">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
     <tr>
       <td style="text-align: left"><strong>Clinician reported health status - ‘Estado de saúde relatado pelo médico’</strong></td>
@@ -563,7 +569,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <tr>
       <td style="text-align: left">smrsq</td>
       <td style="text-align: left">Simplified modified Rankin Scale Questionnaire (smRSq) - ‘Questionário da Escala de Ranking Modificada’</td>
-      <td style="text-align: left"><a name="l1317">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
+      <td style="text-align: left"><a name="l1329">​</a><a href="StructureDefinition-patient.html">BreastCancerPatient</a></td>
     </tr>
   </tbody>
 </table>
@@ -586,7 +592,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <h3 id="must-support-deve-suportar">Must Support (Deve Suportar)</h3>
 <p>A anotação ‘Deve Suportar’ - [‘Must Support] neste guia de implementação é utilizada para indicar que um elemento específico está mapeado para uma variável do conjunto de medidas e deve ser preenchido com dados caso estejam disponíveis no sistema.</p>
 
-<p><a name="l1365">​</a>No caso de um elemento não poder ser preenchido devido à sua indisponibilidade no sistema de origem e se as regras de cardinalidade permitirem, o elemento pode ser deixado em branco. No entanto, se as regras de cardinalidade exigirem que um elemento seja preenchido, a extensão ‘Motivo de Dados Ausentes’ <a href="http://hl7.org/fhir/R5/extension-data-absent-reason.html">Data Absent Reason</a> DEVE ser utilizada.</p>
+<p><a name="l1377">​</a>No caso de um elemento não poder ser preenchido devido à sua indisponibilidade no sistema de origem e se as regras de cardinalidade permitirem, o elemento pode ser deixado em branco. No entanto, se as regras de cardinalidade exigirem que um elemento seja preenchido, a extensão ‘Motivo de Dados Ausentes’ <a href="http://hl7.org/fhir/R5/extension-data-absent-reason.html">Data Absent Reason</a> DEVE ser utilizada.</p>
 
 <h3 id="ip-statements">IP Statements</h3>
 
@@ -648,7 +654,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&nbsp;
 
-                <a href="index.html">&lt;prev</a>
+                <a href="fhir.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -656,7 +662,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&nbsp;
 
-                <a href="fhir-basics.html">next&gt;</a>
+                <a href="lc-avc-bpmn.html">next&gt;</a>
 
               </td>
             </tr>
@@ -666,7 +672,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

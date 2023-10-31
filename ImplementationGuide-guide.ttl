@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MolicAVC"] ; # 
   fhir:title [ fhir:v "Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T16:55:27-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-25T16:05:12-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -653,7 +653,7 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/Questionnaire/ClinicalResponseBaseline> ;
          fhir:reference [ fhir:v "Questionnaire/ClinicalResponseBaseline" ]
        ] ;
-       fhir:name [ fhir:v "ClinicalResponseBaseline" ] ;
+       fhir:name [ fhir:v "Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde" ] ;
        fhir:description [ fhir:v "Questionário aplicado pelo profissional médico ou profissional de saúde no Primeiro atendimento ao AVC" ] ;
        fhir:isExample [ fhir:v "true"^^xsd:boolean ]
      ] [
@@ -1010,19 +1010,29 @@
          fhir:title [ fhir:v "Home" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
+         fhir:source [ fhir:v "fhir.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "fhir.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "FHIR" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
          fhir:source [ fhir:v "ichom.html"^^xsd:anyURI ] ;
          fhir:name [ fhir:v "ichom.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "ICHOM" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
-         fhir:source [ fhir:v "fhir-basics.html"^^xsd:anyURI ] ;
-         fhir:name [ fhir:v "fhir-basics.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "FHIR" ] ;
+         fhir:source [ fhir:v "lc-avc-bpmn.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "lc-avc-bpmn.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Linha do Cuidado do AVC (BPMN)" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "data-dictionary.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "data-dictionary.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Dicionário de Dados" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [ fhir:v "paper.html"^^xsd:anyURI ] ;
          fhir:name [ fhir:v "paper.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Paper" ] ;
+         fhir:title [ fhir:v "Artigo" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;

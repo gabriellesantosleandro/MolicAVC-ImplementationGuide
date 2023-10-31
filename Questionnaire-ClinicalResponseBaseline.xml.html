@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ClinicalResponseBaseline - XML Representation - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
+    <title>Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde - XML Representation - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,8 +41,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"7.48"}
-    h3,h4,h5,h6{--heading-prefix:"7.48"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.48"}
+    h3,h4,h5,h6{--heading-prefix:"9.48"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -82,25 +82,31 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="fhir.html">FHIR</a>
+  </li>
+  <li>
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="fhir-basics.html">FHIR basics</a>
+    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
   </li>
   <li>
-    <a href="paper.html">Paper</a>
+    <a href="data-dictionary.html">Dicionário de Dados</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
-  </li>
-  <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="paper.html">Artigo</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="security.html">Segurança</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -114,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ClinicalResponseBaseline</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde</b></li>
 
           <span style="float:right;">
 
@@ -183,7 +189,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: ClinicalResponseBaseline - XML Representation</h2>
+<h2 id="root">: Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde - XML Representation</h2>
 
   <table class="colsd">
     <tr>
@@ -192,7 +198,7 @@
         
           Draft
           
-            as of 2023-10-17
+            as of 2023-10-25
           
         
       </td>
@@ -273,7 +279,7 @@
          <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Questionário Inicial aplicado pelo Médico ou Profissional de Saúde&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2023-10-17T16:55:27-03:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2023-10-25T16:05:12-03:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gabrielle dos Santos Leandro&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/questionnaire.html#Questionnaire.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gabrielle dos Santos Leandro&quot;/&gt;
@@ -574,7 +580,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

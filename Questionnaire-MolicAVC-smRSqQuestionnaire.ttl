@@ -30,7 +30,7 @@
   fhir:name [ fhir:v "smRSq"] ; # 
   fhir:title [ fhir:v "simplified modified Rankin Scale Questionnaire"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-10-17T16:55:27-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-10-25T16:05:12-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;

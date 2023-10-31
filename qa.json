@@ -3,11 +3,11 @@
   "name" : "MolicAVC",
   "package-id" : "guide",
   "ig-ver" : "1.0.1",
-  "date" : "Tue, 17 Oct, 2023 16:55:27 -0300",
+  "date" : "Wed, 25 Oct, 2023 16:05:12 -0300",
   "errs" : 313,
   "warnings" : 590,
   "hints" : 56,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1392118544
+  "maxMemory" : 1401528632
 }

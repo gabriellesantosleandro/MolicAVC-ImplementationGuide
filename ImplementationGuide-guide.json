@@ -10,7 +10,7 @@
   "name" : "MolicAVC",
   "title" : "Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC",
   "status" : "draft",
-  "date" : "2023-10-17T16:55:27-03:00",
+  "date" : "2023-10-25T16:05:12-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -638,7 +638,7 @@
       "reference" : {
         "reference" : "Questionnaire/ClinicalResponseBaseline"
       },
-      "name" : "ClinicalResponseBaseline",
+      "name" : "Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde",
       "description" : "Questionário aplicado pelo profissional médico ou profissional de saúde no Primeiro atendimento ao AVC",
       "isExample" : true
     },
@@ -901,21 +901,33 @@
         "generation" : "markdown"
       },
       {
+        "sourceUrl" : "fhir.html",
+        "name" : "fhir.html",
+        "title" : "FHIR",
+        "generation" : "markdown"
+      },
+      {
         "sourceUrl" : "ichom.html",
         "name" : "ichom.html",
         "title" : "ICHOM",
         "generation" : "markdown"
       },
       {
-        "sourceUrl" : "fhir-basics.html",
-        "name" : "fhir-basics.html",
-        "title" : "FHIR",
+        "sourceUrl" : "lc-avc-bpmn.html",
+        "name" : "lc-avc-bpmn.html",
+        "title" : "Linha do Cuidado do AVC (BPMN)",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "data-dictionary.html",
+        "name" : "data-dictionary.html",
+        "title" : "Dicionário de Dados",
         "generation" : "markdown"
       },
       {
         "sourceUrl" : "paper.html",
         "name" : "paper.html",
-        "title" : "Paper",
+        "title" : "Artigo",
         "generation" : "markdown"
       },
       {

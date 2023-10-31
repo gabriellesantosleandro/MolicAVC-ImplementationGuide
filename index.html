@@ -80,25 +80,31 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="fhir.html">FHIR</a>
+  </li>
+  <li>
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="fhir-basics.html">FHIR basics</a>
+    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
   </li>
   <li>
-    <a href="paper.html">Paper</a>
+    <a href="data-dictionary.html">Dicionário de Dados</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
-  </li>
-  <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="paper.html">Artigo</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
     <a href="security.html">Segurança</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefatos</a>
+  </li>
+  <li>
+    <a href="artifacts.html#example-example-instances">Exemplos</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -120,7 +126,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="ichom.html">next&gt;</a>
+          | <a href="fhir.html">next&gt;</a>
 
           </span>
 
@@ -173,7 +179,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-10-17
+            as of 2023-10-25
           
         
       </td>
@@ -199,13 +205,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#sumário" id="markdown-toc-sumário">Sumário</a></li>
-  <li><a href="#necessidades-de-negócio" id="markdown-toc-necessidades-de-negócio">Necessidades de Negócio</a></li>
-  <li><a href="#pré-requisitos" id="markdown-toc-pré-requisitos">Pré-Requisitos</a></li>
+  <li><a href="#apresentação" id="markdown-toc-apresentação">Apresentação</a></li>
+  <li><a href="#necessidades-do-negócio-e-limitações" id="markdown-toc-necessidades-do-negócio-e-limitações">Necessidades do Negócio e Limitações</a></li>
   <li><a href="#atores-relacionados" id="markdown-toc-atores-relacionados">Atores Relacionados</a></li>
+  <li><a href="#método" id="markdown-toc-método">Método</a></li>
+  <li><a href="#fhir-implementation-guide-par-ao-avc" id="markdown-toc-fhir-implementation-guide-par-ao-avc">FHIR Implementation Guide par ao AVC</a></li>
   <li><a href="#autores" id="markdown-toc-autores">Autores</a></li>
   <li><a href="#finaciamento" id="markdown-toc-finaciamento">Finaciamento</a></li>
-  <li><a href="#referências" id="markdown-toc-referências">Referências:</a></li>
+  <li><a href="#referências" id="markdown-toc-referências">Referências</a></li>
 </ul>
 
 </div>
@@ -218,58 +225,67 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <br /></p>
 
 <p style="text-align: center; font-size: 20px;"> <b>FHIR Implementation Guide: Valor em Saúde no Monitoramento da Jornada do Paciente com AVC</b></p>
-<p><b> Gabrielle dos Santos Leandro, Eduardo Alves Portela Santos, Ricardo João Cruz-Correia, Claudia Maria Cabral Moro </b></p>
+<p><b> Gabrielle dos Santos Leandro, Ricardo João Cruz-Correia, Eduardo Alves Portela Santos, Claudia Maria Cabral Moro </b></p>
 
-<p style="text-align: justify; font-size: 10px;">This Implementation Guide was developed during the Doctoral Thesis of the student Gabrielle dos Santos Leandro. 
-<br /> * The Brazilian Research and Ethics Committee Report approved this study by # 4,917,962. </p>
+<p style="text-align: justify; font-size: 10px;">Este Guia de Implementação foi desenvolvido durante a Tese de Doutorado da Gabrielle dos Santos Leandro. 
+<br /> * Esta pesquisa foi aprovada pelo Comitê de Ética e Pesquisa por meio do Parecer nº 4.917.962. </p>
 
-<h3 id="sumário">Sumário</h3>
+<h3 id="apresentação">Apresentação</h3>
 
-<p style="text-align: justify; font-size: 14px;"><b>Introdução: </b> <br /> 
-O Acidente Vascular Cerebral (AVC) é a segunda principal causa de morte no mundo [1]. Durante seu tratamento, a janela terapêutica é crucial na intervenção adequada e minimização de danos ao paciente, tornando essencial uma coordenação do cuidado adequada [2]. Neste contexto, a Linha de Cuidado do AVC (LC-AVC) pretende estruturar e direcionar o tratamento considerando os inúmeros serviços e sistemas de saúde envolvidos, a fim de otimizar os resultados do paciente [3].<br />
-A LC-AVC é uma iniciativa para melhorar a coordenação do cuidado, existindo ainda a necessidade de mensurar o quão eficaz é o atendimento considerando métricas centradas no paciente. Diante disto, o International Consortium for Health Outcomes Measurement (ICHOM) elaborou métricas de resultados em saúde padronizadas centradas no paciente para inúmeras patologias, dentre elas o AVC [3, 4].<br />
-Apesar destas iniciativas, um desafio importante para a gestão do cuidado no AVC são os desafios de interoperabilidade das informações entre os diferentes sistemas de informação envolvidos. E neste cenário, o Fast Healthcare Interoperability Resource (FHIR) almeja padronizar a troca de informação entre sistemas de informação em saúde a fim de garantir a interoperabilidade entre eles. Na sua execução é fundamental a construção de um FHIR Implementation Guide (IG), que é um conjunto de regras sobre como os recursos FHIR são utilizados para resolver um problema de saúde em um contexto específico [5].<br /></p>
+<p style="text-align: justify; font-size: 14px"><br /> 
+O Acidente Vascular Cerebral (AVC) é a segunda principal causa de morte no mundo [1]. Durante seu tratamento, a janela terapêutica é crucial na intervenção adequada e minimização de danos ao paciente, tornando essencial uma coordenação do cuidado adequada [2]. Neste contexto, a Linha de Cuidado do AVC (LC-AVC) pretende estruturar e direcionar o tratamento considerando os inúmeros serviços e sistemas de saúde envolvidos, a fim de otimizar os resultados do paciente [3]. <br />
+A LC-AVC é uma iniciativa para melhorar a coordenação do cuidado, existindo ainda a necessidade de mensurar o quão eficaz é o atendimento considerando métricas centradas no paciente. Diante disto, o International Consortium for Health Outcomes Measurement (ICHOM) elaborou métricas de resultados em saúde padronizadas centradas no paciente para inúmeras patologias, dentre elas o AVC [3, 4].<br /> 
+Apesar destas iniciativas, um desafio importante para a gestão do cuidado no AVC são os desafios de interoperabilidade das informações entre os diferentes sistemas de informação envolvidos. E neste cenário, o Fast Healthcare Interoperability Resource (FHIR) almeja padronizar a troca de informação entre sistemas de informação em saúde a fim de garantir a interoperabilidade entre eles. Na sua execução é fundamental a construção de um FHIR Implementation Guide (IG), que é um conjunto de regras sobre como os recursos FHIR são utilizados para resolver um problema de saúde em um contexto específico [5].<br />
+Desta forma, o objetivo deste trabalho foi elaborar um FHIR Implementation Guide para o atendimento ao AVC considerando o conceito dos cuidados em saúde baseados em valor. O conteúdo deste Implementation Guide é apresentado aqui neste documento.</p>
 
-<p style="text-align: justify; font-size: 14px;"><b> Objetivo: </b> <br />
-Elaborar um FHIR Implementation Guide para o atendimento ao AVC considerando o conceito dos cuidados em saúde baseados em valor.</p>
-
-<p style="text-align: justify; font-size: 14px;"><b> Método: </b> <br />
-Representou-se a LC-AVC utilizando as principais LCs-AVC e Diretrizes Clínicas relacionadas ao AVC em BPMN (Business Process Model and Notation) pela plataforma Camunda®, considerando o estudo de caso do atendimento ao AVC de Joinville, Santa Catarina. Foi elaborado um dicionário de dados considerando as LCs-AVC representadas e o Guia de Referência do ICHOM [4]. Por fim, foi feito o mapeamento das variáveis considerando os recursos FHIR disponíveis.<br />
-Para elaboração do IG foram utilizadas as seguintes tecnologias: Ruby, Java® JDK v.11, Node.js®, Jekyll, Docker®, Visual Studio Code®, GoFSH®, Sushi®, FHIR Shorthand® e IG Publishing®. A documentação foi armazenada no GitHub® e um subdomínio foi alocado para acesso. Como modelo para o desenvolvimento deste IG foram utilizados os IGs da Rede Nacional de Dados em Saúde (RNDS) e o de Câncer de Mama da ICHOM.</p>
-
-<p style="text-align: justify; font-size: 14px;"><b> Resultados: </b><br />
-A representação em BPMN abordou as fases Pré-Hospitalar, Hospitalar e de Reabilitação. O IG foi composto de perfis herdados da RNDS, tais como: Organization, Practitioner e Patient; e perfis elaborados considerando as variáveis mapeadas no processo e na ICHOM, tais como Questionnaire e QuestionnaireResponse. As terminologias foram representadas por meio de CodeSystems e ValueSets.  O FHIR IG elaborado bem como toda sua documentação está disponível neste documento.</p>
-
-<p style="text-align: justify; font-size: 14px;"><b> Conclusão: </b><br />
-Este IG é uma inovação no campo da interoperabilidade em saúde e pode futuramente ser incorporado como padrão nacional para o atendimento ao AVC.</p>
-
-<h3 id="necessidades-de-negócio">Necessidades de Negócio</h3>
-<p>Este Guia de Implementação (IG) se insere no domínio do conhecimento, focando apenas na representação dos elementos de dados do conjunto no FHIR, sem abordar casos de uso específicos. Portanto, padrões de interação específicos para a troca de informações não são abordados neste documento.</p>
-
-<p>No entanto, para lhe dar uma ideia de onde este conjunto de informações pode ser aplicado, aqui estão algumas necessidades de negócios típicas:</p>
-
-<ol>
-  <li>
-    <p>Rastrear e comparar resultados que são mais relevantes para diferentes grupos de pacientes, orientando iniciativas de melhoria da qualidade em uma organização de provedores de saúde. Isso pode envolver o uso de ferramentas analíticas de saúde.</p>
-  </li>
-  <li>
-    <p>Acompanhar os resultados individuais dos pacientes em relação a um valor médio de referência para apoiar decisões de tratamento e promover a tomada de decisões compartilhadas.</p>
-  </li>
-  <li>
-    <p>Criar painéis interativos que permitam às organizações de saúde comparar seus resultados ajustados por risco com a média global do ICHOM. Isso visa estabelecer colaborações de aprendizado e definir padrões de excelência em resultados de pacientes. Essa abordagem pode facilitar o compartilhamento de resultados de tratamento com outras organizações de provedores para fins de pesquisa ou participação em colaborações de aprendizado.</p>
-  </li>
-</ol>
-
-<h3 id="pré-requisitos">Pré-Requisitos</h3>
-<p>Os usuários deste guia devem estar familiarizados com o Conjunto de Medidas para o Acidente Vascular Cerebral do ICHOM e o seu Dicionário de Dados correspondente, que elenca todas as variáveis necessárias para a coleta de dados por parte dos implementadores, <a href="https://connect.ichom.org/patient-centered-outcome-measures/stroke/">disponível aqui</a>. Os usuários também devem conhecer os Recursos FHIR (<a href="http://hl7.org/fhir/R5/resourcelist.html">FHIR Resources</a>)para entender como as variáveis do Acidente Vascular Cerebral do ICHOM são representadas neste Guia de Implementação FHIR. Abaixo são exibidos os conceitos básicos.</p>
+<h3 id="necessidades-do-negócio-e-limitações">Necessidades do Negócio e Limitações</h3>
+<p style="text-align: justify; font-size: 14px"><br /> 
+Este Guia de Implementação (IG) se insere no domínio do conhecimento, focando apenas na representação dos elementos de dados do conjunto no FHIR, sem abordar casos de uso específicos. Portanto, padrões de interação específicos para a troca de informações não são abordados neste documento. <br />
+No entanto, para lhe dar uma ideia de onde este conjunto de informações pode ser aplicado, aqui estão algumas necessidades de negócios típicas: <br />
+<b>1.</b> Rastrear e comparar resultados que são mais relevantes para diferentes grupos de pacientes, orientando iniciativas de melhoria da qualidade em uma organização de provedores de saúde. Isso pode envolver o uso de ferramentas analíticas de saúde. <br />
+<b>2.</b> Acompanhar os resultados individuais dos pacientes em relação a um valor médio de referência para apoiar decisões de tratamento e promover a tomada de decisões compartilhadas. <br />
+<b>3.</b> Criar painéis interativos que permitam às organizações de saúde comparar seus resultados ajustados por risco com a média global do ICHOM. Isso visa estabelecer colaborações de aprendizado e definir padrões de excelência em resultados de pacientes. Essa abordagem pode facilitar o compartilhamento de resultados de tratamento com outras organizações de provedores para fins de pesquisa ou participação em colaborações de aprendizado.</p>
 
 <h3 id="atores-relacionados">Atores Relacionados</h3>
+<p style="text-align: justify; font-size: 14px"><br />
+Os principais atores relacionados a este Implementation Guide incluem:<br />
+* Informatas de saúde ou profissionais de tecnologia da informação que trabalham dentro de uma organização fornecedora de cuidados de saúde.<br />
+* Especialista em informática de pesquisa clínica.<br />
+</p>
+
+<h3 id="método">Método</h3>
+<p style="text-align: justify; font-size: 14px;"><br />
+A Linha do Cuidado do AVC foi representada utilizando BPMN (<i>Business Process Model and Notation</i>) pela plataforma Camunda®, considerando o estudo de caso do atendimento ao AVC de Joinville, Santa Catarina. Foi elaborado um dicionário de dados considerando as Linhas de Cuidados do AVC representadas e o Guia de Referência do ICHOM [4]. Por fim, foi feito o mapeamento das variáveis considerando os recursos FHIR disponíveis. Para a elaboração do IG foram utilizadas as seguintes tecnologias: Ruby, Java® JDK v.11, Node.js®, Jekyll, Docker®, Visual Studio Code®, GoFSH®, Sushi®, FHIR Shorthand® e IG Publishing®. A documentação foi armazenada no GitHub® e um subdomínio foi alocado para acesso. Como modelo para o desenvolvimento deste IG foram utilizados os IGs da Rede Nacional de Dados em Saúde (RNDS) e o de Câncer de Mama da ICHOM.</p>
+
+<h4 id="instrumentos-e-ferramentas-utilizadas">Instrumentos e Ferramentas Utilizadas</h4>
 <ul>
-  <li>Informatas de saúde ou profissionais de tecnologia da informação que trabalham dentro de uma organização fornecedora de cuidados de saúde.</li>
-  <li>Especialista em informática de pesquisa clínica.</li>
+  <li><a href="http://189.28.128.100/dab/docs/portaldab/publicacoes/LC_AVC_no_adulto.pdf">Linha de Cuidado do Acidente Vascular Cerebral (AVC) no Adulto</a>.</li>
+  <li><a href="https://www.world-stroke.org/assets/downloads/Global_Stroke_Guidelines_and_Action_Plan_All_in_one_English.pdf">Global Stroke Guidelines and Action Plan: A Road Map for Quality Stroke Care</a></li>
+  <li><a href="https://connect.ichom.org/patient-centered-outcome-measures/stroke/">Conjunto de Medidas para o Acidente Vascular Cerebral do ICHOM e o Dicionário de Dados</a>.</li>
+  <li><a href="http://hl7.org/fhir/R5/resourcelist.html">Recursos FHIR v5.0.0</a></li>
+  <li><a href="https://simplifier.net/RedeNacionaldeDadosemSaude/">FHIR Profiles da Rede Nacional de Dados em Saúde</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig/">FHIR IG for ICHOM Patient Centered Outcomes Measure Set for Breast Cancer</a></li>
+</ul>
+
+<h3 id="fhir-implementation-guide-par-ao-avc">FHIR Implementation Guide par ao AVC</h3>
+<p style="text-align: justify; font-size: 14px;"><br />
+Este FHIR Implementation Guide está disposto nos menus:<br /></p>
+<ul>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/index.html">Home</a> - Faz uma breve apresentação deste Guia de Implementação.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/fhir.html">FHIR</a> - Exibe uma visão geral sobre o FHIR, Aplicabilidade Clínica, Recursos, Profiling, Terminologias e Links Úteis.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/ichom.html">ICHOM</a> - Aborda uma contextualização da ICHOM com o Conjunto de Medidas de Resultados de Saúde Centrados no Paciente com AVC.</li>
+  <li><a href="https://molic-avc.gabriellesantosleandro.com/lc-avc-bpmn.html">LC-AVC BPMN</a> - Exibe a representação da Linha do Cuidado do AVC em BPMN abordando as fases Pré-Hospitalar, Hospitalar e de Reabilitação.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/data-dictionary.html">Dicionário de Dados</a></li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/paper.html">Artigo</a> - Exibe o artigo completo na realização deste Guia de Implementação.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/downloads.html">Downloads</a> - Neste menu é possível fazer o download dos elementos utilizados neste Guia de Implementação.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/security.html">Segurança</a> - Aborda algumas questões de segurança deste Guia de Implementação.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html">Artefatos</a> - Elenca todos os Resource Profiles, Extension Definitions, ValueSets e Exemplos deste Guia de Implementação.</li>
+  <li><a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#example-example-instances">Exemplos</a> - Elenca todos os Exemplos deste Guia de Implementação dentro do menu ‘Artefatos’.</li>
 </ul>
 
 <h3 id="autores">Autores</h3>
+<p style="text-align: justify; font-size: 14px;">
+Este trabalho não seria possível sem:</p>
 <ul>
   <li><a href="https://www.gabriellesantosleandro.com/">Gabrielle dos Santos Leandro</a></li>
   <li>Ricardo João Cruz-Correia</li>
@@ -282,13 +298,14 @@ Este IG é uma inovação no campo da interoperabilidade em saúde e pode futura
   <li>Fundação Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES) - Bolsa de Estudo de Pós-Graduação Modalidade Taxa para Financiamento de Doutorado no <a href="https://www.pucpr.br/escola-politecnica/mestrado-doutorado/tecnologia-em-saude/">Programa de Pós-Graduação em Tecnologias em Saúde - PUCPR</a> durante o período de 2020 a 2024.</li>
 </ul>
 
-<h3 id="referências">Referências:</h3>
-<p>[1] Feigin VL, Brainin M, Norrving B, et al. World Stroke Organization (WSO): Global Stroke Fact Sheet 2022. International Journal of Stroke. 2022;17:18–29.<br />
+<h3 id="referências">Referências</h3>
+<p style="text-align: justify; font-size: 14px;">
+[1] Feigin VL, Brainin M, Norrving B, et al. World Stroke Organization (WSO): Global Stroke Fact Sheet 2022. International Journal of Stroke. 2022;17:18–29.<br />
 [2] Rajendram P, Ikram A, Fisher M. Combined Therapeutics: Future Opportunities for Co-therapy with Thrombectomy. Neurotherapeutics. 2023;20:693–704.<br />
 [3] Brasil. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Clinical Pathway for Cerebrovascular Accident (CVA) in adults. 1st ed. Brasília: Ministério da Saúde; 2020.<br />
 [4] Salinas J, Sprinkhuizen SM, Ackerson T, et al. An International Standard Set of Patient-Centered Outcome Measures After Stroke. Stroke. 2016;47:180–186. <br />
-[5] HL7. Resource Implementation Guide. HL7 FHIR - FHIR CI-Build. 2023. Available from: https://build.fhir.org/implementationguide.html</p>
-
+[5] HL7. Resource Implementation Guide. HL7 FHIR - FHIR CI-Build. 2023. Available from: https://build.fhir.org/implementationguide.html 
+</p>
 <p><br />
 <br />
 <br /></p>
@@ -330,7 +347,7 @@ Este IG é uma inovação no campo da interoperabilidade em saúde e pode futura
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="ichom.html">next&gt;</a>
+                <a href="fhir.html">next&gt;</a>
 
               </td>
             </tr>
@@ -340,7 +357,7 @@ Este IG é uma inovação no campo da interoperabilidade em saúde e pode futura
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Oct 17, 2023 16:55-0300">2023-10-17</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

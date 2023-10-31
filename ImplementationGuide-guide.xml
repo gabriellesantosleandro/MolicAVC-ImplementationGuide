@@ -11,7 +11,7 @@
   <name value="MolicAVC"/>
   <title value="Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC"/>
   <status value="draft"/>
-  <date value="2023-10-17T16:55:27-03:00"/>
+  <date value="2023-10-25T16:05:12-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -586,7 +586,7 @@
       <reference>
         <reference value="Questionnaire/ClinicalResponseBaseline"/>
       </reference>
-      <name value="ClinicalResponseBaseline"/>
+      <name value="Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde"/>
       <description value="Questionário aplicado pelo profissional médico ou profissional de saúde no Primeiro atendimento ao AVC"/>
       <isExample value="true"/>
     </resource>
@@ -830,21 +830,33 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <sourceUrl value="fhir.html"/>
+        <name value="fhir.html"/>
+        <title value="FHIR"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <sourceUrl value="ichom.html"/>
         <name value="ichom.html"/>
         <title value="ICHOM"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <sourceUrl value="fhir-basics.html"/>
-        <name value="fhir-basics.html"/>
-        <title value="FHIR"/>
+        <sourceUrl value="lc-avc-bpmn.html"/>
+        <name value="lc-avc-bpmn.html"/>
+        <title value="Linha do Cuidado do AVC (BPMN)"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="data-dictionary.html"/>
+        <name value="data-dictionary.html"/>
+        <title value="Dicionário de Dados"/>
         <generation value="markdown"/>
       </page>
       <page>
         <sourceUrl value="paper.html"/>
         <name value="paper.html"/>
-        <title value="Paper"/>
+        <title value="Artigo"/>
         <generation value="markdown"/>
       </page>
       <page>
