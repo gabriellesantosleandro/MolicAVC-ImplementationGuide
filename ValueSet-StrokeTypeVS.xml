@@ -8,9 +8,9 @@
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS"/>
   <version value="1.0.1"/>
   <name value="StrokeTypeVS"/>
-  <title value="ValueSet que categoriza o tipo de AVC"/>
+  <title value="ValueSet for stroke type based on ICHOM"/>
   <status value="active"/>
-  <date value="2023-10-25T16:05:12-03:00"/>
+  <date value="2023-11-21T18:47:54-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -36,7 +36,7 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Este ValueSet tem por finalidade categorizar o tipo do AVC"/>
+  <description value="This ValueSet aims to categorize the stroke type according to the ICHOM standard."/>
   <compose>
     <include>
       <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/"/>

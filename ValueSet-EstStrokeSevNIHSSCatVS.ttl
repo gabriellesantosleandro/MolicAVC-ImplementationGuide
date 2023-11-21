@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "EstStrokeSevNIHSSCatVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Sem sintomas de AVC | No stroke symptoms (NIHSS score = 0)</td></tr><tr><td>2</td><td>Menor | Minor (NIHSS score 1-4)</td></tr><tr><td>3</td><td>Moderado | Moderate (NIHSS score 5 – 15)</td></tr><tr><td>4</td><td>Moderado a Severo | Moderate to severe (NIHSS score 16 – 20)</td></tr><tr><td>5</td><td>Severo | Severe (NIHSS score 21 – 42)</td></tr><tr><td>999</td><td>Desconhecido | Unknown</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>No stroke symptoms (NIHSS score = 0)</td></tr><tr><td>2</td><td>Minor (NIHSS score from 1 to 4)</td></tr><tr><td>3</td><td>Moderate (NIHSS score from 5 to 15)</td></tr><tr><td>4</td><td>Moderate to severe (NIHSS score from 16 to 20)</td></tr><tr><td>5</td><td>Severe (NIHSS score from 21 to 42)</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.1"] ; # 
   fhir:name [ fhir:v "EstStrokeSevNIHSSCatVS"] ; # 
-  fhir:title [ fhir:v "ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS"] ; # 
+  fhir:title [ fhir:v "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard."] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-10-25T16:05:12-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-21T18:47:54-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -40,28 +40,28 @@
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Este ValueSet tem por finalidade categorizar a gravidade do AVC baseando-se no National Institute of Health Stroke Scale (NIHSS)"] ; # 
+  fhir:description [ fhir:v "This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)."] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "1" ] ;
-         fhir:display [ fhir:v "Sem sintomas de AVC | No stroke symptoms (NIHSS score = 0)" ]
+         fhir:display [ fhir:v "No stroke symptoms (NIHSS score = 0)" ]
        ] [
          fhir:code [ fhir:v "2" ] ;
-         fhir:display [ fhir:v "Menor | Minor (NIHSS score 1-4)" ]
+         fhir:display [ fhir:v "Minor (NIHSS score from 1 to 4)" ]
        ] [
          fhir:code [ fhir:v "3" ] ;
-         fhir:display [ fhir:v "Moderado | Moderate (NIHSS score 5 – 15)" ]
+         fhir:display [ fhir:v "Moderate (NIHSS score from 5 to 15)" ]
        ] [
          fhir:code [ fhir:v "4" ] ;
-         fhir:display [ fhir:v "Moderado a Severo | Moderate to severe (NIHSS score 16 – 20)" ]
+         fhir:display [ fhir:v "Moderate to severe (NIHSS score from 16 to 20)" ]
        ] [
          fhir:code [ fhir:v "5" ] ;
-         fhir:display [ fhir:v "Severo | Severe (NIHSS score 21 – 42)" ]
+         fhir:display [ fhir:v "Severe (NIHSS score from 21 to 42)" ]
        ] [
          fhir:code [ fhir:v "999" ] ;
-         fhir:display [ fhir:v "Desconhecido | Unknown" ]
+         fhir:display [ fhir:v "Unknown" ]
        ] )
      ] )
   ] . # 

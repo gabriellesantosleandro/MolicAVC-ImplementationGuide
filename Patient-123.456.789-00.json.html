@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Use case of Molic-AVC&#39;s Patient - JSON Representation - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
+    <title>Use case of Stroke Patient - JSON Representation - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -49,7 +49,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
+          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
             <br/>
             <span style="display:inline-block;">1.0.1 - ci-build
 
@@ -88,25 +88,25 @@
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
+    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
   </li>
   <li>
-    <a href="data-dictionary.html">Dicionário de Dados</a>
+    <a href="data-dictionary.html">Data Dictionary</a>
   </li>
   <li>
-    <a href="paper.html">Artigo</a>
+    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
-    <a href="security.html">Segurança</a>
+    <a href="security.html">Security</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
+    <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="artifacts.html#example-example-instances">Examples</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -120,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Use case of Molic-AVC's Patient</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Use case of Stroke Patient</b></li>
 
           <span style="float:right;">
 
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -189,7 +189,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Use case of Molic-AVC&#39;s Patient - JSON Representation</h2>
+<h2 id="root">: Use case of Stroke Patient - JSON Representation</h2>
 
 
 <p><a href="Patient-123.456.789-00.json" no-download="true">Raw json</a> | <a href="Patient-123.456.789-00.json" download>Download</a></p>
@@ -205,16 +205,16 @@
   "<a href="http://hl7.org/fhir/R5/patient.html#Patient.id">id</a>" : "123.456.789-00",
   "<a href="http://hl7.org/fhir/R5/patient.html#Patient.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>" : [
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"
+      <a href="StructureDefinition-StrokePatient.html" style="color: Maroon">&#x1F517;</a> "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"
     ]
   },
   "<a href="http://hl7.org/fhir/R5/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;João da Silva(OFFICIAL)&lt;/b&gt; (no stated gender), DoB: 1960-01-01 ( id:\u00a0123.456.789-00\u00a0(use:\u00a0OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Rua das Flores, 123, Bairro Jardim, Cidade Maravilhosa, Estado, 12345-678(HOME)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-molicavc-ethnicity-extension.html\&quot;&gt;Extension of Patient Ethnicity:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Hispanic or Latino Ethnicity&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-live-alone-pre-stroke-extension.html\&quot;&gt;Extension of Live Alone Pre-Stroke:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The patient's sex at birth.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-molicavc-sex-extension.html\&quot;&gt;Extension of Patient Sex:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Male&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Extension to capture the patient's race, as recommended by ICHOM.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-molicavc-race-extension.html\&quot;&gt;Extension of Patient Race:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;White or Caucasian Race&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The patient's gender.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-molicavc-genderidentity-extension.html\&quot;&gt;Extension of Patient Gender Identity:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Identifies as male&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-living-location-pre-stroke-extension.html\&quot;&gt;Extension of Patient's Residence Prior to a Stroke:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;At home, with no community support&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p style=\&quot;border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\&quot;&gt;&lt;b&gt;João da Silva(OFFICIAL)&lt;/b&gt; male, DoB: 1960-01-01 ( id:\u00a0123.456.789-00\u00a0(use:\u00a0OFFICIAL))&lt;/p&gt;&lt;hr/&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Record is active\&quot;&gt;Active:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;true&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Ways to contact the Patient\&quot;&gt;Contact Detail:&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;Rua das Flores, 123, Bairro Jardim, Cidade Maravilhosa, Estado, 12345-678(HOME)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Represents the race of a patient. This extension is aligned with USCore.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-RaceExtension.html\&quot;&gt;Extension of Race:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-Race 2076-8}\&quot;&gt;Native Hawaiian or Other Pacific Islander&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-LivingLocPreExtension.html\&quot;&gt;Extension of Patient's Residence Prior to a Stroke:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;At home, with no community support&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-LiveAlonePreExtension.html\&quot;&gt;Extension of Live Alone Pre-Stroke:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-EthnicityExtension.html\&quot;&gt;Extension of Patient Ethnicity:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: {http://terminology.hl7.org/CodeSystem/v3-Ethnicity 2135-2}\&quot;&gt;Hispanic or Latino&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;background-color: #f3f5da\&quot; title=\&quot;The patient's gender.\&quot;&gt;&lt;a href=\&quot;StructureDefinition-GenderIdentityExtension.html\&quot;&gt;Extension of Patient Gender Identity:&lt;/a&gt;&lt;/td&gt;&lt;td colspan=\&quot;3\&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span title=\&quot;Codes: \&quot;&gt;Identifies as male&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R5/patient.html#Patient.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension",
       "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
@@ -225,40 +225,29 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension",
       "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "1",
-            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Male"
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2135-2"
           }
         ]
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension",
       "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "21028-6",
-            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "Hispanic or Latino Ethnicity"
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v3-Race",
+            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "2076-8"
           }
         ]
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension",
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
-        "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a>" : "32697-1",
-            "<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a>" : "White or Caucasian Race"
-          }
-        ]
-      }
-    },
-    {
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LivingLocPreExtension",
       "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
@@ -269,7 +258,7 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
+      "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LiveAlonePreExtension",
       "<a href="http://hl7.org/fhir/R5/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
         "<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
@@ -294,6 +283,7 @@
       "<a href="http://hl7.org/fhir/R5/datatypes.html#HumanName#HumanName.text">text</a>" : "João da Silva"
     }
   ],
+  "<a href="http://hl7.org/fhir/R5/patient.html#Patient.gender">gender</a>" : "male",
   "<a href="http://hl7.org/fhir/R5/patient.html#Patient.birthDate">birthDate</a>" : "1960-01-01",
   "<a href="http://hl7.org/fhir/R5/patient.html#Patient.address">address</a>" : [
     {
@@ -358,7 +348,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 18:47-0300">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

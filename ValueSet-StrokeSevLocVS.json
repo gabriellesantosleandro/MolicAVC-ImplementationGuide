@@ -3,14 +3,14 @@
   "id" : "StrokeSevLocVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Completamente acordado | Fully awake</td></tr><tr><td>1</td><td>Sonolento | Somnolent</td></tr><tr><td>2</td><td>Coma | Coma</td></tr><tr><td>999</td><td>Desconhecido | Unknown</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Fully awake</td></tr><tr><td>1</td><td>Somnolent</td></tr><tr><td>2</td><td>Coma</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS",
   "version" : "1.0.1",
   "name" : "StrokeSevLocVS",
-  "title" : "ValueSet que Categoriza o Estado de Consciência",
+  "title" : "ValueSet Categorizing the State of Consciousness according to the ICHOM standard.",
   "status" : "active",
-  "date" : "2023-10-25T16:05:12-03:00",
+  "date" : "2023-11-21T18:47:54-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -36,25 +36,25 @@
       "use" : "work"
     }]
   }],
-  "description" : "Este ValueSet indica o estado de consciência do paciente aferido na chegada ao Hospital de Referência.",
+  "description" : "This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
   "compose" : {
     "include" : [{
       "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/",
       "concept" : [{
         "code" : "0",
-        "display" : "Completamente acordado | Fully awake"
+        "display" : "Fully awake"
       },
       {
         "code" : "1",
-        "display" : "Sonolento | Somnolent"
+        "display" : "Somnolent"
       },
       {
         "code" : "2",
-        "display" : "Coma | Coma"
+        "display" : "Coma"
       },
       {
         "code" : "999",
-        "display" : "Desconhecido | Unknown"
+        "display" : "Unknown"
       }]
     }]
   }

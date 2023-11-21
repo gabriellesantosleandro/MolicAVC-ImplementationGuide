@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PROMIS10VS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Poor</td></tr><tr><td>2</td><td>Fair</td></tr><tr><td>3</td><td>Good</td></tr><tr><td>4</td><td>Very Good</td></tr><tr><td>5</td><td>Excellent</td></tr><tr><td>6</td><td>Completely</td></tr><tr><td>7</td><td>Mostly</td></tr><tr><td>8</td><td>Moderately</td></tr><tr><td>9</td><td>A little</td></tr><tr><td>10</td><td>Not at all</td></tr><tr><td>11</td><td>Always</td></tr><tr><td>12</td><td>Often</td></tr><tr><td>13</td><td>Sometimes</td></tr><tr><td>14</td><td>Rarely</td></tr><tr><td>15</td><td>Never</td></tr><tr><td>16</td><td>None</td></tr><tr><td>17</td><td>Mild</td></tr><tr><td>18</td><td>Moderate</td></tr><tr><td>19</td><td>Severe</td></tr><tr><td>20</td><td>Very Severe</td></tr><tr><td>21</td><td>0: No pain</td></tr><tr><td>22</td><td>1: Very mild pain</td></tr><tr><td>23</td><td>2: Discomforting</td></tr><tr><td>24</td><td>3: Tolerable</td></tr><tr><td>25</td><td>4: Distressing</td></tr><tr><td>26</td><td>5: Very distressing</td></tr><tr><td>27</td><td>6: Intense</td></tr><tr><td>28</td><td>7: Very intense</td></tr><tr><td>29</td><td>8: Utterly horrible</td></tr><tr><td>30</td><td>9: Excruciating unbearable pain</td></tr><tr><td>31</td><td>10: Unspeakable pain</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "PROMIS10VS"] ; # 
+  fhir:title [ fhir:v "ValueSet of PROMIS-10 Response Questionnaire"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-11-21T18:47:54-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com.br" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Poor" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "Fair" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Good" ]
+       ] [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Very Good" ]
+       ] [
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Excellent" ]
+       ] [
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "Completely" ]
+       ] [
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "Mostly" ]
+       ] [
+         fhir:code [ fhir:v "8" ] ;
+         fhir:display [ fhir:v "Moderately" ]
+       ] [
+         fhir:code [ fhir:v "9" ] ;
+         fhir:display [ fhir:v "A little" ]
+       ] [
+         fhir:code [ fhir:v "10" ] ;
+         fhir:display [ fhir:v "Not at all" ]
+       ] [
+         fhir:code [ fhir:v "11" ] ;
+         fhir:display [ fhir:v "Always" ]
+       ] [
+         fhir:code [ fhir:v "12" ] ;
+         fhir:display [ fhir:v "Often" ]
+       ] [
+         fhir:code [ fhir:v "13" ] ;
+         fhir:display [ fhir:v "Sometimes" ]
+       ] [
+         fhir:code [ fhir:v "14" ] ;
+         fhir:display [ fhir:v "Rarely" ]
+       ] [
+         fhir:code [ fhir:v "15" ] ;
+         fhir:display [ fhir:v "Never" ]
+       ] [
+         fhir:code [ fhir:v "16" ] ;
+         fhir:display [ fhir:v "None" ]
+       ] [
+         fhir:code [ fhir:v "17" ] ;
+         fhir:display [ fhir:v "Mild" ]
+       ] [
+         fhir:code [ fhir:v "18" ] ;
+         fhir:display [ fhir:v "Moderate" ]
+       ] [
+         fhir:code [ fhir:v "19" ] ;
+         fhir:display [ fhir:v "Severe" ]
+       ] [
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "Very Severe" ]
+       ] [
+         fhir:code [ fhir:v "21" ] ;
+         fhir:display [ fhir:v "0: No pain" ]
+       ] [
+         fhir:code [ fhir:v "22" ] ;
+         fhir:display [ fhir:v "1: Very mild pain" ]
+       ] [
+         fhir:code [ fhir:v "23" ] ;
+         fhir:display [ fhir:v "2: Discomforting" ]
+       ] [
+         fhir:code [ fhir:v "24" ] ;
+         fhir:display [ fhir:v "3: Tolerable" ]
+       ] [
+         fhir:code [ fhir:v "25" ] ;
+         fhir:display [ fhir:v "4: Distressing" ]
+       ] [
+         fhir:code [ fhir:v "26" ] ;
+         fhir:display [ fhir:v "5: Very distressing" ]
+       ] [
+         fhir:code [ fhir:v "27" ] ;
+         fhir:display [ fhir:v "6: Intense" ]
+       ] [
+         fhir:code [ fhir:v "28" ] ;
+         fhir:display [ fhir:v "7: Very intense" ]
+       ] [
+         fhir:code [ fhir:v "29" ] ;
+         fhir:display [ fhir:v "8: Utterly horrible" ]
+       ] [
+         fhir:code [ fhir:v "30" ] ;
+         fhir:display [ fhir:v "9: Excruciating unbearable pain" ]
+       ] [
+         fhir:code [ fhir:v "31" ] ;
+         fhir:display [ fhir:v "10: Unspeakable pain" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

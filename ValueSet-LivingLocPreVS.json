@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "LivingLocPreVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/livinglocationprestroke/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>At home, with no community support</td></tr><tr><td>2</td><td>At home with community support</td></tr><tr><td>3</td><td>In an assisting living home in the community (senior's home)</td></tr><tr><td>4</td><td>In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)</td></tr><tr><td>5</td><td>In long term care (nursing home, chronic care hospital)</td></tr><tr><td>888</td><td>Other</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS",
+  "version" : "1.0.1",
+  "name" : "LivingLocPreVS",
+  "title" : "ValueSet of Patient's Residence Prior to a Stroke",
+  "status" : "active",
+  "date" : "2023-11-21T18:47:54-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/livinglocationprestroke/",
+      "concept" : [{
+        "code" : "1",
+        "display" : "At home, with no community support"
+      },
+      {
+        "code" : "2",
+        "display" : "At home with community support"
+      },
+      {
+        "code" : "3",
+        "display" : "In an assisting living home in the community (senior's home)"
+      },
+      {
+        "code" : "4",
+        "display" : "In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)"
+      },
+      {
+        "code" : "5",
+        "display" : "In long term care (nursing home, chronic care hospital)"
+      },
+      {
+        "code" : "888",
+        "display" : "Other"
+      },
+      {
+        "code" : "999",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

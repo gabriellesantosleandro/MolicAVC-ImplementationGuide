@@ -10,15 +10,15 @@
   fhir:id [ fhir:v "NoYesUnknownVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a></td><td>Sim | Yes</td><td>Yes</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>Não | No</td><td>No</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Desconhecido | Unknown</td><td>unknown</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0532</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a></td><td>Yes</td><td>Yes</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>No</td><td>No</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>Unknown</td><td>unknown</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "1.0.1"] ; # 
   fhir:name [ fhir:v "NoYesUnknownVS"] ; # 
-  fhir:title [ fhir:v "ValueSet Sim, Não e Desconhecido"] ; # 
+  fhir:title [ fhir:v "ValueSet Yes, No and Unknown"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-10-25T16:05:12-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-21T18:47:54-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -41,20 +41,20 @@
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Valueset com respostas Sim, Não e Desconhecido (yes, no and unknown)"] ; # 
+  fhir:description [ fhir:v "ValueSet with responses Yes, No, and Unknown"] ; # 
   fhir:copyright [ fhir:v "Copyright HL7. Licensed under creative commons public domain"] ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0532"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "Y" ] ;
-         fhir:display [ fhir:v "Sim | Yes" ]
+         fhir:display [ fhir:v "Yes" ]
        ] [
          fhir:code [ fhir:v "N" ] ;
-         fhir:display [ fhir:v "Não | No" ]
+         fhir:display [ fhir:v "No" ]
        ] [
          fhir:code [ fhir:v "UNK" ] ;
-         fhir:display [ fhir:v "Desconhecido | Unknown" ]
+         fhir:display [ fhir:v "Unknown" ]
        ] )
      ] )
   ] . # 

@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="PatientReportedDischargeOrSevenDays"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R5/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> patient-reported-discharge-7days</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://molic-avc.gabriellesantosleandro.com/Questionnaire/PatientReportedDischargeOrSevenDays#1.0.1</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.General-Information-Clinical" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Group" class="hierarchy"/> General-Information-Clinical</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">General information</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.Patient-ID" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> Patient-ID</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What is the patient's identification?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Expressions: <ul><li style="font-size: 11px"><a href="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">Initial Value</a>: <code>%patient.id</code></li></ul></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.FullName-Clinical" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> FullName-Clinical</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What is the patient's full name?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Expressions: <ul><li style="font-size: 11px"><a href="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">Initial Value</a>: <code>%patient.name.first().given.join(' ') + ' ' + %patient.name.first().family</code></li></ul></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" id="item.Patient-Reported-Health-Status" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="Group" class="hierarchy"/> Patient-Reported-Health-Status</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Patient-Reported Health Status</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.PostStrokeAmb" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PostStrokeAmb</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Are you able to walk?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-StrokeAmbVS.html">ValueSet of Prestroke and Poststroke Functional Status: Ambulation</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.PostStrokeToileting" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> PostStrokeToileting</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you need help from anybody to go to the toilet?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-StrokeToiletingVS.html">ValueSet of Prestroke and Poststroke Functional Status: Toileting</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.PostStrokeDress" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PostStrokeDress</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Did you need help with dressing/undressing prior to your stroke or transient ischaemic attack (TIA)? </td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-StrokeDressingVS.html">ValueSet of Prestroke and Poststroke Functional Status: Dressing</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" id="item.Feeding" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> Feeding</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you need a tube for feeding? (For example: a nasogastric tube or a gastrostomy tube.)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-NoYesUnknownVS.html">ValueSet Yes, No and Unknown</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" id="item.Communic" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> Communic</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you have problems with communication or understanding?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-NoYesUnknownVS.html">ValueSet Yes, No and Unknown</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" id="item.PROMIS-10_Q01" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="Group" class="hierarchy"/> PROMIS-10_Q01</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, would you say your health is:</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q01" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q01</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, would you say your health is:</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q02" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q02</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, would you say your quality of life is:</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q03" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q03</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, how would you rate your physical health?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q04" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q04</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, how would you rate your mental health, including your mood and your ability to think?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q05" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q05</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, how would you rate your satisfaction with your social activities and relationships?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q09r" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q09r</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In general, rate how well you carry out your usual social activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q06" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q06</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Q10r" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Q10r</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" id="item.PROMIS-10_Qo8r" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Qo8r</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In the past 7 days, how would you rate your fatigue on average?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" id="item.PROMIS-10_Qo7r" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-question.png" alt="." style="background-color: white; background-color: inherit" title="Question" class="hierarchy"/> PROMIS-10_Qo7r</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">In the past 7 days, how would you rate your pain on average?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/codesystem-item-type.html#item-type-question">question</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Value Set: <a href="ValueSet-PROMIS10VS.html">ValueSet of PROMIS-10 Response Questionnaire</a></td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R5/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext">
+    <extension url="name">
+      <valueCoding>
+        <system value="http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"/>
+        <code value="patient"/>
+        <display value="Patient"/>
+      </valueCoding>
+    </extension>
+    <extension url="type">
+      <valueCode value="Patient"/>
+    </extension>
+    <extension url="description">
+      <valueString value="Patient information to pre-populate the form with"/>
+    </extension>
+  </extension>
+  <url value="https://molic-avc.gabriellesantosleandro.com/Questionnaire/PatientReportedDischargeOrSevenDays"/>
+  <identifier>
+    <use value="official"/>
+    <value value="patient-reported-discharge-7days"/>
+    <assigner>
+      <reference value="ICHOM"/>
+    </assigner>
+  </identifier>
+  <version value="1.0.1"/>
+  <name value="patient-reported-discharge-7days"/>
+  <title value="Patient Reported Questionnaire 02 - Discharge or 7 days post admission"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2023-11-21T18:47:54-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <item>
+    <linkId value="General-Information-Clinical"/>
+    <text value="General information"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%patient.id"/>
+        </valueExpression>
+      </extension>
+      <linkId value="Patient-ID"/>
+      <text value="What is the patient's identification?"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+    <item>
+      <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression">
+        <valueExpression>
+          <language value="text/fhirpath"/>
+          <expression value="%patient.name.first().given.join(' ') + ' ' + %patient.name.first().family"/>
+        </valueExpression>
+      </extension>
+      <linkId value="FullName-Clinical"/>
+      <text value="What is the patient's full name?"/>
+      <type value="string"/>
+      <required value="true"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="Patient-Reported-Health-Status"/>
+    <text value="Patient-Reported Health Status"/>
+    <type value="group"/>
+    <required value="true"/>
+    <item>
+      <linkId value="PostStrokeAmb"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+        <code value="1"/>
+        <display value="Able to walk without help from another person with or without a device."/>
+      </code>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+        <code value="2"/>
+        <display value="Able to walk with help from another person."/>
+      </code>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+        <code value="3"/>
+        <display value="Unable to walk."/>
+      </code>
+      <text value="Are you able to walk?"/>
+      <type value="question"/>
+      <required value="true"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS"/>
+    </item>
+    <item>
+      <linkId value="PostStrokeToileting"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+        <code value="5"/>
+        <display value="I needed help to go to the toilet."/>
+      </code>
+      <text value="Do you need help from anybody to go to the toilet?"/>
+      <type value="question"/>
+      <required value="true"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS"/>
+    </item>
+    <item>
+      <linkId value="PostStrokeDress"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+        <code value="6"/>
+        <display value="I could manage dressing/undressing without help."/>
+      </code>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+        <code value="7"/>
+        <display value="I needed help dressing/undressing."/>
+      </code>
+      <text value="Did you need help with dressing/undressing prior to your stroke or transient ischaemic attack (TIA)? "/>
+      <type value="question"/>
+      <required value="true"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS"/>
+    </item>
+    <item>
+      <linkId value="Feeding"/>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </code>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="N"/>
+        <display value="No"/>
+      </code>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="UNK"/>
+        <display value="Unknown"/>
+      </code>
+      <text value="Do you need a tube for feeding? (For example: a nasogastric tube or a gastrostomy tube.)"/>
+      <type value="question"/>
+      <required value="true"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
+    </item>
+    <item>
+      <linkId value="Communic"/>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="Y"/>
+        <display value="Yes"/>
+      </code>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="N"/>
+        <display value="No"/>
+      </code>
+      <code>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+        <code value="UNK"/>
+        <display value="Unknown"/>
+      </code>
+      <text value="Do you have problems with communication or understanding?"/>
+      <type value="question"/>
+      <required value="true"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
+    </item>
+  </item>
+  <item>
+    <linkId value="PROMIS-10_Q01"/>
+    <text value="In general, would you say your health is:"/>
+    <type value="group"/>
+    <required value="false"/>
+    <item>
+      <linkId value="PROMIS-10_Q01"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </code>
+      <text value="In general, would you say your health is:"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q02"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </code>
+      <text value="In general, would you say your quality of life is:"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q03"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </code>
+      <text value="In general, how would you rate your physical health?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q04"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </code>
+      <text value="In general, how would you rate your mental health, including your mood and your ability to think?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q05"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </code>
+      <text value="In general, how would you rate your satisfaction with your social activities and relationships?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q09r"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="5"/>
+        <display value="Excellent"/>
+      </code>
+      <text value="In general, rate how well you carry out your usual social activities at home, at work and in your community, and responsibilities as a parent, child, spouse, employee, friend, etc.)"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q06"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="10"/>
+        <display value="Not at all"/>
+      </code>
+      <text value="To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Q10r"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="15"/>
+        <display value="Never"/>
+      </code>
+      <text value="In the past 7 days, how often have you been bothered by emotional problems such as feeling anxious, depressed or irritable?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Qo8r"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="20"/>
+        <display value="Very Severe"/>
+      </code>
+      <text value="In the past 7 days, how would you rate your fatigue on average?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+    <item>
+      <linkId value="PROMIS-10_Qo7r"/>
+      <code>
+        <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"/>
+        <code value="31"/>
+        <display value="10: Unspeakable pain"/>
+      </code>
+      <text value="In the past 7 days, how would you rate your pain on average?"/>
+      <type value="question"/>
+      <answerValueSet value="https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS"/>
+    </item>
+  </item>
+</Questionnaire>

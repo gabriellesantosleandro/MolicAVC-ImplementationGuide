@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
+    <title>Artifacts Summary - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,7 +47,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
+          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
             <br/>
             <span style="display:inline-block;">1.0.1 - ci-build
 
@@ -86,25 +86,25 @@
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
+    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
   </li>
   <li>
-    <a href="data-dictionary.html">Dicionário de Dados</a>
+    <a href="data-dictionary.html">Data Dictionary</a>
   </li>
   <li>
-    <a href="paper.html">Artigo</a>
+    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
-    <a href="security.html">Segurança</a>
+    <a href="security.html">Security</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
+    <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="artifacts.html#example-example-instances">Examples</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -126,7 +126,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="StructureDefinition-molicavc-encounter-profile.html">next&gt;</a>
+          | <a href="Questionnaire-ClinicalResponseAnnualUpdate.html">next&gt;</a>
 
           </span>
 
@@ -148,7 +148,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -160,16 +160,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Resource Profiles</a>
+         <a href="#1">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#2">Structures: Extension Definitions</a>
+         <a href="#2">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
+         <a href="#3">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -178,6 +181,77 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
      xmlns:f="http://hl7.org/fhir">
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
+   <h3>Structures: Questionnaires </h3>
+    <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ClinicalResponseBaseline.html"
+                  title="Questionnaire/ClinicalResponseBaseline">Clinical Response Questionnaire 01 - Baseline</a>
+            </td>
+            <td>
+<p>This questionnaire is meant to assess the clinical response in stroke patients at the initial point of assessment, which would be the first doctor’s visit.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ClinicalResponseDischargeOrSevenDays.html"
+                  title="Questionnaire/ClinicalResponseDischargeOrSevenDays">Clinical Response Questionnaire 02 - Discharge or 7 days post admission</a>
+            </td>
+            <td>
+<p>This questionnaire is meant to assess the clinical response in stroke patients at the patient discharge or 7 days post admission, whichever comes first.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ClinicalResponseNinetyDays.html"
+                  title="Questionnaire/ClinicalResponseNinetyDays">Clinical Response Questionnaire 03 - 90 days post admission</a>
+            </td>
+            <td>
+<p>This questionnaire is meant to assess the clinical response in stroke patients at 90 days post admission.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-ClinicalResponseAnnualUpdate.html"
+                  title="Questionnaire/ClinicalResponseAnnualUpdate">Clinical Response Questionnaire 04 - Annual Follow-up</a>
+            </td>
+            <td>
+<p>This questionnaire is meant to assess the clinical response in stroke patients at annual follow-up, from 1 year to 5 years post admission.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PatientReportedBaseline.html"
+                  title="Questionnaire/PatientReportedBaseline">Patient Reported Questionnaire 01 - Baseline</a>
+            </td>
+            <td>
+<p>This questionnaire is designed to assess the patient-reported response in stroke patients at the initial point of assessment.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PatientReportedDischargeOrSevenDays.html"
+                  title="Questionnaire/PatientReportedDischargeOrSevenDays">Patient Reported Questionnaire 02 - Discharge or 7 days post admission</a>
+            </td>
+            <td>
+<p>This questionnaire is designed to assess the patient-reported response in stroke at the patient discharge or 7 days post admission, whichever comes first.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-PatientReportedNinetyDays.html"
+                  title="Questionnaire/PatientReportedNinetyDays">Patient Reported Questionnaire 03 - 90 days post admission</a>
+            </td>
+            <td>
+<p>This questionnaire is designed to assess the patient-reported response in stroke at 90 days post admission.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -220,15 +294,6 @@ public ambulance transport (SAMU), private services, and others.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-patient-profile.html"
-                  title="StructureDefinition/molicavc-patient-profile">Profile of Molic-AVC's Patient</a>
-            </td>
-            <td>
-<p>The Patient Resource of the Molic-AVC Project stores demographics and other administrative information about an individual or animal receiving care or other health-related services.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-molicavc-practitioner-profile.html"
                   title="StructureDefinition/molicavc-practitioner-profile">Profile of Molic-AVC's Practitioner</a>
             </td>
@@ -238,28 +303,16 @@ public ambulance transport (SAMU), private services, and others.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-questionnaire-profile.html"
-                  title="StructureDefinition/molicavc-questionnaire-profile">Profile of Molic-AVC's Questionnaire</a>
+               <a href="StructureDefinition-StrokePatient.html"
+                  title="StructureDefinition/StrokePatient">Stroke Patient Profile</a>
             </td>
             <td>
-<p>A structured set of questions intended to guide the collection of answers from end-users. 
-Questionnaires provide detailed control over order, presentation, phraseology and grouping to allow coherent, 
-consistent data collection.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-questionnaireresponse-profile.html"
-                  title="StructureDefinition/molicavc-questionnaireresponse-profile">Profile of Molic-AVC's QuestionnaireResponse</a>
-            </td>
-            <td>
-<p>QuestionnaireResponse provides a complete or partial list of answers to a set of questions filled when responding
- to a questionnaire.</p>
+<p>This profile stores demographics and other administrative information about an patient with stroke.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="2"> </a>
+   <a name="3"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -267,17 +320,17 @@ consistent data collection.</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-alcoholamount-extension.html"
-                  title="StructureDefinition/molicavc-alcoholamount-extension">Extension of Alcohol intake amount</a>
+               <a href="StructureDefinition-AlcoholAmountExtension.html"
+                  title="StructureDefinition/AlcoholAmountExtension">Extension of Alcohol intake amount</a>
             </td>
             <td>
-<p>One standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol).</p>
+<p>Based on the ICHOM, one standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol).</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-consciousness-extension.html"
-                  title="StructureDefinition/molicavc-consciousness-extension">Extension of Consciousness</a>
+               <a href="StructureDefinition-StrokeSevLocExtension.html"
+                  title="StructureDefinition/StrokeSevLocExtension">Extension of Consciousness</a>
             </td>
             <td>
 <p>Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival.</p>
@@ -285,8 +338,8 @@ consistent data collection.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-nihsscategory-extension.html"
-                  title="StructureDefinition/molicavc-nihsscategory-extension">Extension of Estimated Stroke Severity Category based on NIHSS</a>
+               <a href="StructureDefinition-Est-StrokeSevNIHSSCatExtension.html"
+                  title="StructureDefinition/Est-StrokeSevNIHSSCatExtension">Extension of Estimated Stroke Severity Category based on NIHSS</a>
             </td>
             <td>
 <p>Estimated Stroke Severity: Category. Indicate the estimated stroke severity category 
@@ -295,8 +348,8 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-live-alone-pre-stroke-extension.html"
-                  title="StructureDefinition/live-alone-pre-stroke-extension">Extension of Live Alone Pre-Stroke</a>
+               <a href="StructureDefinition-LiveAlonePreExtension.html"
+                  title="StructureDefinition/LiveAlonePreExtension">Extension of Live Alone Pre-Stroke</a>
             </td>
             <td>
 <p>Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
@@ -304,8 +357,8 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-ethnicity-extension.html"
-                  title="StructureDefinition/molicavc-ethnicity-extension">Extension of Patient Ethnicity</a>
+               <a href="StructureDefinition-EthnicityExtension.html"
+                  title="StructureDefinition/EthnicityExtension">Extension of Patient Ethnicity</a>
             </td>
             <td>
 <p>Extension to capture the patient’s ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.</p>
@@ -313,8 +366,8 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-genderidentity-extension.html"
-                  title="StructureDefinition/molicavc-genderidentity-extension">Extension of Patient Gender Identity</a>
+               <a href="StructureDefinition-GenderIdentityExtension.html"
+                  title="StructureDefinition/GenderIdentityExtension">Extension of Patient Gender Identity</a>
             </td>
             <td>
 <p>The patient’s gender.</p>
@@ -322,26 +375,8 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-race-extension.html"
-                  title="StructureDefinition/molicavc-race-extension">Extension of Patient Race</a>
-            </td>
-            <td>
-<p>Extension to capture the patient’s race, as recommended by ICHOM.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-sex-extension.html"
-                  title="StructureDefinition/molicavc-sex-extension">Extension of Patient Sex</a>
-            </td>
-            <td>
-<p>The patient’s sex at birth.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-living-location-pre-stroke-extension.html"
-                  title="StructureDefinition/living-location-pre-stroke-extension">Extension of Patient's Residence Prior to a Stroke</a>
+               <a href="StructureDefinition-LivingLocPreExtension.html"
+                  title="StructureDefinition/LivingLocPreExtension">Extension of Patient's Residence Prior to a Stroke</a>
             </td>
             <td>
 <p>An extension to capture the patient’s residence prior to a stroke event, based on the ICHOM code.</p>
@@ -349,8 +384,17 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-smokingstatus-extension.html"
-                  title="StructureDefinition/molicavc-smokingstatus-extension">Extension of Smoking Status</a>
+               <a href="StructureDefinition-RaceExtension.html"
+                  title="StructureDefinition/RaceExtension">Extension of Race</a>
+            </td>
+            <td>
+<p>Represents the race of a patient. This extension is aligned with USCore.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SmokingStatusExtension.html"
+                  title="StructureDefinition/SmokingStatusExtension">Extension of Smoking Status</a>
             </td>
             <td>
 <p>Extension to capture the patient’s smoking status, as recommended by ICHOM.</p>
@@ -358,8 +402,8 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-nihss-extension.html"
-                  title="StructureDefinition/molicavc-nihss-extension">Extension of Stroke Severity Score based on NIHSS</a>
+               <a href="StructureDefinition-StrokeSev-NIHSS-Extension.html"
+                  title="StructureDefinition/StrokeSev-NIHSS-Extension">Extension of Stroke Severity Score based on NIHSS</a>
             </td>
             <td>
 <p>Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.</p>
@@ -376,8 +420,8 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-symptomduration-extension.html"
-                  title="StructureDefinition/molicavc-symptomduration-extension">Extension of Stroke's Symptom Duration</a>
+               <a href="StructureDefinition-SymtDurExtension.html"
+                  title="StructureDefinition/SymtDurExtension">Extension of Stroke's Symptom Duration</a>
             </td>
             <td>
 <p>Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival.</p>
@@ -385,7 +429,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Terminology: Value Sets </h3>
     <p>These define sets of codes used by systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -402,18 +446,26 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-NoYesUnknownVS.html" title="ValueSet/NoYesUnknownVS">ValueSet Sim, Não e Desconhecido</a>
+               <a href="ValueSet-SymtDurVS.html" title="ValueSet/SymtDurVS">ValueSet Categorizing the Duration of Stroke Symptoms</a>
             </td>
             <td>
-<p>Valueset com respostas Sim, Não e Desconhecido (yes, no and unknown)</p>
+<p>ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-DiagnosisVS.html" title="ValueSet/DiagnosisVS">ValueSet da Base de Evidência Diagnóstica</a>
+               <a href="ValueSet-StrokeSevLocVS.html" title="ValueSet/StrokeSevLocVS">ValueSet Categorizing the State of Consciousness according to the ICHOM standard.</a>
             </td>
             <td>
-<p>Este ValueSet indica qual base de evidência diagnóstica foi utilizada para sua realização.</p>
+<p>This ValueSet is based on the ICHOM standard and it indicates the patient’s state of consciousness as measured upon arrival at the reference hospital.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-NoYesUnknownVS.html" title="ValueSet/NoYesUnknownVS">ValueSet Yes, No and Unknown</a>
+            </td>
+            <td>
+<p>ValueSet with responses Yes, No, and Unknown</p>
 </td>
          </tr>
          <tr>
@@ -427,6 +479,14 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="ValueSet-StrokeTypeVS.html" title="ValueSet/StrokeTypeVS">ValueSet for stroke type based on ICHOM</a>
+            </td>
+            <td>
+<p>This ValueSet aims to categorize the stroke type according to the ICHOM standard.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="ValueSet-molicavc-cvdcomorbidities-valueset.html"
                   title="ValueSet/molicavc-cvdcomorbidities-valueset">ValueSet of Cardiovascular Comorbidities</a>
             </td>
@@ -436,8 +496,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-dischargelocation-valueset.html"
-                  title="ValueSet/molicavc-dischargelocation-valueset">ValueSet of Discharge Location</a>
+               <a href="ValueSet-DischDestVS.html" title="ValueSet/DischDestVS">ValueSet of Discharge Location</a>
             </td>
             <td>
 <p>Discharge destination following acute care hospitalization. What type of place was the patient discharged to?</p>
@@ -445,35 +504,15 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-eq5d3l-valueset.html"
-                  title="ValueSet/molicavc-eq5d3l-valueset">ValueSet of EQ-5D-3L Response Questionnaire</a>
+               <a href="ValueSet-GenderIdentityVS.html" title="ValueSet/GenderIdentityVS">ValueSet of Gender Identity</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the EQ-5D-3L Questionnaire.</p>
+<p>ValueSet for Gender Identity based on LOINC.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-gender-valueset.html"
-                  title="ValueSet/molicavc-gender-valueset">ValueSet of Gender Identity</a>
-            </td>
-            <td>
-<p>ValueSet for Gender identity based on LOINC.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-molicavc-hrhsqol-valueset.html"
-                  title="ValueSet/molicavc-hrhsqol-valueset">ValueSet of Health-related Quality of Life Response Question</a>
-            </td>
-            <td>
-<p>This ValueSet defines the response values for the Health-related Quality of Life Response Question.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-live-alone-pre-stroke.html"
-                  title="ValueSet/live-alone-pre-stroke">ValueSet of Live Alone Pre-Stroke</a>
+               <a href="ValueSet-LiveAlonePreVS.html" title="ValueSet/LiveAlonePreVS">ValueSet of Live Alone Pre-Stroke</a>
             </td>
             <td>
 <p>ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
@@ -489,8 +528,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-promis10-valueset.html"
-                  title="ValueSet/molicavc-promis10-valueset">ValueSet of PROMIS-10 Response Questionnaire</a>
+               <a href="ValueSet-PROMIS10VS.html" title="ValueSet/PROMIS10VS">ValueSet of PROMIS-10 Response Questionnaire</a>
             </td>
             <td>
 <p>This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.</p>
@@ -498,25 +536,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-ethnicity-valueset.html"
-                  title="ValueSet/molicavc-ethnicity-valueset">ValueSet of Patient Ethnicity</a>
-            </td>
-            <td>
-<p>Patient’s Ethnicity captures the cultural background or heritage individuals identify with most closely. It is recorded based on local standards in the geographic region and self-reported by the patient. Although optional, ICHOM strongly encourages collecting this inclusive information to address health disparities while ensuring confidentiality. . Responses are coded using LOINC standards.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-molicavc-race.html" title="ValueSet/molicavc-race">ValueSet of Patient Race</a>
-            </td>
-            <td>
-<p>Value set for capturing the patient’s race based on LOINC standards, as recommended by ICHOM.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-living-location-pre-stroke-valueset.html"
-                  title="ValueSet/living-location-pre-stroke-valueset">ValueSet of Patient's Residence Prior to a Stroke</a>
+               <a href="ValueSet-LivingLocPreVS.html" title="ValueSet/LivingLocPreVS">ValueSet of Patient's Residence Prior to a Stroke</a>
             </td>
             <td>
 <p>Represents the patient’s most recent place of residence before the occurrence of a stroke based on ICHOM code.</p>
@@ -524,11 +544,27 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-functionalaspectsrehabilitation-valueset.html"
-                  title="ValueSet/molicavc-functionalaspectsrehabilitation-valueset">ValueSet of Prestroke and Poststroke Functional Status questionnaire</a>
+               <a href="ValueSet-StrokeAmbVS.html" title="ValueSet/StrokeAmbVS">ValueSet of Prestroke and Poststroke Functional Status: Ambulation</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status questionnaire.</p>
+<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-StrokeDressingVS.html" title="ValueSet/StrokeDressingVS">ValueSet of Prestroke and Poststroke Functional Status: Dressing</a>
+            </td>
+            <td>
+<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-StrokeToiletingVS.html"
+                  title="ValueSet/StrokeToiletingVS">ValueSet of Prestroke and Poststroke Functional Status: Toileting</a>
+            </td>
+            <td>
+<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting.</p>
 </td>
          </tr>
          <tr>
@@ -551,8 +587,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-smokingstatus-valueset.html"
-                  title="ValueSet/molicavc-smokingstatus-valueset">ValueSet of Smoking Status</a>
+               <a href="ValueSet-SmokingStatusVS.html" title="ValueSet/SmokingStatusVS">ValueSet of Smoking Status</a>
             </td>
             <td>
 <p>ValueSet for Smoking Status. A person’s current and past smoking behavior.</p>
@@ -560,26 +595,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-vr12-valueset.html"
-                  title="ValueSet/molicavc-vr12-valueset">ValueSet of VR-12 Response Questionnaire</a>
-            </td>
-            <td>
-<p>This ValueSet defines the response values for the VR-12 (Veterans RAND 12 Item Health Survey).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-molicavc-whodas-valueset.html"
-                  title="ValueSet/molicavc-whodas-valueset">ValueSet of WHODAS Response Questionnaire</a>
-            </td>
-            <td>
-<p>This ValueSet defines the response values for the WHODAS (World Health Organization Disability Assessment Schedule) Questionnaire.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-molicavc-smrsq-valueset.html"
-                  title="ValueSet/molicavc-smrsq-valueset">ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)</a>
+               <a href="ValueSet-SMRSqVS.html" title="ValueSet/SMRSqVS">ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)</a>
             </td>
             <td>
 <p>This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.</p>
@@ -587,40 +603,24 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-StrokeSevLocVS.html" title="ValueSet/StrokeSevLocVS">ValueSet que Categoriza o Estado de Consciência</a>
+               <a href="ValueSet-DiagnosisVS.html" title="ValueSet/DiagnosisVS">ValueSet of the Diagnostic Evidence Base</a>
             </td>
             <td>
-<p>Este ValueSet indica o estado de consciência do paciente aferido na chegada ao Hospital de Referência.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SymtDurVS.html" title="ValueSet/SymtDurVS">ValueSet que categoriza a Duração dos Sintomas do AVC</a>
-            </td>
-            <td>
-<p>ValueSet que categoriza a duração dos sintomas do AVC considerando o início dos sintomas até a admissão no hospital de referência</p>
+<p>This ValueSet indicates which diagnostic evidence base was used for its realization</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-EstStrokeSevNIHSSCatVS.html"
-                  title="ValueSet/EstStrokeSevNIHSSCatVS">ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS</a>
+                  title="ValueSet/EstStrokeSevNIHSSCatVS">ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.</a>
             </td>
             <td>
-<p>Este ValueSet tem por finalidade categorizar a gravidade do AVC baseando-se no National Institute of Health Stroke Scale (NIHSS)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-StrokeTypeVS.html" title="ValueSet/StrokeTypeVS">ValueSet que categoriza o tipo de AVC</a>
-            </td>
-            <td>
-<p>Este ValueSet tem por finalidade categorizar o tipo do AVC</p>
+<p>This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -628,56 +628,11 @@ by the NIH Stroke Scale (NIHSS).</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Questionnaire-ClinicalResponseBaseline.html"
-                  title="Questionnaire/ClinicalResponseBaseline">Questionário de coleta de dados no Primeiro Atendimento ao AVC pelo Médico ou Profissional de Saúde</a>
-            </td>
-            <td>
-<p>Questionário aplicado pelo profissional médico ou profissional de saúde no Primeiro atendimento ao AVC</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-WHODASQuestionnaire.html"
-                  title="Questionnaire/MolicAVC-WHODASQuestionnaire">Use case of Molic-AVC WHODAS Questionnaire</a>
-            </td>
-            <td>
-<p>Example of WHODAS Questionnaire for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-EQ5D3LQuestionnaire.html"
-                  title="Questionnaire/MolicAVC-EQ5D3LQuestionnaire">Use case of Molic-AVC's EQ-5D-3L Questionnaire</a>
-            </td>
-            <td>
-<p>Example of EQ-5D-3L Questionnaire for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Encounter-MolicAVC-EncouterExample.html"
                   title="Encounter/MolicAVC-EncouterExample">Use case of Molic-AVC's Encounter</a>
             </td>
             <td>
 <p>Example instance of an encounter for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-FunctionalAspectsRehabilitation.html"
-                  title="Questionnaire/MolicAVC-FunctionalAspectsRehabilitation">Use case of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation</a>
-            </td>
-            <td>
-<p>Example of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-HRHSQoL.html"
-                  title="Questionnaire/MolicAVC-HRHSQoL">Use case of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question.</a>
-            </td>
-            <td>
-<p>Example of Health-related Quality of Life/Self-Reported Health Status Question.</p>
 </td>
          </tr>
          <tr>
@@ -691,25 +646,6 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-PROMIS10Questionnaire.html"
-                  title="Questionnaire/MolicAVC-PROMIS10Questionnaire">Use case of Molic-AVC's PROMIS-10 Questionnaire</a>
-            </td>
-            <td>
-<p>Example of PROMIS-10 Questionnaire for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-123.456.789-00.html" title="Patient/123.456.789-00">Use case of Molic-AVC's Patient</a>
-            </td>
-            <td>
-<p>This case study presents a patient profile tailored for the Molic-AVC project, an initiative 
-focused on optimizing care for Acute Ischemic Stroke patients. The profile extends the FHIR Patient 
-resource with specialized extensions to capture essential data.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="Practitioner-MolicAVC-DoctorExample.html"
                   title="Practitioner/MolicAVC-DoctorExample">Use case of Molic-AVC's Practitioner</a>
             </td>
@@ -719,101 +655,11 @@ resource with specialized extensions to capture essential data.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-FunctionalStatus-Questionnaire.html"
-                  title="Questionnaire/MolicAVC-FunctionalStatus-Questionnaire">Use case of Molic-AVC's Prestroke and Poststroke Functional Status</a>
+               <a href="Patient-123.456.789-00.html" title="Patient/123.456.789-00">Use case of Stroke Patient</a>
             </td>
             <td>
-<p>Example of Prestroke and Poststroke Functional Status Questionnaire for the patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-VR12Questionnaire.html"
-                  title="Questionnaire/MolicAVC-VR12Questionnaire">Use case of Molic-AVC's VR-12 Survey</a>
-            </td>
-            <td>
-<p>Example of VR-12 for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Questionnaire-MolicAVC-smRSqQuestionnaire.html"
-                  title="Questionnaire/MolicAVC-smRSqQuestionnaire">Use case of Molic-AVC's simplified modified Rankin Scale Questionnaire (smRSq)</a>
-            </td>
-            <td>
-<p>Example of simplified modified Rankin Scale Questionnaire for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-WHODAS-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-WHODAS-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC WHODAS questionnaire</a>
-            </td>
-            <td>
-<p>Example of WHODAS QuestionnaireResponse for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-EQ5D3L-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-EQ5D3L-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's EQ-5D-3L questionnaire</a>
-            </td>
-            <td>
-<p>Example of EQ-5D-3L QuestionnaireResponse for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-FunctionalAspectsRehabilitation-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.</a>
-            </td>
-            <td>
-<p>Example of QuestionnaireResponse of Functional Aspects and Rehabilitation: Feeding, Communication, and Stroke Rehabilitation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-HRHSQoL-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-HRHSQoL-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's Health-Related Quality of Life/Self-Reported Health Status Question.</a>
-            </td>
-            <td>
-<p>Example of Health-related Quality of Life/Self-Reported Health Status QuestionnaireResponse.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-PROMIS10-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-PROMIS10-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's PROMIS-10</a>
-            </td>
-            <td>
-<p>Example of PROMIS-10 QuestionnaireResponse for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-FunctionalStatus-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-FunctionalStatus-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's Prestroke and Poststroke Functional Status</a>
-            </td>
-            <td>
-<p>Example of Prestroke and Poststroke Functional Status QuestionnaireResponse for the patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-VR12-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-VR12-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's VR-12 Survey</a>
-            </td>
-            <td>
-<p>Example of VR-12 QuestionnaireResponse for a patient admitted due to a stroke.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="QuestionnaireResponse-MolicAVC-smRSq-QuestionnaireResponse.html"
-                  title="QuestionnaireResponse/MolicAVC-smRSq-QuestionnaireResponse">Use case of QuestionnaireResponse of Molic-AVC's simplified modified Rankin Scale questionnaire</a>
-            </td>
-            <td>
-<p>Example of simplified modified Rankin Scale QuestionnaireResponse for a patient admitted due to a stroke.</p>
+<p>This case study presents a patient profile. The profile extends the FHIR Patient 
+resource with specialized extensions to capture essential data.</p>
 </td>
          </tr>
       </tbody>
@@ -854,7 +700,7 @@ resource with specialized extensions to capture essential data.</p>
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="StructureDefinition-molicavc-encounter-profile.html">next&gt;</a>
+                <a href="Questionnaire-ClinicalResponseAnnualUpdate.html">next&gt;</a>
 
               </td>
             </tr>
@@ -864,7 +710,7 @@ resource with specialized extensions to capture essential data.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 18:47-0300">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -2,14 +2,14 @@
   "resourceType" : "Patient",
   "id" : "123.456.789-00",
   "meta" : {
-    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-patient-profile"]
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>João da Silva(OFFICIAL)</b> (no stated gender), DoB: 1960-01-01 ( id:\u00a0123.456.789-00\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Rua das Flores, 123, Bairro Jardim, Cidade Maravilhosa, Estado, 12345-678(HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.\"><a href=\"StructureDefinition-molicavc-ethnicity-extension.html\">Extension of Patient Ethnicity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Hispanic or Latino Ethnicity</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.\"><a href=\"StructureDefinition-live-alone-pre-stroke-extension.html\">Extension of Live Alone Pre-Stroke:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's sex at birth.\"><a href=\"StructureDefinition-molicavc-sex-extension.html\">Extension of Patient Sex:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Male</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension to capture the patient's race, as recommended by ICHOM.\"><a href=\"StructureDefinition-molicavc-race-extension.html\">Extension of Patient Race:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">White or Caucasian Race</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's gender.\"><a href=\"StructureDefinition-molicavc-genderidentity-extension.html\">Extension of Patient Gender Identity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Identifies as male</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code.\"><a href=\"StructureDefinition-living-location-pre-stroke-extension.html\">Extension of Patient's Residence Prior to a Stroke:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">At home, with no community support</span></li></ul></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>João da Silva(OFFICIAL)</b> male, DoB: 1960-01-01 ( id:\u00a0123.456.789-00\u00a0(use:\u00a0OFFICIAL))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">Rua das Flores, 123, Bairro Jardim, Cidade Maravilhosa, Estado, 12345-678(HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Represents the race of a patient. This extension is aligned with USCore.\"><a href=\"StructureDefinition-RaceExtension.html\">Extension of Race:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-Race 2076-8}\">Native Hawaiian or Other Pacific Islander</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code.\"><a href=\"StructureDefinition-LivingLocPreExtension.html\">Extension of Patient's Residence Prior to a Stroke:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">At home, with no community support</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.\"><a href=\"StructureDefinition-LiveAlonePreExtension.html\">Extension of Live Alone Pre-Stroke:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.\"><a href=\"StructureDefinition-EthnicityExtension.html\">Extension of Patient Ethnicity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-Ethnicity 2135-2}\">Hispanic or Latino</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's gender.\"><a href=\"StructureDefinition-GenderIdentityExtension.html\">Extension of Patient Gender Identity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: \">Identifies as male</span></li></ul></td></tr></table></div>"
   },
   "extension" : [{
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-genderidentity-extension",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension",
     "valueCodeableConcept" : {
       "coding" : [{
         "code" : "LA22878-5",
@@ -18,34 +18,25 @@
     }
   },
   {
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-sex-extension",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension",
     "valueCodeableConcept" : {
       "coding" : [{
-        "code" : "1",
-        "display" : "Male"
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+        "code" : "2135-2"
       }]
     }
   },
   {
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-ethnicity-extension",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension",
     "valueCodeableConcept" : {
       "coding" : [{
-        "code" : "21028-6",
-        "display" : "Hispanic or Latino Ethnicity"
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "code" : "2076-8"
       }]
     }
   },
   {
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-race-extension",
-    "valueCodeableConcept" : {
-      "coding" : [{
-        "code" : "32697-1",
-        "display" : "White or Caucasian Race"
-      }]
-    }
-  },
-  {
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/living-location-pre-stroke-extension",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LivingLocPreExtension",
     "valueCodeableConcept" : {
       "coding" : [{
         "code" : "1",
@@ -54,7 +45,7 @@
     }
   },
   {
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/live-alone-pre-stroke-extension",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LiveAlonePreExtension",
     "valueCodeableConcept" : {
       "coding" : [{
         "code" : "2",
@@ -72,6 +63,7 @@
     "use" : "official",
     "text" : "João da Silva"
   }],
+  "gender" : "male",
   "birthDate" : "1960-01-01",
   "address" : [{
     "use" : "home",

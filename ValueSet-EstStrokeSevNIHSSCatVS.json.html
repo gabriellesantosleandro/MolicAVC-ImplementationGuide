@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS - JSON Representation - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
+    <title>ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard. - JSON Representation - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,15 +41,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.24"}
-    h3,h4,h5,h6{--heading-prefix:"9.24"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.29"}
+    h3,h4,h5,h6{--heading-prefix:"9.29"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
+          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
             <br/>
             <span style="display:inline-block;">1.0.1 - ci-build
 
@@ -88,25 +88,25 @@
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
+    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
   </li>
   <li>
-    <a href="data-dictionary.html">Dicionário de Dados</a>
+    <a href="data-dictionary.html">Data Dictionary</a>
   </li>
   <li>
-    <a href="paper.html">Artigo</a>
+    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
-    <a href="security.html">Segurança</a>
+    <a href="security.html">Security</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
+    <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="artifacts.html#example-example-instances">Examples</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -120,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.</b></li>
 
           <span style="float:right;">
 
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -189,7 +189,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS - JSON Representation</h2>
+<h2 id="root">: ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard. - JSON Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -198,7 +198,7 @@
         
           Active
           
-            as of 2023-10-25
+            as of 2023-11-21
           
         
       </td>
@@ -220,14 +220,14 @@
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a>" : "EstStrokeSevNIHSSCatVS",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Sem sintomas de AVC | No stroke symptoms (NIHSS score = 0)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Menor | Minor (NIHSS score 1-4)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Moderado | Moderate (NIHSS score 5 – 15)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Moderado a Severo | Moderate to severe (NIHSS score 16 – 20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Severo | Severe (NIHSS score 21 – 42)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;999&lt;/td&gt;&lt;td&gt;Desconhecido | Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/&lt;/code&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;No stroke symptoms (NIHSS score = 0)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Minor (NIHSS score from 1 to 4)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Moderate (NIHSS score from 5 to 15)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Moderate to severe (NIHSS score from 16 to 20)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Severe (NIHSS score from 21 to 42)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;999&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a>" : "1.0.1",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a>" : "EstStrokeSevNIHSSCatVS",
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "ValueSet que categoriza a gravidade estimada do AVC por meio do NIHSS",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>" : "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2023-10-25T16:05:12-03:00",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a>" : "2023-11-21T18:47:54-03:00",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a>" : "Gabrielle dos Santos Leandro",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -259,7 +259,7 @@
       ]
     }
   ],
-  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "Este ValueSet tem por finalidade categorizar a gravidade do AVC baseando-se no National Institute of Health Stroke Scale (NIHSS)",
+  "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>" : "This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
   "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>" : [
       {
@@ -267,27 +267,27 @@
         "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
           {
             "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "1",
-            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Sem sintomas de AVC | No stroke symptoms (NIHSS score = 0)"
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "No stroke symptoms (NIHSS score = 0)"
           },
           {
             "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "2",
-            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Menor | Minor (NIHSS score 1-4)"
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Minor (NIHSS score from 1 to 4)"
           },
           {
             "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "3",
-            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Moderado | Moderate (NIHSS score 5 – 15)"
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Moderate (NIHSS score from 5 to 15)"
           },
           {
             "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "4",
-            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Moderado a Severo | Moderate to severe (NIHSS score 16 – 20)"
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Moderate to severe (NIHSS score from 16 to 20)"
           },
           {
             "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "5",
-            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Severo | Severe (NIHSS score 21 – 42)"
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Severe (NIHSS score from 21 to 42)"
           },
           {
             "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "999",
-            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Desconhecido | Unknown"
+            "<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a>" : "Unknown"
           }
         ]
       }
@@ -345,7 +345,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 18:47-0300">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

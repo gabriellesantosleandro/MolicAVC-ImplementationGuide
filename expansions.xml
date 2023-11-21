@@ -1,316 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8ecbb0a2-b4ba-4491-90d8-e9184a6e9e87"/>
+  <id value="a61e60a4-e482-40c4-9bd9-ac12388ead0f"/>
   <meta>
-    <lastUpdated value="2023-10-25T16:05:12.336-03:00"/>
+    <lastUpdated value="2023-11-21T18:47:54.430-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html">codesystem expandedYes-NoIndicator v2.1.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-Y"> </a>  
-                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y">Y</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
-                <td>Sim | Yes</td>
-                <td>
-                  <div>
-                    <p>Yes</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-N"> </a>  
-                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N">N</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
-                <td>Não | No</td>
-                <td>
-                  <div>
-                    <p>No</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-UNK"> </a>  
-                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a>
-                </td>
-                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
-                <td>Desconhecido | Unknown</td>
-                <td>
-                  <div>
-                    <p>unknown</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
-        <version value="1.0.1"/>
-        <name value="NoYesUnknownVS"/>
-        <title value="ValueSet Sim, Não e Desconhecido"/>
-        <status value="active"/>
-        <experimental value="false"/>
-        <date value="2023-10-25T16:05:12-03:00"/>
-        <expansion>
-          <identifier value="urn:uuid:43973a6f-f9b5-4b57-8aa8-7a149d9f341e"/>
-          <timestamp value="2023-10-25T16:06:05-03:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0532|2.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
-            <code value="Y"/>
-            <display value="Sim | Yes"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
-            <code value="N"/>
-            <display value="Não | No"/>
-          </contains>
-          <contains>
-            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
-            <code value="UNK"/>
-            <display value="Desconhecido | Unknown"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 10 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21028-6"> </a>  
-                  <a href="https://loinc.org/21028-6/">21028-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Hispanic or Latino Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-2028-9"> </a>  
-                  <a href="https://loinc.org/2028-9/">2028-9</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Non-Hispanic or Latino Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32626-4"> </a>  
-                  <a href="https://loinc.org/32626-4/">32626-4</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>White Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32623-1"> </a>  
-                  <a href="https://loinc.org/32623-1/">32623-1</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>African Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32620-7"> </a>  
-                  <a href="https://loinc.org/32620-7/">32620-7</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Indigenous Ethnicity (Global)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32622-3"> </a>  
-                  <a href="https://loinc.org/32622-3/">32622-3</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Asian Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32621-5"> </a>  
-                  <a href="https://loinc.org/32621-5/">32621-5</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Aboriginal Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32629-8"> </a>  
-                  <a href="https://loinc.org/32629-8/">32629-8</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Pacific Islander Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-2029-7"> </a>  
-                  <a href="https://loinc.org/2029-7/">2029-7</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Other Ethnicity</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-32627-2"> </a>  
-                  <a href="https://loinc.org/32627-2/">32627-2</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Unknown</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-ethnicity-valueset"/>
-        <version value="1.0.1"/>
-        <name value="MolicAVC_EthnicityValueSet"/>
-        <title value="ValueSet of Patient Ethnicity"/>
-        <status value="active"/>
-        <date value="2023-10-25T16:05:12-03:00"/>
-        <expansion>
-          <identifier value="urn:uuid:c322e192-7974-4b88-a834-3113d7cf3426"/>
-          <timestamp value="2023-10-25T16:06:05-03:00"/>
-          <total value="10"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21028-6"/>
-            <display value="Hispanic or Latino Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="2028-9"/>
-            <display value="Non-Hispanic or Latino Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32626-4"/>
-            <display value="White Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32623-1"/>
-            <display value="African Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32620-7"/>
-            <display value="Indigenous Ethnicity (Global)"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32622-3"/>
-            <display value="Asian Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32621-5"/>
-            <display value="Aboriginal Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32629-8"/>
-            <display value="Pacific Islander Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="2029-7"/>
-            <display value="Other Ethnicity"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="32627-2"/>
-            <display value="Unknown"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
+    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS"/>
     <resource>
       <ValueSet>
         <text>
@@ -389,15 +86,15 @@
             </table>
           </div>
         </text>
-        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-gender-valueset"/>
+        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS"/>
         <version value="1.0.1"/>
-        <name value="MolicAVC_GenderIdentityValueSet"/>
+        <name value="GenderIdentityVS"/>
         <title value="ValueSet of Gender Identity"/>
         <status value="active"/>
-        <date value="2023-10-25T16:05:12-03:00"/>
+        <date value="2023-11-21T18:47:54-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:0f0280d8-2e5a-4073-bd54-b8875a6e59b8"/>
-          <timestamp value="2023-10-25T16:06:06-03:00"/>
+          <identifier value="urn:uuid:fb4ba0da-3fe9-4e0d-8d3f-dc19554d4424"/>
+          <timestamp value="2023-11-21T18:48:38-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -455,14 +152,16 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
+    <fullUrl value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.74</p>
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html">codesystem expandedYes-NoIndicator v2.1.0 (CodeSystem)</a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -474,47 +173,87 @@
                 <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Definition</b>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-2135-2"> </a>  
-                  <a href="https://loinc.org/2135-2/">2135-2</a>
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-Y"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y">Y</a>
                 </td>
-                <td>http://loinc.org</td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
+                <td>Yes</td>
+                <td>
+                  <div>
+                    <p>Yes</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-N"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N">N</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
+                <td>No</td>
+                <td>
+                  <div>
+                    <p>No</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---terminology.hl7.org-CodeSystem-v2-0532-UNK"> </a>  
+                  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK">UNK</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0532</td>
                 <td>Unknown</td>
+                <td>
+                  <div>
+                    <p>unknown</p>
+
+                  </div>
+                </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-race"/>
+        <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS"/>
         <version value="1.0.1"/>
-        <name value="MolicAVC_RaceValueSet"/>
-        <title value="ValueSet of Patient Race"/>
+        <name value="NoYesUnknownVS"/>
+        <title value="ValueSet Yes, No and Unknown"/>
         <status value="active"/>
-        <date value="2023-10-25T16:05:12-03:00"/>
+        <experimental value="false"/>
+        <date value="2023-11-21T18:47:54-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:1fa96081-7441-4a7c-91e1-d50b418e8fcb"/>
-          <timestamp value="2023-10-25T16:06:06-03:00"/>
-          <total value="1"/>
+          <identifier value="urn:uuid:5cd9961a-b4c8-46f5-9188-536c6f3fab1c"/>
+          <timestamp value="2023-11-21T18:48:39-03:00"/>
+          <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0532|2.1.0"/>
           </parameter>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="2135-2"/>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="Y"/>
+            <display value="Yes"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="N"/>
+            <display value="No"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+            <code value="UNK"/>
             <display value="Unknown"/>
           </contains>
         </expansion>

@@ -1,0 +1,100 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/administrative-gender",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-administrative-gender.html" : "AdministrativeGender"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.1.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-GenderIdentityVS.html" : "ValueSet of Gender Identity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-organization-type.html" : "Organization Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0532",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ExpandedYesNoIndicator",
+      "title" : "expandedYes-NoIndicator",
+      "description" : "HL7-defined code system of concepts used to specify an expansion on the original Yes/No indicator table by including \"flavors of null\".  It is intended to be applied to fields where the response is not limited to \"yes\" or \"no\".  Used in numerous locations in HL7 Version 2.x messaging.",
+      "oids" : ["2.16.840.1.113883.18.347"],
+      "uses" : {
+      },
+      "ValueSet-NoYesUnknownVS.html" : "ValueSet Yes, No and Unknown"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Ethnicity",
+      "title" : "Ethnicity",
+      "description" : "**Deprecation Information:** Deprecated due to UP-265. This code system in NOT the acknowledged source of truth for Ethnicity concepts and codes. It should no longer be used. https://terminology.hl7.org/CodeSystem-CDCREC.html should be used in its place. In the United States, federal standards for classifying data on ethnicity determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define ethnicity, and they recognize the absence of an anthropological or scientific basis for ethnicity classification. Instead, the federal standards acknowledge that ethnicity is a social-political construct in which an individual's own identification with a particular ethnicity is preferred to observer identification. The standards specify two minimum ethnicity categories: Hispanic or Latino, and Not Hispanic or Latino. The standards define a Hispanic or Latino as a person of \"Mexican, Puerto Rican, Cuban, South or Central America, or other Spanish culture or origin, regardless of race.\" The standards stipulate that ethnicity data need not be limited to the two minimum categories, but any expansion must be collapsible to those categories. In addition, the standards stipulate that an individual can be Hispanic or Latino or can be Not Hispanic or Latino, but cannot be both.",
+      "oids" : ["2.16.840.1.113883.5.50"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v3-Ethnicity.html" : "Ethnicity"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-Race",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "Race",
+      "title" : "Race",
+      "description" : "**Deprecation Information:** Deprecated per UP-263. This code system is NOT the acknowledged source of truth for Race concepts and codes. It should no longer be used. https://terminology.hl7.org/CodeSystem-CDCREC.html should be used in its place. In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+      "oids" : ["2.16.840.1.113883.5.104"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v3-Race.html" : "Race"
+    }
+  ]
+}

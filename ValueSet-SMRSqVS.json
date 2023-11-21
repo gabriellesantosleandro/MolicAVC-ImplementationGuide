@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "SMRSqVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>No symptoms at all.</td></tr><tr><td>1</td><td>No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td>2</td><td>Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance.</td></tr><tr><td>3</td><td>Moderate disability; requiring some help, but able to walk without assistance.</td></tr><tr><td>4</td><td>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td>5</td><td>Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td>6</td><td>Dead.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
+  "version" : "1.0.1",
+  "name" : "SMRSqVS",
+  "title" : "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)",
+  "status" : "active",
+  "date" : "2023-11-21T18:47:54-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/",
+      "concept" : [{
+        "code" : "0",
+        "display" : "No symptoms at all."
+      },
+      {
+        "code" : "1",
+        "display" : "No significant disability despite symptoms; able to carry out all usual duties and activities."
+      },
+      {
+        "code" : "2",
+        "display" : "Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance."
+      },
+      {
+        "code" : "3",
+        "display" : "Moderate disability; requiring some help, but able to walk without assistance."
+      },
+      {
+        "code" : "4",
+        "display" : "Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance."
+      },
+      {
+        "code" : "5",
+        "display" : "Severe disability; bedridden, incontinent and requiring constant nursing care and attention."
+      },
+      {
+        "code" : "6",
+        "display" : "Dead."
+      }]
+    }]
+  }
+}

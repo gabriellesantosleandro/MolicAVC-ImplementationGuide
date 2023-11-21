@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Segurança - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
+    <title>Security - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,7 +47,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
+          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
             <br/>
             <span style="display:inline-block;">1.0.1 - ci-build
 
@@ -86,25 +86,25 @@
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
+    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
   </li>
   <li>
-    <a href="data-dictionary.html">Dicionário de Dados</a>
+    <a href="data-dictionary.html">Data Dictionary</a>
   </li>
   <li>
-    <a href="paper.html">Artigo</a>
+    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
-    <a href="security.html">Segurança</a>
+    <a href="security.html">Security</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
+    <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="artifacts.html#example-example-instances">Examples</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -118,7 +118,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Segurança</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Security</b></li>
 
           <span style="float:right;">
 
@@ -148,8 +148,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Segurança</h2>
+  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Security</h2>
   
 
 
@@ -167,9 +167,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
-<p>O ICHOM criou ‘Conjuntos de Mensurações de Resultados em Saúde Centrados no Paciente’ para comparar o desempenho de saúde em um âmbito global, permitir que profissionais de saúde aprendam uns com os outros, e agilizar a melhoria da assistência médica de saúde para os pacientes. O ‘Conjunto de Mensurações de Resultados em Saúde Centrados no Paciente’ para o Acidente Vascular Cerebral (AVC) inclui tanto os resultados clínicos quanto os resutados relatados pelo paciente.</p>
+<p>ICHOM has created ‘Patient-Centered Health Outcome Measure Sets’ to compare health performance on a global scale, enable healthcare professionals to learn from each other, and expedite the improvement of medical healthcare for patients. The ‘Patient-Centered Health Outcome Measure Set’ for Stroke includes both clinical outcomes and patient-reported outcomes.</p>
 
-<p>Este Guia de Implementação focou-se exclusivamente em representar os elementos do Conjunto de Mensurações de Resultados para o AVC do ICHOM no FHIR, sem considerar o apoio a casos de uso específicos; por consequência, medidas de segurança amplas não fazem parte deste escopo. A responsabilidade por garantir o armazenamento seguro e a transmissão de dados do paciente, conforme a necessidade de cada caso de uso, cabe aos implementadores.</p>
+<p>This Implementation Guide focused exclusively on representing the elements of the ICHOM Stroke Health Outcome Measure Set in FHIR, without considering support for specific use cases; consequently, comprehensive security measures are not part of this scope. The responsibility for ensuring secure storage and transmission of patient data, as required for each use case, rests with the implementers.</p>
 
 <p><br />
 <br />
@@ -221,7 +221,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 18:47-0300">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

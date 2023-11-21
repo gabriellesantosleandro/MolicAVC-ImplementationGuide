@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="LiveAlonePreVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/livealoneprestroke/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Yes, I lived alone</td></tr><tr><td>2</td><td>No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAlonePreVS"/>
+  <version value="1.0.1"/>
+  <name value="LiveAlonePreVS"/>
+  <title value="ValueSet of Live Alone Pre-Stroke"/>
+  <status value="active"/>
+  <date value="2023-11-21T18:47:54-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
+  <compose>
+    <include>
+      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/livealoneprestroke/"/>
+      <concept>
+        <code value="1"/>
+        <display value="Yes, I lived alone"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="No, I shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

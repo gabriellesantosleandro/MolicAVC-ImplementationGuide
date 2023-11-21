@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="SymtDurVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Menor que 4:30h. | Less than 4.5 hours</td></tr><tr><td>1</td><td>Maior que 4:30h. | More than 4.5 hours</td></tr><tr><td>999</td><td>Desconhecido | Unknown</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Less than 4.5 hours</td></tr><tr><td>1</td><td>More than 4.5 hours</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS"/>
   <version value="1.0.1"/>
   <name value="SymtDurVS"/>
-  <title value="ValueSet que categoriza a Duração dos Sintomas do AVC"/>
+  <title value="ValueSet Categorizing the Duration of Stroke Symptoms"/>
   <status value="active"/>
-  <date value="2023-10-25T16:05:12-03:00"/>
+  <date value="2023-11-21T18:47:54-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -36,21 +36,21 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="ValueSet que categoriza a duração dos sintomas do AVC considerando o início dos sintomas até a admissão no hospital de referência"/>
+  <description value="ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital."/>
   <compose>
     <include>
       <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/"/>
       <concept>
         <code value="0"/>
-        <display value="Menor que 4:30h. | Less than 4.5 hours"/>
+        <display value="Less than 4.5 hours"/>
       </concept>
       <concept>
         <code value="1"/>
-        <display value="Maior que 4:30h. | More than 4.5 hours"/>
+        <display value="More than 4.5 hours"/>
       </concept>
       <concept>
         <code value="999"/>
-        <display value="Desconhecido | Unknown"/>
+        <display value="Unknown"/>
       </concept>
     </include>
   </compose>

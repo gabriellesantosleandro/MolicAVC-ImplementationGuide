@@ -1,0 +1,57 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "StrokeAmbVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Able to walk without help from another person with or without a device.</td></tr><tr><td>2</td><td>Able to walk with help from another person.</td></tr><tr><td>3</td><td>Unable to walk.</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS",
+  "version" : "1.0.1",
+  "name" : "StrokeAmbVS",
+  "title" : "ValueSet of Prestroke and Poststroke Functional Status: Ambulation",
+  "status" : "active",
+  "date" : "2023-11-21T18:47:54-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Able to walk without help from another person with or without a device."
+      },
+      {
+        "code" : "2",
+        "display" : "Able to walk with help from another person."
+      },
+      {
+        "code" : "3",
+        "display" : "Unable to walk."
+      }]
+    }]
+  }
+}

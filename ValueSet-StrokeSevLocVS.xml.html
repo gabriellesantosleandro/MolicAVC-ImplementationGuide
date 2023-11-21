@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ValueSet que Categoriza o Estado de Consciência - XML Representation - Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC v1.0.1</title>
+    <title>ValueSet Categorizing the State of Consciousness according to the ICHOM standard. - XML Representation - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,15 +41,15 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.44"}
-    h3,h4,h5,h6{--heading-prefix:"9.44"}</style>
+    <style type="text/css">h2{--heading-prefix:"9.43"}
+    h3,h4,h5,h6{--heading-prefix:"9.43"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC</span>
+          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
             <br/>
             <span style="display:inline-block;">1.0.1 - ci-build
 
@@ -88,25 +88,25 @@
     <a href="ichom.html">ICHOM</a>
   </li>
   <li>
-    <a href="lc-avc-bpmn.html">LC-AVC (BPMN)</a>
+    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
   </li>
   <li>
-    <a href="data-dictionary.html">Dicionário de Dados</a>
+    <a href="data-dictionary.html">Data Dictionary</a>
   </li>
   <li>
-    <a href="paper.html">Artigo</a>
+    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
   </li>
   <li>
-    <a href="security.html">Segurança</a>
+    <a href="security.html">Security</a>
   </li>
   <li>
-    <a href="artifacts.html">Artefatos</a>
+    <a href="artifacts.html">Artifacts</a>
   </li>
   <li>
-    <a href="artifacts.html#example-example-instances">Exemplos</a>
+    <a href="artifacts.html#example-example-instances">Examples</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -120,7 +120,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet que Categoriza o Estado de Consciência</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet Categorizing the State of Consciousness according to the ICHOM standard.</b></li>
 
           <span style="float:right;">
 
@@ -143,7 +143,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Projeto Molic-AVC: Monitoramento da Linha de Cuidado do AVC - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -189,7 +189,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: ValueSet que Categoriza o Estado de Consciência - XML Representation</h2>
+<h2 id="root">: ValueSet Categorizing the State of Consciousness according to the ICHOM standard. - XML Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -198,7 +198,7 @@
         
           Active
           
-            as of 2023-10-25
+            as of 2023-11-21
           
         
       </td>
@@ -220,15 +220,16 @@
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;StrokeSevLocVS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Completamente acordado | Fully awake&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Sonolento | Somnolent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Coma | Coma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;999&lt;/td&gt;&lt;td&gt;Desconhecido | Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;Fully awake&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Somnolent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Coma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;999&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>
        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;1.0.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;StrokeSevLocVS&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ValueSet que Categoriza o Estado de Consciência&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a>
+         <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ValueSet Categorizing the State of Consciousness according to the ICHOM standard.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2023-10-25T16:05:12-03:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2023-11-21T18:47:54-03:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gabrielle dos Santos Leandro&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gabrielle dos Santos Leandro&quot;/&gt;
@@ -255,26 +256,26 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>
-               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Este ValueSet indica o estado de consciência do paciente aferido na chegada ao Hospital de Referência.&quot;/&gt;
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>
               <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;0&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Completamente acordado | Fully awake&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Fully awake&quot;/&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Sonolento | Somnolent&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Somnolent&quot;/&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;2&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Coma | Coma&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Coma&quot;/&gt;
       &lt;/concept&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;999&quot;/&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Desconhecido | Unknown&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Unknown&quot;/&gt;
       &lt;/concept&gt;
     &lt;/include&gt;
   &lt;/compose&gt;
@@ -330,7 +331,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Oct 25, 2023 16:05-0300">2023-10-25</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 18:47-0300">2023-11-21</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

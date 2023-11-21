@@ -1,0 +1,242 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "DiagnosisVS",
+      "title" : "ValueSet of the Diagnostic Evidence Base",
+      "description" : "This ValueSet indicates which diagnostic evidence base was used for its realization",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "DischDestVS",
+      "title" : "ValueSet of Discharge Location",
+      "description" : "Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "EstStrokeSevNIHSSCatVS",
+      "title" : "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.",
+      "description" : "This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "GenderIdentityVS",
+      "title" : "ValueSet of Gender Identity",
+      "description" : "ValueSet for Gender Identity based on LOINC.",
+      "systems" : ["http://loinc.org"]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAlonePreVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "LiveAlonePreVS",
+      "title" : "ValueSet of Live Alone Pre-Stroke",
+      "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/livealoneprestroke/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "LivingLocPreVS",
+      "title" : "ValueSet of Patient's Residence Prior to a Stroke",
+      "description" : "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/livinglocationprestroke/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "NoYesUnknownVS",
+      "title" : "ValueSet Yes, No and Unknown",
+      "description" : "ValueSet with responses Yes, No, and Unknown",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "PROMIS10VS",
+      "title" : "ValueSet of PROMIS-10 Response Questionnaire",
+      "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SMRSqVS",
+      "title" : "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)",
+      "description" : "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SmokingStatusVS",
+      "title" : "ValueSet of Smoking Status",
+      "description" : "ValueSet for Smoking Status. A person's current and past smoking behavior.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "StrokeAmbVS",
+      "title" : "ValueSet of Prestroke and Poststroke Functional Status: Ambulation",
+      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "StrokeDressingVS",
+      "title" : "ValueSet of Prestroke and Poststroke Functional Status: Dressing",
+      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "StrokeSevLocVS",
+      "title" : "ValueSet Categorizing the State of Consciousness according to the ICHOM standard.",
+      "description" : "This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "StrokeToiletingVS",
+      "title" : "ValueSet of Prestroke and Poststroke Functional Status: Toileting",
+      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "StrokeTypeVS",
+      "title" : "ValueSet for stroke type based on ICHOM",
+      "description" : "This ValueSet aims to categorize the stroke type according to the ICHOM standard.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "SymtDurVS",
+      "title" : "ValueSet Categorizing the Duration of Stroke Symptoms",
+      "description" : "ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/cnes-valueset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CNES_ValueSet",
+      "title" : "ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)",
+      "description" : "This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde).",
+      "systems" : [
+        "http://cnes2.datasus.gov.br/Exibe_Ficha_Estabelecimento.asp?VCo_Unidade=4209102511959"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "HospitalDepartment_ValueSet",
+      "title" : "ValueSet for Hospital Department",
+      "description" : "This ValueSet includes the hospital departments responsible for taking care of stroke patients.",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "CardiovascularComorbidities_ValueSet",
+      "title" : "ValueSet of Cardiovascular Comorbidities",
+      "description" : " Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/cvdcomorbidities/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MolicAVC_ReferenceLocation_ValueSet",
+      "title" : "ValueSet of Reference Location",
+      "description" : "Indicate and classify where the patient was referred.",
+      "systems" : [
+        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/reference-location/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ProfessionalCode_ValueSet",
+      "title" : "ValueSet of Professional Code",
+      "description" : "This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil.",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset/"
+      ]
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MolicAVC_CodeHealthcareUnitValueSet",
+      "title" : "Type of Healthcare Unit ValueSet",
+      "description" : "This ValueSet details codes for healthcare units serving stroke patients in Brazil.",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset/"
+      ]
+    }
+  ]
+}
