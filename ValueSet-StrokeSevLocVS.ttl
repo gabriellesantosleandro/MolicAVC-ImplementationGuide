@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "StrokeSevLocVS"] ; # 
   fhir:title [ fhir:v "ValueSet Categorizing the State of Consciousness according to the ICHOM standard."] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-11-21T18:47:54-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-21T19:08:35-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;

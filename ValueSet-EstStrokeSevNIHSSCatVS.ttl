@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EstStrokeSevNIHSSCatVS"] ; # 
   fhir:title [ fhir:v "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard."] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-11-21T18:47:54-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-21T19:08:35-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;

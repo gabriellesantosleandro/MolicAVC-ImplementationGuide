@@ -3,7 +3,7 @@
 
 err = 191, warn = 184, info = 104
 IG Publisher Version: 1.5.2 Out of date - current version is 1.5.4
-Generated Tue Nov 21 18:49:55 BRT 2023. FHIR version 5.0.0 for guide#1.0.1 (canonical = https://molic-avc.gabriellesantosleandro.com)
+Generated Tue Nov 21 19:10:35 BRT 2023. FHIR version 5.0.0 for guide#1.0.1 (canonical = https://molic-avc.gabriellesantosleandro.com)
  Build Errors : 215 / 0 / 0
  C:\fhir\fhir-molic-avc-ig\fsh-generated\resources\Encounter-MolicAVC-EncouterExample : 15 / 13 / 2
  C:\fhir\fhir-molic-avc-ig\fsh-generated\resources\Organization-MolicAVC-OrganizationExample : 3 / 3 / 2
