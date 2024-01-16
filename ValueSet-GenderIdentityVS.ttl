@@ -10,14 +10,15 @@
   fhir:id [ fhir:v "GenderIdentityVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA22878-5/\">LA22878-5</a></td><td>Identifies as male</td></tr><tr><td><a href=\"https://loinc.org/LA22879-3/\">LA22879-3</a></td><td>Identifies as female</td></tr><tr><td><a href=\"https://loinc.org/LA76696-4:/\">LA76696-4:</a></td><td>Non-binary</td></tr><tr><td><a href=\"https://loinc.org/LA22880-1/\">LA22880-1</a></td><td>Female-to-male transsexual</td></tr><tr><td><a href=\"https://loinc.org/LA22881-9/\">LA22881-9</a></td><td>Male-to-female transsexual</td></tr><tr><td><a href=\"https://loinc.org/LA22882-7/\">LA22882-7</a></td><td>Identifies as non-conforming</td></tr><tr><td><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>Other</td></tr><tr><td><a href=\"https://loinc.org/LA20384-6/\">LA20384-6</a></td><td>Asked but unknown</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LA22878-5/\">LA22878-5</a></td><td>Identifies as male</td></tr><tr><td><a href=\"https://loinc.org/LA22879-3/\">LA22879-3</a></td><td>Identifies as female</td></tr><tr><td><a href=\"https://loinc.org/LA22880-1/\">LA22880-1</a></td><td>Female-to-male transsexual</td></tr><tr><td><a href=\"https://loinc.org/LA22881-9/\">LA22881-9</a></td><td>Male-to-female transsexual</td></tr><tr><td><a href=\"https://loinc.org/LA22882-7/\">LA22882-7</a></td><td>Identifies as non-conforming</td></tr><tr><td><a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>Other</td></tr><tr><td><a href=\"https://loinc.org/LA20384-6/\">LA20384-6</a></td><td>Asked but unknown</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
   fhir:name [ fhir:v "GenderIdentityVS"] ; # 
-  fhir:title [ fhir:v "ValueSet of Gender Identity"] ; # 
+  fhir:title [ fhir:v "Gender Identity"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-11-21T19:08:35-03:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-11T13:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -50,9 +51,6 @@
        ] [
          fhir:code [ fhir:v "LA22879-3" ] ;
          fhir:display [ fhir:v "Identifies as female" ]
-       ] [
-         fhir:code [ fhir:v "LA76696-4:" ] ;
-         fhir:display [ fhir:v "Non-binary" ]
        ] [
          fhir:code [ fhir:v "LA22880-1" ] ;
          fhir:display [ fhir:v "Female-to-male transsexual" ]

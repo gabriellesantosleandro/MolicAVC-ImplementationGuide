@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="StrokeTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IS<a name="StrokeTypeCS-IS"> </a></td><td>Ischemic stroke (IS)</td></tr><tr><td style="white-space:nowrap">ICH<a name="StrokeTypeCS-ICH"> </a></td><td>Intracerebral hemorrhage (ICH)</td></tr><tr><td style="white-space:nowrap">TIA<a name="StrokeTypeCS-TIA"> </a></td><td>Transient ischemic attack (TIA)</td></tr><tr><td style="white-space:nowrap">UNK<a name="StrokeTypeCS-UNK"> </a></td><td>Stroke of unknown type</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS"/>
+  <version value="0.0.0"/>
+  <name value="StrokeTypeCS"/>
+  <title value="Stroke Type"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that aims to categorize the stroke type according to the ICHOM standard."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="IS"/>
+    <display value="Ischemic stroke (IS)"/>
+  </concept>
+  <concept>
+    <code value="ICH"/>
+    <display value="Intracerebral hemorrhage (ICH)"/>
+  </concept>
+  <concept>
+    <code value="TIA"/>
+    <display value="Transient ischemic attack (TIA)"/>
+  </concept>
+  <concept>
+    <code value="UNK"/>
+    <display value="Stroke of unknown type"/>
+  </concept>
+</CodeSystem>

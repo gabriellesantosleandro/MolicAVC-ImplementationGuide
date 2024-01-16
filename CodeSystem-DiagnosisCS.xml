@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="DiagnosisCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="DiagnosisCS-0"> </a></td><td>Clinical symptoms alone</td></tr><tr><td style="white-space:nowrap">1<a name="DiagnosisCS-1"> </a></td><td>Clinical and Tomography</td></tr><tr><td style="white-space:nowrap">2<a name="DiagnosisCS-2"> </a></td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS"/>
+  <version value="0.0.0"/>
+  <name value="DiagnosisCS"/>
+  <title value="Diagnostic Evidence Base"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that indicates which diagnostic evidence base was used for its realization"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="0"/>
+    <display value="Clinical symptoms alone"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="Clinical and Tomography"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Clinical and Magnetic Resonance Imaging"/>
+  </concept>
+</CodeSystem>

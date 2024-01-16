@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/Patient/example-strokepatient> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-strokepatient"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2024-01-11T13:00:00-03:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"^^xsd:anyURI ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>João Silva </b> male, DoB: 1960-01-01 ( id: 123.456.789-00)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td>true</td><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">id: 700.0000.0000.0000</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: (11) 1234-5678</li><li>Rua Exemplo, 123 São Paulo SP 12345-678 BR </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension that represents the race of a patient.\"><a href=\"StructureDefinition-RaceExtension.html\">Race:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-Race 2106-3}\">White</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension to capture the patient's ethnicity which represents their cultural background or heritage.\"><a href=\"StructureDefinition-EthnicityExtension.html\">Ethnicity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-Ethnicity 2165-9}\">South American</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Extension of the patient's gender.\"><a href=\"StructureDefinition-GenderIdentityExtension.html\">Gender Identity:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://loinc.org LA22878-5}\">Identifies as male</span></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         a loinc:LA22878-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "LA22878-5" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Ethnicity"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2165-9" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Race"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2106-3" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123.456.789-00" ]
+  ] [
+     fhir:system [ fhir:v "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cns"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "700.0000.0000.0000" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Silva" ] ;
+     fhir:given ( [ fhir:v "João" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(11) 1234-5678" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1960-01-01"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Rua Exemplo, 123" ] ) ;
+     fhir:city [ fhir:v "São Paulo" ] ;
+     fhir:state [ fhir:v "SP" ] ;
+     fhir:postalCode [ fhir:v "12345-678" ] ;
+     fhir:country [ fhir:v "BR" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

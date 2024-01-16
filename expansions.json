@@ -1,27 +1,398 @@
 {
   "resourceType" : "Bundle",
-  "id" : "1e78fa8c-0c06-4f1b-8417-5f42b98d8ecf",
+  "id" : "0fb0dd93-bc13-456a-be49-07e8741d389d",
   "meta" : {
-    "lastUpdated" : "2023-11-21T19:08:35.747-03:00"
+    "lastUpdated" : "2024-01-16T20:08:55.271-03:00"
   },
   "type" : "collection",
   "entry" : [{
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-CVDComorbiditiesCS.html\">codesystem Cardiovascular Comorbidities v0.0.0 (CodeSystem)</a></p><p>This value set contains 24 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-0\">0</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>No other diseases</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Heart Disease (angina, heart attack, or HF)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>High Blood Pressure</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Atrial Fibrillation or Flutter</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-6\">6</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Peripheral Artery Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-7\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-7\">7</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Myocardial Infarction</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-8\">8</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Obesity</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-9\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-9\">9</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Stroke</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-10\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-10\">10</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Ulcer or Stomach disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-11\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-11\">11</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Renan Insufficiency</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-12\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-12\">12</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Liver Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-13\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-13\">13</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Anemia or other blood disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-14\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-14\">14</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Cancer/Other Cancer in last 5 years</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-15\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-15\">15</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>AIDS/Immunodeficiency</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-16\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-16\">16</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Presence/ History of Depression</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-17\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-17\">17</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Anxiety or Neuroses</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-18\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-18\">18</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-19\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-19\">19</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Substance Abuse</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-20\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-20\">20</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Osteoarthritis, degenerative arthritis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-21\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-21\">21</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Rheumatoid Arthritis</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-22\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-22\">22</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Periodontal Disease</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-CVDComorbiditiesCS-888\"> </a>\u00a0\u00a0<a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-888\">888</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</td><td>Other Medical Problems</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS",
+      "version" : "0.0.0",
+      "name" : "CVDComorbiditiesVS",
+      "title" : "Cardiovascular Comorbidities",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d48dfb47-fc49-48ef-b526-3f56854a87a2",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 24,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "0",
+          "display" : "No other diseases"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "1",
+          "display" : "Heart Disease (angina, heart attack, or HF)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "2",
+          "display" : "High Blood Pressure"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "3",
+          "display" : "Atrial Fibrillation or Flutter"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "4",
+          "display" : "Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "5",
+          "display" : "Diabetes"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "6",
+          "display" : "Peripheral Artery Disease"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "7",
+          "display" : "Myocardial Infarction"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "8",
+          "display" : "Obesity"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "9",
+          "display" : "Stroke"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "10",
+          "display" : "Ulcer or Stomach disease"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "11",
+          "display" : "Renan Insufficiency"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "12",
+          "display" : "Liver Disease"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "13",
+          "display" : "Anemia or other blood disease"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "14",
+          "display" : "Cancer/Other Cancer in last 5 years"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "15",
+          "display" : "AIDS/Immunodeficiency"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "16",
+          "display" : "Presence/ History of Depression"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "17",
+          "display" : "Anxiety or Neuroses"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "18",
+          "display" : "Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "19",
+          "display" : "Substance Abuse"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "20",
+          "display" : "Osteoarthritis, degenerative arthritis"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "21",
+          "display" : "Rheumatoid Arthritis"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "22",
+          "display" : "Periodontal Disease"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+          "code" : "888",
+          "display" : "Other Medical Problems"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ConsciousnessCS.html\">codesystem State of Consciousness according to the ICHOM standard v0.0.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-ConsciousnessCS-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-0\">0</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS</td><td>Fully awake</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-ConsciousnessCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS</td><td>Somnolent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-ConsciousnessCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS</td><td>Coma</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-ConsciousnessCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS",
+      "version" : "0.0.0",
+      "name" : "ConsciousnessVS",
+      "title" : "State of Consciousness.",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:1799ebea-9bd8-4722-8f83-9610dd458efb",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+          "code" : "0",
+          "display" : "Fully awake"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+          "code" : "1",
+          "display" : "Somnolent"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+          "code" : "2",
+          "display" : "Coma"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+          "code" : "999",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DiagnosisCS.html\">codesystem Diagnostic Evidence Base v0.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DiagnosisCS-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DiagnosisCS.html#DiagnosisCS-0\">0</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS</td><td>Clinical symptoms alone</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DiagnosisCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DiagnosisCS.html#DiagnosisCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS</td><td>Clinical and Tomography</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DiagnosisCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DiagnosisCS.html#DiagnosisCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS</td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
+      "version" : "0.0.0",
+      "name" : "DiagnosisVS",
+      "title" : "Diagnostic Evidence Base",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:536c98aa-7ba8-4af0-9652-fff174c9bad1",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+          "code" : "0",
+          "display" : "Clinical symptoms alone"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+          "code" : "1",
+          "display" : "Clinical and Tomography"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+          "code" : "2",
+          "display" : "Clinical and Magnetic Resonance Imaging"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DischDestCS.html\">codesystem Discharge Location v0.0.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Home or community-dwelling (not home hospice)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Residential facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Dedicated inpatient rehabilitation facility</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Another acute care hospital</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Patient died in hospital</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-888\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-888\">888</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-DischDestCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-DischDestCS.html#DischDestCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS",
+      "version" : "0.0.0",
+      "name" : "DischDestVS",
+      "title" : "Discharge Location",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:5419aff3-f1e3-4153-a0a4-5cff2d8cbe4c",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "1",
+          "display" : "Home or community-dwelling (not home hospice)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "2",
+          "display" : "Residential facility"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "3",
+          "display" : "Dedicated inpatient rehabilitation facility"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "4",
+          "display" : "Another acute care hospital"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "5",
+          "display" : "Patient died in hospital"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "888",
+          "display" : "Other"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+          "code" : "999",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html\">codesystem Estimated stroke severity using the NIHSS. v0.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-EstStrokeSevNIHSSCatCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html#EstStrokeSevNIHSSCatCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</td><td>No stroke symptoms (NIHSS score = 0)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-EstStrokeSevNIHSSCatCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html#EstStrokeSevNIHSSCatCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</td><td>Minor (NIHSS score from 1 to 4)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-EstStrokeSevNIHSSCatCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html#EstStrokeSevNIHSSCatCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</td><td>Moderate (NIHSS score from 5 to 15)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-EstStrokeSevNIHSSCatCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html#EstStrokeSevNIHSSCatCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</td><td>Moderate to severe (NIHSS score from 16 to 20)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-EstStrokeSevNIHSSCatCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html#EstStrokeSevNIHSSCatCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</td><td>Severe (NIHSS score from 21 to 42)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-EstStrokeSevNIHSSCatCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-EstStrokeSevNIHSSCatCS.html#EstStrokeSevNIHSSCatCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
+      "version" : "0.0.0",
+      "name" : "EstStrokeSevNIHSSCatVS",
+      "title" : "Estimated stroke severity using the NIHSS.",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e694173a-3e09-42f6-9849-c76cb1ceeaf7",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+          "code" : "1",
+          "display" : "No stroke symptoms (NIHSS score = 0)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+          "code" : "2",
+          "display" : "Minor (NIHSS score from 1 to 4)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+          "code" : "3",
+          "display" : "Moderate (NIHSS score from 5 to 15)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+          "code" : "4",
+          "display" : "Moderate to severe (NIHSS score from 16 to 20)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+          "code" : "5",
+          "display" : "Severe (NIHSS score from 21 to 42)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+          "code" : "999",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.74</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22878-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22878-5/\">LA22878-5</a></td><td>http://loinc.org</td><td>Identifies as male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22879-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22879-3/\">LA22879-3</a></td><td>http://loinc.org</td><td>Identifies as female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22880-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22880-1/\">LA22880-1</a></td><td>http://loinc.org</td><td>Female-to-male transsexual</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22881-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22881-9/\">LA22881-9</a></td><td>http://loinc.org</td><td>Male-to-female transsexual</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22882-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22882-7/\">LA22882-7</a></td><td>http://loinc.org</td><td>Identifies as non-conforming</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA46-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>http://loinc.org</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20384-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA20384-6/\">LA20384-6</a></td><td>http://loinc.org</td><td>Asked but unknown</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li>Loinc v2.74</li><li>Loinc v2.74</li></ul></div><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22878-5\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22878-5/\">LA22878-5</a></td><td>http://loinc.org</td><td>Identifies as male</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22879-3\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22879-3/\">LA22879-3</a></td><td>http://loinc.org</td><td>Identifies as female</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22880-1\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22880-1/\">LA22880-1</a></td><td>http://loinc.org</td><td>Female-to-male transsexual</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22881-9\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22881-9/\">LA22881-9</a></td><td>http://loinc.org</td><td>Male-to-female transsexual</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA22882-7\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA22882-7/\">LA22882-7</a></td><td>http://loinc.org</td><td>Identifies as non-conforming</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA46-8\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA46-8/\">LA46-8</a></td><td>http://loinc.org</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-LA20384-6\"> </a>\u00a0\u00a0<a href=\"https://loinc.org/LA20384-6/\">LA20384-6</a></td><td>http://loinc.org</td><td>Asked but unknown</td></tr></table></div>"
       },
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "name" : "GenderIdentityVS",
-      "title" : "ValueSet of Gender Identity",
+      "title" : "Gender Identity",
       "status" : "active",
-      "date" : "2023-11-21T19:08:35-03:00",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:6f22c49f-a60e-4bdc-a804-d7d26653f0a5",
-        "timestamp" : "2023-11-21T19:09:21-03:00",
+        "identifier" : "urn:uuid:c20abdb0-f215-4e12-b468-71f9bc46c1e3",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
         "total" : 7,
         "parameter" : [{
           "name" : "excludeNested",
@@ -34,6 +405,10 @@
         {
           "name" : "limitedExpansion",
           "valueBoolean" : true
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://loinc.org|2.74"
         },
         {
           "name" : "version",
@@ -78,23 +453,203 @@
     }
   },
   {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAloneVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-LiveAloneCS.html\">codesystem Live Alone Pre-Stroke v0.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LiveAloneCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LiveAloneCS.html#LiveAloneCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS</td><td>Yes, I live/lived alone</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LiveAloneCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LiveAloneCS.html#LiveAloneCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS</td><td>No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LiveAloneCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LiveAloneCS.html#LiveAloneCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAloneVS",
+      "version" : "0.0.0",
+      "name" : "LiveAloneVS",
+      "title" : "Live Alone Pre-Stroke",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d8ca7d91-da6a-4f93-9fe4-5f7a7fc7f919",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+          "code" : "1",
+          "display" : "Yes, I live/lived alone"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+          "code" : "2",
+          "display" : "No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+          "code" : "999",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPostVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-LivingLocPostCS.html\">codesystem Patient's Residence Post to a Stroke v0.0.0 (CodeSystem)</a></p><p>This value set contains 8 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>At home, with no community support</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>At home with community support</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>In an assisting living home in the community (senior's home)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>In long term care (nursing home, chronic care hospital)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-6\">6</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>In an acute care hospital</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-888\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-888\">888</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPostCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPostCS.html#LivingLocPostCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPostVS",
+      "version" : "0.0.0",
+      "name" : "LivingLocPostVS",
+      "title" : "Patient's Residence Post to a Stroke",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:6fd157c7-6ef1-4394-8b7a-03b9ff25a404",
+        "timestamp" : "2024-01-16T20:10:34-03:00",
+        "total" : 8,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "1",
+          "display" : "At home, with no community support"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "2",
+          "display" : "At home with community support"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "3",
+          "display" : "In an assisting living home in the community (senior's home)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "4",
+          "display" : "In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "5",
+          "display" : "In long term care (nursing home, chronic care hospital)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "6",
+          "display" : "In an acute care hospital"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "888",
+          "display" : "Other"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+          "code" : "999",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-LivingLocPreCS.html\">codesystem Patient's Residence Prior to a Stroke v0.0.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>At home, with no community support</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>At home with community support</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>In an assisting living home in the community (senior's home)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>In long term care (nursing home, chronic care hospital)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-888\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-888\">888</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>Other</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-LivingLocPreCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-LivingLocPreCS.html#LivingLocPreCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS",
+      "version" : "0.0.0",
+      "name" : "LivingLocPreVS",
+      "title" : "Patient's Residence Prior to a Stroke",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e67d26e4-32b1-444b-ad5a-98c97f9d2875",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "1",
+          "display" : "At home, with no community support"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "2",
+          "display" : "At home with community support"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "3",
+          "display" : "In an assisting living home in the community (senior's home)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "4",
+          "display" : "In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "5",
+          "display" : "In long term care (nursing home, chronic care hospital)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "888",
+          "display" : "Other"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+          "code" : "999",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html\">codesystem expandedYes-NoIndicator v2.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-Y\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Yes</td><td><div><p>Yes</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-N\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>No</td><td><div><p>No</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-UNK\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Unknown</td><td><div><p>unknown</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html\">codesystem expandedYes-NoIndicator v2.1.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-Y\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-Y\">Y</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Yes</td><td><div><p>Yes</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-N\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-N\">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>No</td><td><div><p>No</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0532-UNK\"> </a>\u00a0\u00a0<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html#v2-0532-UNK\">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0532</td><td>Unknown</td><td><div><p>unknown</p>\n</div></td></tr></table></div>"
       },
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "name" : "NoYesUnknownVS",
-      "title" : "ValueSet Yes, No and Unknown",
+      "title" : "Yes, No and Unknown",
       "status" : "active",
       "experimental" : false,
-      "date" : "2023-11-21T19:08:35-03:00",
+      "date" : "2024-01-16T20:08:55-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:e67c8f05-11b9-4cab-909f-6f910cede3ab",
-        "timestamp" : "2023-11-21T19:09:21-03:00",
+        "identifier" : "urn:uuid:5f777c9b-438e-4258-9be9-62abce092b03",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -117,6 +672,536 @@
         {
           "system" : "http://terminology.hl7.org/CodeSystem/v2-0532",
           "code" : "UNK",
+          "display" : "Unknown"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-PROMIS10VS.html\">codesystem PROMIS-10 Response Questionnaire v0.0.0 (CodeSystem)</a></p><p>This value set contains 31 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Poor</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Fair</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Good</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Very Good</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Excellent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-6\">6</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Completely</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-7\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-7\">7</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Mostly</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-8\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-8\">8</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Moderately</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-9\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-9\">9</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>A little</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-10\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-10\">10</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Not at all</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-11\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-11\">11</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Always</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-12\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-12\">12</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Often</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-13\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-13\">13</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Sometimes</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-14\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-14\">14</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Rarely</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-15\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-15\">15</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Never</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-16\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-16\">16</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>None</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-17\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-17\">17</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Mild</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-18\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-18\">18</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Moderate</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-19\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-19\">19</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Severe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-20\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-20\">20</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>Very Severe</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-21\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-21\">21</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>0: No pain</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-22\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-22\">22</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>1: Very mild pain</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-23\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-23\">23</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>2: Discomforting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-24\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-24\">24</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>3: Tolerable</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-25\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-25\">25</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>4: Distressing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-26\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-26\">26</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>5: Very distressing</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-27\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-27\">27</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>6: Intense</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-28\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-28\">28</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>7: Very intense</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-29\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-29\">29</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>8: Utterly horrible</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-30\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-30\">30</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>9: Excruciating unbearable pain</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-PROMIS10VS-31\"> </a>\u00a0\u00a0<a href=\"CodeSystem-PROMIS10VS.html#PROMIS10VS-31\">31</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</td><td>10: Unspeakable pain</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS",
+      "version" : "0.0.0",
+      "name" : "PROMIS10VS",
+      "title" : "PROMIS-10 Response Questionnaire",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:ba2df6e0-4222-4114-a3e7-6c1f566be33f",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
+        "total" : 31,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "1",
+          "display" : "Poor"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "2",
+          "display" : "Fair"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "3",
+          "display" : "Good"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "4",
+          "display" : "Very Good"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "5",
+          "display" : "Excellent"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "6",
+          "display" : "Completely"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "7",
+          "display" : "Mostly"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "8",
+          "display" : "Moderately"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "9",
+          "display" : "A little"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "10",
+          "display" : "Not at all"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "11",
+          "display" : "Always"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "12",
+          "display" : "Often"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "13",
+          "display" : "Sometimes"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "14",
+          "display" : "Rarely"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "15",
+          "display" : "Never"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "16",
+          "display" : "None"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "17",
+          "display" : "Mild"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "18",
+          "display" : "Moderate"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "19",
+          "display" : "Severe"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "20",
+          "display" : "Very Severe"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "21",
+          "display" : "0: No pain"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "22",
+          "display" : "1: Very mild pain"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "23",
+          "display" : "2: Discomforting"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "24",
+          "display" : "3: Tolerable"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "25",
+          "display" : "4: Distressing"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "26",
+          "display" : "5: Very distressing"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "27",
+          "display" : "6: Intense"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "28",
+          "display" : "7: Very intense"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "29",
+          "display" : "8: Utterly horrible"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "30",
+          "display" : "9: Excruciating unbearable pain"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+          "code" : "31",
+          "display" : "10: Unspeakable pain"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-SMRSqCS.html\">codesystem Simplified Modified Ranking Scale questionnaire (sMRSq) v0.0.0 (CodeSystem)</a></p><p>This value set contains 7 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-0\">0</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>No symptoms at all.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>Moderate disability; requiring some help, but able to walk without assistance.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SMRSqCS-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-6\">6</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</td><td>Dead.</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
+      "version" : "0.0.0",
+      "name" : "SMRSqVS",
+      "title" : "Simplified modified Ranking Scale questionnaire (SMRSq)",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d88e8712-3689-47ab-8201-a700cbda8c12",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
+        "total" : 7,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "0",
+          "display" : "No symptoms at all."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "1",
+          "display" : "No significant disability despite symptoms; able to carry out all usual duties and activities."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "2",
+          "display" : "Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "3",
+          "display" : "Moderate disability; requiring some help, but able to walk without assistance."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "4",
+          "display" : "Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "5",
+          "display" : "Severe disability; bedridden, incontinent and requiring constant nursing care and attention."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+          "code" : "6",
+          "display" : "Dead."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-SmokingStatusCS.html\">codesystem Smoking Status v0.0.0 (CodeSystem)</a></p><p>This value set contains 6 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SmokingStatusCS-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-0\">0</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</td><td>Current every day smoker (a person who smokes daily).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SmokingStatusCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</td><td>Current weekly smoker (a person who smokes at least weekly but not daily).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SmokingStatusCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</td><td>Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime).</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SmokingStatusCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</td><td>Never smoker.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SmokingStatusCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</td><td>Others.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SmokingStatusCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</td><td>Unknown if ever smoked.</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
+      "version" : "0.0.0",
+      "name" : "SmokingStatusVS",
+      "title" : "Smoking Status",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d8982328-792d-4b9d-86e7-62a137ca901c",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
+        "total" : 6,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+          "code" : "0",
+          "display" : "Current every day smoker (a person who smokes daily)."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+          "code" : "1",
+          "display" : "Current weekly smoker (a person who smokes at least weekly but not daily)."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+          "code" : "2",
+          "display" : "Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime)."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+          "code" : "3",
+          "display" : "Never smoker."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+          "code" : "4",
+          "display" : "Others."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+          "code" : "999",
+          "display" : "Unknown if ever smoked."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-StrokeFuncStatusCS.html\">codesystem Prestroke and Poststroke Functional Status v0.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>Able to walk without help from another person with or without a device.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-2\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-2\">2</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>Able to walk with help from another person.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-3\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-3\">3</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>Unable to walk.</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS",
+      "version" : "0.0.0",
+      "name" : "StrokeAmbVS",
+      "title" : "Prestroke and Poststroke Functional Status: Ambulation",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:e3745185-946a-47a8-b501-8fee1d00985f",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "1",
+          "display" : "Able to walk without help from another person with or without a device."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "2",
+          "display" : "Able to walk with help from another person."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "3",
+          "display" : "Unable to walk."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-StrokeFuncStatusCS.html\">codesystem Prestroke and Poststroke Functional Status v0.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-6\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-6\">6</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>I could manage dressing/undressing without help.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-7\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-7\">7</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>I needed help dressing/undressing.</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS",
+      "version" : "0.0.0",
+      "name" : "StrokeDressingVS",
+      "title" : "Prestroke and Poststroke Functional Status: Dressing",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:d045205d-8926-4997-8bef-4e560c2c38f0",
+        "timestamp" : "2024-01-16T20:10:35-03:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "6",
+          "display" : "I could manage dressing/undressing without help."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "7",
+          "display" : "I needed help dressing/undressing."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-StrokeFuncStatusCS.html\">codesystem Prestroke and Poststroke Functional Status v0.0.0 (CodeSystem)</a></p><p>This value set contains 2 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-4\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-4\">4</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>I could manage going to the toilet without assistance.</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeFuncStatusCS-5\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-5\">5</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</td><td>I needed help to go to the toilet.</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS",
+      "version" : "0.0.0",
+      "name" : "StrokeToiletingVS",
+      "title" : "Prestroke and Poststroke Functional Status: Toileting",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:7f7e069c-3283-454b-b3e7-224dfd0b9144",
+        "timestamp" : "2024-01-16T20:10:36-03:00",
+        "total" : 2,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "4",
+          "display" : "I could manage going to the toilet without assistance."
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+          "code" : "5",
+          "display" : "I needed help to go to the toilet."
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-StrokeTypeCS.html\">codesystem Stroke Type v0.0.0 (CodeSystem)</a></p><p>This value set contains 4 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeTypeCS-IS\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeTypeCS.html#StrokeTypeCS-IS\">IS</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</td><td>Ischemic stroke (IS)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeTypeCS-ICH\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeTypeCS.html#StrokeTypeCS-ICH\">ICH</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</td><td>Intracerebral hemorrhage (ICH)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeTypeCS-TIA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeTypeCS.html#StrokeTypeCS-TIA\">TIA</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</td><td>Transient ischemic attack (TIA)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-StrokeTypeCS-UNK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-StrokeTypeCS.html#StrokeTypeCS-UNK\">UNK</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</td><td>Stroke of unknown type</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",
+      "version" : "0.0.0",
+      "name" : "StrokeTypeVS",
+      "title" : "Stroke type based on ICHOM",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:bc47d01a-4fe7-4b3c-8537-ab72c8c74f5d",
+        "timestamp" : "2024-01-16T20:10:36-03:00",
+        "total" : 4,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+          "code" : "IS",
+          "display" : "Ischemic stroke (IS)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+          "code" : "ICH",
+          "display" : "Intracerebral hemorrhage (ICH)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+          "code" : "TIA",
+          "display" : "Transient ischemic attack (TIA)"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+          "code" : "UNK",
+          "display" : "Stroke of unknown type"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-SymtDurCS.html\">codesystem Duration of Stroke Symptoms v0.0.0 (CodeSystem)</a></p><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SymtDurCS-0\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SymtDurCS.html#SymtDurCS-0\">0</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS</td><td>Less than 4.5 hours</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SymtDurCS-1\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SymtDurCS.html#SymtDurCS-1\">1</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS</td><td>More than 4.5 hours</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---molic-avc.gabriellesantosleandro.com-CodeSystem-SymtDurCS-999\"> </a>\u00a0\u00a0<a href=\"CodeSystem-SymtDurCS.html#SymtDurCS-999\">999</a></td><td>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS</td><td>Unknown</td></tr></table></div>"
+      },
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
+      "version" : "0.0.0",
+      "name" : "SymtDurVS",
+      "title" : "Duration of Stroke Symptoms",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2024-01-11T13:00:00-03:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:0b237220-e8ee-4713-be7f-3332fa3c4e1b",
+        "timestamp" : "2024-01-16T20:10:36-03:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS|0.0.0"
+        }],
+        "contains" : [{
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+          "code" : "0",
+          "display" : "Less than 4.5 hours"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+          "code" : "1",
+          "display" : "More than 4.5 hours"
+        },
+        {
+          "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+          "code" : "999",
           "display" : "Unknown"
         }]
       }

@@ -1,0 +1,60 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "StrokeTypeCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IS<a name=\"StrokeTypeCS-IS\"> </a></td><td>Ischemic stroke (IS)</td></tr><tr><td style=\"white-space:nowrap\">ICH<a name=\"StrokeTypeCS-ICH\"> </a></td><td>Intracerebral hemorrhage (ICH)</td></tr><tr><td style=\"white-space:nowrap\">TIA<a name=\"StrokeTypeCS-TIA\"> </a></td><td>Transient ischemic attack (TIA)</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"StrokeTypeCS-UNK\"> </a></td><td>Stroke of unknown type</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+  "version" : "0.0.0",
+  "name" : "StrokeTypeCS",
+  "title" : "Stroke Type",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that aims to categorize the stroke type according to the ICHOM standard.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "IS",
+    "display" : "Ischemic stroke (IS)"
+  },
+  {
+    "code" : "ICH",
+    "display" : "Intracerebral hemorrhage (ICH)"
+  },
+  {
+    "code" : "TIA",
+    "display" : "Transient ischemic attack (TIA)"
+  },
+  {
+    "code" : "UNK",
+    "display" : "Stroke of unknown type"
+  }]
+}

@@ -1,6 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.1.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.1.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-address-use.html" : "AddressUse"
+    },
+    {
       "url" : "http://hl7.org/fhir/administrative-gender",
       "version" : "5.0.0",
       "status" : "active",
@@ -25,6 +49,22 @@
       "http://hl7.org/fhir/R5/valueset-identifier-use.html" : "IdentifierUse"
     },
     {
+      "url" : "http://hl7.org/fhir/link-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "Link Type",
+      "description" : "The type of link between this Patient resource and other Patient/RelatedPerson resource(s).",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.413",
+        "2.16.840.1.113883.4.642.2.234",
+        "2.16.840.1.113883.4.642.4.424"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-link-type.html" : "Link Type"
+    },
+    {
       "url" : "http://loinc.org",
       "version" : "3.1.0",
       "status" : "active",
@@ -34,19 +74,19 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-GenderIdentityVS.html" : "ValueSet of Gender Identity"
+      "ValueSet-GenderIdentityVS.html" : "Gender Identity"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "OrganizationType",
-      "title" : "Organization type",
-      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-organization-type.html" : "Organization Type"
+      "http://hl7.org/fhir/R5/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -70,7 +110,7 @@
       "oids" : ["2.16.840.1.113883.18.347"],
       "uses" : {
       },
-      "ValueSet-NoYesUnknownVS.html" : "ValueSet Yes, No and Unknown"
+      "ValueSet-NoYesUnknownVS.html" : "Yes, No and Unknown"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
@@ -85,6 +125,30 @@
       "http://terminology.hl7.org/5.3.0/ValueSet-v3-Ethnicity.html" : "Ethnicity"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "MaritalStatus",
+      "title" : "MaritalStatus",
+      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+      "oids" : ["2.16.840.1.113883.5.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "NullFlavor",
+      "title" : "NullFlavor",
+      "description" : "A collection of codes specifying why a valid value is not present.",
+      "oids" : ["2.16.840.1.113883.5.1008"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Race",
       "version" : "3.0.0",
       "status" : "active",
@@ -95,6 +159,175 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.3.0/ValueSet-v3-Race.html" : "Race"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "CVDComorbiditiesCS",
+      "title" : "Cardiovascular Comorbidities",
+      "description" : "CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply.",
+      "uses" : {
+      },
+      "ValueSet-CVDComorbiditiesVS.html" : "Cardiovascular Comorbidities"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "ConsciousnessCS",
+      "title" : "State of Consciousness according to the ICHOM standard",
+      "description" : "CodeSystem based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
+      "uses" : {
+      },
+      "ValueSet-ConsciousnessVS.html" : "State of Consciousness."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DiagnosisCS",
+      "title" : "Diagnostic Evidence Base",
+      "description" : "CodeSystem that indicates which diagnostic evidence base was used for its realization",
+      "uses" : {
+      },
+      "ValueSet-DiagnosisVS.html" : "Diagnostic Evidence Base"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DischDestCS",
+      "title" : "Discharge Location",
+      "description" : "CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "uses" : {
+      },
+      "ValueSet-DischDestVS.html" : "Discharge Location"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "EstStrokeSevNIHSSCatCS",
+      "title" : "Estimated stroke severity using the NIHSS.",
+      "description" : "CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+      "uses" : {
+      },
+      "ValueSet-EstStrokeSevNIHSSCatVS.html" : "Estimated stroke severity using the NIHSS."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LiveAloneCS",
+      "title" : "Live Alone Pre-Stroke",
+      "description" : "CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+      "uses" : {
+      },
+      "ValueSet-LiveAloneVS.html" : "Live Alone Pre-Stroke"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPostCS",
+      "title" : "Patient's Residence Post to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code.",
+      "uses" : {
+      },
+      "ValueSet-LivingLocPostVS.html" : "Patient's Residence Post to a Stroke"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPreCS",
+      "title" : "Patient's Residence Prior to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "uses" : {
+      },
+      "ValueSet-LivingLocPreVS.html" : "Patient's Residence Prior to a Stroke"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "PROMIS10CS",
+      "title" : "PROMIS-10 Response Questionnaire",
+      "description" : "CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-PROMIS10VS.html" : "PROMIS-10 Response Questionnaire"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SMRSqCS",
+      "title" : "Simplified Modified Ranking Scale questionnaire (sMRSq)",
+      "description" : "CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq).",
+      "uses" : {
+      },
+      "ValueSet-SMRSqVS.html" : "Simplified modified Ranking Scale questionnaire (SMRSq)"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SmokingStatusCS",
+      "title" : "Smoking Status",
+      "description" : "CodeSystem for Smoking Status. A person's current and past smoking behavior.",
+      "uses" : {
+      },
+      "ValueSet-SmokingStatusVS.html" : "Smoking Status"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "StrokeFuncStatusCS",
+      "title" : "Prestroke and Poststroke Functional Status",
+      "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.",
+      "uses" : {
+      },
+      "ValueSet-StrokeToiletingVS.html" : "Prestroke and Poststroke Functional Status: Toileting",
+      "ValueSet-StrokeDressingVS.html" : "Prestroke and Poststroke Functional Status: Dressing",
+      "ValueSet-StrokeAmbVS.html" : "Prestroke and Poststroke Functional Status: Ambulation"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "StrokeTypeCS",
+      "title" : "Stroke Type",
+      "description" : "CodeSystem that aims to categorize the stroke type according to the ICHOM standard.",
+      "uses" : {
+      },
+      "ValueSet-StrokeTypeVS.html" : "Stroke type based on ICHOM"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SymtDurCS",
+      "title" : "Duration of Stroke Symptoms",
+      "description" : "CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
+      "uses" : {
+      },
+      "ValueSet-SymtDurVS.html" : "Duration of Stroke Symptoms"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages",
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages"
     }
   ]
 }

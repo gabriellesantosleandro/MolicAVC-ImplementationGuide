@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/Practitioner/example-strokepractitioner> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-strokepractitioner"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2024-01-24T15:15:19-03:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"^^xsd:anyURI ;
+       fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner>
+     ] )
+  ] ; # 
+  fhir:language [ fhir:v "pt-BR"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p><b>Generated Narrative: Practitioner</b><a name=\"example-strokepractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;example-strokepractitioner&quot; Updated &quot;2024-01-24 15:15:19-0300&quot;  (Language &quot;pt-BR&quot;) </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-StrokePractitioner.html\">Stroke Practitioner based on Brazilian RNDS</a></p></div><p><b>identifier</b>: id: 123.456.789-00, id: 00.123.456/0001-99</p><p><b>active</b>: true</p><p><b>name</b>: Maria Ferreira </p><p><b>telecom</b>: ph: (11) 9876-5432</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1970-05-15</p><p><b>address</b>: Rua Exemplo, 456 Rio de Janeiro RJ 21000-000 BR </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td>Doctor of Medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0360.html\">degreeLicenseCertificate</a>#MD)</span></td><td>2000-01-01 --&gt; (ongoing)</td><td><span>: Conselho Regional de Medicina</span></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123.456.789-00" ]
+  ] [
+     fhir:system [ fhir:v "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cnpj"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "00.123.456/0001-99" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Ferreira" ] ;
+     fhir:given ( [ fhir:v "Maria" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "(11) 9876-5432" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1970-05-15"^^xsd:date] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "Rua Exemplo, 456" ] ) ;
+     fhir:city [ fhir:v "Rio de Janeiro" ] ;
+     fhir:state [ fhir:v "RJ" ] ;
+     fhir:postalCode [ fhir:v "21000-000" ] ;
+     fhir:country [ fhir:v "BR" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0360"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "MD" ] ;
+         fhir:display [ fhir:v "Doctor of Medicine" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2000-01-01"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:display [ fhir:v "Conselho Regional de Medicina" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

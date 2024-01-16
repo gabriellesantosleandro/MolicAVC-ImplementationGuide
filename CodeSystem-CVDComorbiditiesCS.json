@@ -1,0 +1,140 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "CVDComorbiditiesCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"CVDComorbiditiesCS-0\"> </a></td><td>No other diseases</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"CVDComorbiditiesCS-1\"> </a></td><td>Heart Disease (angina, heart attack, or HF)</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"CVDComorbiditiesCS-2\"> </a></td><td>High Blood Pressure</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"CVDComorbiditiesCS-3\"> </a></td><td>Atrial Fibrillation or Flutter</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"CVDComorbiditiesCS-4\"> </a></td><td>Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"CVDComorbiditiesCS-5\"> </a></td><td>Diabetes</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"CVDComorbiditiesCS-6\"> </a></td><td>Peripheral Artery Disease</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"CVDComorbiditiesCS-7\"> </a></td><td>Myocardial Infarction</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"CVDComorbiditiesCS-8\"> </a></td><td>Obesity</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"CVDComorbiditiesCS-9\"> </a></td><td>Stroke</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"CVDComorbiditiesCS-10\"> </a></td><td>Ulcer or Stomach disease</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"CVDComorbiditiesCS-11\"> </a></td><td>Renan Insufficiency</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"CVDComorbiditiesCS-12\"> </a></td><td>Liver Disease</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"CVDComorbiditiesCS-13\"> </a></td><td>Anemia or other blood disease</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"CVDComorbiditiesCS-14\"> </a></td><td>Cancer/Other Cancer in last 5 years</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"CVDComorbiditiesCS-15\"> </a></td><td>AIDS/Immunodeficiency</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"CVDComorbiditiesCS-16\"> </a></td><td>Presence/ History of Depression</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"CVDComorbiditiesCS-17\"> </a></td><td>Anxiety or Neuroses</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"CVDComorbiditiesCS-18\"> </a></td><td>Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"CVDComorbiditiesCS-19\"> </a></td><td>Substance Abuse</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"CVDComorbiditiesCS-20\"> </a></td><td>Osteoarthritis, degenerative arthritis</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"CVDComorbiditiesCS-21\"> </a></td><td>Rheumatoid Arthritis</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"CVDComorbiditiesCS-22\"> </a></td><td>Periodontal Disease</td></tr><tr><td style=\"white-space:nowrap\">888<a name=\"CVDComorbiditiesCS-888\"> </a></td><td>Other Medical Problems</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+  "version" : "0.0.0",
+  "name" : "CVDComorbiditiesCS",
+  "title" : "Cardiovascular Comorbidities",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 24,
+  "concept" : [{
+    "code" : "0",
+    "display" : "No other diseases"
+  },
+  {
+    "code" : "1",
+    "display" : "Heart Disease (angina, heart attack, or HF)"
+  },
+  {
+    "code" : "2",
+    "display" : "High Blood Pressure"
+  },
+  {
+    "code" : "3",
+    "display" : "Atrial Fibrillation or Flutter"
+  },
+  {
+    "code" : "4",
+    "display" : "Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)"
+  },
+  {
+    "code" : "5",
+    "display" : "Diabetes"
+  },
+  {
+    "code" : "6",
+    "display" : "Peripheral Artery Disease"
+  },
+  {
+    "code" : "7",
+    "display" : "Myocardial Infarction"
+  },
+  {
+    "code" : "8",
+    "display" : "Obesity"
+  },
+  {
+    "code" : "9",
+    "display" : "Stroke"
+  },
+  {
+    "code" : "10",
+    "display" : "Ulcer or Stomach disease"
+  },
+  {
+    "code" : "11",
+    "display" : "Renan Insufficiency"
+  },
+  {
+    "code" : "12",
+    "display" : "Liver Disease"
+  },
+  {
+    "code" : "13",
+    "display" : "Anemia or other blood disease"
+  },
+  {
+    "code" : "14",
+    "display" : "Cancer/Other Cancer in last 5 years"
+  },
+  {
+    "code" : "15",
+    "display" : "AIDS/Immunodeficiency"
+  },
+  {
+    "code" : "16",
+    "display" : "Presence/ History of Depression"
+  },
+  {
+    "code" : "17",
+    "display" : "Anxiety or Neuroses"
+  },
+  {
+    "code" : "18",
+    "display" : "Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)"
+  },
+  {
+    "code" : "19",
+    "display" : "Substance Abuse"
+  },
+  {
+    "code" : "20",
+    "display" : "Osteoarthritis, degenerative arthritis"
+  },
+  {
+    "code" : "21",
+    "display" : "Rheumatoid Arthritis"
+  },
+  {
+    "code" : "22",
+    "display" : "Periodontal Disease"
+  },
+  {
+    "code" : "888",
+    "display" : "Other Medical Problems"
+  }]
+}

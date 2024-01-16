@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SMRSqCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="SMRSqCS-0"> </a></td><td>No symptoms at all.</td></tr><tr><td style="white-space:nowrap">1<a name="SMRSqCS-1"> </a></td><td>No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td style="white-space:nowrap">2<a name="SMRSqCS-2"> </a></td><td>Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance.</td></tr><tr><td style="white-space:nowrap">3<a name="SMRSqCS-3"> </a></td><td>Moderate disability; requiring some help, but able to walk without assistance.</td></tr><tr><td style="white-space:nowrap">4<a name="SMRSqCS-4"> </a></td><td>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td style="white-space:nowrap">5<a name="SMRSqCS-5"> </a></td><td>Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td style="white-space:nowrap">6<a name="SMRSqCS-6"> </a></td><td>Dead.</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS"/>
+  <version value="0.0.0"/>
+  <name value="SMRSqCS"/>
+  <title value="Simplified Modified Ranking Scale questionnaire (sMRSq)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="0"/>
+    <display value="No symptoms at all."/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="No significant disability despite symptoms; able to carry out all usual duties and activities."/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance."/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Moderate disability; requiring some help, but able to walk without assistance."/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance."/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Severe disability; bedridden, incontinent and requiring constant nursing care and attention."/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Dead."/>
+  </concept>
+</CodeSystem>

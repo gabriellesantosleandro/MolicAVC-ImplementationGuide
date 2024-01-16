@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ConsciousnessVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-ConsciousnessCS.html"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-ConsciousnessCS.html#ConsciousnessCS-0">0</a></td><td>Fully awake</td></tr><tr><td><a href="CodeSystem-ConsciousnessCS.html#ConsciousnessCS-1">1</a></td><td>Somnolent</td></tr><tr><td><a href="CodeSystem-ConsciousnessCS.html#ConsciousnessCS-2">2</a></td><td>Coma</td></tr><tr><td><a href="CodeSystem-ConsciousnessCS.html#ConsciousnessCS-999">999</a></td><td>Unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS"/>
+  <version value="0.0.0"/>
+  <name value="ConsciousnessVS"/>
+  <title value="State of Consciousness."/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital."/>
+  <compose>
+    <include>
+      <system value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS"/>
+      <concept>
+        <code value="0"/>
+        <display value="Fully awake"/>
+      </concept>
+      <concept>
+        <code value="1"/>
+        <display value="Somnolent"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="Coma"/>
+      </concept>
+      <concept>
+        <code value="999"/>
+        <display value="Unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

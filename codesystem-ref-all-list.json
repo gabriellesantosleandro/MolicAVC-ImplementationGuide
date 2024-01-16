@@ -1,6 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.1.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.1.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-address-use.html" : "AddressUse"
+    },
+    {
       "url" : "http://hl7.org/fhir/administrative-gender",
       "version" : "5.0.0",
       "status" : "active",
@@ -41,16 +65,44 @@
       "http://hl7.org/fhir/R5/valueset-link-type.html" : "Link Type"
     },
     {
-      "url" : "http://hl7.org/fhir/name-use",
+      "url" : "http://hl7.org/fhir/observation-referencerange-normalvalue",
       "version" : "5.0.0",
       "status" : "active",
-      "name" : "NameUse",
-      "title" : "NameUse",
-      "description" : "The use of a human name.",
-      "oids" : ["2.16.840.1.113883.4.642.4.66"],
+      "name" : "ObservationReferenceRangeNormalValue",
+      "title" : "ObservationreferenceRangeNormalValue",
+      "description" : "Codes that describe the normal value in the reference range.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2099"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-name-use.html" : "NameUse"
+      "http://hl7.org/fhir/R5/valueset-observation-referencerange-normalvalue.html" : "Observation Reference Range Normal Value Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.401",
+        "2.16.840.1.113883.4.642.1.388",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-status.html" : "Observation Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the triggeredBy type of observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2098"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-triggeredbytype.html" : "triggered Bytype"
     },
     {
       "url" : "http://loinc.org",
@@ -63,55 +115,31 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes",
-      "ValueSet-GenderIdentityVS.html" : "ValueSet of Gender Identity"
+      "ValueSet-GenderIdentityVS.html" : "Gender Identity"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/diet",
+      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-data-absent-reason.html" : "Data Absent Reason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "Diet",
-      "title" : "Diet",
-      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1091"],
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-encounter-diet.html" : "Diet"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SpecialArrangements",
-      "title" : "Special arrangements",
-      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1090"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html" : "Special Arrangements"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "EncounterType",
-      "title" : "Encounter type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1088"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-encounter-type.html" : "Encounter Type"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
-      "version" : "1.0.0",
-      "status" : "draft",
-      "name" : "LocationType",
-      "title" : "Location type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-location-form.html" : "Location Form"
+      "http://hl7.org/fhir/R5/valueset-observation-category.html" : "Observation Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
@@ -124,6 +152,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R5/valueset-organization-type.html" : "Organization Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -150,6 +190,18 @@
       "http://hl7.org/fhir/R5/valueset-identifier-type.html" : "Identifier Type Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "DegreeLicenseCertificate",
+      "title" : "degreeLicenseCertificate",
+      "description" : "Code system of concepts specifying an educational degree (e.g., MD).  Used in the CNN datatype (names and identifiers of clinicians) in Version 2 messaging.  Used in HL7 Version 2.x messaging in the CNN segment; note that in releases of HL7 prior to 2.3.1, was also used in person names (XPN), but this use was deprecated, then withdrawn in 2.7.",
+      "oids" : ["2.16.840.1.113883.18.220"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v2-0360.html" : "hl7VS-degreeLicenseCertificate"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0532",
       "version" : "2.1.0",
       "status" : "active",
@@ -159,19 +211,7 @@
       "oids" : ["2.16.840.1.113883.18.347"],
       "uses" : {
       },
-      "ValueSet-NoYesUnknownVS.html" : "ValueSet Yes, No and Unknown"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "EncounterSpecialCourtesy",
-      "title" : "EncounterSpecialCourtesy",
-      "description" : "**** MISSING DESCRIPTION ****",
-      "oids" : ["2.16.840.1.113883.5.40"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
+      "ValueSet-NoYesUnknownVS.html" : "Yes, No and Unknown"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Ethnicity",
@@ -207,8 +247,19 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes",
-      "http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html" : "Special Courtesy"
+      "http://hl7.org/fhir/R5/valueset-marital-status.html" : "Marital Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-Race",
@@ -221,6 +272,162 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.3.0/ValueSet-v3-Race.html" : "Race"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "CVDComorbiditiesCS",
+      "title" : "Cardiovascular Comorbidities",
+      "description" : "CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply.",
+      "uses" : {
+      },
+      "ValueSet-CVDComorbiditiesVS.html" : "Cardiovascular Comorbidities"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "ConsciousnessCS",
+      "title" : "State of Consciousness according to the ICHOM standard",
+      "description" : "CodeSystem based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
+      "uses" : {
+      },
+      "ValueSet-ConsciousnessVS.html" : "State of Consciousness."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DiagnosisCS",
+      "title" : "Diagnostic Evidence Base",
+      "description" : "CodeSystem that indicates which diagnostic evidence base was used for its realization",
+      "uses" : {
+      },
+      "ValueSet-DiagnosisVS.html" : "Diagnostic Evidence Base"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DischDestCS",
+      "title" : "Discharge Location",
+      "description" : "CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "uses" : {
+      },
+      "ValueSet-DischDestVS.html" : "Discharge Location"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "EstStrokeSevNIHSSCatCS",
+      "title" : "Estimated stroke severity using the NIHSS.",
+      "description" : "CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+      "uses" : {
+      },
+      "ValueSet-EstStrokeSevNIHSSCatVS.html" : "Estimated stroke severity using the NIHSS."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LiveAloneCS",
+      "title" : "Live Alone Pre-Stroke",
+      "description" : "CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+      "uses" : {
+      },
+      "ValueSet-LiveAloneVS.html" : "Live Alone Pre-Stroke"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPostCS",
+      "title" : "Patient's Residence Post to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code.",
+      "uses" : {
+      },
+      "ValueSet-LivingLocPostVS.html" : "Patient's Residence Post to a Stroke"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPreCS",
+      "title" : "Patient's Residence Prior to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "uses" : {
+      },
+      "ValueSet-LivingLocPreVS.html" : "Patient's Residence Prior to a Stroke"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "PROMIS10CS",
+      "title" : "PROMIS-10 Response Questionnaire",
+      "description" : "CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+      "uses" : {
+      },
+      "ValueSet-PROMIS10VS.html" : "PROMIS-10 Response Questionnaire"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SMRSqCS",
+      "title" : "Simplified Modified Ranking Scale questionnaire (sMRSq)",
+      "description" : "CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq).",
+      "uses" : {
+      },
+      "ValueSet-SMRSqVS.html" : "Simplified modified Ranking Scale questionnaire (SMRSq)"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SmokingStatusCS",
+      "title" : "Smoking Status",
+      "description" : "CodeSystem for Smoking Status. A person's current and past smoking behavior.",
+      "uses" : {
+      },
+      "ValueSet-SmokingStatusVS.html" : "Smoking Status"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "StrokeFuncStatusCS",
+      "title" : "Prestroke and Poststroke Functional Status",
+      "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.",
+      "uses" : {
+      },
+      "ValueSet-StrokeToiletingVS.html" : "Prestroke and Poststroke Functional Status: Toileting",
+      "ValueSet-StrokeDressingVS.html" : "Prestroke and Poststroke Functional Status: Dressing",
+      "ValueSet-StrokeAmbVS.html" : "Prestroke and Poststroke Functional Status: Ambulation"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "StrokeTypeCS",
+      "title" : "Stroke Type",
+      "description" : "CodeSystem that aims to categorize the stroke type according to the ICHOM standard.",
+      "uses" : {
+      },
+      "ValueSet-StrokeTypeVS.html" : "Stroke type based on ICHOM"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SymtDurCS",
+      "title" : "Duration of Stroke Symptoms",
+      "description" : "CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
+      "uses" : {
+      },
+      "ValueSet-SymtDurVS.html" : "Duration of Stroke Symptoms"
     },
     {
       "url" : "urn:ietf:bcp:47",

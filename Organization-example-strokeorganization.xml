@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="example-strokeorganization"/>
+  <meta>
+    <lastUpdated value="2024-01-11T14:10:06-03:00"/>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Organization</b><a name="example-strokeorganization"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Organization &quot;example-strokeorganization&quot; Updated &quot;2024-01-11 14:10:06-0300&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-StrokeOrganization.html">Healthcare Facility based on the Brazilian RNDS</a></p></div><p><b>identifier</b>: id: CNES 67890, id: 00.123.456/0001-01</p><p><b>active</b>: true</p><p><b>type</b>: Hospital <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></p><p><b>name</b>: Hospital Referência em AVC</p><p><b>alias</b>: HRAVC</p><p><b>description</b>: O Hospital de Referência em AVC é a referência no tratamento e na pesquisa de acidente vascular cerebral no Brasil.</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Issuer</b></td></tr><tr><td style="display: none">*</td><td>Neurologia <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ()</span></td><td><span>: Conselho Regional de Medicina</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://rnds.saude.gov.br/fhir/r4/NamingSystem/cnes"/>
+    <value value="CNES 67890"/>
+  </identifier>
+  <identifier>
+    <system value="http://rnds.saude.gov.br/fhir/r4/NamingSystem/cnpj"/>
+    <value value="00.123.456/0001-01"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <text value="Hospital"/>
+  </type>
+  <name value="Hospital Referência em AVC"/>
+  <alias value="HRAVC"/>
+  <description value="O Hospital de Referência em AVC é a referência no tratamento e na pesquisa de acidente vascular cerebral no Brasil."/>
+  <qualification>
+    <code>
+      <text value="Neurologia"/>
+    </code>
+    <issuer>
+      <display value="Conselho Regional de Medicina"/>
+    </issuer>
+  </qualification>
+</Organization>

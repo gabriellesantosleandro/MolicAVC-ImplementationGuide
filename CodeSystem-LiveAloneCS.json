@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "LiveAloneCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"LiveAloneCS-1\"> </a></td><td>Yes, I live/lived alone</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"LiveAloneCS-2\"> </a></td><td>No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"LiveAloneCS-999\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+  "version" : "0.0.0",
+  "name" : "LiveAloneCS",
+  "title" : "Live Alone Pre-Stroke",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Yes, I live/lived alone"
+  },
+  {
+    "code" : "2",
+    "display" : "No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown"
+  }]
+}

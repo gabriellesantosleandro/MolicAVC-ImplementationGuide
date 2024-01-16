@@ -3,14 +3,15 @@
   "id" : "DiagnosisVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Clinical symptoms alone</td></tr><tr><td>1</td><td>Clinical and Tomography</td></tr><tr><td>2</td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-DiagnosisCS.html\"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-DiagnosisCS.html#DiagnosisCS-0\">0</a></td><td>Clinical symptoms alone</td></tr><tr><td><a href=\"CodeSystem-DiagnosisCS.html#DiagnosisCS-1\">1</a></td><td>Clinical and Tomography</td></tr><tr><td><a href=\"CodeSystem-DiagnosisCS.html#DiagnosisCS-2\">2</a></td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></li></ul></div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
-  "version" : "1.0.1",
+  "version" : "0.0.0",
   "name" : "DiagnosisVS",
-  "title" : "ValueSet of the Diagnostic Evidence Base",
+  "title" : "Diagnostic Evidence Base",
   "status" : "active",
-  "date" : "2023-11-21T19:08:35-03:00",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -36,10 +37,10 @@
       "use" : "work"
     }]
   }],
-  "description" : "This ValueSet indicates which diagnostic evidence base was used for its realization",
+  "description" : "ValueSet that indicates which diagnostic evidence base was used for its realization",
   "compose" : {
     "include" : [{
-      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/",
+      "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
       "concept" : [{
         "code" : "0",
         "display" : "Clinical symptoms alone"

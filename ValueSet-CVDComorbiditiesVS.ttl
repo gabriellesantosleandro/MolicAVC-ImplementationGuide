@@ -1,0 +1,125 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CVDComorbiditiesVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-CVDComorbiditiesCS.html\"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-0\">0</a></td><td>No other diseases</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-1\">1</a></td><td>Heart Disease (angina, heart attack, or HF)</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-2\">2</a></td><td>High Blood Pressure</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-3\">3</a></td><td>Atrial Fibrillation or Flutter</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-4\">4</a></td><td>Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-5\">5</a></td><td>Diabetes</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-6\">6</a></td><td>Peripheral Artery Disease</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-7\">7</a></td><td>Myocardial Infarction</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-8\">8</a></td><td>Obesity</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-9\">9</a></td><td>Stroke</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-10\">10</a></td><td>Ulcer or Stomach disease</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-11\">11</a></td><td>Renan Insufficiency</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-12\">12</a></td><td>Liver Disease</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-13\">13</a></td><td>Anemia or other blood disease</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-14\">14</a></td><td>Cancer/Other Cancer in last 5 years</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-15\">15</a></td><td>AIDS/Immunodeficiency</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-16\">16</a></td><td>Presence/ History of Depression</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-17\">17</a></td><td>Anxiety or Neuroses</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-18\">18</a></td><td>Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-19\">19</a></td><td>Substance Abuse</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-20\">20</a></td><td>Osteoarthritis, degenerative arthritis</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-21\">21</a></td><td>Rheumatoid Arthritis</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-22\">22</a></td><td>Periodontal Disease</td></tr><tr><td><a href=\"CodeSystem-CVDComorbiditiesCS.html#CVDComorbiditiesCS-888\">888</a></td><td>Other Medical Problems</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
+  fhir:name [ fhir:v "CVDComorbiditiesVS"] ; # 
+  fhir:title [ fhir:v "Cardiovascular Comorbidities"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-11T13:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com.br" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Valueset that indicate which comorbidities the patient is living with. Select all conditions that apply."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "0" ] ;
+         fhir:display [ fhir:v "No other diseases" ]
+       ] [
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Heart Disease (angina, heart attack, or HF)" ]
+       ] [
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "High Blood Pressure" ]
+       ] [
+         fhir:code [ fhir:v "3" ] ;
+         fhir:display [ fhir:v "Atrial Fibrillation or Flutter" ]
+       ] [
+         fhir:code [ fhir:v "4" ] ;
+         fhir:display [ fhir:v "Chronic Pulmonary Disease (Asthma, Chronic Bronchitis, COPD, Emphysema)" ]
+       ] [
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "Diabetes" ]
+       ] [
+         fhir:code [ fhir:v "6" ] ;
+         fhir:display [ fhir:v "Peripheral Artery Disease" ]
+       ] [
+         fhir:code [ fhir:v "7" ] ;
+         fhir:display [ fhir:v "Myocardial Infarction" ]
+       ] [
+         fhir:code [ fhir:v "8" ] ;
+         fhir:display [ fhir:v "Obesity" ]
+       ] [
+         fhir:code [ fhir:v "9" ] ;
+         fhir:display [ fhir:v "Stroke" ]
+       ] [
+         fhir:code [ fhir:v "10" ] ;
+         fhir:display [ fhir:v "Ulcer or Stomach disease" ]
+       ] [
+         fhir:code [ fhir:v "11" ] ;
+         fhir:display [ fhir:v "Renan Insufficiency" ]
+       ] [
+         fhir:code [ fhir:v "12" ] ;
+         fhir:display [ fhir:v "Liver Disease" ]
+       ] [
+         fhir:code [ fhir:v "13" ] ;
+         fhir:display [ fhir:v "Anemia or other blood disease" ]
+       ] [
+         fhir:code [ fhir:v "14" ] ;
+         fhir:display [ fhir:v "Cancer/Other Cancer in last 5 years" ]
+       ] [
+         fhir:code [ fhir:v "15" ] ;
+         fhir:display [ fhir:v "AIDS/Immunodeficiency" ]
+       ] [
+         fhir:code [ fhir:v "16" ] ;
+         fhir:display [ fhir:v "Presence/ History of Depression" ]
+       ] [
+         fhir:code [ fhir:v "17" ] ;
+         fhir:display [ fhir:v "Anxiety or Neuroses" ]
+       ] [
+         fhir:code [ fhir:v "18" ] ;
+         fhir:display [ fhir:v "Presence/History of Psychotic Mental Illness (e.g., Schizophrenia)" ]
+       ] [
+         fhir:code [ fhir:v "19" ] ;
+         fhir:display [ fhir:v "Substance Abuse" ]
+       ] [
+         fhir:code [ fhir:v "20" ] ;
+         fhir:display [ fhir:v "Osteoarthritis, degenerative arthritis" ]
+       ] [
+         fhir:code [ fhir:v "21" ] ;
+         fhir:display [ fhir:v "Rheumatoid Arthritis" ]
+       ] [
+         fhir:code [ fhir:v "22" ] ;
+         fhir:display [ fhir:v "Periodontal Disease" ]
+       ] [
+         fhir:code [ fhir:v "888" ] ;
+         fhir:display [ fhir:v "Other Medical Problems" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

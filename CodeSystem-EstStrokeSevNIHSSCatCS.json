@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "EstStrokeSevNIHSSCatCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"EstStrokeSevNIHSSCatCS-1\"> </a></td><td>No stroke symptoms (NIHSS score = 0)</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"EstStrokeSevNIHSSCatCS-2\"> </a></td><td>Minor (NIHSS score from 1 to 4)</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"EstStrokeSevNIHSSCatCS-3\"> </a></td><td>Moderate (NIHSS score from 5 to 15)</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"EstStrokeSevNIHSSCatCS-4\"> </a></td><td>Moderate to severe (NIHSS score from 16 to 20)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"EstStrokeSevNIHSSCatCS-5\"> </a></td><td>Severe (NIHSS score from 21 to 42)</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"EstStrokeSevNIHSSCatCS-999\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+  "version" : "0.0.0",
+  "name" : "EstStrokeSevNIHSSCatCS",
+  "title" : "Estimated stroke severity using the NIHSS.",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "1",
+    "display" : "No stroke symptoms (NIHSS score = 0)"
+  },
+  {
+    "code" : "2",
+    "display" : "Minor (NIHSS score from 1 to 4)"
+  },
+  {
+    "code" : "3",
+    "display" : "Moderate (NIHSS score from 5 to 15)"
+  },
+  {
+    "code" : "4",
+    "display" : "Moderate to severe (NIHSS score from 16 to 20)"
+  },
+  {
+    "code" : "5",
+    "display" : "Severe (NIHSS score from 21 to 42)"
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown"
+  }]
+}

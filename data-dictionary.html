@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Data Dictionary - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
+    <title>Data-Dictionary - FHIR Implementation Guide for Stroke v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,17 +39,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5"}
-    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide for Stroke</span>
             <br/>
-            <span style="display:inline-block;">1.0.1 - ci-build
+            <span style="display:inline-block;">0.0.0 - ballot
 
 
             </span>
@@ -80,19 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="stroke-cp.html">Stroke-CP</a>
+  </li>
+  <li>
+    <a href="data-dictionary.html">Data-Dictionary</a>
+  </li>
+  <li>
     <a href="fhir.html">FHIR</a>
   </li>
   <li>
     <a href="ichom.html">ICHOM</a>
-  </li>
-  <li>
-    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
-  </li>
-  <li>
-    <a href="data-dictionary.html">Data Dictionary</a>
-  </li>
-  <li>
-    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -118,15 +115,15 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data Dictionary</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Data-Dictionary</b></li>
 
           <span style="float:right;">
 
-            <a href="lc-avc-bpmn.html">&lt;prev</a> | 
+            <a href="stroke-cp.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
-          | <a href="paper.html">next&gt;</a>
+          | <a href="fhir.html">next&gt;</a>
 
           </span>
 
@@ -148,8 +145,8 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Data Dictionary</h2>
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide for Stroke - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Data-Dictionary</h2>
   
 
 
@@ -169,12 +166,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h3 id="data-dictionary">Data Dictionary</h3>
 
-<p style="text-align: justify; font-size: 14px;"> The following data dictionary was created considering data from the process and ICHOM as displayed in Table 1. In the 'Variable ID' column, the variables that need to be collected are displayed. In the 'M/O' column, 'M' stands for Mandatory (meaning its presence is required) and 'O' stands for Optional. 'Definition' displays the variable's definition. 'Reference' indicates whether the variable was referenced by the Process, by ICHOM, or by both. 'Timing' indicates when the variable is collected: Pre-Hospital Phase (PPH), Acute Hospital Phase (AHP), and Follow-up and Rehabilitation Phase (FRP). 'Terminology' indicates the specified terminology. 'Type' represents the proposed data type. 'Response Options' indicates the type of response as per the proposed terminology. Lastly, 'FHIR Resource' points to the resource associated with the variable. With this mapping in mind, the Implementation Guide for this study was developed considering Profiles, Extensions, Value Sets, and Use Cases. </p>
+<p style="text-align: justify; font-size: 14px;"> The following data dictionary was created considering data from the process and ICHOM as displayed in Table 1. In the 'Variable ID' column, this table enumerates the essential variables for collection. The 'Item' column provides a detailed definition for each variable. The 'Reference' column identifies the source of the variable, indicating whether it is derived from the Process, ICHOM standards, or a combination of both. The 'Timing' column specifies the phase in which each variable is collected, categorized as Pre-Hospital Phase (P), Acute Hospital Phase (H), or Follow-up and Rehabilitation Phase (F). 'Terminology' details the specific terminology used for each variable. Finally, the 'FHIR Resource' column links each variable to its corresponding resource in the FHIR framework. This comprehensive mapping formed the foundational basis for the development of the FHIR IG for stroke, encompassing all its artifacts. </p>
 
 <p style="text-align: justify; font-size: 12px;"> <b> Table 1 </b> – Data Dictionary. </p>
 
-<div style="width: 100%; height: 8150px; overflow: auto;">
-<iframe style="position:absolute; width: 155%; height: 8150px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyWXh--8EOCdU5lkUT6K57Cr1XvJI8X9zChVUQSelGerbwqPEQ_Lws7WB-_9AiIhnhvWk0khkZXIJk/pubhtml?gid=457149530&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+<div style="width: 107%; height: 2600px; overflow: auto;">
+<iframe style="position:absolute; width: 107%; height: 2600px;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQyWXh--8EOCdU5lkUT6K57Cr1XvJI8X9zChVUQSelGerbwqPEQ_Lws7WB-_9AiIhnhvWk0khkZXIJk/pubhtml?gid=457149530&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 </div>
 
 
@@ -205,7 +202,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="lc-avc-bpmn.html">&lt;prev</a>
+                <a href="stroke-cp.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -213,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="paper.html">next&gt;</a>
+                <a href="fhir.html">next&gt;</a>
 
               </td>
             </tr>
@@ -223,7 +220,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:08-0300">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 16, 2024 20:08-0300">2024-01-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

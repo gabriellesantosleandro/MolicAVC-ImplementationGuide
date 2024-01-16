@@ -1,3 +1,116 @@
 {
-  "codeSystems" : []
+  "codeSystems" : [
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "CVDComorbiditiesCS",
+      "title" : "Cardiovascular Comorbidities",
+      "description" : "CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "ConsciousnessCS",
+      "title" : "State of Consciousness according to the ICHOM standard",
+      "description" : "CodeSystem based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DiagnosisCS",
+      "title" : "Diagnostic Evidence Base",
+      "description" : "CodeSystem that indicates which diagnostic evidence base was used for its realization"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DischDestCS",
+      "title" : "Discharge Location",
+      "description" : "CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "EstStrokeSevNIHSSCatCS",
+      "title" : "Estimated stroke severity using the NIHSS.",
+      "description" : "CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LiveAloneCS",
+      "title" : "Live Alone Pre-Stroke",
+      "description" : "CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPostCS",
+      "title" : "Patient's Residence Post to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPreCS",
+      "title" : "Patient's Residence Prior to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "PROMIS10CS",
+      "title" : "PROMIS-10 Response Questionnaire",
+      "description" : "CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SMRSqCS",
+      "title" : "Simplified Modified Ranking Scale questionnaire (sMRSq)",
+      "description" : "CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq)."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SmokingStatusCS",
+      "title" : "Smoking Status",
+      "description" : "CodeSystem for Smoking Status. A person's current and past smoking behavior."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "StrokeFuncStatusCS",
+      "title" : "Prestroke and Poststroke Functional Status",
+      "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "StrokeTypeCS",
+      "title" : "Stroke Type",
+      "description" : "CodeSystem that aims to categorize the stroke type according to the ICHOM standard."
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "SymtDurCS",
+      "title" : "Duration of Stroke Symptoms",
+      "description" : "CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital."
+    }
+  ]
 }

@@ -6,11 +6,11 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MolicAVC</h2><p>The official URL for this implementation guide is: </p><pre>https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide</pre><div><p>FHIR Implementation Guide for Stroke: A Dual Focus on the Patient's Journey and Outcome Measures</p>\n</div></div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide",
-  "version" : "1.0.1",
+  "version" : "0.0.0",
   "name" : "MolicAVC",
-  "title" : "Molic-AVC Project: Monitoring the Stroke Clinical Pathway",
+  "title" : "FHIR Implementation Guide for Stroke",
   "status" : "draft",
-  "date" : "2023-11-21T19:08:35-03:00",
+  "date" : "2024-01-16T20:08:55-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -63,7 +63,7 @@
   "definition" : {
     "extension" : [{
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools#current"
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
     }],
     "resource" : [{
       "extension" : [{
@@ -71,10 +71,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/molicavc-encounter-profile"
+        "reference" : "StructureDefinition/CVDComorbidities"
       },
-      "name" : "Profile of Molic-AVC's Encounter",
-      "description" : "The Encounter Resource in the MOLIC-AVC project represents the actual interaction between \r\na patient and their healthcare provider(s). It's designed to document delivered health services or assess\r\nthe patient's health status.",
+      "name" : "Cardiovascular Comorbidities",
+      "description" : "Indicate which comorbidities the patient is living with.",
       "isExample" : false
     },
     {
@@ -83,10 +83,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/molicavc-observation-profile"
+        "reference" : "StructureDefinition/Consciousness"
       },
-      "name" : "Profile of Molic-AVC's Observation",
-      "description" : "Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines \r\nand patterns and even capture demographic characteristics, as well as capture results of tests performed on products and substances. \r\nMost observations are simple name/value pair assertions with some metadata, but some observations group other observations together \r\nlogically, or even are multi-component observations.",
+      "name" : "Stroke Severity: Consciousness",
+      "description" : "Indicate the patient’s level of consciousness measured on hospital arrival.",
       "isExample" : false
     },
     {
@@ -95,10 +95,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/molicavc-organization-profile"
+        "reference" : "StructureDefinition/DiagnosisEvidence"
       },
-      "name" : "Profile of Molic-AVC's Organization",
-      "description" : "The Organization resource in the MOLIC-AVC project encompasses all entities or groups \r\ninvolved in the healthcare process and related health services as part of their formal responsibilities. \r\nExamples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, \r\npublic ambulance transport (SAMU), private services, and others.",
+      "name" : "Diagnosis Evidence Base",
+      "description" : "Indicate how the diagnosis was made.",
       "isExample" : false
     },
     {
@@ -107,10 +107,178 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/molicavc-practitioner-profile"
+        "reference" : "StructureDefinition/DischDest"
       },
-      "name" : "Profile of Molic-AVC's Practitioner",
-      "description" : "The Practitioner Resource in the MOLIC-AVC project encompasses all individuals involved in the healthcare process and related health services as part of their formal responsibilities. This Resource is utilized to assign activities and responsibilities to these individuals. Examples include: doctors, nurses, therapists, receptionists, and so on.",
+      "name" : "Discharge Destination Following Acute Care Hospitalization",
+      "description" : "Indicate the patient’s discharge destination from acute care hospital.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/EstStrokeSevNIHSSCat"
+      },
+      "name" : "Estimated Stroke Severity: based on NIHSS Category",
+      "description" : "Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Hemicraniectomy"
+      },
+      "name" : "Hemicraniectomy",
+      "description" : "Indicate if the patient underwent hemicraniectomy.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorAtrialFibrillation"
+      },
+      "name" : "Prior Atrial Fibrillation and Flutter",
+      "description" : "Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorDiabetesMellitus"
+      },
+      "name" : "Prior Diabetes Mellitus",
+      "description" : "Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorHyperlipidemia"
+      },
+      "name" : "Prior Hyperlipidemia",
+      "description" : "Indicate whether the patient has ever been diagnosed with hyperlipidemia.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorHypertension"
+      },
+      "name" : "Prior Hypertension",
+      "description" : "Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorIschemicHeartDisease"
+      },
+      "name" : "Prior Ischemic Heart Disease",
+      "description" : "Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorMyocardialInfarction"
+      },
+      "name" : "Prior Myocardial Infarction",
+      "description" : "Indicate whether the patient has a documented history of myocardial infarction.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorStrokeExclTIA"
+      },
+      "name" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "description" : "Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PriorTIA"
+      },
+      "name" : "Prior Transient Ischemic Attacks",
+      "description" : "Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ProcoagulantReversal"
+      },
+      "name" : "Procoagulant Reversal Therapy",
+      "description" : "Indicate if the patient received procoagulant reversal therapy.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RehabIN"
+      },
+      "name" : "Inpatient Acute Care Rehabilitation",
+      "description" : "Indicate whether there is dedicated stroke rehabilitation during acute care.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RehabOUT"
+      },
+      "name" : "Post Acute Care Rehabilitation",
+      "description" : "Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/StrokeOrganization"
+      },
+      "name" : "Healthcare Facility based on the Brazilian RNDS",
+      "description" : "The Organization Profile encompasses all healthcare institutions related to stroke care, based on the \r\nBrazilian National Data Network (RNDS).",
       "isExample" : false
     },
     {
@@ -121,32 +289,104 @@
       "reference" : {
         "reference" : "StructureDefinition/StrokePatient"
       },
-      "name" : "Stroke Patient Profile",
-      "description" : "This profile stores demographics and other administrative information about an patient with stroke.",
+      "name" : "Stroke Patient based on the Brazilian RNDS",
+      "description" : "This profile stores demographics and other administrative information about a patient with stroke, based on the Brazilian National Data Network (RNDS).",
       "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/AlcoholAmountExtension"
+        "reference" : "StructureDefinition/StrokePractitioner"
       },
-      "name" : "Extension of Alcohol intake amount",
-      "description" : "Based on the ICHOM, one standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol).",
+      "name" : "Stroke Practitioner based on Brazilian RNDS",
+      "description" : "This profile encompasses all health professionals involved in the healthcare process and related health services \r\nas part of their formal responsibilities, conforming to the standards of the Brazilian National Data Network (RNDS).",
       "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/Est-StrokeSevNIHSSCatExtension"
+        "reference" : "StructureDefinition/StrokeRecur"
       },
-      "name" : "Extension of Estimated Stroke Severity Category based on NIHSS",
-      "description" : "Estimated Stroke Severity: Category. Indicate the estimated stroke severity category \r\nby the NIH Stroke Scale (NIHSS).",
+      "name" : "Stroke Recurrence.",
+      "description" : "Indicate if the patient had a new stroke within 90 days of their first stroke occurrence.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/StrokeSevNIHSS"
+      },
+      "name" : "Stroke Severity: NIHSS Score",
+      "description" : "Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/StrokeType"
+      },
+      "name" : "Stroke Type",
+      "description" : "Indicate Stroke Type.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SympIntracranialHemorrhage"
+      },
+      "name" : "Symptomatic Intracranial Hemorrhage",
+      "description" : "Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/SymtDur"
+      },
+      "name" : "Duration of Stroke Symptoms",
+      "description" : "Indicate the duration of the stroke symptoms measured on hospital arrival.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Thrombectomy"
+      },
+      "name" : "Thrombectomy",
+      "description" : "Indicate if the patient underwent thrombectomy.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Thrombolytic"
+      },
+      "name" : "Thrombolytic Therapy",
+      "description" : "Indicate if the patient received intravenous thrombolytic therapy.",
       "isExample" : false
     },
     {
@@ -157,8 +397,8 @@
       "reference" : {
         "reference" : "StructureDefinition/EthnicityExtension"
       },
-      "name" : "Extension of Patient Ethnicity",
-      "description" : "Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.",
+      "name" : "Ethnicity",
+      "description" : "Extension to capture the patient's ethnicity which represents their cultural background or heritage.",
       "isExample" : false
     },
     {
@@ -169,44 +409,8 @@
       "reference" : {
         "reference" : "StructureDefinition/GenderIdentityExtension"
       },
-      "name" : "Extension of Patient Gender Identity",
-      "description" : "The patient's gender.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/LiveAlonePreExtension"
-      },
-      "name" : "Extension of Live Alone Pre-Stroke",
-      "description" : "Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/LivingLocPreExtension"
-      },
-      "name" : "Extension of Patient's Residence Prior to a Stroke",
-      "description" : "An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/molicavc-strokewindow-extension"
-      },
-      "name" : "Extension of Stroke Window",
-      "description" : "Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours.",
+      "name" : "Gender Identity",
+      "description" : "Extension of the patient's gender.",
       "isExample" : false
     },
     {
@@ -217,56 +421,8 @@
       "reference" : {
         "reference" : "StructureDefinition/RaceExtension"
       },
-      "name" : "Extension of Race",
-      "description" : "Represents the race of a patient. This extension is aligned with USCore.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SmokingStatusExtension"
-      },
-      "name" : "Extension of Smoking Status",
-      "description" : "Extension to capture the patient's smoking status, as recommended by ICHOM.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/StrokeSevLocExtension"
-      },
-      "name" : "Extension of Consciousness",
-      "description" : "Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/StrokeSev-NIHSS-Extension"
-      },
-      "name" : "Extension of Stroke Severity Score based on NIHSS",
-      "description" : "Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/SymtDurExtension"
-      },
-      "name" : "Extension of Stroke's Symptom Duration",
-      "description" : "Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival.",
+      "name" : "Race",
+      "description" : "Extension that represents the race of a patient.",
       "isExample" : false
     },
     {
@@ -275,10 +431,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/cnes-valueset"
+        "reference" : "ValueSet/CVDComorbiditiesVS"
       },
-      "name" : "ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)",
-      "description" : "This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde).",
+      "name" : "Cardiovascular Comorbidities",
+      "description" : "Valueset that indicate which comorbidities the patient is living with. Select all conditions that apply.",
       "isExample" : false
     },
     {
@@ -287,10 +443,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/molicavc-cvdcomorbidities-valueset"
+        "reference" : "ValueSet/ConsciousnessVS"
       },
-      "name" : "ValueSet of Cardiovascular Comorbidities",
-      "description" : " Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up.",
+      "name" : "State of Consciousness.",
+      "description" : "ValueSet based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
       "isExample" : false
     },
     {
@@ -301,8 +457,8 @@
       "reference" : {
         "reference" : "ValueSet/DiagnosisVS"
       },
-      "name" : "ValueSet of the Diagnostic Evidence Base",
-      "description" : "This ValueSet indicates which diagnostic evidence base was used for its realization",
+      "name" : "Diagnostic Evidence Base",
+      "description" : "ValueSet that indicates which diagnostic evidence base was used for its realization",
       "isExample" : false
     },
     {
@@ -313,8 +469,8 @@
       "reference" : {
         "reference" : "ValueSet/DischDestVS"
       },
-      "name" : "ValueSet of Discharge Location",
-      "description" : "Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "name" : "Discharge Location",
+      "description" : "ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
       "isExample" : false
     },
     {
@@ -325,8 +481,8 @@
       "reference" : {
         "reference" : "ValueSet/EstStrokeSevNIHSSCatVS"
       },
-      "name" : "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.",
-      "description" : "This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+      "name" : "Estimated stroke severity using the NIHSS.",
+      "description" : "ValueSet that intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
       "isExample" : false
     },
     {
@@ -337,7 +493,7 @@
       "reference" : {
         "reference" : "ValueSet/GenderIdentityVS"
       },
-      "name" : "ValueSet of Gender Identity",
+      "name" : "Gender Identity",
       "description" : "ValueSet for Gender Identity based on LOINC.",
       "isExample" : false
     },
@@ -347,10 +503,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/hospital-department-valueset"
+        "reference" : "ValueSet/LiveAloneVS"
       },
-      "name" : "ValueSet for Hospital Department",
-      "description" : "This ValueSet includes the hospital departments responsible for taking care of stroke patients.",
+      "name" : "Live Alone Pre-Stroke",
+      "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
       "isExample" : false
     },
     {
@@ -359,10 +515,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/LiveAlonePreVS"
+        "reference" : "ValueSet/LivingLocPostVS"
       },
-      "name" : "ValueSet of Live Alone Pre-Stroke",
-      "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+      "name" : "Patient's Residence Post to a Stroke",
+      "description" : "ValueSet that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code.",
       "isExample" : false
     },
     {
@@ -373,32 +529,8 @@
       "reference" : {
         "reference" : "ValueSet/LivingLocPreVS"
       },
-      "name" : "ValueSet of Patient's Residence Prior to a Stroke",
-      "description" : "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/type-healthcare-unit-valueset"
-      },
-      "name" : "Type of Healthcare Unit ValueSet",
-      "description" : "This ValueSet details codes for healthcare units serving stroke patients in Brazil.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/molicavc-referencelocation-valueset"
-      },
-      "name" : "ValueSet of Reference Location",
-      "description" : "Indicate and classify where the patient was referred.",
+      "name" : "Patient's Residence Prior to a Stroke",
+      "description" : "ValueSet that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
       "isExample" : false
     },
     {
@@ -409,7 +541,7 @@
       "reference" : {
         "reference" : "ValueSet/NoYesUnknownVS"
       },
-      "name" : "ValueSet Yes, No and Unknown",
+      "name" : "Yes, No and Unknown",
       "description" : "ValueSet with responses Yes, No, and Unknown",
       "isExample" : false
     },
@@ -421,20 +553,8 @@
       "reference" : {
         "reference" : "ValueSet/PROMIS10VS"
       },
-      "name" : "ValueSet of PROMIS-10 Response Questionnaire",
-      "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/professionalcode-valueset"
-      },
-      "name" : "ValueSet of Professional Code",
-      "description" : "This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil.",
+      "name" : "PROMIS-10 Response Questionnaire",
+      "description" : "ValueSet that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
       "isExample" : false
     },
     {
@@ -445,8 +565,8 @@
       "reference" : {
         "reference" : "ValueSet/SMRSqVS"
       },
-      "name" : "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)",
-      "description" : "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.",
+      "name" : "Simplified modified Ranking Scale questionnaire (SMRSq)",
+      "description" : "ValueSet that defines the response values for the simplified modified Ranking Scale questionnaire.",
       "isExample" : false
     },
     {
@@ -457,7 +577,7 @@
       "reference" : {
         "reference" : "ValueSet/SmokingStatusVS"
       },
-      "name" : "ValueSet of Smoking Status",
+      "name" : "Smoking Status",
       "description" : "ValueSet for Smoking Status. A person's current and past smoking behavior.",
       "isExample" : false
     },
@@ -469,8 +589,8 @@
       "reference" : {
         "reference" : "ValueSet/StrokeAmbVS"
       },
-      "name" : "ValueSet of Prestroke and Poststroke Functional Status: Ambulation",
-      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.",
+      "name" : "Prestroke and Poststroke Functional Status: Ambulation",
+      "description" : "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.",
       "isExample" : false
     },
     {
@@ -481,20 +601,8 @@
       "reference" : {
         "reference" : "ValueSet/StrokeDressingVS"
       },
-      "name" : "ValueSet of Prestroke and Poststroke Functional Status: Dressing",
-      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing.",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/StrokeSevLocVS"
-      },
-      "name" : "ValueSet Categorizing the State of Consciousness according to the ICHOM standard.",
-      "description" : "This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
+      "name" : "Prestroke and Poststroke Functional Status: Dressing",
+      "description" : "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Dressing.",
       "isExample" : false
     },
     {
@@ -505,8 +613,8 @@
       "reference" : {
         "reference" : "ValueSet/StrokeToiletingVS"
       },
-      "name" : "ValueSet of Prestroke and Poststroke Functional Status: Toileting",
-      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting.",
+      "name" : "Prestroke and Poststroke Functional Status: Toileting",
+      "description" : "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Toileting.",
       "isExample" : false
     },
     {
@@ -517,8 +625,8 @@
       "reference" : {
         "reference" : "ValueSet/StrokeTypeVS"
       },
-      "name" : "ValueSet for stroke type based on ICHOM",
-      "description" : "This ValueSet aims to categorize the stroke type according to the ICHOM standard.",
+      "name" : "Stroke type based on ICHOM",
+      "description" : "ValueSet that aims to categorize the stroke type according to the ICHOM standard.",
       "isExample" : false
     },
     {
@@ -529,22 +637,177 @@
       "reference" : {
         "reference" : "ValueSet/SymtDurVS"
       },
-      "name" : "ValueSet Categorizing the Duration of Stroke Symptoms",
+      "name" : "Duration of Stroke Symptoms",
       "description" : "ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
       "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "Patient/123.456.789-00"
+        "reference" : "CodeSystem/CVDComorbiditiesCS"
       },
-      "name" : "Use case of Stroke Patient",
-      "description" : "This case study presents a patient profile. The profile extends the FHIR Patient \nresource with specialized extensions to capture essential data.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"]
+      "name" : "Cardiovascular Comorbidities",
+      "description" : "CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ConsciousnessCS"
+      },
+      "name" : "State of Consciousness according to the ICHOM standard",
+      "description" : "CodeSystem based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DiagnosisCS"
+      },
+      "name" : "Diagnostic Evidence Base",
+      "description" : "CodeSystem that indicates which diagnostic evidence base was used for its realization",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/DischDestCS"
+      },
+      "name" : "Discharge Location",
+      "description" : "CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/EstStrokeSevNIHSSCatCS"
+      },
+      "name" : "Estimated stroke severity using the NIHSS.",
+      "description" : "CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LiveAloneCS"
+      },
+      "name" : "Live Alone Pre-Stroke",
+      "description" : "CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LivingLocPostCS"
+      },
+      "name" : "Patient's Residence Post to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/LivingLocPreCS"
+      },
+      "name" : "Patient's Residence Prior to a Stroke",
+      "description" : "CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PROMIS10VS"
+      },
+      "name" : "PROMIS-10 Response Questionnaire",
+      "description" : "CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/SMRSqCS"
+      },
+      "name" : "Simplified Modified Ranking Scale questionnaire (sMRSq)",
+      "description" : "CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/SmokingStatusCS"
+      },
+      "name" : "Smoking Status",
+      "description" : "CodeSystem for Smoking Status. A person's current and past smoking behavior.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/StrokeFuncStatusCS"
+      },
+      "name" : "Prestroke and Poststroke Functional Status",
+      "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/StrokeTypeCS"
+      },
+      "name" : "Stroke Type",
+      "description" : "CodeSystem that aims to categorize the stroke type according to the ICHOM standard.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/SymtDurCS"
+      },
+      "name" : "Duration of Stroke Symptoms",
+      "description" : "CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -597,41 +860,314 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Practitioner"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Practitioner/MolicAVC-DoctorExample"
+        "reference" : "Observation/ExampleCVDComorbidities"
       },
-      "name" : "Use case of Molic-AVC's Practitioner",
-      "description" : "Example instance of a doctor in the Molic-AVC project.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"]
+      "name" : "Cardiovascular Comorbidities",
+      "description" : "Example of Cardiovascular Comorbidities. Indicate which comorbidities the patient is living with.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Encounter/MolicAVC-EncouterExample"
+        "reference" : "Observation/ExampleConsciousness"
       },
-      "name" : "Use case of Molic-AVC's Encounter",
-      "description" : "Example instance of an encounter for a patient admitted due to a stroke.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"]
+      "name" : "Stroke Severity: Consciousness",
+      "description" : "Example of Stroke Severity: Consciousness. Indicate the patient’s level of consciousness measured on hospital arrival.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness"]
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Organization"
+        "valueString" : "Observation"
       }],
       "reference" : {
-        "reference" : "Organization/MolicAVC-OrganizationExample"
+        "reference" : "Observation/ExampleDiagnosisEvidence"
       },
-      "name" : "Use case of Molic-AVC's Organization",
-      "description" : "Example instance of an Organization in the Molic-AVC project.",
-      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
-      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"]
+      "name" : "Diagnosis Evidence Base",
+      "description" : "Example of Diagnosis Evidence Base. Indicate how the diagnosis was made.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleDischDest"
+      },
+      "name" : "Discharge Destination Following Acute Care Hospitalization",
+      "description" : "Example of Discharge Destination Following Acute Care Hospitalization.  Indicate the patient’s discharge destination from acute care hospital.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleEstStrokeSevNIHSSCat"
+      },
+      "name" : "Estimated Stroke Severity: based on NIHSS Category",
+      "description" : "Example of Estimated Stroke Severity: based on NIHSS Category. Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS).",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleHemicraniectomy"
+      },
+      "name" : "Hemicraniectomy",
+      "description" : "Example of Hemicraniectomy. Indicate if the patient underwent hemicraniectomy.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorAtrialFibrillation"
+      },
+      "name" : "Prior Atrial Fibrillation and Flutter",
+      "description" : "Example of Prior Atrial Fibrillation and Flutter. Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorDiabetesMellitus"
+      },
+      "name" : "Prior Diabetes Mellitus",
+      "description" : "Example of Prior Diabetes Mellitus. Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents).",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorHyperlipidemia"
+      },
+      "name" : "Prior Hyperlipidemia",
+      "description" : "Example of Prior Hyperlipidemia. Indicate whether the patient has ever been diagnosed with hyperlipidemia.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorHypertension"
+      },
+      "name" : "Prior Hypertension",
+      "description" : "Example of Prior Hypertension. Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorIschemicHeartDisease"
+      },
+      "name" : "Prior Ischemic Heart Disease",
+      "description" : "Example of Prior Ischemic Heart Disease. Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction).",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorMyocardialInfarction"
+      },
+      "name" : "Prior Myocardial Infarction",
+      "description" : "Example of Prior Myocardial Infarction. Indicate whether the patient has a documented history of myocardial infarction.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorStrokeExclTIA"
+      },
+      "name" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "description" : "Example of Prior Stroke excluding Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks).",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExamplePriorTIA"
+      },
+      "name" : "Prior Transient Ischemic Attacks",
+      "description" : "Example of Prior Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleProcoagulantReversal"
+      },
+      "name" : "Procoagulant Reversal Therapy",
+      "description" : "Example of Procoagulant Reversal Therapy. Indicate if the patient received procoagulant reversal therapy.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleRehabIN"
+      },
+      "name" : "Inpatient Acute Care Rehabilitation",
+      "description" : "Example of Inpatient Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during acute care.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleRehabOUT"
+      },
+      "name" : "Post Acute Care Rehabilitation",
+      "description" : "Example of Post Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleStrokeRecur"
+      },
+      "name" : "Stroke Recurrence.",
+      "description" : "Example of Stroke Recurrence. Indicate if the patient had a new stroke within 90 days of their first stroke occurrence.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleStrokeSevNIHSS"
+      },
+      "name" : "Stroke Severity: NIHSS Score",
+      "description" : "Example of Stroke Severity: NIHSS Score. Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleStrokeType"
+      },
+      "name" : "Stroke Type",
+      "description" : "Example of Stroke Type. Indicate Stroke Type.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSympIntracranialHemorrhage"
+      },
+      "name" : "Symptomatic Intracranial Hemorrhage",
+      "description" : "Example of Symptomatic Intracranial Hemorrhage. Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleSymtDur"
+      },
+      "name" : "Duration of Stroke Symptoms",
+      "description" : "Example of Duration of Stroke Symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleThrombectomy"
+      },
+      "name" : "Thrombectomy",
+      "description" : "Example of Thrombectomy. Indicate if the patient underwent thrombectomy.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleThrombolytic"
+      },
+      "name" : "Thrombolytic Therapy",
+      "description" : "Example of Thrombolytic Therapy. Indicate if the patient received intravenous thrombolytic therapy.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic"]
     },
     {
       "extension" : [{
@@ -668,6 +1204,45 @@
       "name" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "description" : "This questionnaire is designed to assess the patient-reported response in stroke at 90 days post admission.",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/example-strokeorganization"
+      },
+      "name" : "Healthcare Facility",
+      "description" : "Example of Healthcare Facility related to stroke care, based on the Brazilian National Data Network (RNDS).",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/example-strokepatient"
+      },
+      "name" : "Stroke Patient",
+      "description" : "Example of Stroke Patient. This example presents a profile for stroke patient based on Brazilian RNDS.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/example-strokepractitioner"
+      },
+      "name" : "Stroke Practitioner",
+      "description" : "This example presents a practitioner profile for stroke attendance based on Brazilian National Data Network.",
+      "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner",
+      "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"]
     }],
     "page" : {
       "sourceUrl" : "toc.html",
@@ -681,6 +1256,18 @@
         "generation" : "markdown"
       },
       {
+        "sourceUrl" : "stroke-cp.html",
+        "name" : "stroke-cp.html",
+        "title" : "Stroke-CP",
+        "generation" : "markdown"
+      },
+      {
+        "sourceUrl" : "data-dictionary.html",
+        "name" : "data-dictionary.html",
+        "title" : "Data-Dictionary",
+        "generation" : "markdown"
+      },
+      {
         "sourceUrl" : "fhir.html",
         "name" : "fhir.html",
         "title" : "FHIR",
@@ -690,24 +1277,6 @@
         "sourceUrl" : "ichom.html",
         "name" : "ichom.html",
         "title" : "ICHOM",
-        "generation" : "markdown"
-      },
-      {
-        "sourceUrl" : "lc-avc-bpmn.html",
-        "name" : "lc-avc-bpmn.html",
-        "title" : "Stroke-CP (BPMN)",
-        "generation" : "markdown"
-      },
-      {
-        "sourceUrl" : "data-dictionary.html",
-        "name" : "data-dictionary.html",
-        "title" : "Data Dictionary",
-        "generation" : "markdown"
-      },
-      {
-        "sourceUrl" : "paper.html",
-        "name" : "paper.html",
-        "title" : "Paper",
         "generation" : "markdown"
       },
       {
@@ -735,7 +1304,7 @@
         "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
         "code" : "releaselabel"
       },
-      "value" : "ci-build"
+      "value" : "ballot"
     },
     {
       "code" : {

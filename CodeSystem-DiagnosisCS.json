@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DiagnosisCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"DiagnosisCS-0\"> </a></td><td>Clinical symptoms alone</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DiagnosisCS-1\"> </a></td><td>Clinical and Tomography</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"DiagnosisCS-2\"> </a></td><td>Clinical and Magnetic Resonance Imaging</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+  "version" : "0.0.0",
+  "name" : "DiagnosisCS",
+  "title" : "Diagnostic Evidence Base",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that indicates which diagnostic evidence base was used for its realization",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "0",
+    "display" : "Clinical symptoms alone"
+  },
+  {
+    "code" : "1",
+    "display" : "Clinical and Tomography"
+  },
+  {
+    "code" : "2",
+    "display" : "Clinical and Magnetic Resonance Imaging"
+  }]
+}

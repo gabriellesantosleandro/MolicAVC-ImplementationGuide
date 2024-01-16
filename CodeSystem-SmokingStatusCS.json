@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SmokingStatusCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"SmokingStatusCS-0\"> </a></td><td>Current every day smoker (a person who smokes daily).</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"SmokingStatusCS-1\"> </a></td><td>Current weekly smoker (a person who smokes at least weekly but not daily).</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"SmokingStatusCS-2\"> </a></td><td>Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime).</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"SmokingStatusCS-3\"> </a></td><td>Never smoker.</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"SmokingStatusCS-4\"> </a></td><td>Others.</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"SmokingStatusCS-999\"> </a></td><td>Unknown if ever smoked.</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+  "version" : "0.0.0",
+  "name" : "SmokingStatusCS",
+  "title" : "Smoking Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem for Smoking Status. A person's current and past smoking behavior.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "0",
+    "display" : "Current every day smoker (a person who smokes daily)."
+  },
+  {
+    "code" : "1",
+    "display" : "Current weekly smoker (a person who smokes at least weekly but not daily)."
+  },
+  {
+    "code" : "2",
+    "display" : "Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime)."
+  },
+  {
+    "code" : "3",
+    "display" : "Never smoker."
+  },
+  {
+    "code" : "4",
+    "display" : "Others."
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown if ever smoked."
+  }]
+}

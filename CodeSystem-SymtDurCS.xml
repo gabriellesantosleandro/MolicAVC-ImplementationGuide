@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="SymtDurCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="SymtDurCS-0"> </a></td><td>Less than 4.5 hours</td></tr><tr><td style="white-space:nowrap">1<a name="SymtDurCS-1"> </a></td><td>More than 4.5 hours</td></tr><tr><td style="white-space:nowrap">999<a name="SymtDurCS-999"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS"/>
+  <version value="0.0.0"/>
+  <name value="SymtDurCS"/>
+  <title value="Duration of Stroke Symptoms"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="0"/>
+    <display value="Less than 4.5 hours"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="More than 4.5 hours"/>
+  </concept>
+  <concept>
+    <code value="999"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

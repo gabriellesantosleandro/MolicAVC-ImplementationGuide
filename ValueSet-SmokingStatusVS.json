@@ -3,14 +3,15 @@
   "id" : "SmokingStatusVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>Current every day smoker (a person who smokes daily).</td></tr><tr><td>1</td><td>Current weekly smoker (a person who smokes at least weekly but not daily).</td></tr><tr><td>2</td><td>Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime).</td></tr><tr><td>3</td><td>Never smoker.</td></tr><tr><td>4</td><td>Others.</td></tr><tr><td>999</td><td>Unknown if ever smoked.</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-SmokingStatusCS.html\"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-0\">0</a></td><td>Current every day smoker (a person who smokes daily).</td></tr><tr><td><a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-1\">1</a></td><td>Current weekly smoker (a person who smokes at least weekly but not daily).</td></tr><tr><td><a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-2\">2</a></td><td>Former smoker (a person who does not smoke at all now, but has smoked at least 100 cigarettes or a similar amount of other tobacco products in his/her lifetime).</td></tr><tr><td><a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-3\">3</a></td><td>Never smoker.</td></tr><tr><td><a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-4\">4</a></td><td>Others.</td></tr><tr><td><a href=\"CodeSystem-SmokingStatusCS.html#SmokingStatusCS-999\">999</a></td><td>Unknown if ever smoked.</td></tr></table></li></ul></div>"
   },
   "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
-  "version" : "1.0.1",
+  "version" : "0.0.0",
   "name" : "SmokingStatusVS",
-  "title" : "ValueSet of Smoking Status",
+  "title" : "Smoking Status",
   "status" : "active",
-  "date" : "2023-11-21T19:08:35-03:00",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
   "publisher" : "Gabrielle dos Santos Leandro",
   "contact" : [{
     "name" : "Gabrielle dos Santos Leandro",
@@ -39,7 +40,7 @@
   "description" : "ValueSet for Smoking Status. A person's current and past smoking behavior.",
   "compose" : {
     "include" : [{
-      "system" : "https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus",
+      "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
       "concept" : [{
         "code" : "0",
         "display" : "Current every day smoker (a person who smokes daily)."

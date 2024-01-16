@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Home - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
+    <title>Home - FHIR Implementation Guide for Stroke v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -47,9 +47,9 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide for Stroke</span>
             <br/>
-            <span style="display:inline-block;">1.0.1 - ci-build
+            <span style="display:inline-block;">0.0.0 - ballot
 
 
             </span>
@@ -80,19 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="stroke-cp.html">Stroke-CP</a>
+  </li>
+  <li>
+    <a href="data-dictionary.html">Data-Dictionary</a>
+  </li>
+  <li>
     <a href="fhir.html">FHIR</a>
   </li>
   <li>
     <a href="ichom.html">ICHOM</a>
-  </li>
-  <li>
-    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
-  </li>
-  <li>
-    <a href="data-dictionary.html">Data Dictionary</a>
-  </li>
-  <li>
-    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -126,7 +123,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="fhir.html">next&gt;</a>
+          | <a href="stroke-cp.html">next&gt;</a>
 
           </span>
 
@@ -148,7 +145,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide for Stroke - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Home</h2>
   
 
@@ -163,7 +160,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">1.0.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide|1.0.1"/></span>
+      <span class="copy-text">0.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide|0.0.0"/></span>
       </td>
     </tr>
 
@@ -179,7 +176,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2023-11-21
+            as of 2024-01-16
           
         
       </td>
@@ -209,10 +206,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#business-needs-and-limitations" id="markdown-toc-business-needs-and-limitations">Business Needs and Limitations</a></li>
   <li><a href="#related-actors" id="markdown-toc-related-actors">Related Actors</a></li>
   <li><a href="#method" id="markdown-toc-method">Method</a></li>
-  <li><a href="#fhir-implementation-guide-for-stroke" id="markdown-toc-fhir-implementation-guide-for-stroke">FHIR Implementation Guide for Stroke</a></li>
+  <li><a href="#organization-of-the-fhir-ig-for-stroke-content" id="markdown-toc-organization-of-the-fhir-ig-for-stroke-content">Organization of the FHIR IG for Stroke Content</a></li>
   <li><a href="#authors" id="markdown-toc-authors">Authors</a></li>
   <li><a href="#funding" id="markdown-toc-funding">Funding</a></li>
-  <li><a href="#referências" id="markdown-toc-referências">Referências</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
 </div>
@@ -224,92 +221,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p><br />
 <br /></p>
 
-<p style="text-align: center; font-size: 20px;"> <b>FHIR Implementation Guide for Stroke: A Dual Focus on the Patient's Journey and Outcomes Measures</b></p>
+<p style="text-align: center; font-size: 20px;"> <b>FHIR Implementation Guide for Stroke: A Dual Focus on the Patient’s Clinical Pathway and ICHOM Patient-Centered Outcome Measures for Stroke</b></p>
 <p><b> Gabrielle dos Santos Leandro, Claudia Maria Cabral Moro, Ricardo João Cruz-Correia, and Eduardo Alves Portela Santos </b></p>
 
 <p style="text-align: justify; font-size: 10px;">This Implementation Guide was developed during Gabrielle dos Santos Leandro's Doctoral Thesis. 
 <br /> * This research was approved by the Ethics and Research Committee through Opinion No. 4,917,962. </p>
 
 <h3 id="introduction">Introduction</h3>
-
-<p style="text-align: justify; font-size: 14px"><br /> 
-Stroke is the second leading cause of death worldwide [1]. During its treatment, the therapeutic window is crucial for providing appropriate intervention and minimizing damage to the patient, making proper care coordination essential [2]. In this context, the Stroke Clinical Pathway (Stroke-CP) aims to structure and organize treatment, considering the numerous services and health systems involved, in order to optimize patient outcomes [3] <br />
-The Stroke-CP is an initiative to improve care coordination, with still a need to measure how effective the care is considering patient-centered metrics. In view of this, the International Consortium for Health Outcomes Measurement (ICHOM) has developed standardized, patient-centered health outcome metrics for numerous pathologies, including stroke [3, 4].<br /> 
-Despite these initiatives, a major challenge for stroke care management is the interoperability challenges of information among the different involved information systems. In this scenario, Fast Healthcare Interoperability Resource (FHIR) aims to standardize the exchange of information between health information systems to ensure interoperability among them. In its execution, it is fundamental to build a FHIR Implementation Guide (IG), which is a set of rules on how FHIR resources are used to solve a health problem in a specific context [5].<br />
-Thus, the objective of this work was to develop a FHIR Implementation Guide for stroke care considering the concept of value-based health care. The content of this Implementation Guide is presented here in this document.</p>
+<p style="text-align: justify; font-size: 14px;">
+Stroke is the second leading cause of death worldwide [1]. During its treatment, the therapeutic window is crucial for providing appropriate intervention and minimizing damage to the patient, making proper care coordination essential [2]. In this context, the Stroke Clinical Pathway (Stroke-CP) aims to structure and organize treatment, considering the numerous services and health systems involved, in order to optimize patient outcomes [3]. The Stroke-CP is an initiative to improve care coordination, with still a need to measure how effective the care is considering patient-centered metrics. In view of this, the International Consortium for Health Outcomes Measurement (ICHOM) has developed standardized, patient-centered health outcome metrics for numerous pathologies, including stroke [3, 4]. Despite these initiatives, a major challenge for stroke care management is the interoperability challenges of information among the different involved information systems. In this scenario, Fast Healthcare Interoperability Resource (FHIR) aims to standardize the exchange of information between health information systems to ensure interoperability among them. In its execution, it is fundamental to build a FHIR Implementation Guide (IG), which is a set of rules on how FHIR resources are used to solve a health problem in a specific context [5]. Thus, the objective of this work was to develop a FHIR Implementation Guide for stroke care considering the concept of value-based health care. The content of this Implementation Guide is presented here in this document. </p>
 
 <h3 id="business-needs-and-limitations">Business Needs and Limitations</h3>
-<p style="text-align: justify; font-size: 14px"><br /> 
-This Implementation Guide (IG) falls within the knowledge domain, focusing only on representing the data elements of the set in FHIR, without addressing specific use cases. Therefore, specific interaction standards for information exchange are not addressed in this document. <br />
-However, to give you an idea of where this information set can be applied, here are some typical business needs: <br />
+<p style="text-align: justify; font-size: 14px;">
+This Implementation Guide (IG) falls within the knowledge domain, focusing only on representing the data elements of the set in FHIR, without addressing specific use cases. Therefore, specific interaction standards for information exchange are not addressed in this document. However, to give you an idea of where this information set can be applied, here are some typical business needs: <br />
 <b>1.</b> Track and compare outcomes that are most relevant to different patient groups, guiding quality improvement initiatives in a healthcare provider organization. This may involve the use of health analytics tools.<br />
 <b>2.</b> Track individual patient outcomes against a reference average value to support treatment decisions and promote shared decision-making. <br />
-<b>3.</b> Create interactive dashboards that allow healthcare organizations to compare their risk-adjusted outcomes with the global ICHOM average. This aims to establish learning collaborations and set standards of excellence in patient outcomes. This approach may facilitate sharing treatment outcomes with other provider organizations for research purposes or participation in learning collaborations.</p>
-
-<h3 id="related-actors">Related Actors</h3>
-<p style="text-align: justify; font-size: 14px"><br />
-The main actors related to this Implementation Guide include:<br />
-* Health informatics or information technology professionals working within a healthcare provider organization.<br />
-* Clinical research informatics specialist.<br />
+<b>3.</b> Create interactive dashboards that allow healthcare organizations to compare their risk-adjusted outcomes with the global ICHOM average. This aims to establish learning collaborations and set standards of excellence in patient outcomes. This approach may facilitate sharing treatment outcomes with other provider organizations for research purposes or participation in learning collaborations.
 </p>
 
+<h3 id="related-actors">Related Actors</h3>
+<p style="text-align: justify; font-size: 14px;">
+The main actors related to this Implementation Guide include: <br />
+* Health informatics or information technology professionals working within a healthcare provider organization. <br />
+* Clinical research informatics specialist. </p>
+
 <h3 id="method">Method</h3>
-<p style="text-align: justify; font-size: 14px;"><br />
-The Stroke Care Line was represented using BPMN (<i>Business Process Model and Notation</i>) by the Camunda® platform, considering the case study of stroke care in Joinville, Brazil. A data dictionary was elaborated considering the Stroke-CP represented and the ICHOM Reference Guide [4]. Finally, the variables were mapped considering the available FHIR resources. The following technologies were used for the IG development: Ruby, Java® JDK v.11, Node.js®, Jekyll, Docker®, Visual Studio Code®, GoFSH®, Sushi®, FHIR Shorthand® and IG Publishing®. The documentation was stored on GitHub® and a subdomain was allocated for access. As a model for the development of this IG, the RNDS (Brazilian National Health Data Network) IGs and the ICHOM Breast Cancer IG were used.</p>
+<p style="text-align: justify; font-size: 14px;">
+The Stroke Care Line was represented using BPMN (Business Process Model and Notation) by the Camunda® platform, considering the case study of stroke care in Joinville, Brazil. A data dictionary was elaborated considering the Stroke-CP represented and the ICHOM Reference Guide [4]. Finally, the variables were mapped considering the available FHIR resources. The following technologies were used for the IG development: Ruby, Java® JDK v.11, Node.js®, Jekyll, Docker®, Visual Studio Code®, GoFSH®, Sushi®, FHIR Shorthand® and IG Publishing®. The documentation was stored on GitHub® and a subdomain was allocated for access. </p>
 
-<h4 id="resources-and-tools-used">Resources and Tools Used</h4>
-<ul>
-  <li><a href="http://189.28.128.100/dab/docs/portaldab/publicacoes/LC_AVC_no_adulto.pdf">Clinical Pathway for Cerebrovascular Accident (CVA) in adults</a>.</li>
-  <li><a href="https://www.world-stroke.org/assets/downloads/Global_Stroke_Guidelines_and_Action_Plan_All_in_one_English.pdf">Global Stroke Guidelines and Action Plan: A Road Map for Quality Stroke Care</a></li>
-  <li><a href="https://connect.ichom.org/patient-centered-outcome-measures/stroke/">ICHOM Stroke Measure Set and Data Dictionary</a>.</li>
-  <li><a href="http://hl7.org/fhir/R5/resourcelist.html">FHIR Resources v5.0.0</a></li>
-  <li><a href="https://simplifier.net/RedeNacionaldeDadosemSaude/">FHIR Profiles da Rede Nacional de Dados em Saúde</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig/">FHIR IG for ICHOM Patient Centered Outcomes Measure Set for Breast Cancer</a></li>
-</ul>
+<p style="text-align: justify; font-size: 14px;">
+<b>Resources and Tools Used</b> <br />
+<a href="http://189.28.128.100/dab/docs/portaldab/publicacoes/LC_AVC_no_adulto.pdf" target="_blank">- Clinical Pathway for Cerebrovascular Accident (CVA) in adults.</a> <br />
+<a href="https://www.world-stroke.org/assets/downloads/Global_Stroke_Guidelines_and_Action_Plan_All_in_one_English.pdf" target="_blank">- Global Stroke Guidelines and Action Plan: A Road Map for Quality Stroke Care. </a> <br />
+<a hreaf="https://connect.ichom.org/patient-centered-outcome-measures/stroke/" target="_blank">- ICHOM Stroke Measure Set and Data Dictionary. </a> <br />
+<a hreaf="http://hl7.org/fhir/R5/resourcelist.html" target="_blank">- FHIR Resources v5.0.0 </a><br />
+<a hreaf="https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig/" target="_blank">- FHIR IG for ICHOM Patient Centered Outcomes Measure Set for Breast Cancer. </a> <br />
+</p>
 
-<h3 id="fhir-implementation-guide-for-stroke">FHIR Implementation Guide for Stroke</h3>
-<p style="text-align: justify; font-size: 14px;"><br />
-This FHIR Implementation Guide is organized in the following menus:<br /></p>
-<ul>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/index.html">Home</a> - Provides a brief introduction to this Implementation Guide.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/fhir.html">FHIR</a> - Displays an overview of FHIR, Clinical Applicability, Resources, Profiling, Terminologies, and Useful Links.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/ichom.html">ICHOM</a> - Discusses the context of ICHOM with the Patient-Centered Health Outcome Measure Set for Stroke.</li>
-  <li><a href="https://molic-avc.gabriellesantosleandro.com/lc-avc-bpmn.html">Stroke-CP BPMN</a> - Shows the representation of the Stroke Clinical Pathway in BPMN, covering the Pre-Hospital, Hospital, and Rehabilitation phases.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/data-dictionary.html">Data Dictionary</a> - Displays the data dictionary of this study considering the data from ICHOM and the process.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/paper.html">Paper</a> -  Displays the complete paper on the creation of this Implementation Guide.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/downloads.html">Downloads</a> - This menu allows you to download the elements used in this Implementation Guide.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/security.html">Security</a> - Addresses some security issues of this Implementation Guide.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html">Artifacts</a> - Lists all Resource Profiles, Extension Definitions, ValueSets, and Examples of this Implementation Guide.</li>
-  <li><a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#example-example-instances">Examples</a> - Lists all the Examples in this Implementation Guide under the ‘Artifacts’ menu.</li>
-</ul>
+<h3 id="organization-of-the-fhir-ig-for-stroke-content">Organization of the FHIR IG for Stroke Content</h3>
+<p style="text-align: justify; font-size: 14px;">
+This FHIR Implementation Guide is organized in the following menus: <br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/index.html">Home</a>: Provides a brief introduction to this Implementation Guide.<br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/stroke-cp.html">Stroke-CP</a>: Shows the representation of the Stroke Clinical Pathway in BPMN, covering the Pre-Hospital, Hospital, and Rehabilitation phases.<br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/data-dictionary.html">Data-Dictionary</a>: Displays the data dictionary of this study considering the data from ICHOM and the process.<br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/fhir.html">FHIR</a>: Displays an overview of FHIR, Clinical Applicability, Resources, Profiling, Terminologies, and Useful Links.<br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/ichom.html">ICHOM</a>: Discusses the context of ICHOM with the Patient-Centered Health Outcome Measure Set for Stroke.<br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html">Artifacts</a>: Lists all Resource Profiles, Extension Definitions, ValueSets, and Examples of this Implementation Guide.<br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#example-example-instances">Examples</a>: Lists all the Examples in this Implementation Guide under the 'Artifacts' menu. <br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/downloads.html">Downloads</a>: This menu allows you to download the elements used in this Implementation Guide. <br />
+- <a href="http://molic-avc.gabriellesantosleandro.com/security.html">Security</a>: Addresses some security issues of this Implementation Guide. <br />
+</p>
 
 <h3 id="authors">Authors</h3>
 <p style="text-align: justify; font-size: 14px;">
-This work would not be possible without:</p>
-<ul>
-  <li><a href="https://www.gabriellesantosleandro.com/">Gabrielle dos Santos Leandro</a></li>
-  <li>Ricardo João Cruz-Correia</li>
-  <li>Claudia Maria Cabral Moro</li>
-  <li>Eduardo Alves Portela Santos</li>
-</ul>
+This work would not be possible without:<br />
+* <a href="https://www.gabriellesantosleandro.com/">Gabrielle dos Santos Leandro</a><br />
+* Ricardo João Cruz-Correia <br />
+* Claudia Maria Cabral Moro <br />
+* Eduardo Alves Portela Santos <br />
+</p>
 
 <h3 id="funding">Funding</h3>
-<ul>
-  <li>Fundação Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES) - Postgraduate Study Scholarship Tax Mode for Doctoral Funding in the <a href="https://www.pucpr.br/escola-politecnica/mestrado-doutorado/tecnologia-em-saude/">Programa de Pós-Graduação em Tecnologias em Saúde - PUCPR</a> during the period from 2020 to 2024.</li>
-</ul>
+<p style="text-align: justify; font-size: 14px;">
+* Fundação Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES) - Postgraduate Study Scholarship Tax Mode for Doctoral Funding in the <a href="https://www.pucpr.br/escola-politecnica/mestrado-doutorado/tecnologia-em-saude/">Programa de Pós-Graduação em Tecnologias em Saúde - PUCPR</a> during the period from 2020 to 2024.<br /></p>
 
-<h3 id="referências">Referências</h3>
+<h3 id="references">References</h3>
 <p style="text-align: justify; font-size: 14px;">
 [1] Feigin VL, Brainin M, Norrving B, et al. World Stroke Organization (WSO): Global Stroke Fact Sheet 2022. International Journal of Stroke. 2022;17:18–29.<br />
 [2] Rajendram P, Ikram A, Fisher M. Combined Therapeutics: Future Opportunities for Co-therapy with Thrombectomy. Neurotherapeutics. 2023;20:693–704.<br />
 [3] Brasil. Ministério da Saúde. Secretaria de Atenção Primária à Saúde. Clinical Pathway for Cerebrovascular Accident (CVA) in adults. 1st ed. Brasília: Ministério da Saúde; 2020.<br />
 [4] Salinas J, Sprinkhuizen SM, Ackerson T, et al. An International Standard Set of Patient-Centered Outcome Measures After Stroke. Stroke. 2016;47:180–186. <br />
 [5] HL7. Resource Implementation Guide. HL7 FHIR - FHIR CI-Build. 2023. Available from: https://build.fhir.org/implementationguide.html 
-</p>
-<p><br />
 <br />
-<br /></p>
-
+<br />
+<br />
+</p>
 
 
 
@@ -347,7 +333,7 @@ This work would not be possible without:</p>
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="fhir.html">next&gt;</a>
+                <a href="stroke-cp.html">next&gt;</a>
 
               </td>
             </tr>
@@ -357,7 +343,7 @@ This work would not be possible without:</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:08-0300">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 16, 2024 20:08-0300">2024-01-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

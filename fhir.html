@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FHIR - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
+    <title>FHIR - FHIR Implementation Guide for Stroke v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,17 +39,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide for Stroke</span>
             <br/>
-            <span style="display:inline-block;">1.0.1 - ci-build
+            <span style="display:inline-block;">0.0.0 - ballot
 
 
             </span>
@@ -80,19 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="stroke-cp.html">Stroke-CP</a>
+  </li>
+  <li>
+    <a href="data-dictionary.html">Data-Dictionary</a>
+  </li>
+  <li>
     <a href="fhir.html">FHIR</a>
   </li>
   <li>
     <a href="ichom.html">ICHOM</a>
-  </li>
-  <li>
-    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
-  </li>
-  <li>
-    <a href="data-dictionary.html">Data Dictionary</a>
-  </li>
-  <li>
-    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -122,7 +119,7 @@
 
           <span style="float:right;">
 
-            <a href="index.html">&lt;prev</a> | 
+            <a href="data-dictionary.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -148,7 +145,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide for Stroke - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>FHIR</h2>
   
 
@@ -171,44 +168,57 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#resources" id="markdown-toc-resources">Resources</a></li>
   <li><a href="#profiling" id="markdown-toc-profiling">Profiling</a></li>
   <li><a href="#terminology" id="markdown-toc-terminology">Terminology</a></li>
+  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
   <li><a href="#links" id="markdown-toc-links">Links</a></li>
 </ul>
 
 </div>
-<p>This Implementation Guide (IG) uses terminology, notations, and design principles specific to the HL7 FHIR standard. It is important to be familiar with the basic principles of FHIR and how to read the FHIR specifications. Therefore, readers who are not familiar with FHIR are encouraged to review the following explanation before reading the rest of this IG.</p>
+<p style="text-align: justify; font-size: 14px;">
+This FHIR IG uses terminology, notations, and design principles specific to the HL7 FHIR standard. It is important to be familiar with the basic principles of FHIR and how to read the FHIR specifications. Therefore, readers who are not familiar with FHIR are encouraged to review the following explanation before reading the rest of this IG.</p>
 
 <h3 id="fhir-overview">FHIR Overview</h3>
 
-<p>Fast Healthcare Interoperability Resources (FHIR) is a platform specification from Health Level 7 (HL7) that supports the exchange of healthcare information between systems and health applications. Clinical data should be available and understandable when a patient moves through the healthcare ecosystem. To ensure this, FHIR defines a set of functionalities employed throughout the healthcare process, in all jurisdictions and many different contexts. FHIR is universally applicable, meaning it can be used in a wide variety of implementation environments, for example, data sharing based on Electronic Health Records, mobile phone applications, and cloud communications. Additionally, FHIR has a strong focus on rapid and easy implementation, which lowers the barriers to entry for new developers working with FHIR.</p>
+<p style="text-align: justify; font-size: 14px;">
+Fast Healthcare Interoperability Resources (FHIR) is a platform specification from Health Level 7 (HL7) that supports the exchange of healthcare information between systems and health applications. Clinical data should be available and understandable when a patient moves through the healthcare ecosystem. To ensure this, FHIR defines a set of functionalities employed throughout the healthcare process, in all jurisdictions and many different contexts. FHIR is universally applicable, meaning it can be used in a wide variety of implementation environments, for example, data sharing based on electronic health records, mobile phone applications, and cloud communications. Additionally, FHIR has a strong focus on rapid and easy implementation, which lowers the barriers to entry for new developers working with FHIR.</p>
 
 <h3 id="clinical-applicability">Clinical Applicability</h3>
 
-<p>FHIR is designed to standardize and enable the exchange of all health-related information. This includes not only clinical data but also administrative and health-related research data. FHIR can be used in both human and veterinary medicine and is applicable globally in a wide variety of contexts, including inpatient care, acute care, long-term care, outpatient care, community care, etc. One of the benefits of HL7 FHIR is that it is independent of any electronic health record vendor or health system. Furthermore, the specification is free for everyone to use and there are many public examples available to assist in the development of new applications.</p>
+<p style="text-align: justify; font-size: 14px;">
+FHIR is designed to standardize and enable the exchange of all health-related information. This includes not only clinical data but also administrative and health-related research data. FHIR can be used in both human and veterinary medicine and is applicable globally in a wide variety of contexts, including inpatient care, acute care, long-term care, outpatient care, community care, etc. One of the benefits of HL7 FHIR is that it is independent of any electronic health record vendor or health system. Furthermore, the specification is free for everyone to use and there are many public examples available to assist in the development of new applications.</p>
 
 <h3 id="resources">Resources</h3>
 
-<p>The fundamental components of FHIR are called resources, which are represented in XML or JSON. A resource is considered a set of information, called data elements, used for exchanging or storing data. For example, the ‘Patient’ resource contains demographic and administrative details about the person being cared for. There are various resources, covering different aspects of the health domain, from patient management and research to medical billing and clinical reporting. The main goal is that a set of resources can cover most clinical use cases. This can be achieved by combining resources through references. For example, by associating ‘Patient’ with ‘Observation’ (which stores clinical findings of a patient), ‘Condition’ (problem or diagnosis), and ‘Medication’ (composition, dose, and indication of the medicines), you can implement and adapt to specific use cases.</p>
+<p style="text-align: justify; font-size: 14px;">
+The fundamental components of FHIR are called resources, which are represented in XML or JSON. A resource is considered a set of information, called data elements, used for exchanging or storing data. For example, the 'Patient' resource contains demographic and administrative details about the person being cared for. There are various resources, covering different aspects of the health domain, from patient management and research to medical billing and clinical reporting. The main goal is that a set of resources can cover most clinical use cases. This can be achieved by combining resources through references. For example, by associating 'Patient' with 'Observation' (which stores clinical findings of a patient), 'Condition' (problem or diagnosis), and 'Medication' (composition, dose, and indication of the medicines), you can implement and adapt to specific use cases.</p>
 
 <h3 id="profiling">Profiling</h3>
 
-<p>A Profile establishes the use of a resource in a specific scenario. The term ‘Profiling’ refers to the act of applying constraints to the so-called essential resources. These resources are formulated by expert working groups to accommodate the most common use cases. Due to their generic nature, the rules in this specification are intentionally flexible. By applying a set of constraints to a FHIR resource, it can be adapted to a specific scenario. There is a high likelihood that you will need something precisely tailored to your domain when using FHIR. Consequently, the FHIR specification anticipates the need to apply constraints to existing resources to create a profile that meets your requirements. For this reason, you can find national, regional, or even hospital-specific profiles. FHIR has consciously chosen to cover 80% of the data elements used in health systems with its resources. The remaining 20% refer to specific use cases and can be managed as FHIR extensions. Extensions are additional resources that help address data not covered by the existing essential FHIR profiles of HL7</p>
+<p style="text-align: justify; font-size: 14px;">
+A Profile establishes the use of a resource in a specific scenario. The term 'Profiling' refers to the act of applying constraints to the so-called essential resources. These resources are formulated by expert working groups to accommodate the most common use cases. Due to their generic nature, the rules in this specification are intentionally flexible. By applying a set of constraints to a FHIR resource, it can be adapted to a specific scenario. There is a high likelihood that you will need something precisely tailored to your domain when using FHIR. Consequently, the FHIR specification anticipates the need to apply constraints to existing resources to create a profile that meets your requirements. For this reason, you can find national, regional, or even hospital-specific profiles. FHIR has consciously chosen to cover 80% of the data elements used in health systems with its resources. The remaining 20% refer to specific use cases and can be managed as FHIR extensions. Extensions are additional resources that help address data not covered by the existing essential FHIR profiles of HL7. </p>
 
 <h3 id="terminology">Terminology</h3>
 
-<p>To enhance interoperability, adopting standardized terminology is essential. By using uniform terminology, it’s possible to collect, document, and process health information based on similar data concepts. This enables healthcare professionals to share and compare clinical knowledge in a consistent manner and within an internationally accepted system. FHIR cannot determine every code needed in global health systems, so instead, they have made available two resources to manage codes and their respective meanings, namely:</p>
+<p style="text-align: justify; font-size: 14px;">
+To enhance interoperability, adopting standardized terminology is essential. By using uniform terminology, it's possible to collect, document, and process health information based on similar data concepts. This enables healthcare professionals to share and compare clinical knowledge in a consistent manner and within an internationally accepted system. FHIR cannot determine every code needed in global health systems, so instead, they have made available two resources to manage codes and their respective meanings, namely:
+<br />
+* CodeSystem is a set of codes that establishes various codes and their meanings. The concept of a CodeSystem is similar to a catalog, housing various codes and their definitions. A CodeSystem can be SNOMED-CT or LOINC, or even one you have created yourself.
+<br />
+* ValueSet specifies a selection of codes from one or more CodeSystems, intended for use in a specific context. A ValueSet contains links to the authentic codes of a particular CodeSystem. The advantage is that when a CodeSystem is updated, the ValueSets that include codes from that CodeSystem are also automatically updated.
+</p>
 
-<ul>
-  <li>
-    <p>CodeSystem is a set of codes that establishes various codes and their meanings. The concept of a CodeSystem is similar to a catalog, housing various codes and their definitions. A CodeSystem can be SNOMED-CT or LOINC, or even one you have created yourself.</p>
-  </li>
-  <li>
-    <p>ValueSet specifies a selection of codes from one or more CodeSystems, intended for use in a specific context. A ValueSet contains links to the authentic codes of a particular CodeSystem. The advantage is that when a CodeSystem is updated, the ValueSets that include codes from that CodeSystem are also automatically updated.</p>
-  </li>
-</ul>
+<h3 id="must-support">Must Support</h3>
+
+<p style="text-align: justify; font-size: 14px;">
+The 'Must Support' annotation in this implementation guide is used to indicate that a specific element is mapped to a variable from the measure set and should be filled with data if available in the system.
+<br />
+In cases where an element cannot be filled due to its unavailability in the source system and if the cardinality rules allow, the element can be left blank. However, if the cardinality rules require that an element be filled, the 'Data Absent Reason' extension MUST be used."
+</p>
 
 <h3 id="links">Links</h3>
 
-<p>For further reading, we recommended using the following links:</p>
+<p style="text-align: justify; font-size: 14px;">
+For further reading, we recommended using the following links:
+</p>
 
 <ul>
   <li><a href="http://hl7.org/fhir/r4/summary.html">FHIR summary</a></li>
@@ -220,6 +230,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="http://hl7.org/fhir/r4/resource.html">Base resource definitions</a></li>
 </ul>
 
+<p><br />
+<br />
+<br /></p>
 
 
 
@@ -249,7 +262,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="index.html">&lt;prev</a>
+                <a href="data-dictionary.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -267,7 +280,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:08-0300">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 16, 2024 20:08-0300">2024-01-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

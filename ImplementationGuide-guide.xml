@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide"/>
-  <version value="1.0.1"/>
+  <version value="0.0.0"/>
   <name value="MolicAVC"/>
-  <title value="Molic-AVC Project: Monitoring the Stroke Clinical Pathway"/>
+  <title value="FHIR Implementation Guide for Stroke"/>
   <status value="draft"/>
-  <date value="2023-11-21T19:08:35-03:00"/>
+  <date value="2024-01-16T20:08:55-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -59,17 +59,17 @@
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/molicavc-encounter-profile"/>
+        <reference value="StructureDefinition/CVDComorbidities"/>
       </reference>
-      <name value="Profile of Molic-AVC's Encounter"/>
-      <description value="The Encounter Resource in the MOLIC-AVC project represents the actual interaction between &#xD;&#xA;a patient and their healthcare provider(s). It's designed to document delivered health services or assess&#xD;&#xA;the patient's health status."/>
+      <name value="Cardiovascular Comorbidities"/>
+      <description value="Indicate which comorbidities the patient is living with."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -77,10 +77,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/molicavc-observation-profile"/>
+        <reference value="StructureDefinition/Consciousness"/>
       </reference>
-      <name value="Profile of Molic-AVC's Observation"/>
-      <description value="Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines &#xD;&#xA;and patterns and even capture demographic characteristics, as well as capture results of tests performed on products and substances. &#xD;&#xA;Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together &#xD;&#xA;logically, or even are multi-component observations."/>
+      <name value="Stroke Severity: Consciousness"/>
+      <description value="Indicate the patient’s level of consciousness measured on hospital arrival."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -88,10 +88,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/molicavc-organization-profile"/>
+        <reference value="StructureDefinition/DiagnosisEvidence"/>
       </reference>
-      <name value="Profile of Molic-AVC's Organization"/>
-      <description value="The Organization resource in the MOLIC-AVC project encompasses all entities or groups &#xD;&#xA;involved in the healthcare process and related health services as part of their formal responsibilities. &#xD;&#xA;Examples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, &#xD;&#xA;public ambulance transport (SAMU), private services, and others."/>
+      <name value="Diagnosis Evidence Base"/>
+      <description value="Indicate how the diagnosis was made."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -99,10 +99,164 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/molicavc-practitioner-profile"/>
+        <reference value="StructureDefinition/DischDest"/>
       </reference>
-      <name value="Profile of Molic-AVC's Practitioner"/>
-      <description value="The Practitioner Resource in the MOLIC-AVC project encompasses all individuals involved in the healthcare process and related health services as part of their formal responsibilities. This Resource is utilized to assign activities and responsibilities to these individuals. Examples include: doctors, nurses, therapists, receptionists, and so on."/>
+      <name value="Discharge Destination Following Acute Care Hospitalization"/>
+      <description value="Indicate the patient’s discharge destination from acute care hospital."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/EstStrokeSevNIHSSCat"/>
+      </reference>
+      <name value="Estimated Stroke Severity: based on NIHSS Category"/>
+      <description value="Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Hemicraniectomy"/>
+      </reference>
+      <name value="Hemicraniectomy"/>
+      <description value="Indicate if the patient underwent hemicraniectomy."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorAtrialFibrillation"/>
+      </reference>
+      <name value="Prior Atrial Fibrillation and Flutter"/>
+      <description value="Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorDiabetesMellitus"/>
+      </reference>
+      <name value="Prior Diabetes Mellitus"/>
+      <description value="Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorHyperlipidemia"/>
+      </reference>
+      <name value="Prior Hyperlipidemia"/>
+      <description value="Indicate whether the patient has ever been diagnosed with hyperlipidemia."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorHypertension"/>
+      </reference>
+      <name value="Prior Hypertension"/>
+      <description value="Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorIschemicHeartDisease"/>
+      </reference>
+      <name value="Prior Ischemic Heart Disease"/>
+      <description value="Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorMyocardialInfarction"/>
+      </reference>
+      <name value="Prior Myocardial Infarction"/>
+      <description value="Indicate whether the patient has a documented history of myocardial infarction."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorStrokeExclTIA"/>
+      </reference>
+      <name value="Prior Stroke excluding Transient Ischemic Attacks"/>
+      <description value="Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PriorTIA"/>
+      </reference>
+      <name value="Prior Transient Ischemic Attacks"/>
+      <description value="Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ProcoagulantReversal"/>
+      </reference>
+      <name value="Procoagulant Reversal Therapy"/>
+      <description value="Indicate if the patient received procoagulant reversal therapy."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RehabIN"/>
+      </reference>
+      <name value="Inpatient Acute Care Rehabilitation"/>
+      <description value="Indicate whether there is dedicated stroke rehabilitation during acute care."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RehabOUT"/>
+      </reference>
+      <name value="Post Acute Care Rehabilitation"/>
+      <description value="Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StrokeOrganization"/>
+      </reference>
+      <name value="Healthcare Facility based on the Brazilian RNDS"/>
+      <description value="The Organization Profile encompasses all healthcare institutions related to stroke care, based on the &#xD;&#xA;Brazilian National Data Network (RNDS)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -112,30 +266,96 @@
       <reference>
         <reference value="StructureDefinition/StrokePatient"/>
       </reference>
-      <name value="Stroke Patient Profile"/>
-      <description value="This profile stores demographics and other administrative information about an patient with stroke."/>
+      <name value="Stroke Patient based on the Brazilian RNDS"/>
+      <description value="This profile stores demographics and other administrative information about a patient with stroke, based on the Brazilian National Data Network (RNDS)."/>
       <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/AlcoholAmountExtension"/>
+        <reference value="StructureDefinition/StrokePractitioner"/>
       </reference>
-      <name value="Extension of Alcohol intake amount"/>
-      <description value="Based on the ICHOM, one standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol)."/>
+      <name value="Stroke Practitioner based on Brazilian RNDS"/>
+      <description value="This profile encompasses all health professionals involved in the healthcare process and related health services &#xD;&#xA;as part of their formal responsibilities, conforming to the standards of the Brazilian National Data Network (RNDS)."/>
       <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Est-StrokeSevNIHSSCatExtension"/>
+        <reference value="StructureDefinition/StrokeRecur"/>
       </reference>
-      <name value="Extension of Estimated Stroke Severity Category based on NIHSS"/>
-      <description value="Estimated Stroke Severity: Category. Indicate the estimated stroke severity category &#xD;&#xA;by the NIH Stroke Scale (NIHSS)."/>
+      <name value="Stroke Recurrence."/>
+      <description value="Indicate if the patient had a new stroke within 90 days of their first stroke occurrence."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StrokeSevNIHSS"/>
+      </reference>
+      <name value="Stroke Severity: NIHSS Score"/>
+      <description value="Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/StrokeType"/>
+      </reference>
+      <name value="Stroke Type"/>
+      <description value="Indicate Stroke Type."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SympIntracranialHemorrhage"/>
+      </reference>
+      <name value="Symptomatic Intracranial Hemorrhage"/>
+      <description value="Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SymtDur"/>
+      </reference>
+      <name value="Duration of Stroke Symptoms"/>
+      <description value="Indicate the duration of the stroke symptoms measured on hospital arrival."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Thrombectomy"/>
+      </reference>
+      <name value="Thrombectomy"/>
+      <description value="Indicate if the patient underwent thrombectomy."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Thrombolytic"/>
+      </reference>
+      <name value="Thrombolytic Therapy"/>
+      <description value="Indicate if the patient received intravenous thrombolytic therapy."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -145,8 +365,8 @@
       <reference>
         <reference value="StructureDefinition/EthnicityExtension"/>
       </reference>
-      <name value="Extension of Patient Ethnicity"/>
-      <description value="Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information."/>
+      <name value="Ethnicity"/>
+      <description value="Extension to capture the patient's ethnicity which represents their cultural background or heritage."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -156,41 +376,8 @@
       <reference>
         <reference value="StructureDefinition/GenderIdentityExtension"/>
       </reference>
-      <name value="Extension of Patient Gender Identity"/>
-      <description value="The patient's gender."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/LiveAlonePreExtension"/>
-      </reference>
-      <name value="Extension of Live Alone Pre-Stroke"/>
-      <description value="Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/LivingLocPreExtension"/>
-      </reference>
-      <name value="Extension of Patient's Residence Prior to a Stroke"/>
-      <description value="An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/molicavc-strokewindow-extension"/>
-      </reference>
-      <name value="Extension of Stroke Window"/>
-      <description value="Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours."/>
+      <name value="Gender Identity"/>
+      <description value="Extension of the patient's gender."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -200,52 +387,8 @@
       <reference>
         <reference value="StructureDefinition/RaceExtension"/>
       </reference>
-      <name value="Extension of Race"/>
-      <description value="Represents the race of a patient. This extension is aligned with USCore."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/SmokingStatusExtension"/>
-      </reference>
-      <name value="Extension of Smoking Status"/>
-      <description value="Extension to capture the patient's smoking status, as recommended by ICHOM."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/StrokeSevLocExtension"/>
-      </reference>
-      <name value="Extension of Consciousness"/>
-      <description value="Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/StrokeSev-NIHSS-Extension"/>
-      </reference>
-      <name value="Extension of Stroke Severity Score based on NIHSS"/>
-      <description value="Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/SymtDurExtension"/>
-      </reference>
-      <name value="Extension of Stroke's Symptom Duration"/>
-      <description value="Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival."/>
+      <name value="Race"/>
+      <description value="Extension that represents the race of a patient."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -253,10 +396,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/cnes-valueset"/>
+        <reference value="ValueSet/CVDComorbiditiesVS"/>
       </reference>
-      <name value="ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)"/>
-      <description value="This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)."/>
+      <name value="Cardiovascular Comorbidities"/>
+      <description value="Valueset that indicate which comorbidities the patient is living with. Select all conditions that apply."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -264,10 +407,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/molicavc-cvdcomorbidities-valueset"/>
+        <reference value="ValueSet/ConsciousnessVS"/>
       </reference>
-      <name value="ValueSet of Cardiovascular Comorbidities"/>
-      <description value=" Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up."/>
+      <name value="State of Consciousness."/>
+      <description value="ValueSet based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -277,8 +420,8 @@
       <reference>
         <reference value="ValueSet/DiagnosisVS"/>
       </reference>
-      <name value="ValueSet of the Diagnostic Evidence Base"/>
-      <description value="This ValueSet indicates which diagnostic evidence base was used for its realization"/>
+      <name value="Diagnostic Evidence Base"/>
+      <description value="ValueSet that indicates which diagnostic evidence base was used for its realization"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -288,8 +431,8 @@
       <reference>
         <reference value="ValueSet/DischDestVS"/>
       </reference>
-      <name value="ValueSet of Discharge Location"/>
-      <description value="Discharge destination following acute care hospitalization. What type of place was the patient discharged to?"/>
+      <name value="Discharge Location"/>
+      <description value="ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -299,8 +442,8 @@
       <reference>
         <reference value="ValueSet/EstStrokeSevNIHSSCatVS"/>
       </reference>
-      <name value="ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard."/>
-      <description value="This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)."/>
+      <name value="Estimated stroke severity using the NIHSS."/>
+      <description value="ValueSet that intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -310,7 +453,7 @@
       <reference>
         <reference value="ValueSet/GenderIdentityVS"/>
       </reference>
-      <name value="ValueSet of Gender Identity"/>
+      <name value="Gender Identity"/>
       <description value="ValueSet for Gender Identity based on LOINC."/>
       <isExample value="false"/>
     </resource>
@@ -319,10 +462,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/hospital-department-valueset"/>
+        <reference value="ValueSet/LiveAloneVS"/>
       </reference>
-      <name value="ValueSet for Hospital Department"/>
-      <description value="This ValueSet includes the hospital departments responsible for taking care of stroke patients."/>
+      <name value="Live Alone Pre-Stroke"/>
+      <description value="ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -330,10 +473,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/LiveAlonePreVS"/>
+        <reference value="ValueSet/LivingLocPostVS"/>
       </reference>
-      <name value="ValueSet of Live Alone Pre-Stroke"/>
-      <description value="ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
+      <name value="Patient's Residence Post to a Stroke"/>
+      <description value="ValueSet that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -343,30 +486,8 @@
       <reference>
         <reference value="ValueSet/LivingLocPreVS"/>
       </reference>
-      <name value="ValueSet of Patient's Residence Prior to a Stroke"/>
-      <description value="Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/type-healthcare-unit-valueset"/>
-      </reference>
-      <name value="Type of Healthcare Unit ValueSet"/>
-      <description value="This ValueSet details codes for healthcare units serving stroke patients in Brazil."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/molicavc-referencelocation-valueset"/>
-      </reference>
-      <name value="ValueSet of Reference Location"/>
-      <description value="Indicate and classify where the patient was referred."/>
+      <name value="Patient's Residence Prior to a Stroke"/>
+      <description value="ValueSet that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -376,7 +497,7 @@
       <reference>
         <reference value="ValueSet/NoYesUnknownVS"/>
       </reference>
-      <name value="ValueSet Yes, No and Unknown"/>
+      <name value="Yes, No and Unknown"/>
       <description value="ValueSet with responses Yes, No, and Unknown"/>
       <isExample value="false"/>
     </resource>
@@ -387,19 +508,8 @@
       <reference>
         <reference value="ValueSet/PROMIS10VS"/>
       </reference>
-      <name value="ValueSet of PROMIS-10 Response Questionnaire"/>
-      <description value="This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/professionalcode-valueset"/>
-      </reference>
-      <name value="ValueSet of Professional Code"/>
-      <description value="This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil."/>
+      <name value="PROMIS-10 Response Questionnaire"/>
+      <description value="ValueSet that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -409,8 +519,8 @@
       <reference>
         <reference value="ValueSet/SMRSqVS"/>
       </reference>
-      <name value="ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)"/>
-      <description value="This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire."/>
+      <name value="Simplified modified Ranking Scale questionnaire (SMRSq)"/>
+      <description value="ValueSet that defines the response values for the simplified modified Ranking Scale questionnaire."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -420,7 +530,7 @@
       <reference>
         <reference value="ValueSet/SmokingStatusVS"/>
       </reference>
-      <name value="ValueSet of Smoking Status"/>
+      <name value="Smoking Status"/>
       <description value="ValueSet for Smoking Status. A person's current and past smoking behavior."/>
       <isExample value="false"/>
     </resource>
@@ -431,8 +541,8 @@
       <reference>
         <reference value="ValueSet/StrokeAmbVS"/>
       </reference>
-      <name value="ValueSet of Prestroke and Poststroke Functional Status: Ambulation"/>
-      <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation."/>
+      <name value="Prestroke and Poststroke Functional Status: Ambulation"/>
+      <description value="ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Ambulation."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -442,19 +552,8 @@
       <reference>
         <reference value="ValueSet/StrokeDressingVS"/>
       </reference>
-      <name value="ValueSet of Prestroke and Poststroke Functional Status: Dressing"/>
-      <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing."/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/StrokeSevLocVS"/>
-      </reference>
-      <name value="ValueSet Categorizing the State of Consciousness according to the ICHOM standard."/>
-      <description value="This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital."/>
+      <name value="Prestroke and Poststroke Functional Status: Dressing"/>
+      <description value="ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Dressing."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -464,8 +563,8 @@
       <reference>
         <reference value="ValueSet/StrokeToiletingVS"/>
       </reference>
-      <name value="ValueSet of Prestroke and Poststroke Functional Status: Toileting"/>
-      <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting."/>
+      <name value="Prestroke and Poststroke Functional Status: Toileting"/>
+      <description value="ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Toileting."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -475,8 +574,8 @@
       <reference>
         <reference value="ValueSet/StrokeTypeVS"/>
       </reference>
-      <name value="ValueSet for stroke type based on ICHOM"/>
-      <description value="This ValueSet aims to categorize the stroke type according to the ICHOM standard."/>
+      <name value="Stroke type based on ICHOM"/>
+      <description value="ValueSet that aims to categorize the stroke type according to the ICHOM standard."/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -486,21 +585,163 @@
       <reference>
         <reference value="ValueSet/SymtDurVS"/>
       </reference>
-      <name value="ValueSet Categorizing the Duration of Stroke Symptoms"/>
+      <name value="Duration of Stroke Symptoms"/>
       <description value="ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital."/>
       <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="Patient/123.456.789-00"/>
+        <reference value="CodeSystem/CVDComorbiditiesCS"/>
       </reference>
-      <name value="Use case of Stroke Patient"/>
-      <description value="This case study presents a patient profile. The profile extends the FHIR Patient &#xA;resource with specialized extensions to capture essential data."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"/>
+      <name value="Cardiovascular Comorbidities"/>
+      <description value="CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ConsciousnessCS"/>
+      </reference>
+      <name value="State of Consciousness according to the ICHOM standard"/>
+      <description value="CodeSystem based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DiagnosisCS"/>
+      </reference>
+      <name value="Diagnostic Evidence Base"/>
+      <description value="CodeSystem that indicates which diagnostic evidence base was used for its realization"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DischDestCS"/>
+      </reference>
+      <name value="Discharge Location"/>
+      <description value="CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/EstStrokeSevNIHSSCatCS"/>
+      </reference>
+      <name value="Estimated stroke severity using the NIHSS."/>
+      <description value="CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LiveAloneCS"/>
+      </reference>
+      <name value="Live Alone Pre-Stroke"/>
+      <description value="CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LivingLocPostCS"/>
+      </reference>
+      <name value="Patient's Residence Post to a Stroke"/>
+      <description value="CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/LivingLocPreCS"/>
+      </reference>
+      <name value="Patient's Residence Prior to a Stroke"/>
+      <description value="CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PROMIS10VS"/>
+      </reference>
+      <name value="PROMIS-10 Response Questionnaire"/>
+      <description value="CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SMRSqCS"/>
+      </reference>
+      <name value="Simplified Modified Ranking Scale questionnaire (sMRSq)"/>
+      <description value="CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq)."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SmokingStatusCS"/>
+      </reference>
+      <name value="Smoking Status"/>
+      <description value="CodeSystem for Smoking Status. A person's current and past smoking behavior."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/StrokeFuncStatusCS"/>
+      </reference>
+      <name value="Prestroke and Poststroke Functional Status"/>
+      <description value="CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/StrokeTypeCS"/>
+      </reference>
+      <name value="Stroke Type"/>
+      <description value="CodeSystem that aims to categorize the stroke type according to the ICHOM standard."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SymtDurCS"/>
+      </reference>
+      <name value="Duration of Stroke Symptoms"/>
+      <description value="CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital."/>
+      <isExample value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -548,39 +789,291 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Practitioner"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Practitioner/MolicAVC-DoctorExample"/>
+        <reference value="Observation/ExampleCVDComorbidities"/>
       </reference>
-      <name value="Use case of Molic-AVC's Practitioner"/>
-      <description value="Example instance of a doctor in the Molic-AVC project."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"/>
+      <name value="Cardiovascular Comorbidities"/>
+      <description value="Example of Cardiovascular Comorbidities. Indicate which comorbidities the patient is living with."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Encounter/MolicAVC-EncouterExample"/>
+        <reference value="Observation/ExampleConsciousness"/>
       </reference>
-      <name value="Use case of Molic-AVC's Encounter"/>
-      <description value="Example instance of an encounter for a patient admitted due to a stroke."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"/>
+      <name value="Stroke Severity: Consciousness"/>
+      <description value="Example of Stroke Severity: Consciousness. Indicate the patient’s level of consciousness measured on hospital arrival."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Organization/MolicAVC-OrganizationExample"/>
+        <reference value="Observation/ExampleDiagnosisEvidence"/>
       </reference>
-      <name value="Use case of Molic-AVC's Organization"/>
-      <description value="Example instance of an Organization in the Molic-AVC project."/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"/>
-      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"/>
+      <name value="Diagnosis Evidence Base"/>
+      <description value="Example of Diagnosis Evidence Base. Indicate how the diagnosis was made."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleDischDest"/>
+      </reference>
+      <name value="Discharge Destination Following Acute Care Hospitalization"/>
+      <description value="Example of Discharge Destination Following Acute Care Hospitalization.  Indicate the patient’s discharge destination from acute care hospital."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleEstStrokeSevNIHSSCat"/>
+      </reference>
+      <name value="Estimated Stroke Severity: based on NIHSS Category"/>
+      <description value="Example of Estimated Stroke Severity: based on NIHSS Category. Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS)."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleHemicraniectomy"/>
+      </reference>
+      <name value="Hemicraniectomy"/>
+      <description value="Example of Hemicraniectomy. Indicate if the patient underwent hemicraniectomy."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorAtrialFibrillation"/>
+      </reference>
+      <name value="Prior Atrial Fibrillation and Flutter"/>
+      <description value="Example of Prior Atrial Fibrillation and Flutter. Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorDiabetesMellitus"/>
+      </reference>
+      <name value="Prior Diabetes Mellitus"/>
+      <description value="Example of Prior Diabetes Mellitus. Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents)."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorHyperlipidemia"/>
+      </reference>
+      <name value="Prior Hyperlipidemia"/>
+      <description value="Example of Prior Hyperlipidemia. Indicate whether the patient has ever been diagnosed with hyperlipidemia."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorHypertension"/>
+      </reference>
+      <name value="Prior Hypertension"/>
+      <description value="Example of Prior Hypertension. Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorIschemicHeartDisease"/>
+      </reference>
+      <name value="Prior Ischemic Heart Disease"/>
+      <description value="Example of Prior Ischemic Heart Disease. Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction)."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorMyocardialInfarction"/>
+      </reference>
+      <name value="Prior Myocardial Infarction"/>
+      <description value="Example of Prior Myocardial Infarction. Indicate whether the patient has a documented history of myocardial infarction."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorStrokeExclTIA"/>
+      </reference>
+      <name value="Prior Stroke excluding Transient Ischemic Attacks"/>
+      <description value="Example of Prior Stroke excluding Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks)."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExamplePriorTIA"/>
+      </reference>
+      <name value="Prior Transient Ischemic Attacks"/>
+      <description value="Example of Prior Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleProcoagulantReversal"/>
+      </reference>
+      <name value="Procoagulant Reversal Therapy"/>
+      <description value="Example of Procoagulant Reversal Therapy. Indicate if the patient received procoagulant reversal therapy."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleRehabIN"/>
+      </reference>
+      <name value="Inpatient Acute Care Rehabilitation"/>
+      <description value="Example of Inpatient Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during acute care."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleRehabOUT"/>
+      </reference>
+      <name value="Post Acute Care Rehabilitation"/>
+      <description value="Example of Post Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleStrokeRecur"/>
+      </reference>
+      <name value="Stroke Recurrence."/>
+      <description value="Example of Stroke Recurrence. Indicate if the patient had a new stroke within 90 days of their first stroke occurrence."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleStrokeSevNIHSS"/>
+      </reference>
+      <name value="Stroke Severity: NIHSS Score"/>
+      <description value="Example of Stroke Severity: NIHSS Score. Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleStrokeType"/>
+      </reference>
+      <name value="Stroke Type"/>
+      <description value="Example of Stroke Type. Indicate Stroke Type."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleSympIntracranialHemorrhage"/>
+      </reference>
+      <name value="Symptomatic Intracranial Hemorrhage"/>
+      <description value="Example of Symptomatic Intracranial Hemorrhage. Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleSymtDur"/>
+      </reference>
+      <name value="Duration of Stroke Symptoms"/>
+      <description value="Example of Duration of Stroke Symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleThrombectomy"/>
+      </reference>
+      <name value="Thrombectomy"/>
+      <description value="Example of Thrombectomy. Indicate if the patient underwent thrombectomy."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ExampleThrombolytic"/>
+      </reference>
+      <name value="Thrombolytic Therapy"/>
+      <description value="Example of Thrombolytic Therapy. Indicate if the patient received intravenous thrombolytic therapy."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -615,6 +1108,42 @@
       <description value="This questionnaire is designed to assess the patient-reported response in stroke at 90 days post admission."/>
       <isExample value="false"/>
     </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/example-strokeorganization"/>
+      </reference>
+      <name value="Healthcare Facility"/>
+      <description value="Example of Healthcare Facility related to stroke care, based on the Brazilian National Data Network (RNDS)."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/example-strokepatient"/>
+      </reference>
+      <name value="Stroke Patient"/>
+      <description value="Example of Stroke Patient. This example presents a profile for stroke patient based on Brazilian RNDS."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/example-strokepractitioner"/>
+      </reference>
+      <name value="Stroke Practitioner"/>
+      <description value="This example presents a practitioner profile for stroke attendance based on Brazilian National Data Network."/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"/>
+      <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"/>
+    </resource>
     <page>
       <sourceUrl value="toc.html"/>
       <name value="toc.html"/>
@@ -627,6 +1156,18 @@
         <generation value="markdown"/>
       </page>
       <page>
+        <sourceUrl value="stroke-cp.html"/>
+        <name value="stroke-cp.html"/>
+        <title value="Stroke-CP"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <sourceUrl value="data-dictionary.html"/>
+        <name value="data-dictionary.html"/>
+        <title value="Data-Dictionary"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
         <sourceUrl value="fhir.html"/>
         <name value="fhir.html"/>
         <title value="FHIR"/>
@@ -636,24 +1177,6 @@
         <sourceUrl value="ichom.html"/>
         <name value="ichom.html"/>
         <title value="ICHOM"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <sourceUrl value="lc-avc-bpmn.html"/>
-        <name value="lc-avc-bpmn.html"/>
-        <title value="Stroke-CP (BPMN)"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <sourceUrl value="data-dictionary.html"/>
-        <name value="data-dictionary.html"/>
-        <title value="Data Dictionary"/>
-        <generation value="markdown"/>
-      </page>
-      <page>
-        <sourceUrl value="paper.html"/>
-        <name value="paper.html"/>
-        <title value="Paper"/>
         <generation value="markdown"/>
       </page>
       <page>
@@ -681,7 +1204,7 @@
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="releaselabel"/>
       </code>
-      <value value="ci-build"/>
+      <value value="ballot"/>
     </parameter>
     <parameter>
       <code>

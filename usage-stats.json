@@ -1,26 +1,11 @@
 {
   "package": "guide",
-  "version": "1.0.1",
+  "version": "0.0.0",
   "fhirVersion": "5.0.0",
   "extensions": [
     {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/AlcoholAmountExtension",
-      "title": "Extension of Alcohol intake amount",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Est-StrokeSevNIHSSCatExtension",
-      "title": "Extension of Estimated Stroke Severity Category based on NIHSS",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension",
-      "title": "Extension of Patient Ethnicity",
+      "title": "Ethnicity",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -28,23 +13,7 @@
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension",
-      "title": "Extension of Patient Gender Identity",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LiveAlonePreExtension",
-      "title": "Extension of Live Alone Pre-Stroke",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LivingLocPreExtension",
-      "title": "Extension of Patient\u0027s Residence Prior to a Stroke",
+      "title": "Gender Identity",
       "types": [
         "CodeableConcept",
         "CodeableConcept"
@@ -52,79 +21,59 @@
     },
     {
       "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension",
-      "title": "Extension of Race",
+      "title": "Race",
       "types": [
         "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SmokingStatusExtension",
-      "title": "Extension of Smoking Status",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSev-NIHSS-Extension",
-      "title": "Extension of Stroke Severity Score based on NIHSS",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevLocExtension",
-      "title": "Extension of Consciousness",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDurExtension",
-      "title": "Extension of Stroke\u0027s Symptom Duration",
-      "types": [
-        "CodeableConcept",
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension",
-      "title": "Extension of Stroke Window",
-      "types": [
-        "time"
       ]
     }
   ],
   "profiles": {
-    "Patient": [
-      {
-        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient",
-        "title": "Stroke Patient Profile"
-      }
-    ],
-    "Encounter": [
-      {
-        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
-        "title": "Profile of Molic-AVC\u0027s Encounter"
-      }
-    ],
     "Observation": [
       {
-        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-observation-profile",
-        "title": "Profile of Molic-AVC\u0027s Observation"
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur",
+        "title": "Stroke Recurrence."
+      },
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS",
+        "title": "Stroke Severity: NIHSS Score"
+      },
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType",
+        "title": "Stroke Type"
+      },
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage",
+        "title": "Symptomatic Intracranial Hemorrhage"
+      },
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur",
+        "title": "Duration of Stroke Symptoms"
+      },
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy",
+        "title": "Thrombectomy"
+      },
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic",
+        "title": "Thrombolytic Therapy"
       }
     ],
     "Organization": [
       {
-        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
-        "title": "Profile of Molic-AVC\u0027s Organization"
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization",
+        "title": "Healthcare Facility based on the Brazilian RNDS"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient",
+        "title": "Stroke Patient based on the Brazilian RNDS"
       }
     ],
     "Practitioner": [
       {
-        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
-        "title": "Profile of Molic-AVC\u0027s Practitioner"
+        "url": "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner",
+        "title": "Stroke Practitioner based on Brazilian RNDS"
       }
     ]
   },
@@ -136,15 +85,17 @@
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
@@ -156,12 +107,6 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
       "StructureDefinition"
     ],
-    "http://hl7.org/fhir/StructureDefinition/variable": [
-      "Questionnaire.item.item"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/binding-definition": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
@@ -171,47 +116,14 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
-      "Questionnaire.item.item"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext": [
-      "Questionnaire"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/AlcoholAmountExtension": [
-      "Observation"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Est-StrokeSevNIHSSCatExtension": [
-      "Observation"
-    ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension": [
       "Patient"
     ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension": [
       "Patient"
     ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LiveAlonePreExtension": [
-      "Patient"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LivingLocPreExtension": [
-      "Patient"
-    ],
     "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension": [
       "Patient"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SmokingStatusExtension": [
-      "Observation"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSev-NIHSS-Extension": [
-      "Observation"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevLocExtension": [
-      "Observation"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDurExtension": [
-      "Observation"
-    ],
-    "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension": [
-      "Observation"
     ]
   }
 }

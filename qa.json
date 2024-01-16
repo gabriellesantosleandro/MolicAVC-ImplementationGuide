@@ -1,13 +1,16 @@
 {
   "url" : "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide",
   "name" : "MolicAVC",
+  "title" : "FHIR Implementation Guide for Stroke",
+  "description" : "FHIR Implementation Guide for Stroke: A Dual Focus on the Patient's Journey and Outcome Measures",
+  "status" : "draft",
   "package-id" : "guide",
-  "ig-ver" : "1.0.1",
-  "date" : "Tue, 21 Nov, 2023 19:08:35 -0300",
-  "errs" : 191,
-  "warnings" : 184,
-  "hints" : 104,
+  "ig-ver" : "0.0.0",
+  "date" : "Tue, 16 Jan, 2024 20:08:55 -0300",
+  "errs" : 0,
+  "warnings" : 0,
+  "hints" : 0,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1645608024
+  "maxMemory" : 1712538672
 }

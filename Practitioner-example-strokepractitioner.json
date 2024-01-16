@@ -1,0 +1,54 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "example-strokepractitioner",
+  "meta" : {
+    "lastUpdated" : "2024-01-24T15:15:19-03:00",
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"]
+  },
+  "language" : "pt-BR",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"pt-BR\" lang=\"pt-BR\"><p><b>Generated Narrative: Practitioner</b><a name=\"example-strokepractitioner\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;example-strokepractitioner&quot; Updated &quot;2024-01-24 15:15:19-0300&quot;  (Language &quot;pt-BR&quot;) </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-StrokePractitioner.html\">Stroke Practitioner based on Brazilian RNDS</a></p></div><p><b>identifier</b>: id:\u00a0123.456.789-00, id:\u00a000.123.456/0001-99</p><p><b>active</b>: true</p><p><b>name</b>: Maria Ferreira </p><p><b>telecom</b>: ph: (11) 9876-5432</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1970-05-15</p><p><b>address</b>: Rua Exemplo, 456 Rio de Janeiro RJ 21000-000 BR </p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Period</b></td><td><b>Issuer</b></td></tr><tr><td style=\"display: none\">*</td><td>Doctor of Medicine <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0360.html\">degreeLicenseCertificate</a>#MD)</span></td><td>2000-01-01 --&gt; (ongoing)</td><td><span>: Conselho Regional de Medicina</span></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cpf",
+    "value" : "123.456.789-00"
+  },
+  {
+    "system" : "http://rnds.saude.gov.br/fhir/r4/NamingSystem/cnpj",
+    "value" : "00.123.456/0001-99"
+  }],
+  "active" : true,
+  "name" : [{
+    "family" : "Ferreira",
+    "given" : ["Maria"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "(11) 9876-5432"
+  }],
+  "gender" : "female",
+  "birthDate" : "1970-05-15",
+  "address" : [{
+    "line" : ["Rua Exemplo, 456"],
+    "city" : "Rio de Janeiro",
+    "state" : "RJ",
+    "postalCode" : "21000-000",
+    "country" : "BR"
+  }],
+  "qualification" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0360",
+        "code" : "MD",
+        "display" : "Doctor of Medicine"
+      }]
+    },
+    "period" : {
+      "start" : "2000-01-01"
+    },
+    "issuer" : {
+      "display" : "Conselho Regional de Medicina"
+    }
+  }]
+}

@@ -1,0 +1,168 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PROMIS10VS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"PROMIS10VS-1\"> </a></td><td>Poor</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"PROMIS10VS-2\"> </a></td><td>Fair</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"PROMIS10VS-3\"> </a></td><td>Good</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"PROMIS10VS-4\"> </a></td><td>Very Good</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"PROMIS10VS-5\"> </a></td><td>Excellent</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"PROMIS10VS-6\"> </a></td><td>Completely</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"PROMIS10VS-7\"> </a></td><td>Mostly</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"PROMIS10VS-8\"> </a></td><td>Moderately</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"PROMIS10VS-9\"> </a></td><td>A little</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"PROMIS10VS-10\"> </a></td><td>Not at all</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"PROMIS10VS-11\"> </a></td><td>Always</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"PROMIS10VS-12\"> </a></td><td>Often</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"PROMIS10VS-13\"> </a></td><td>Sometimes</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"PROMIS10VS-14\"> </a></td><td>Rarely</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"PROMIS10VS-15\"> </a></td><td>Never</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"PROMIS10VS-16\"> </a></td><td>None</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"PROMIS10VS-17\"> </a></td><td>Mild</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"PROMIS10VS-18\"> </a></td><td>Moderate</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"PROMIS10VS-19\"> </a></td><td>Severe</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"PROMIS10VS-20\"> </a></td><td>Very Severe</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"PROMIS10VS-21\"> </a></td><td>0: No pain</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"PROMIS10VS-22\"> </a></td><td>1: Very mild pain</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"PROMIS10VS-23\"> </a></td><td>2: Discomforting</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"PROMIS10VS-24\"> </a></td><td>3: Tolerable</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"PROMIS10VS-25\"> </a></td><td>4: Distressing</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"PROMIS10VS-26\"> </a></td><td>5: Very distressing</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"PROMIS10VS-27\"> </a></td><td>6: Intense</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"PROMIS10VS-28\"> </a></td><td>7: Very intense</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"PROMIS10VS-29\"> </a></td><td>8: Utterly horrible</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"PROMIS10VS-30\"> </a></td><td>9: Excruciating unbearable pain</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"PROMIS10VS-31\"> </a></td><td>10: Unspeakable pain</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+  "version" : "0.0.0",
+  "name" : "PROMIS10CS",
+  "title" : "PROMIS-10 Response Questionnaire",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 31,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Poor"
+  },
+  {
+    "code" : "2",
+    "display" : "Fair"
+  },
+  {
+    "code" : "3",
+    "display" : "Good"
+  },
+  {
+    "code" : "4",
+    "display" : "Very Good"
+  },
+  {
+    "code" : "5",
+    "display" : "Excellent"
+  },
+  {
+    "code" : "6",
+    "display" : "Completely"
+  },
+  {
+    "code" : "7",
+    "display" : "Mostly"
+  },
+  {
+    "code" : "8",
+    "display" : "Moderately"
+  },
+  {
+    "code" : "9",
+    "display" : "A little"
+  },
+  {
+    "code" : "10",
+    "display" : "Not at all"
+  },
+  {
+    "code" : "11",
+    "display" : "Always"
+  },
+  {
+    "code" : "12",
+    "display" : "Often"
+  },
+  {
+    "code" : "13",
+    "display" : "Sometimes"
+  },
+  {
+    "code" : "14",
+    "display" : "Rarely"
+  },
+  {
+    "code" : "15",
+    "display" : "Never"
+  },
+  {
+    "code" : "16",
+    "display" : "None"
+  },
+  {
+    "code" : "17",
+    "display" : "Mild"
+  },
+  {
+    "code" : "18",
+    "display" : "Moderate"
+  },
+  {
+    "code" : "19",
+    "display" : "Severe"
+  },
+  {
+    "code" : "20",
+    "display" : "Very Severe"
+  },
+  {
+    "code" : "21",
+    "display" : "0: No pain"
+  },
+  {
+    "code" : "22",
+    "display" : "1: Very mild pain"
+  },
+  {
+    "code" : "23",
+    "display" : "2: Discomforting"
+  },
+  {
+    "code" : "24",
+    "display" : "3: Tolerable"
+  },
+  {
+    "code" : "25",
+    "display" : "4: Distressing"
+  },
+  {
+    "code" : "26",
+    "display" : "5: Very distressing"
+  },
+  {
+    "code" : "27",
+    "display" : "6: Intense"
+  },
+  {
+    "code" : "28",
+    "display" : "7: Very intense"
+  },
+  {
+    "code" : "29",
+    "display" : "8: Utterly horrible"
+  },
+  {
+    "code" : "30",
+    "display" : "9: Excruciating unbearable pain"
+  },
+  {
+    "code" : "31",
+    "display" : "10: Unspeakable pain"
+  }]
+}

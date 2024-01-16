@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleConsciousness"/>
+  <meta>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleConsciousness"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleConsciousness&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Consciousness.html">Stroke Severity: Consciousness</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Consciousness related finding <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#106167005)</span></p><p><b>subject</b>: <a href="Patient-example-strokepatient.html">Patient/example-strokepatient</a> &quot; SILVA&quot;</p><p><b>effective</b>: 2024-01-11 11:45:00+0000</p><p><b>performer</b>: <a href="Practitioner-example-strokepractitioner.html">Practitioner/example-strokepractitioner</a> &quot; FERREIRA&quot;</p><p><b>value</b>: Somnolent <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ConsciousnessCS.html">State of Consciousness according to the ICHOM standard</a>#1)</span></p></div>
+  </text>
+  <status value="preliminary"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="106167005"/>
+      <display value="Consciousness related finding"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-strokepatient"/>
+  </subject>
+  <effectiveDateTime value="2024-01-11T11:45:00Z"/>
+  <performer>
+    <reference value="Practitioner/example-strokepractitioner"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS"/>
+      <code value="1"/>
+      <display value="Somnolent"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

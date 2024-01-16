@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "DischDestCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"DischDestCS-1\"> </a></td><td>Home or community-dwelling (not home hospice)</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"DischDestCS-2\"> </a></td><td>Residential facility</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"DischDestCS-3\"> </a></td><td>Dedicated inpatient rehabilitation facility</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"DischDestCS-4\"> </a></td><td>Another acute care hospital</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"DischDestCS-5\"> </a></td><td>Patient died in hospital</td></tr><tr><td style=\"white-space:nowrap\">888<a name=\"DischDestCS-888\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"DischDestCS-999\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+  "version" : "0.0.0",
+  "name" : "DischDestCS",
+  "title" : "Discharge Location",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Home or community-dwelling (not home hospice)"
+  },
+  {
+    "code" : "2",
+    "display" : "Residential facility"
+  },
+  {
+    "code" : "3",
+    "display" : "Dedicated inpatient rehabilitation facility"
+  },
+  {
+    "code" : "4",
+    "display" : "Another acute care hospital"
+  },
+  {
+    "code" : "5",
+    "display" : "Patient died in hospital"
+  },
+  {
+    "code" : "888",
+    "display" : "Other"
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown"
+  }]
+}

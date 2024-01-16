@@ -1,6 +1,36 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
+      "uses" : {
+      },
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
+      "uses" : {
+      },
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
       "version" : "5.0.0",
       "status" : "active",
@@ -13,8 +43,8 @@
       "uses" : {
       },
       "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
-      "StructureDefinition-molicavc-practitioner-profile.html" : "Profile of Molic-AVC's Practitioner",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/all-languages",
@@ -28,104 +58,115 @@
       "sources" : ["2.16.840.1.113883.4.642.3.21"],
       "uses" : {
       },
-      "StructureDefinition-molicavc-practitioner-profile.html" : "Profile of Molic-AVC's Practitioner",
-      "StructureDefinition-molicavc-organization-profile.html" : "Profile of Molic-AVC's Organization",
-      "StructureDefinition-molicavc-observation-profile.html" : "Profile of Molic-AVC's Observation",
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score",
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
       "version" : "5.0.0",
       "status" : "draft",
-      "name" : "EncounterDiet",
-      "title" : "Diet",
-      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
       "oids" : [
-        "2.16.840.1.113883.4.642.3.255",
-        "2.16.840.1.113883.4.642.2.142",
-        "2.16.840.1.113883.4.642.3.250"
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
       ],
       "sources" : [
-        "2.16.840.1.113883.4.642.3.255",
-        "2.16.840.1.113883.4.642.2.142",
-        "2.16.840.1.113883.4.642.3.250"
+        "2.16.840.1.113883.4.642.3.653",
+        "2.16.840.1.113883.4.642.2.78",
+        "2.16.840.1.113883.4.642.3.141"
       ],
       "uses" : {
       },
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter"
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
       "version" : "5.0.0",
-      "status" : "draft",
-      "name" : "SpecialArrangements",
-      "title" : "Special Arrangements",
-      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
-      ],
-      "oids" : [
-        "2.16.840.1.113883.4.642.3.248",
-        "2.16.840.1.113883.4.642.2.141",
-        "2.16.840.1.113883.4.642.3.253"
-      ],
-      "sources" : [
-        "2.16.840.1.113883.4.642.3.248",
-        "2.16.840.1.113883.4.642.2.141",
-        "2.16.840.1.113883.4.642.3.253"
-      ],
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "Data Absent Reason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
-      "version" : "5.0.0",
-      "status" : "draft",
-      "name" : "SpecialCourtesy",
-      "title" : "Special Courtesy",
-      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ],
-      "oids" : [
-        "2.16.840.1.113883.4.642.3.247",
-        "2.16.840.1.113883.4.642.3.252",
-        "2.16.840.1.113883.4.642.2.140"
-      ],
-      "sources" : [
-        "2.16.840.1.113883.4.642.3.247",
-        "2.16.840.1.113883.4.642.3.252",
-        "2.16.840.1.113883.4.642.2.140"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
-      "version" : "5.0.0",
-      "status" : "draft",
-      "name" : "EncounterType",
-      "title" : "Encounter Type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
-      "oids" : [
-        "2.16.840.1.113883.4.642.3.243",
-        "2.16.840.1.113883.4.642.3.248",
-        "2.16.840.1.113883.4.642.2.137"
-      ],
-      "sources" : [
-        "2.16.840.1.113883.4.642.3.243",
-        "2.16.840.1.113883.4.642.3.248",
-        "2.16.840.1.113883.4.642.2.137"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter"
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
@@ -139,11 +180,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-molicavc-practitioner-profile.html" : "Profile of Molic-AVC's Practitioner",
-      "StructureDefinition-molicavc-organization-profile.html" : "Profile of Molic-AVC's Organization",
-      "StructureDefinition-molicavc-observation-profile.html" : "Profile of Molic-AVC's Observation",
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS",
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -157,11 +196,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-molicavc-practitioner-profile.html" : "Profile of Molic-AVC's Practitioner",
-      "StructureDefinition-molicavc-organization-profile.html" : "Profile of Molic-AVC's Organization",
-      "StructureDefinition-molicavc-observation-profile.html" : "Profile of Molic-AVC's Observation",
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS",
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -181,11 +218,33 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-molicavc-practitioner-profile.html" : "Profile of Molic-AVC's Practitioner",
-      "StructureDefinition-molicavc-organization-profile.html" : "Profile of Molic-AVC's Organization",
-      "StructureDefinition-molicavc-observation-profile.html" : "Profile of Molic-AVC's Observation",
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score",
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -207,23 +266,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/location-form",
-      "version" : "5.0.0",
-      "status" : "draft",
-      "name" : "LocationForm",
-      "title" : "Location Form",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/location-physical-type"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.328"],
-      "sources" : ["2.16.840.1.113883.4.642.3.328"],
-      "uses" : {
-      },
-      "StructureDefinition-molicavc-encounter-profile.html" : "Profile of Molic-AVC's Encounter"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -240,22 +283,52 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
       "version" : "5.0.0",
-      "status" : "active",
-      "name" : "NameUse",
-      "title" : "NameUse",
-      "description" : "The use of a human name.",
-      "systems" : ["http://hl7.org/fhir/name-use"],
-      "oids" : ["2.16.840.1.113883.4.642.3.65"],
-      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.403",
+        "2.16.840.1.113883.4.642.2.222",
+        "2.16.840.1.113883.4.642.3.392"
+      ],
       "uses" : {
       },
-      "StructureDefinition-molicavc-practitioner-profile.html" : "Profile of Molic-AVC's Practitioner",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -277,7 +350,241 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-molicavc-observation-profile.html" : "Profile of Molic-AVC's Observation"
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretationCodes",
+      "title" : "Observation Interpretation Codes",
+      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.399",
+        "2.16.840.1.113883.4.642.3.386",
+        "2.16.840.1.113883.4.642.2.218"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.2.215",
+        "2.16.840.1.113883.4.642.3.395",
+        "2.16.840.1.113883.4.642.3.382"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-referencerange-normalvalue",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeNormalValueCodes",
+      "title" : "Observation Reference Range Normal Value Codes",
+      "description" : "Codes that describe the normal value in the reference range, such as “Negative” or “Absent”",
+      "systems" : ["http://hl7.org/fhir/observation-referencerange-normalvalue"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3264"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3264"],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "Observation Status",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.400",
+        "2.16.840.1.113883.4.642.3.387",
+        "2.16.840.1.113883.4.642.2.219"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-triggeredbytype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "TriggeredBytype",
+      "title" : "triggered Bytype",
+      "description" : "Codes providing the type of triggeredBy observation.",
+      "systems" : ["http://hl7.org/fhir/observation-triggeredbytype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.3265"],
+      "sources" : ["2.16.840.1.113883.4.642.3.3265"],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -299,7 +606,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-molicavc-organization-profile.html" : "Profile of Molic-AVC's Organization"
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -313,7 +620,114 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient Profile"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.407",
+        "2.16.840.1.113883.4.642.3.396"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+      "version" : "5.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "sources" : [
+        "2.16.840.1.113883.4.642.3.397",
+        "2.16.840.1.113883.4.642.2.217",
+        "2.16.840.1.113883.4.642.3.384"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-StrokeType.html" : "Stroke Type",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-StrokeSevNIHSS.html" : "Stroke Severity: NIHSS Score"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0360",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSDegreeLicenseCertificate",
+      "title" : "hl7VS-degreeLicenseCertificate",
+      "description" : "Concepts specifying an educational degree (e.g., MD).  Used in the CNN datatype (names and identifiers of clinicians) in Version 2 messaging.  Used in Version 2 messaging; note that in releases of HL7 prior to 2.3.1, was also used in person names (XPN), but this use was deprecated, then withdrawn in 2.7.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360"],
+      "oids" : ["2.16.840.1.113883.21.236"],
+      "sources" : ["2.16.840.1.113883.21.236"],
+      "uses" : {
+      },
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-Ethnicity",
@@ -328,7 +742,7 @@
       "uses" : {
       },
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "StructureDefinition-EthnicityExtension.html" : "Extension of Patient Ethnicity"
+      "StructureDefinition-EthnicityExtension.html" : "Ethnicity"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-Race",
@@ -343,122 +757,178 @@
       "uses" : {
       },
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "StructureDefinition-RaceExtension.html" : "Extension of Race"
+      "StructureDefinition-RaceExtension.html" : "Race"
     },
     {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
-      "version" : "1.0.1",
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS",
+      "version" : "0.0.0",
       "status" : "active",
-      "name" : "DiagnosisVS",
-      "title" : "ValueSet of the Diagnostic Evidence Base",
-      "description" : "This ValueSet indicates which diagnostic evidence base was used for its realization",
+      "name" : "CVDComorbiditiesVS",
+      "title" : "Cardiovascular Comorbidities",
+      "description" : "Valueset that indicate which comorbidities the patient is living with. Select all conditions that apply.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/diagnosticevidence/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS"
       ],
       "uses" : {
       },
-      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline"
+      "StructureDefinition-CVDComorbidities.html" : "Cardiovascular Comorbidities"
     },
     {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS",
-      "version" : "1.0.1",
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS",
+      "version" : "0.0.0",
       "status" : "active",
-      "name" : "DischDestVS",
-      "title" : "ValueSet of Discharge Location",
-      "description" : "Discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "name" : "ConsciousnessVS",
+      "title" : "State of Consciousness.",
+      "description" : "ValueSet based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/"
-      ],
-      "uses" : {
-      },
-      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission"
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "EstStrokeSevNIHSSCatVS",
-      "title" : "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.",
-      "description" : "This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
-      "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/nihsscategory/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS"
       ],
       "uses" : {
       },
       "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
-      "StructureDefinition-Est-StrokeSevNIHSSCatExtension.html" : "Extension of Estimated Stroke Severity Category based on NIHSS"
+      "StructureDefinition-Consciousness.html" : "Stroke Severity: Consciousness"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DiagnosisVS",
+      "title" : "Diagnostic Evidence Base",
+      "description" : "ValueSet that indicates which diagnostic evidence base was used for its realization",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
+      "StructureDefinition-DiagnosisEvidence.html" : "Diagnosis Evidence Base"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "DischDestVS",
+      "title" : "Discharge Location",
+      "description" : "ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission",
+      "StructureDefinition-DischDest.html" : "Discharge Destination Following Acute Care Hospitalization"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "EstStrokeSevNIHSSCatVS",
+      "title" : "Estimated stroke severity using the NIHSS.",
+      "description" : "ValueSet that intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
+      "StructureDefinition-EstStrokeSevNIHSSCat.html" : "Estimated Stroke Severity: based on NIHSS Category"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "GenderIdentityVS",
-      "title" : "ValueSet of Gender Identity",
+      "title" : "Gender Identity",
       "description" : "ValueSet for Gender Identity based on LOINC.",
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "StructureDefinition-GenderIdentityExtension.html" : "Extension of Patient Gender Identity"
+      "StructureDefinition-GenderIdentityExtension.html" : "Gender Identity"
     },
     {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAlonePreVS",
-      "version" : "1.0.1",
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAloneVS",
+      "version" : "0.0.0",
       "status" : "active",
-      "name" : "LiveAlonePreVS",
-      "title" : "ValueSet of Live Alone Pre-Stroke",
+      "name" : "LiveAloneVS",
+      "title" : "Live Alone Pre-Stroke",
       "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/livealoneprestroke/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS"
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "StructureDefinition-LiveAlonePreExtension.html" : "Extension of Live Alone Pre-Stroke"
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission"
+    },
+    {
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPostVS",
+      "version" : "0.0.0",
+      "status" : "active",
+      "name" : "LivingLocPostVS",
+      "title" : "Patient's Residence Post to a Stroke",
+      "description" : "ValueSet that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code.",
+      "systems" : [
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS"
+      ]
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "LivingLocPreVS",
-      "title" : "ValueSet of Patient's Residence Prior to a Stroke",
-      "description" : "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
+      "title" : "Patient's Residence Prior to a Stroke",
+      "description" : "ValueSet that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/livinglocationprestroke/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS"
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "StructureDefinition-LivingLocPreExtension.html" : "Extension of Patient's Residence Prior to a Stroke"
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "NoYesUnknownVS",
-      "title" : "ValueSet Yes, No and Unknown",
+      "title" : "Yes, No and Unknown",
       "description" : "ValueSet with responses Yes, No, and Unknown",
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
       "uses" : {
       },
-      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
       "Questionnaire-ClinicalResponseAnnualUpdate.html" : "Clinical Response Questionnaire 04 - Annual Follow-up",
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
+      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
       "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
-      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission"
+      "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "PROMIS10VS",
-      "title" : "ValueSet of PROMIS-10 Response Questionnaire",
-      "description" : "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
+      "title" : "PROMIS-10 Response Questionnaire",
+      "description" : "ValueSet that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/promis10/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS"
       ],
       "uses" : {
       },
@@ -467,191 +937,110 @@
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "SMRSqVS",
-      "title" : "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)",
-      "description" : "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.",
+      "title" : "Simplified modified Ranking Scale questionnaire (SMRSq)",
+      "description" : "ValueSet that defines the response values for the simplified modified Ranking Scale questionnaire.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS"
       ],
       "uses" : {
       },
-      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission",
-      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission"
+      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission",
+      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "SmokingStatusVS",
-      "title" : "ValueSet of Smoking Status",
+      "title" : "Smoking Status",
       "description" : "ValueSet for Smoking Status. A person's current and past smoking behavior.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/SmokingStatus"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS"
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "StructureDefinition-SmokingStatusExtension.html" : "Extension of Smoking Status"
+      "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "StrokeAmbVS",
-      "title" : "ValueSet of Prestroke and Poststroke Functional Status: Ambulation",
-      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.",
+      "title" : "Prestroke and Poststroke Functional Status: Ambulation",
+      "description" : "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS"
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "StrokeDressingVS",
-      "title" : "ValueSet of Prestroke and Poststroke Functional Status: Dressing",
-      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing.",
+      "title" : "Prestroke and Poststroke Functional Status: Dressing",
+      "description" : "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Dressing.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS"
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
     },
     {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "StrokeSevLocVS",
-      "title" : "ValueSet Categorizing the State of Consciousness according to the ICHOM standard.",
-      "description" : "This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
-      "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/consciousness/"
-      ],
-      "uses" : {
-      },
-      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
-      "StructureDefinition-StrokeSevLocExtension.html" : "Extension of Consciousness"
-    },
-    {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "StrokeToiletingVS",
-      "title" : "ValueSet of Prestroke and Poststroke Functional Status: Toileting",
-      "description" : "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting.",
+      "title" : "Prestroke and Poststroke Functional Status: Toileting",
+      "description" : "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Toileting.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS"
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
       "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",
-      "version" : "1.0.1",
+      "version" : "0.0.0",
       "status" : "active",
       "name" : "StrokeTypeVS",
-      "title" : "ValueSet for stroke type based on ICHOM",
-      "description" : "This ValueSet aims to categorize the stroke type according to the ICHOM standard.",
+      "title" : "Stroke type based on ICHOM",
+      "description" : "ValueSet that aims to categorize the stroke type according to the ICHOM standard.",
       "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/"
-      ],
-      "uses" : {
-      },
-      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline"
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "SymtDurVS",
-      "title" : "ValueSet Categorizing the Duration of Stroke Symptoms",
-      "description" : "ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
-      "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/symptomduration/"
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS"
       ],
       "uses" : {
       },
       "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
-      "StructureDefinition-SymtDurExtension.html" : "Extension of Stroke's Symptom Duration"
+      "StructureDefinition-StrokeType.html" : "Stroke Type"
     },
     {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/cnes-valueset",
-      "version" : "1.0.1",
+      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
+      "version" : "0.0.0",
       "status" : "active",
-      "name" : "CNES_ValueSet",
-      "title" : "ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)",
-      "description" : "This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde).",
+      "name" : "SymtDurVS",
+      "title" : "Duration of Stroke Symptoms",
+      "description" : "ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
       "systems" : [
-        "http://cnes2.datasus.gov.br/Exibe_Ficha_Estabelecimento.asp?VCo_Unidade=4209102511959"
-      ]
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "HospitalDepartment_ValueSet",
-      "title" : "ValueSet for Hospital Department",
-      "description" : "This ValueSet includes the hospital departments responsible for taking care of stroke patients.",
-      "systems" : [
-        "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset/"
-      ]
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "CardiovascularComorbidities_ValueSet",
-      "title" : "ValueSet of Cardiovascular Comorbidities",
-      "description" : " Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up.",
-      "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/cvdcomorbidities/"
-      ]
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "MolicAVC_ReferenceLocation_ValueSet",
-      "title" : "ValueSet of Reference Location",
-      "description" : "Indicate and classify where the patient was referred.",
-      "systems" : [
-        "https://connect.ichom.org/patient-centered-outcome-measures/stroke/reference-location/"
-      ]
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "ProfessionalCode_ValueSet",
-      "title" : "ValueSet of Professional Code",
-      "description" : "This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil.",
-      "systems" : [
-        "https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset/"
-      ]
-    },
-    {
-      "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "MolicAVC_CodeHealthcareUnitValueSet",
-      "title" : "Type of Healthcare Unit ValueSet",
-      "description" : "This ValueSet details codes for healthcare units serving stroke patients in Brazil.",
-      "systems" : [
-        "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset/"
-      ]
+        "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
+      "StructureDefinition-SymtDur.html" : "Duration of Stroke Symptoms"
     }
   ]
 }

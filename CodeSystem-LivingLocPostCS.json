@@ -1,0 +1,76 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "LivingLocPostCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"LivingLocPostCS-1\"> </a></td><td>At home, with no community support</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"LivingLocPostCS-2\"> </a></td><td>At home with community support</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"LivingLocPostCS-3\"> </a></td><td>In an assisting living home in the community (senior's home)</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"LivingLocPostCS-4\"> </a></td><td>In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"LivingLocPostCS-5\"> </a></td><td>In long term care (nursing home, chronic care hospital)</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"LivingLocPostCS-6\"> </a></td><td>In an acute care hospital</td></tr><tr><td style=\"white-space:nowrap\">888<a name=\"LivingLocPostCS-888\"> </a></td><td>Other</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"LivingLocPostCS-999\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+  "version" : "0.0.0",
+  "name" : "LivingLocPostCS",
+  "title" : "Patient's Residence Post to a Stroke",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 8,
+  "concept" : [{
+    "code" : "1",
+    "display" : "At home, with no community support"
+  },
+  {
+    "code" : "2",
+    "display" : "At home with community support"
+  },
+  {
+    "code" : "3",
+    "display" : "In an assisting living home in the community (senior's home)"
+  },
+  {
+    "code" : "4",
+    "display" : "In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)"
+  },
+  {
+    "code" : "5",
+    "display" : "In long term care (nursing home, chronic care hospital)"
+  },
+  {
+    "code" : "6",
+    "display" : "In an acute care hospital"
+  },
+  {
+    "code" : "888",
+    "display" : "Other"
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown"
+  }]
+}

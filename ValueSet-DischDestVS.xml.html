@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ValueSet of Discharge Location - XML Representation - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
+    <title>Discharge Location - XML Representation - FHIR Implementation Guide for Stroke v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,17 +41,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9.28"}
-    h3,h4,h5,h6{--heading-prefix:"9.28"}</style>
+    <style type="text/css">h2{--heading-prefix:"8.41"}
+    h3,h4,h5,h6{--heading-prefix:"8.41"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide for Stroke</span>
             <br/>
-            <span style="display:inline-block;">1.0.1 - ci-build
+            <span style="display:inline-block;">0.0.0 - ballot
 
 
             </span>
@@ -82,19 +82,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="stroke-cp.html">Stroke-CP</a>
+  </li>
+  <li>
+    <a href="data-dictionary.html">Data-Dictionary</a>
+  </li>
+  <li>
     <a href="fhir.html">FHIR</a>
   </li>
   <li>
     <a href="ichom.html">ICHOM</a>
-  </li>
-  <li>
-    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
-  </li>
-  <li>
-    <a href="data-dictionary.html">Data Dictionary</a>
-  </li>
-  <li>
-    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -120,7 +117,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet of Discharge Location</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Discharge Location</b></li>
 
           <span style="float:right;">
 
@@ -143,7 +140,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide for Stroke - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -189,7 +186,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: ValueSet of Discharge Location - XML Representation</h2>
+<h2 id="root">: Discharge Location - XML Representation</h2>
 
   <table class="colsi">
     <tr>
@@ -198,7 +195,7 @@
         
           Active
           
-            as of 2023-11-21
+            as of 2024-01-11
           
         
       </td>
@@ -214,21 +211,22 @@
 
 
 
-  <pre class="xml" style="white-space: pre; overflow: hidden"><code class="language-xml">
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code class="language-xml" style="white-space: pre; text-wrap: nowrap;">
 
 &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet">ValueSet</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>=&quot;DischDestVS&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.text">text</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;code&gt;https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/&lt;/code&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Home or community-dwelling (not home hospice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Residential facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Dedicated inpatient rehabilitation facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Another acute care hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Patient died in hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;888&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;999&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=&quot;CodeSystem-DischDestCS.html&quot;&gt;&lt;code&gt;https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS&lt;/code&gt;&lt;/a&gt;&lt;table class=&quot;none&quot;&gt;&lt;tr&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-1&quot;&gt;1&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Home or community-dwelling (not home hospice)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-2&quot;&gt;2&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Residential facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-3&quot;&gt;3&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dedicated inpatient rehabilitation facility&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-4&quot;&gt;4&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Another acute care hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-5&quot;&gt;5&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Patient died in hospital&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-888&quot;&gt;888&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;CodeSystem-DischDestCS.html#DischDestCS-999&quot;&gt;999&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unknown&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.url">url</a>
        <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;1.0.1&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.version">version</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;0.0.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;DischDestVS&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;ValueSet of Discharge Location&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.title">title</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Discharge Location&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2023-11-21T19:08:35-03:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.experimental">experimental</a> <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.date">date</a> <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">value</a>=&quot;2024-01-11T13:00:00-03:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.publisher">publisher</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gabrielle dos Santos Leandro&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Gabrielle dos Santos Leandro&quot;/&gt;
@@ -255,11 +253,11 @@
     &lt;/telecom&gt;
   &lt;/contact&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.description">description</a>
-               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;Discharge destination following acute care hospitalization. What type of place was the patient discharged to?&quot;/&gt;
+               <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">value</a>=&quot;ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose">compose</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include">include</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.system">system</a>
-              <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/&quot;/&gt;
+              <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>=&quot;https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept">concept</a>&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>=&quot;1&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/valueset.html#ValueSet.compose.include.concept.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>=&quot;Home or community-dwelling (not home hospice)&quot;/&gt;
@@ -342,7 +340,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:08-0300">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 16, 2024 20:08-0300">2024-01-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

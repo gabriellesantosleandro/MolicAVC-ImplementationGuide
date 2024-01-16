@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleProcoagulantReversal"/>
+  <meta>
+    <profile value="https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ExampleProcoagulantReversal"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ExampleProcoagulantReversal&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-ProcoagulantReversal.html">Procoagulant Reversal Therapy</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Vitamin K supplement therapy <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#438821000124106)</span></p><p><b>subject</b>: <a href="Patient-example-strokepatient.html">Patient/example-strokepatient</a> &quot; SILVA&quot;</p><p><b>effective</b>: 2024-01-13 09:00:00+0000 --&gt; 2024-01-13 10:00:00+0000</p><p><b>performer</b>: <a href="Practitioner-example-strokepractitioner.html">Practitioner/example-strokepractitioner</a> &quot; FERREIRA&quot;</p><p><b>value</b>: Yes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>#Y)</span></p></div>
+  </text>
+  <status value="preliminary"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="438821000124106"/>
+      <display value="Vitamin K supplement therapy"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/example-strokepatient"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2024-01-13T09:00:00Z"/>
+    <end value="2024-01-13T10:00:00Z"/>
+  </effectivePeriod>
+  <performer>
+    <reference value="Practitioner/example-strokepractitioner"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0532"/>
+      <code value="Y"/>
+      <display value="Yes"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

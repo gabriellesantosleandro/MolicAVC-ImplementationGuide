@@ -3,14 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="StrokeTypeVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>IS</td><td>Ischemic stroke (IS)</td></tr><tr><td>ICH</td><td>Intracerebral hemorrhage (ICH)</td></tr><tr><td>TIA</td><td>Transient ischemic attack (TIA)</td></tr><tr><td>UNK</td><td>Stroke of unknown type</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-StrokeTypeCS.html"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-StrokeTypeCS.html#StrokeTypeCS-IS">IS</a></td><td>Ischemic stroke (IS)</td></tr><tr><td><a href="CodeSystem-StrokeTypeCS.html#StrokeTypeCS-ICH">ICH</a></td><td>Intracerebral hemorrhage (ICH)</td></tr><tr><td><a href="CodeSystem-StrokeTypeCS.html#StrokeTypeCS-TIA">TIA</a></td><td>Transient ischemic attack (TIA)</td></tr><tr><td><a href="CodeSystem-StrokeTypeCS.html#StrokeTypeCS-UNK">UNK</a></td><td>Stroke of unknown type</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS"/>
-  <version value="1.0.1"/>
+  <version value="0.0.0"/>
   <name value="StrokeTypeVS"/>
-  <title value="ValueSet for stroke type based on ICHOM"/>
+  <title value="Stroke type based on ICHOM"/>
   <status value="active"/>
-  <date value="2023-11-21T19:08:35-03:00"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -36,10 +37,10 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="This ValueSet aims to categorize the stroke type according to the ICHOM standard."/>
+  <description value="ValueSet that aims to categorize the stroke type according to the ICHOM standard."/>
   <compose>
     <include>
-      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/stroketype/"/>
+      <system value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS"/>
       <concept>
         <code value="IS"/>
         <display value="Ischemic stroke (IS)"/>

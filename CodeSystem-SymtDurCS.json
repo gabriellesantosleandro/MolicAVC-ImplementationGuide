@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "SymtDurCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"SymtDurCS-0\"> </a></td><td>Less than 4.5 hours</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"SymtDurCS-1\"> </a></td><td>More than 4.5 hours</td></tr><tr><td style=\"white-space:nowrap\">999<a name=\"SymtDurCS-999\"> </a></td><td>Unknown</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+  "version" : "0.0.0",
+  "name" : "SymtDurCS",
+  "title" : "Duration of Stroke Symptoms",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "0",
+    "display" : "Less than 4.5 hours"
+  },
+  {
+    "code" : "1",
+    "display" : "More than 4.5 hours"
+  },
+  {
+    "code" : "999",
+    "display" : "Unknown"
+  }]
+}

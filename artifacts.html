@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
+    <title>Artifacts Summary - FHIR Implementation Guide for Stroke v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,17 +39,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide for Stroke</span>
             <br/>
-            <span style="display:inline-block;">1.0.1 - ci-build
+            <span style="display:inline-block;">0.0.0 - ballot
 
 
             </span>
@@ -80,19 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="stroke-cp.html">Stroke-CP</a>
+  </li>
+  <li>
+    <a href="data-dictionary.html">Data-Dictionary</a>
+  </li>
+  <li>
     <a href="fhir.html">FHIR</a>
   </li>
   <li>
     <a href="ichom.html">ICHOM</a>
-  </li>
-  <li>
-    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
-  </li>
-  <li>
-    <a href="data-dictionary.html">Data Dictionary</a>
-  </li>
-  <li>
-    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -148,7 +145,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide for Stroke - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -172,7 +169,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#4">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -259,55 +259,247 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-encounter-profile.html"
-                  title="StructureDefinition/molicavc-encounter-profile">Profile of Molic-AVC's Encounter</a>
+               <a href="StructureDefinition-CVDComorbidities.html"
+                  title="StructureDefinition/CVDComorbidities">Cardiovascular Comorbidities</a>
             </td>
             <td>
-<p>The Encounter Resource in the MOLIC-AVC project represents the actual interaction between 
-a patient and their healthcare provider(s). It’s designed to document delivered health services or assess
-the patient’s health status.</p>
+<p>Indicate which comorbidities the patient is living with.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-observation-profile.html"
-                  title="StructureDefinition/molicavc-observation-profile">Profile of Molic-AVC's Observation</a>
+               <a href="StructureDefinition-DiagnosisEvidence.html"
+                  title="StructureDefinition/DiagnosisEvidence">Diagnosis Evidence Base</a>
             </td>
             <td>
-<p>Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines 
-and patterns and even capture demographic characteristics, as well as capture results of tests performed on products and substances. 
-Most observations are simple name/value pair assertions with some metadata, but some observations group other observations together 
-logically, or even are multi-component observations.</p>
+<p>Indicate how the diagnosis was made.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-organization-profile.html"
-                  title="StructureDefinition/molicavc-organization-profile">Profile of Molic-AVC's Organization</a>
+               <a href="StructureDefinition-DischDest.html"
+                  title="StructureDefinition/DischDest">Discharge Destination Following Acute Care Hospitalization</a>
             </td>
             <td>
-<p>The Organization resource in the MOLIC-AVC project encompasses all entities or groups 
-involved in the healthcare process and related health services as part of their formal responsibilities. 
-Examples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, 
-public ambulance transport (SAMU), private services, and others.</p>
+<p>Indicate the patient’s discharge destination from acute care hospital.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-practitioner-profile.html"
-                  title="StructureDefinition/molicavc-practitioner-profile">Profile of Molic-AVC's Practitioner</a>
+               <a href="StructureDefinition-SymtDur.html"
+                  title="StructureDefinition/SymtDur">Duration of Stroke Symptoms</a>
             </td>
             <td>
-<p>The Practitioner Resource in the MOLIC-AVC project encompasses all individuals involved in the healthcare process and related health services as part of their formal responsibilities. This Resource is utilized to assign activities and responsibilities to these individuals. Examples include: doctors, nurses, therapists, receptionists, and so on.</p>
+<p>Indicate the duration of the stroke symptoms measured on hospital arrival.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EstStrokeSevNIHSSCat.html"
+                  title="StructureDefinition/EstStrokeSevNIHSSCat">Estimated Stroke Severity: based on NIHSS Category</a>
+            </td>
+            <td>
+<p>Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StrokeOrganization.html"
+                  title="StructureDefinition/StrokeOrganization">Healthcare Facility based on the Brazilian RNDS</a>
+            </td>
+            <td>
+<p>The Organization Profile encompasses all healthcare institutions related to stroke care, based on the 
+Brazilian National Data Network (RNDS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Hemicraniectomy.html"
+                  title="StructureDefinition/Hemicraniectomy">Hemicraniectomy</a>
+            </td>
+            <td>
+<p>Indicate if the patient underwent hemicraniectomy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RehabIN.html"
+                  title="StructureDefinition/RehabIN">Inpatient Acute Care Rehabilitation</a>
+            </td>
+            <td>
+<p>Indicate whether there is dedicated stroke rehabilitation during acute care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RehabOUT.html"
+                  title="StructureDefinition/RehabOUT">Post Acute Care Rehabilitation</a>
+            </td>
+            <td>
+<p>Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorAtrialFibrillation.html"
+                  title="StructureDefinition/PriorAtrialFibrillation">Prior Atrial Fibrillation and Flutter</a>
+            </td>
+            <td>
+<p>Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorDiabetesMellitus.html"
+                  title="StructureDefinition/PriorDiabetesMellitus">Prior Diabetes Mellitus</a>
+            </td>
+            <td>
+<p>Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorHyperlipidemia.html"
+                  title="StructureDefinition/PriorHyperlipidemia">Prior Hyperlipidemia</a>
+            </td>
+            <td>
+<p>Indicate whether the patient has ever been diagnosed with hyperlipidemia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorHypertension.html"
+                  title="StructureDefinition/PriorHypertension">Prior Hypertension</a>
+            </td>
+            <td>
+<p>Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorIschemicHeartDisease.html"
+                  title="StructureDefinition/PriorIschemicHeartDisease">Prior Ischemic Heart Disease</a>
+            </td>
+            <td>
+<p>Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorMyocardialInfarction.html"
+                  title="StructureDefinition/PriorMyocardialInfarction">Prior Myocardial Infarction</a>
+            </td>
+            <td>
+<p>Indicate whether the patient has a documented history of myocardial infarction.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorStrokeExclTIA.html"
+                  title="StructureDefinition/PriorStrokeExclTIA">Prior Stroke excluding Transient Ischemic Attacks</a>
+            </td>
+            <td>
+<p>Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PriorTIA.html"
+                  title="StructureDefinition/PriorTIA">Prior Transient Ischemic Attacks</a>
+            </td>
+            <td>
+<p>Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ProcoagulantReversal.html"
+                  title="StructureDefinition/ProcoagulantReversal">Procoagulant Reversal Therapy</a>
+            </td>
+            <td>
+<p>Indicate if the patient received procoagulant reversal therapy.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-StrokePatient.html"
-                  title="StructureDefinition/StrokePatient">Stroke Patient Profile</a>
+                  title="StructureDefinition/StrokePatient">Stroke Patient based on the Brazilian RNDS</a>
             </td>
             <td>
-<p>This profile stores demographics and other administrative information about an patient with stroke.</p>
+<p>This profile stores demographics and other administrative information about a patient with stroke, based on the Brazilian National Data Network (RNDS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StrokePractitioner.html"
+                  title="StructureDefinition/StrokePractitioner">Stroke Practitioner based on Brazilian RNDS</a>
+            </td>
+            <td>
+<p>This profile encompasses all health professionals involved in the healthcare process and related health services 
+as part of their formal responsibilities, conforming to the standards of the Brazilian National Data Network (RNDS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StrokeRecur.html"
+                  title="StructureDefinition/StrokeRecur">Stroke Recurrence.</a>
+            </td>
+            <td>
+<p>Indicate if the patient had a new stroke within 90 days of their first stroke occurrence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Consciousness.html"
+                  title="StructureDefinition/Consciousness">Stroke Severity: Consciousness</a>
+            </td>
+            <td>
+<p>Indicate the patient’s level of consciousness measured on hospital arrival.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StrokeSevNIHSS.html"
+                  title="StructureDefinition/StrokeSevNIHSS">Stroke Severity: NIHSS Score</a>
+            </td>
+            <td>
+<p>Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StrokeType.html"
+                  title="StructureDefinition/StrokeType">Stroke Type</a>
+            </td>
+            <td>
+<p>Indicate Stroke Type.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SympIntracranialHemorrhage.html"
+                  title="StructureDefinition/SympIntracranialHemorrhage">Symptomatic Intracranial Hemorrhage</a>
+            </td>
+            <td>
+<p>Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Thrombectomy.html"
+                  title="StructureDefinition/Thrombectomy">Thrombectomy</a>
+            </td>
+            <td>
+<p>Indicate if the patient underwent thrombectomy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Thrombolytic.html"
+                  title="StructureDefinition/Thrombolytic">Thrombolytic Therapy</a>
+            </td>
+            <td>
+<p>Indicate if the patient received intravenous thrombolytic therapy.</p>
 </td>
          </tr>
       </tbody>
@@ -320,111 +512,29 @@ public ambulance transport (SAMU), private services, and others.</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-AlcoholAmountExtension.html"
-                  title="StructureDefinition/AlcoholAmountExtension">Extension of Alcohol intake amount</a>
-            </td>
-            <td>
-<p>Based on the ICHOM, one standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-StrokeSevLocExtension.html"
-                  title="StructureDefinition/StrokeSevLocExtension">Extension of Consciousness</a>
-            </td>
-            <td>
-<p>Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Est-StrokeSevNIHSSCatExtension.html"
-                  title="StructureDefinition/Est-StrokeSevNIHSSCatExtension">Extension of Estimated Stroke Severity Category based on NIHSS</a>
-            </td>
-            <td>
-<p>Estimated Stroke Severity: Category. Indicate the estimated stroke severity category 
-by the NIH Stroke Scale (NIHSS).</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-LiveAlonePreExtension.html"
-                  title="StructureDefinition/LiveAlonePreExtension">Extension of Live Alone Pre-Stroke</a>
-            </td>
-            <td>
-<p>Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="StructureDefinition-EthnicityExtension.html"
-                  title="StructureDefinition/EthnicityExtension">Extension of Patient Ethnicity</a>
+                  title="StructureDefinition/EthnicityExtension">Ethnicity</a>
             </td>
             <td>
-<p>Extension to capture the patient’s ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information.</p>
+<p>Extension to capture the patient’s ethnicity which represents their cultural background or heritage.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-GenderIdentityExtension.html"
-                  title="StructureDefinition/GenderIdentityExtension">Extension of Patient Gender Identity</a>
+                  title="StructureDefinition/GenderIdentityExtension">Gender Identity</a>
             </td>
             <td>
-<p>The patient’s gender.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-LivingLocPreExtension.html"
-                  title="StructureDefinition/LivingLocPreExtension">Extension of Patient's Residence Prior to a Stroke</a>
-            </td>
-            <td>
-<p>An extension to capture the patient’s residence prior to a stroke event, based on the ICHOM code.</p>
+<p>Extension of the patient’s gender.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-RaceExtension.html"
-                  title="StructureDefinition/RaceExtension">Extension of Race</a>
+                  title="StructureDefinition/RaceExtension">Race</a>
             </td>
             <td>
-<p>Represents the race of a patient. This extension is aligned with USCore.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SmokingStatusExtension.html"
-                  title="StructureDefinition/SmokingStatusExtension">Extension of Smoking Status</a>
-            </td>
-            <td>
-<p>Extension to capture the patient’s smoking status, as recommended by ICHOM.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-StrokeSev-NIHSS-Extension.html"
-                  title="StructureDefinition/StrokeSev-NIHSS-Extension">Extension of Stroke Severity Score based on NIHSS</a>
-            </td>
-            <td>
-<p>Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-molicavc-strokewindow-extension.html"
-                  title="StructureDefinition/molicavc-strokewindow-extension">Extension of Stroke Window</a>
-            </td>
-            <td>
-<p>Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-SymtDurExtension.html"
-                  title="StructureDefinition/SymtDurExtension">Extension of Stroke's Symptom Duration</a>
-            </td>
-            <td>
-<p>Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival.</p>
+<p>Extension that represents the race of a patient.</p>
 </td>
          </tr>
       </tbody>
@@ -437,16 +547,32 @@ by the NIH Stroke Scale (NIHSS).</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-type-healthcare-unit-valueset.html"
-                  title="ValueSet/type-healthcare-unit-valueset">Type of Healthcare Unit ValueSet</a>
+               <a href="ValueSet-CVDComorbiditiesVS.html"
+                  title="ValueSet/CVDComorbiditiesVS">Cardiovascular Comorbidities</a>
             </td>
             <td>
-<p>This ValueSet details codes for healthcare units serving stroke patients in Brazil.</p>
+<p>Valueset that indicate which comorbidities the patient is living with. Select all conditions that apply.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-SymtDurVS.html" title="ValueSet/SymtDurVS">ValueSet Categorizing the Duration of Stroke Symptoms</a>
+               <a href="ValueSet-DiagnosisVS.html" title="ValueSet/DiagnosisVS">Diagnostic Evidence Base</a>
+            </td>
+            <td>
+<p>ValueSet that indicates which diagnostic evidence base was used for its realization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-DischDestVS.html" title="ValueSet/DischDestVS">Discharge Location</a>
+            </td>
+            <td>
+<p>ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-SymtDurVS.html" title="ValueSet/SymtDurVS">Duration of Stroke Symptoms</a>
             </td>
             <td>
 <p>ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.</p>
@@ -454,57 +580,16 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-StrokeSevLocVS.html" title="ValueSet/StrokeSevLocVS">ValueSet Categorizing the State of Consciousness according to the ICHOM standard.</a>
+               <a href="ValueSet-EstStrokeSevNIHSSCatVS.html"
+                  title="ValueSet/EstStrokeSevNIHSSCatVS">Estimated stroke severity using the NIHSS.</a>
             </td>
             <td>
-<p>This ValueSet is based on the ICHOM standard and it indicates the patient’s state of consciousness as measured upon arrival at the reference hospital.</p>
+<p>ValueSet that intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-NoYesUnknownVS.html" title="ValueSet/NoYesUnknownVS">ValueSet Yes, No and Unknown</a>
-            </td>
-            <td>
-<p>ValueSet with responses Yes, No, and Unknown</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-hospital-department-valueset.html"
-                  title="ValueSet/hospital-department-valueset">ValueSet for Hospital Department</a>
-            </td>
-            <td>
-<p>This ValueSet includes the hospital departments responsible for taking care of stroke patients.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-StrokeTypeVS.html" title="ValueSet/StrokeTypeVS">ValueSet for stroke type based on ICHOM</a>
-            </td>
-            <td>
-<p>This ValueSet aims to categorize the stroke type according to the ICHOM standard.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-molicavc-cvdcomorbidities-valueset.html"
-                  title="ValueSet/molicavc-cvdcomorbidities-valueset">ValueSet of Cardiovascular Comorbidities</a>
-            </td>
-            <td>
-<p>Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-DischDestVS.html" title="ValueSet/DischDestVS">ValueSet of Discharge Location</a>
-            </td>
-            <td>
-<p>Discharge destination following acute care hospitalization. What type of place was the patient discharged to?</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-GenderIdentityVS.html" title="ValueSet/GenderIdentityVS">ValueSet of Gender Identity</a>
+               <a href="ValueSet-GenderIdentityVS.html" title="ValueSet/GenderIdentityVS">Gender Identity</a>
             </td>
             <td>
 <p>ValueSet for Gender Identity based on LOINC.</p>
@@ -512,7 +597,7 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-LiveAlonePreVS.html" title="ValueSet/LiveAlonePreVS">ValueSet of Live Alone Pre-Stroke</a>
+               <a href="ValueSet-LiveAloneVS.html" title="ValueSet/LiveAloneVS">Live Alone Pre-Stroke</a>
             </td>
             <td>
 <p>ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
@@ -520,74 +605,64 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-cnes-valueset.html" title="ValueSet/cnes-valueset">ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)</a>
+               <a href="ValueSet-PROMIS10VS.html" title="ValueSet/PROMIS10VS">PROMIS-10 Response Questionnaire</a>
             </td>
             <td>
-<p>This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde).</p>
+<p>ValueSet that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-PROMIS10VS.html" title="ValueSet/PROMIS10VS">ValueSet of PROMIS-10 Response Questionnaire</a>
+               <a href="ValueSet-LivingLocPostVS.html" title="ValueSet/LivingLocPostVS">Patient's Residence Post to a Stroke</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.</p>
+<p>ValueSet that represents the patient’s most recent place of residence after the occurrence of a stroke based on ICHOM code.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-LivingLocPreVS.html" title="ValueSet/LivingLocPreVS">ValueSet of Patient's Residence Prior to a Stroke</a>
+               <a href="ValueSet-LivingLocPreVS.html" title="ValueSet/LivingLocPreVS">Patient's Residence Prior to a Stroke</a>
             </td>
             <td>
-<p>Represents the patient’s most recent place of residence before the occurrence of a stroke based on ICHOM code.</p>
+<p>ValueSet that represents the patient’s most recent place of residence before the occurrence of a stroke based on ICHOM code.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-StrokeAmbVS.html" title="ValueSet/StrokeAmbVS">ValueSet of Prestroke and Poststroke Functional Status: Ambulation</a>
+               <a href="ValueSet-StrokeAmbVS.html" title="ValueSet/StrokeAmbVS">Prestroke and Poststroke Functional Status: Ambulation</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.</p>
+<p>ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Ambulation.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-StrokeDressingVS.html" title="ValueSet/StrokeDressingVS">ValueSet of Prestroke and Poststroke Functional Status: Dressing</a>
+               <a href="ValueSet-StrokeDressingVS.html" title="ValueSet/StrokeDressingVS">Prestroke and Poststroke Functional Status: Dressing</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing.</p>
+<p>ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Dressing.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-StrokeToiletingVS.html"
-                  title="ValueSet/StrokeToiletingVS">ValueSet of Prestroke and Poststroke Functional Status: Toileting</a>
+                  title="ValueSet/StrokeToiletingVS">Prestroke and Poststroke Functional Status: Toileting</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting.</p>
+<p>ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Toileting.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-professionalcode-valueset.html"
-                  title="ValueSet/professionalcode-valueset">ValueSet of Professional Code</a>
+               <a href="ValueSet-SMRSqVS.html" title="ValueSet/SMRSqVS">Simplified modified Ranking Scale questionnaire (SMRSq)</a>
             </td>
             <td>
-<p>This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil.</p>
+<p>ValueSet that defines the response values for the simplified modified Ranking Scale questionnaire.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-molicavc-referencelocation-valueset.html"
-                  title="ValueSet/molicavc-referencelocation-valueset">ValueSet of Reference Location</a>
-            </td>
-            <td>
-<p>Indicate and classify where the patient was referred.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-SmokingStatusVS.html" title="ValueSet/SmokingStatusVS">ValueSet of Smoking Status</a>
+               <a href="ValueSet-SmokingStatusVS.html" title="ValueSet/SmokingStatusVS">Smoking Status</a>
             </td>
             <td>
 <p>ValueSet for Smoking Status. A person’s current and past smoking behavior.</p>
@@ -595,32 +670,157 @@ by the NIH Stroke Scale (NIHSS).</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-SMRSqVS.html" title="ValueSet/SMRSqVS">ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)</a>
+               <a href="ValueSet-ConsciousnessVS.html" title="ValueSet/ConsciousnessVS">State of Consciousness.</a>
             </td>
             <td>
-<p>This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire.</p>
+<p>ValueSet based on the ICHOM standard that indicates the patient’s state of consciousness as measured upon arrival at the reference hospital.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-DiagnosisVS.html" title="ValueSet/DiagnosisVS">ValueSet of the Diagnostic Evidence Base</a>
+               <a href="ValueSet-StrokeTypeVS.html" title="ValueSet/StrokeTypeVS">Stroke type based on ICHOM</a>
             </td>
             <td>
-<p>This ValueSet indicates which diagnostic evidence base was used for its realization</p>
+<p>ValueSet that aims to categorize the stroke type according to the ICHOM standard.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-EstStrokeSevNIHSSCatVS.html"
-                  title="ValueSet/EstStrokeSevNIHSSCatVS">ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard.</a>
+               <a href="ValueSet-NoYesUnknownVS.html" title="ValueSet/NoYesUnknownVS">Yes, No and Unknown</a>
             </td>
             <td>
-<p>This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).</p>
+<p>ValueSet with responses Yes, No, and Unknown</p>
 </td>
          </tr>
       </tbody>
    </table>
    <a name="5"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-CVDComorbiditiesCS.html"
+                  title="CodeSystem/CVDComorbiditiesCS">Cardiovascular Comorbidities</a>
+            </td>
+            <td>
+<p>CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DiagnosisCS.html" title="CodeSystem/DiagnosisCS">Diagnostic Evidence Base</a>
+            </td>
+            <td>
+<p>CodeSystem that indicates which diagnostic evidence base was used for its realization</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-DischDestCS.html" title="CodeSystem/DischDestCS">Discharge Location</a>
+            </td>
+            <td>
+<p>CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-SymtDurCS.html" title="CodeSystem/SymtDurCS">Duration of Stroke Symptoms</a>
+            </td>
+            <td>
+<p>CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-EstStrokeSevNIHSSCatCS.html"
+                  title="CodeSystem/EstStrokeSevNIHSSCatCS">Estimated stroke severity using the NIHSS.</a>
+            </td>
+            <td>
+<p>CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-LiveAloneCS.html" title="CodeSystem/LiveAloneCS">Live Alone Pre-Stroke</a>
+            </td>
+            <td>
+<p>CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-PROMIS10VS.html" title="CodeSystem/PROMIS10VS">PROMIS-10 Response Questionnaire</a>
+            </td>
+            <td>
+<p>CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-LivingLocPostCS.html"
+                  title="CodeSystem/LivingLocPostCS">Patient's Residence Post to a Stroke</a>
+            </td>
+            <td>
+<p>CodeSystem that represents the patient’s most recent place of residence after the occurrence of a stroke based on ICHOM code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-LivingLocPreCS.html" title="CodeSystem/LivingLocPreCS">Patient's Residence Prior to a Stroke</a>
+            </td>
+            <td>
+<p>CodeSystem that represents the patient’s most recent place of residence before the occurrence of a stroke based on ICHOM code.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-StrokeFuncStatusCS.html"
+                  title="CodeSystem/StrokeFuncStatusCS">Prestroke and Poststroke Functional Status</a>
+            </td>
+            <td>
+<p>CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-SMRSqCS.html" title="CodeSystem/SMRSqCS">Simplified Modified Ranking Scale questionnaire (sMRSq)</a>
+            </td>
+            <td>
+<p>CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-SmokingStatusCS.html"
+                  title="CodeSystem/SmokingStatusCS">Smoking Status</a>
+            </td>
+            <td>
+<p>CodeSystem for Smoking Status. A person’s current and past smoking behavior.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-ConsciousnessCS.html"
+                  title="CodeSystem/ConsciousnessCS">State of Consciousness according to the ICHOM standard</a>
+            </td>
+            <td>
+<p>CodeSystem based on the ICHOM standard that indicates the patient’s state of consciousness as measured upon arrival at the reference hospital.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-StrokeTypeCS.html" title="CodeSystem/StrokeTypeCS">Stroke Type</a>
+            </td>
+            <td>
+<p>CodeSystem that aims to categorize the stroke type according to the ICHOM standard.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -628,38 +828,245 @@ by the NIH Stroke Scale (NIHSS).</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Encounter-MolicAVC-EncouterExample.html"
-                  title="Encounter/MolicAVC-EncouterExample">Use case of Molic-AVC's Encounter</a>
+               <a href="Observation-ExampleCVDComorbidities.html"
+                  title="Observation/ExampleCVDComorbidities">Cardiovascular Comorbidities</a>
             </td>
             <td>
-<p>Example instance of an encounter for a patient admitted due to a stroke.</p>
+<p>Example of Cardiovascular Comorbidities. Indicate which comorbidities the patient is living with.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Organization-MolicAVC-OrganizationExample.html"
-                  title="Organization/MolicAVC-OrganizationExample">Use case of Molic-AVC's Organization</a>
+               <a href="Observation-ExampleDiagnosisEvidence.html"
+                  title="Observation/ExampleDiagnosisEvidence">Diagnosis Evidence Base</a>
             </td>
             <td>
-<p>Example instance of an Organization in the Molic-AVC project.</p>
+<p>Example of Diagnosis Evidence Base. Indicate how the diagnosis was made.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Practitioner-MolicAVC-DoctorExample.html"
-                  title="Practitioner/MolicAVC-DoctorExample">Use case of Molic-AVC's Practitioner</a>
+               <a href="Observation-ExampleDischDest.html"
+                  title="Observation/ExampleDischDest">Discharge Destination Following Acute Care Hospitalization</a>
             </td>
             <td>
-<p>Example instance of a doctor in the Molic-AVC project.</p>
+<p>Example of Discharge Destination Following Acute Care Hospitalization.  Indicate the patient’s discharge destination from acute care hospital.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-123.456.789-00.html" title="Patient/123.456.789-00">Use case of Stroke Patient</a>
+               <a href="Observation-ExampleSymtDur.html"
+                  title="Observation/ExampleSymtDur">Duration of Stroke Symptoms</a>
             </td>
             <td>
-<p>This case study presents a patient profile. The profile extends the FHIR Patient 
-resource with specialized extensions to capture essential data.</p>
+<p>Example of Duration of Stroke Symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleEstStrokeSevNIHSSCat.html"
+                  title="Observation/ExampleEstStrokeSevNIHSSCat">Estimated Stroke Severity: based on NIHSS Category</a>
+            </td>
+            <td>
+<p>Example of Estimated Stroke Severity: based on NIHSS Category. Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-example-strokeorganization.html"
+                  title="Organization/example-strokeorganization">Healthcare Facility</a>
+            </td>
+            <td>
+<p>Example of Healthcare Facility related to stroke care, based on the Brazilian National Data Network (RNDS).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleHemicraniectomy.html"
+                  title="Observation/ExampleHemicraniectomy">Hemicraniectomy</a>
+            </td>
+            <td>
+<p>Example of Hemicraniectomy. Indicate if the patient underwent hemicraniectomy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleRehabIN.html"
+                  title="Observation/ExampleRehabIN">Inpatient Acute Care Rehabilitation</a>
+            </td>
+            <td>
+<p>Example of Inpatient Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during acute care.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleRehabOUT.html"
+                  title="Observation/ExampleRehabOUT">Post Acute Care Rehabilitation</a>
+            </td>
+            <td>
+<p>Example of Post Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorAtrialFibrillation.html"
+                  title="Observation/ExamplePriorAtrialFibrillation">Prior Atrial Fibrillation and Flutter</a>
+            </td>
+            <td>
+<p>Example of Prior Atrial Fibrillation and Flutter. Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorDiabetesMellitus.html"
+                  title="Observation/ExamplePriorDiabetesMellitus">Prior Diabetes Mellitus</a>
+            </td>
+            <td>
+<p>Example of Prior Diabetes Mellitus. Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorHyperlipidemia.html"
+                  title="Observation/ExamplePriorHyperlipidemia">Prior Hyperlipidemia</a>
+            </td>
+            <td>
+<p>Example of Prior Hyperlipidemia. Indicate whether the patient has ever been diagnosed with hyperlipidemia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorHypertension.html"
+                  title="Observation/ExamplePriorHypertension">Prior Hypertension</a>
+            </td>
+            <td>
+<p>Example of Prior Hypertension. Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorIschemicHeartDisease.html"
+                  title="Observation/ExamplePriorIschemicHeartDisease">Prior Ischemic Heart Disease</a>
+            </td>
+            <td>
+<p>Example of Prior Ischemic Heart Disease. Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorMyocardialInfarction.html"
+                  title="Observation/ExamplePriorMyocardialInfarction">Prior Myocardial Infarction</a>
+            </td>
+            <td>
+<p>Example of Prior Myocardial Infarction. Indicate whether the patient has a documented history of myocardial infarction.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorStrokeExclTIA.html"
+                  title="Observation/ExamplePriorStrokeExclTIA">Prior Stroke excluding Transient Ischemic Attacks</a>
+            </td>
+            <td>
+<p>Example of Prior Stroke excluding Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExamplePriorTIA.html"
+                  title="Observation/ExamplePriorTIA">Prior Transient Ischemic Attacks</a>
+            </td>
+            <td>
+<p>Example of Prior Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleProcoagulantReversal.html"
+                  title="Observation/ExampleProcoagulantReversal">Procoagulant Reversal Therapy</a>
+            </td>
+            <td>
+<p>Example of Procoagulant Reversal Therapy. Indicate if the patient received procoagulant reversal therapy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-example-strokepatient.html"
+                  title="Patient/example-strokepatient">Stroke Patient</a>
+            </td>
+            <td>
+<p>Example of Stroke Patient. This example presents a profile for stroke patient based on Brazilian RNDS.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-example-strokepractitioner.html"
+                  title="Practitioner/example-strokepractitioner">Stroke Practitioner</a>
+            </td>
+            <td>
+<p>This example presents a practitioner profile for stroke attendance based on Brazilian National Data Network.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleStrokeRecur.html"
+                  title="Observation/ExampleStrokeRecur">Stroke Recurrence.</a>
+            </td>
+            <td>
+<p>Example of Stroke Recurrence. Indicate if the patient had a new stroke within 90 days of their first stroke occurrence.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleConsciousness.html"
+                  title="Observation/ExampleConsciousness">Stroke Severity: Consciousness</a>
+            </td>
+            <td>
+<p>Example of Stroke Severity: Consciousness. Indicate the patient’s level of consciousness measured on hospital arrival.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleStrokeSevNIHSS.html"
+                  title="Observation/ExampleStrokeSevNIHSS">Stroke Severity: NIHSS Score</a>
+            </td>
+            <td>
+<p>Example of Stroke Severity: NIHSS Score. Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleStrokeType.html"
+                  title="Observation/ExampleStrokeType">Stroke Type</a>
+            </td>
+            <td>
+<p>Example of Stroke Type. Indicate Stroke Type.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleSympIntracranialHemorrhage.html"
+                  title="Observation/ExampleSympIntracranialHemorrhage">Symptomatic Intracranial Hemorrhage</a>
+            </td>
+            <td>
+<p>Example of Symptomatic Intracranial Hemorrhage. Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleThrombectomy.html"
+                  title="Observation/ExampleThrombectomy">Thrombectomy</a>
+            </td>
+            <td>
+<p>Example of Thrombectomy. Indicate if the patient underwent thrombectomy.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-ExampleThrombolytic.html"
+                  title="Observation/ExampleThrombolytic">Thrombolytic Therapy</a>
+            </td>
+            <td>
+<p>Example of Thrombolytic Therapy. Indicate if the patient received intravenous thrombolytic therapy.</p>
 </td>
          </tr>
       </tbody>
@@ -710,7 +1117,7 @@ resource with specialized extensions to capture essential data.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:08-0300">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 16, 2024 20:08-0300">2024-01-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

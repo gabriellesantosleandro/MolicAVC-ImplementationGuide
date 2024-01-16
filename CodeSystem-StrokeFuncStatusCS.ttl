@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "StrokeFuncStatusCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"StrokeFuncStatusCS-1\"> </a></td><td>Able to walk without help from another person with or without a device.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"StrokeFuncStatusCS-2\"> </a></td><td>Able to walk with help from another person.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"StrokeFuncStatusCS-3\"> </a></td><td>Unable to walk.</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"StrokeFuncStatusCS-4\"> </a></td><td>I could manage going to the toilet without assistance.</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"StrokeFuncStatusCS-5\"> </a></td><td>I needed help to go to the toilet.</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"StrokeFuncStatusCS-6\"> </a></td><td>I could manage dressing/undressing without help.</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"StrokeFuncStatusCS-7\"> </a></td><td>I needed help dressing/undressing.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
+  fhir:name [ fhir:v "StrokeFuncStatusCS"] ; # 
+  fhir:title [ fhir:v "Prestroke and Poststroke Functional Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-11T13:00:00-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://gabriellesantosleandro.com.br" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "gabrielle.santos.leandro@gmail.com" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status."] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Able to walk without help from another person with or without a device." ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Able to walk with help from another person." ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Unable to walk." ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "I could manage going to the toilet without assistance." ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "I needed help to go to the toilet." ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "I could manage dressing/undressing without help." ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "I needed help dressing/undressing." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

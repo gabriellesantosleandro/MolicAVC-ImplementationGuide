@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="LiveAloneCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="LiveAloneCS-1"> </a></td><td>Yes, I live/lived alone</td></tr><tr><td style="white-space:nowrap">2<a name="LiveAloneCS-2"> </a></td><td>No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td style="white-space:nowrap">999<a name="LiveAloneCS-999"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS"/>
+  <version value="0.0.0"/>
+  <name value="LiveAloneCS"/>
+  <title value="Live Alone Pre-Stroke"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="1"/>
+    <display value="Yes, I live/lived alone"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"/>
+  </concept>
+  <concept>
+    <code value="999"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,72 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "StrokeFuncStatusCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"StrokeFuncStatusCS-1\"> </a></td><td>Able to walk without help from another person with or without a device.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"StrokeFuncStatusCS-2\"> </a></td><td>Able to walk with help from another person.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"StrokeFuncStatusCS-3\"> </a></td><td>Unable to walk.</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"StrokeFuncStatusCS-4\"> </a></td><td>I could manage going to the toilet without assistance.</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"StrokeFuncStatusCS-5\"> </a></td><td>I needed help to go to the toilet.</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"StrokeFuncStatusCS-6\"> </a></td><td>I could manage dressing/undressing without help.</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"StrokeFuncStatusCS-7\"> </a></td><td>I needed help dressing/undressing.</td></tr></table></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+  "version" : "0.0.0",
+  "name" : "StrokeFuncStatusCS",
+  "title" : "Prestroke and Poststroke Functional Status",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 7,
+  "concept" : [{
+    "code" : "1",
+    "display" : "Able to walk without help from another person with or without a device."
+  },
+  {
+    "code" : "2",
+    "display" : "Able to walk with help from another person."
+  },
+  {
+    "code" : "3",
+    "display" : "Unable to walk."
+  },
+  {
+    "code" : "4",
+    "display" : "I could manage going to the toilet without assistance."
+  },
+  {
+    "code" : "5",
+    "display" : "I needed help to go to the toilet."
+  },
+  {
+    "code" : "6",
+    "display" : "I could manage dressing/undressing without help."
+  },
+  {
+    "code" : "7",
+    "display" : "I needed help dressing/undressing."
+  }]
+}

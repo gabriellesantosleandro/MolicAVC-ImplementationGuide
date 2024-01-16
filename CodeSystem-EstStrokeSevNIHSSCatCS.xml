@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="EstStrokeSevNIHSSCatCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="EstStrokeSevNIHSSCatCS-1"> </a></td><td>No stroke symptoms (NIHSS score = 0)</td></tr><tr><td style="white-space:nowrap">2<a name="EstStrokeSevNIHSSCatCS-2"> </a></td><td>Minor (NIHSS score from 1 to 4)</td></tr><tr><td style="white-space:nowrap">3<a name="EstStrokeSevNIHSSCatCS-3"> </a></td><td>Moderate (NIHSS score from 5 to 15)</td></tr><tr><td style="white-space:nowrap">4<a name="EstStrokeSevNIHSSCatCS-4"> </a></td><td>Moderate to severe (NIHSS score from 16 to 20)</td></tr><tr><td style="white-space:nowrap">5<a name="EstStrokeSevNIHSSCatCS-5"> </a></td><td>Severe (NIHSS score from 21 to 42)</td></tr><tr><td style="white-space:nowrap">999<a name="EstStrokeSevNIHSSCatCS-999"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS"/>
+  <version value="0.0.0"/>
+  <name value="EstStrokeSevNIHSSCatCS"/>
+  <title value="Estimated stroke severity using the NIHSS."/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="1"/>
+    <display value="No stroke symptoms (NIHSS score = 0)"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Minor (NIHSS score from 1 to 4)"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Moderate (NIHSS score from 5 to 15)"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Moderate to severe (NIHSS score from 16 to 20)"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Severe (NIHSS score from 21 to 42)"/>
+  </concept>
+  <concept>
+    <code value="999"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

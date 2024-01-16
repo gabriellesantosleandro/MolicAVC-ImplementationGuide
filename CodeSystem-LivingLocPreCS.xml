@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="LivingLocPreCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="LivingLocPreCS-1"> </a></td><td>At home, with no community support</td></tr><tr><td style="white-space:nowrap">2<a name="LivingLocPreCS-2"> </a></td><td>At home with community support</td></tr><tr><td style="white-space:nowrap">3<a name="LivingLocPreCS-3"> </a></td><td>In an assisting living home in the community (senior's home)</td></tr><tr><td style="white-space:nowrap">4<a name="LivingLocPreCS-4"> </a></td><td>In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)</td></tr><tr><td style="white-space:nowrap">5<a name="LivingLocPreCS-5"> </a></td><td>In long term care (nursing home, chronic care hospital)</td></tr><tr><td style="white-space:nowrap">888<a name="LivingLocPreCS-888"> </a></td><td>Other</td></tr><tr><td style="white-space:nowrap">999<a name="LivingLocPreCS-999"> </a></td><td>Unknown</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS"/>
+  <version value="0.0.0"/>
+  <name value="LivingLocPreCS"/>
+  <title value="Patient's Residence Prior to a Stroke"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="1"/>
+    <display value="At home, with no community support"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="At home with community support"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="In an assisting living home in the community (senior's home)"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="In a rehabilitation hospital or skilled care facilities (SNIF, IRF, LTACH)"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="In long term care (nursing home, chronic care hospital)"/>
+  </concept>
+  <concept>
+    <code value="888"/>
+    <display value="Other"/>
+  </concept>
+  <concept>
+    <code value="999"/>
+    <display value="Unknown"/>
+  </concept>
+</CodeSystem>

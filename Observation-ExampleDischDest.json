@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Observation",
+  "id" : "ExampleDischDest",
+  "meta" : {
+    "profile" : ["https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleDischDest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleDischDest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-DischDest.html\">Discharge Destination Following Acute Care Hospitalization</a></p></div><p><b>status</b>: preliminary</p><p><b>code</b>: Ensuring patient's caregiver prepared for hospital discharge <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#225987006)</span></p><p><b>subject</b>: <a href=\"Patient-example-strokepatient.html\">Patient/example-strokepatient</a> &quot; SILVA&quot;</p><p><b>effective</b>: 2024-01-01 09:00:00+0000 --&gt; 2024-01-13 10:00:00+0000</p><p><b>performer</b>: <a href=\"Practitioner-example-strokepractitioner.html\">Practitioner/example-strokepractitioner</a> &quot; FERREIRA&quot;</p><p><b>value</b>: Home or community-dwelling (not home hospice) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-DischDestCS.html\">Discharge Location</a>#1)</span></p></div>"
+  },
+  "status" : "preliminary",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "225987006",
+      "display" : "Ensuring patient's caregiver prepared for hospital discharge"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/example-strokepatient"
+  },
+  "effectivePeriod" : {
+    "start" : "2024-01-01T09:00:00Z",
+    "end" : "2024-01-13T10:00:00Z"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/example-strokepractitioner"
+  }],
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+      "code" : "1",
+      "display" : "Home or community-dwelling (not home hospice)"
+    }]
+  }
+}

@@ -1,331 +1,492 @@
 [
   {
+    "id" : "CVDComorbiditiesCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS",
+    "version" : "0.0.0",
+    "name" : "CVDComorbiditiesCS"
+  },
+  {
+    "id" : "ConsciousnessCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+    "version" : "0.0.0",
+    "name" : "ConsciousnessCS"
+  },
+  {
+    "id" : "DiagnosisCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS",
+    "version" : "0.0.0",
+    "name" : "DiagnosisCS"
+  },
+  {
+    "id" : "DischDestCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS",
+    "version" : "0.0.0",
+    "name" : "DischDestCS"
+  },
+  {
+    "id" : "EstStrokeSevNIHSSCatCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS",
+    "version" : "0.0.0",
+    "name" : "EstStrokeSevNIHSSCatCS"
+  },
+  {
+    "id" : "LiveAloneCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+    "version" : "0.0.0",
+    "name" : "LiveAloneCS"
+  },
+  {
+    "id" : "LivingLocPostCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS",
+    "version" : "0.0.0",
+    "name" : "LivingLocPostCS"
+  },
+  {
+    "id" : "LivingLocPreCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS",
+    "version" : "0.0.0",
+    "name" : "LivingLocPreCS"
+  },
+  {
+    "id" : "PROMIS10VS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS",
+    "version" : "0.0.0",
+    "name" : "PROMIS10CS"
+  },
+  {
+    "id" : "SMRSqCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS",
+    "version" : "0.0.0",
+    "name" : "SMRSqCS"
+  },
+  {
+    "id" : "SmokingStatusCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS",
+    "version" : "0.0.0",
+    "name" : "SmokingStatusCS"
+  },
+  {
+    "id" : "StrokeFuncStatusCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS",
+    "version" : "0.0.0",
+    "name" : "StrokeFuncStatusCS"
+  },
+  {
+    "id" : "StrokeTypeCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
+    "version" : "0.0.0",
+    "name" : "StrokeTypeCS"
+  },
+  {
+    "id" : "SymtDurCS",
+    "type" : "CodeSystem",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS",
+    "version" : "0.0.0",
+    "name" : "SymtDurCS"
+  },
+  {
     "id" : "guide",
     "type" : "ImplementationGuide",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "MolicAVC"
   },
   {
     "id" : "ClinicalResponseAnnualUpdate",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/ClinicalResponseAnnualUpdate",
-    "version" : "1.0.1",
-    "name" : "clinician-reported-annual-update"
+    "version" : "0.0.0",
+    "name" : "ClinicalResponseAnnualUpdate"
   },
   {
     "id" : "ClinicalResponseBaseline",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/ClinicalResponseBaseline",
-    "version" : "1.0.1",
-    "name" : "clinician-reported-baseline"
+    "version" : "0.0.0",
+    "name" : "ClinicalResponseBaseline"
   },
   {
     "id" : "ClinicalResponseDischargeOrSevenDays",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/ClinicalResponseDischargeOrSevenDays",
-    "version" : "1.0.1",
-    "name" : "clinician-reported-discharge-7days"
+    "version" : "0.0.0",
+    "name" : "ClinicalResponseDischargeOrSevenDays"
   },
   {
     "id" : "ClinicalResponseNinetyDays",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/ClinicalResponseNinetyDays",
-    "version" : "1.0.1",
-    "name" : "clinician-reported-90days"
+    "version" : "0.0.0",
+    "name" : "ClinicalResponseNinetyDays"
   },
   {
     "id" : "PatientReportedBaseline",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/PatientReportedBaseline",
-    "version" : "1.0.1",
-    "name" : "patient-reported-baseline"
+    "version" : "0.0.0",
+    "name" : "PatientReportedBaseline"
   },
   {
     "id" : "PatientReportedDischargeOrSevenDays",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/PatientReportedDischargeOrSevenDays",
-    "version" : "1.0.1",
-    "name" : "patient-reported-discharge-7days"
+    "version" : "0.0.0",
+    "name" : "PatientReportedDischargeOrSevenDays"
   },
   {
     "id" : "PatientReportedNinetyDays",
     "type" : "Questionnaire",
     "url" : "https://molic-avc.gabriellesantosleandro.com/Questionnaire/PatientReportedNinetyDays",
-    "version" : "1.0.1",
-    "name" : "patient-reported-discharge-90days"
+    "version" : "0.0.0",
+    "name" : "PatientReportedNinetyDays"
   },
   {
-    "id" : "AlcoholAmountExtension",
+    "id" : "CVDComorbidities",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/AlcoholAmountExtension",
-    "version" : "1.0.1",
-    "name" : "AlcoholAmountExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities",
+    "version" : "0.0.0",
+    "name" : "CVDComorbidities"
   },
   {
-    "id" : "Est-StrokeSevNIHSSCatExtension",
+    "id" : "Consciousness",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Est-StrokeSevNIHSSCatExtension",
-    "version" : "1.0.1",
-    "name" : "EstStrokeSevNIHSSCatExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness",
+    "version" : "0.0.0",
+    "name" : "Consciousness"
+  },
+  {
+    "id" : "DiagnosisEvidence",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence",
+    "version" : "0.0.0",
+    "name" : "DiagnosisEvidence"
+  },
+  {
+    "id" : "DischDest",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest",
+    "version" : "0.0.0",
+    "name" : "DischDest"
+  },
+  {
+    "id" : "EstStrokeSevNIHSSCat",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat",
+    "version" : "0.0.0",
+    "name" : "EstStrokeSevNIHSSCat"
   },
   {
     "id" : "EthnicityExtension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "EthnicityExtension"
   },
   {
     "id" : "GenderIdentityExtension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "GenderIdentityExtension"
   },
   {
-    "id" : "LiveAlonePreExtension",
+    "id" : "Hemicraniectomy",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LiveAlonePreExtension",
-    "version" : "1.0.1",
-    "name" : "LiveAlonePreExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy",
+    "version" : "0.0.0",
+    "name" : "Hemicraniectomy"
   },
   {
-    "id" : "LivingLocPreExtension",
+    "id" : "PriorAtrialFibrillation",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LivingLocPreExtension",
-    "version" : "1.0.1",
-    "name" : "LivingLocPreExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation",
+    "version" : "0.0.0",
+    "name" : "PriorAtrialFibrillation"
+  },
+  {
+    "id" : "PriorDiabetesMellitus",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus",
+    "version" : "0.0.0",
+    "name" : "PriorDiabetesMellitus"
+  },
+  {
+    "id" : "PriorHyperlipidemia",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia",
+    "version" : "0.0.0",
+    "name" : "PriorHyperlipidemia"
+  },
+  {
+    "id" : "PriorHypertension",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension",
+    "version" : "0.0.0",
+    "name" : "PriorHypertension"
+  },
+  {
+    "id" : "PriorIschemicHeartDisease",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease",
+    "version" : "0.0.0",
+    "name" : "PriorIschemicHeartDisease"
+  },
+  {
+    "id" : "PriorMyocardialInfarction",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction",
+    "version" : "0.0.0",
+    "name" : "PriorMyocardialInfarction"
+  },
+  {
+    "id" : "PriorStrokeExclTIA",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA",
+    "version" : "0.0.0",
+    "name" : "PriorStrokeExclTIA"
+  },
+  {
+    "id" : "PriorTIA",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA",
+    "version" : "0.0.0",
+    "name" : "PriorTIA"
+  },
+  {
+    "id" : "ProcoagulantReversal",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal",
+    "version" : "0.0.0",
+    "name" : "ProcoagulantReversal"
   },
   {
     "id" : "RaceExtension",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "RaceExtension"
   },
   {
-    "id" : "SmokingStatusExtension",
+    "id" : "RehabIN",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SmokingStatusExtension",
-    "version" : "1.0.1",
-    "name" : "SmokingStatusExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN",
+    "version" : "0.0.0",
+    "name" : "RehabIN"
+  },
+  {
+    "id" : "RehabOUT",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT",
+    "version" : "0.0.0",
+    "name" : "RehabOUT"
+  },
+  {
+    "id" : "StrokeOrganization",
+    "type" : "StructureDefinition",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization",
+    "version" : "0.0.0",
+    "name" : "StrokeOrganization"
   },
   {
     "id" : "StrokePatient",
     "type" : "StructureDefinition",
     "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "StrokePatient"
   },
   {
-    "id" : "StrokeSev-NIHSS-Extension",
+    "id" : "StrokePractitioner",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSev-NIHSS-Extension",
-    "version" : "1.0.1",
-    "name" : "StrokeSevNIHSSExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner",
+    "version" : "0.0.0",
+    "name" : "StrokePractitioner"
   },
   {
-    "id" : "StrokeSevLocExtension",
+    "id" : "StrokeRecur",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevLocExtension",
-    "version" : "1.0.1",
-    "name" : "StrokeSevLocExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur",
+    "version" : "0.0.0",
+    "name" : "StrokeRecur"
   },
   {
-    "id" : "SymtDurExtension",
+    "id" : "StrokeSevNIHSS",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDurExtension",
-    "version" : "1.0.1",
-    "name" : "SymtDurExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS",
+    "version" : "0.0.0",
+    "name" : "StrokeSevNIHSS"
   },
   {
-    "id" : "molicavc-encounter-profile",
+    "id" : "StrokeType",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_EncounterProfile"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType",
+    "version" : "0.0.0",
+    "name" : "StrokeType"
   },
   {
-    "id" : "molicavc-observation-profile",
+    "id" : "SympIntracranialHemorrhage",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-observation-profile",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_Observation"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage",
+    "version" : "0.0.0",
+    "name" : "SympIntracranialHemorrhage"
   },
   {
-    "id" : "molicavc-organization-profile",
+    "id" : "SymtDur",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_OrganizationProfile"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur",
+    "version" : "0.0.0",
+    "name" : "SymtDur"
   },
   {
-    "id" : "molicavc-practitioner-profile",
+    "id" : "Thrombectomy",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_PractitionerProfile"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy",
+    "version" : "0.0.0",
+    "name" : "Thrombectomy"
   },
   {
-    "id" : "molicavc-strokewindow-extension",
+    "id" : "Thrombolytic",
     "type" : "StructureDefinition",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_StrokeWindowExtension"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic",
+    "version" : "0.0.0",
+    "name" : "Thrombolytic"
+  },
+  {
+    "id" : "CVDComorbiditiesVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS",
+    "version" : "0.0.0",
+    "name" : "CVDComorbiditiesVS"
+  },
+  {
+    "id" : "ConsciousnessVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS",
+    "version" : "0.0.0",
+    "name" : "ConsciousnessVS"
   },
   {
     "id" : "DiagnosisVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "DiagnosisVS"
   },
   {
     "id" : "DischDestVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "DischDestVS"
   },
   {
     "id" : "EstStrokeSevNIHSSCatVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "EstStrokeSevNIHSSCatVS"
   },
   {
     "id" : "GenderIdentityVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "GenderIdentityVS"
   },
   {
-    "id" : "LiveAlonePreVS",
+    "id" : "LiveAloneVS",
     "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAlonePreVS",
-    "version" : "1.0.1",
-    "name" : "LiveAlonePreVS"
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAloneVS",
+    "version" : "0.0.0",
+    "name" : "LiveAloneVS"
+  },
+  {
+    "id" : "LivingLocPostVS",
+    "type" : "ValueSet",
+    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPostVS",
+    "version" : "0.0.0",
+    "name" : "LivingLocPostVS"
   },
   {
     "id" : "LivingLocPreVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "LivingLocPreVS"
   },
   {
     "id" : "NoYesUnknownVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "NoYesUnknownVS"
   },
   {
     "id" : "PROMIS10VS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "PROMIS10VS"
   },
   {
     "id" : "SMRSqVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "SMRSqVS"
   },
   {
     "id" : "SmokingStatusVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "SmokingStatusVS"
   },
   {
     "id" : "StrokeAmbVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "StrokeAmbVS"
   },
   {
     "id" : "StrokeDressingVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "StrokeDressingVS"
-  },
-  {
-    "id" : "StrokeSevLocVS",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS",
-    "version" : "1.0.1",
-    "name" : "StrokeSevLocVS"
   },
   {
     "id" : "StrokeToiletingVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "StrokeToiletingVS"
   },
   {
     "id" : "StrokeTypeVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "StrokeTypeVS"
   },
   {
     "id" : "SymtDurVS",
     "type" : "ValueSet",
     "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS",
-    "version" : "1.0.1",
+    "version" : "0.0.0",
     "name" : "SymtDurVS"
-  },
-  {
-    "id" : "cnes-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/cnes-valueset",
-    "version" : "1.0.1",
-    "name" : "CNES_ValueSet"
-  },
-  {
-    "id" : "hospital-department-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset",
-    "version" : "1.0.1",
-    "name" : "HospitalDepartment_ValueSet"
-  },
-  {
-    "id" : "molicavc-cvdcomorbidities-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset",
-    "version" : "1.0.1",
-    "name" : "CardiovascularComorbidities_ValueSet"
-  },
-  {
-    "id" : "molicavc-referencelocation-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_ReferenceLocation_ValueSet"
-  },
-  {
-    "id" : "professionalcode-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset",
-    "version" : "1.0.1",
-    "name" : "ProfessionalCode_ValueSet"
-  },
-  {
-    "id" : "type-healthcare-unit-valueset",
-    "type" : "ValueSet",
-    "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset",
-    "version" : "1.0.1",
-    "name" : "MolicAVC_CodeHealthcareUnitValueSet"
   }
 ]

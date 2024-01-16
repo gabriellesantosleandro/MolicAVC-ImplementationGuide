@@ -10,14 +10,15 @@
   fhir:id [ fhir:v "SMRSqVS"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>0</td><td>No symptoms at all.</td></tr><tr><td>1</td><td>No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td>2</td><td>Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance.</td></tr><tr><td>3</td><td>Moderate disability; requiring some help, but able to walk without assistance.</td></tr><tr><td>4</td><td>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td>5</td><td>Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td>6</td><td>Dead.</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-SMRSqCS.html\"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-0\">0</a></td><td>No symptoms at all.</td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-1\">1</a></td><td>No significant disability despite symptoms; able to carry out all usual duties and activities.</td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-2\">2</a></td><td>Slight disability; unable to carry out all previous activities but able to look after own affairs without assistance.</td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-3\">3</a></td><td>Moderate disability; requiring some help, but able to walk without assistance.</td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-4\">4</a></td><td>Moderately severe disability; unable to walk without assistance and unable to attend to own bodily needs without assistance.</td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-5\">5</a></td><td>Severe disability; bedridden, incontinent and requiring constant nursing care and attention.</td></tr><tr><td><a href=\"CodeSystem-SMRSqCS.html#SMRSqCS-6\">6</a></td><td>Dead.</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
   fhir:name [ fhir:v "SMRSqVS"] ; # 
-  fhir:title [ fhir:v "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)"] ; # 
+  fhir:title [ fhir:v "Simplified modified Ranking Scale questionnaire (SMRSq)"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-11-21T19:08:35-03:00"^^xsd:dateTime] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-01-11T13:00:00-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -40,10 +41,10 @@
        fhir:use [ fhir:v "work" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire."] ; # 
+  fhir:description [ fhir:v "ValueSet that defines the response values for the simplified modified Ranking Scale questionnaire."] ; # 
   fhir:compose [
      fhir:include ( [
-       fhir:system [ fhir:v "https://connect.ichom.org/patient-centered-outcome-measures/stroke/smrsq/"^^xsd:anyURI ] ;
+       fhir:system [ fhir:v "https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS"^^xsd:anyURI ] ;
        fhir:concept ( [
          fhir:code [ fhir:v "0" ] ;
          fhir:display [ fhir:v "No symptoms at all." ]

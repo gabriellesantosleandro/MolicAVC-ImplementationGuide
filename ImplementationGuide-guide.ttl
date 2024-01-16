@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>MolicAVC</h2><p>The official URL for this implementation guide is: </p><pre>https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide</pre><div><p>FHIR Implementation Guide for Stroke: A Dual Focus on the Patient's Journey and Outcome Measures</p>\n</div></div>"
   ] ; # 
   fhir:url [ fhir:v "https://molic-avc.gabriellesantosleandro.com/ImplementationGuide/guide"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:version [ fhir:v "0.0.0"] ; # 
   fhir:name [ fhir:v "MolicAVC"] ; # 
-  fhir:title [ fhir:v "Molic-AVC Project: Monitoring the Stroke Clinical Pathway"] ; # 
+  fhir:title [ fhir:v "FHIR Implementation Guide for Stroke"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-11-21T19:08:35-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-01-16T20:08:55-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Gabrielle dos Santos Leandro"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Gabrielle dos Santos Leandro" ] ;
@@ -72,7 +72,7 @@
   fhir:definition [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -80,11 +80,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile> ;
-         fhir:reference [ fhir:v "StructureDefinition/molicavc-encounter-profile" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities> ;
+         fhir:reference [ fhir:v "StructureDefinition/CVDComorbidities" ]
        ] ;
-       fhir:name [ fhir:v "Profile of Molic-AVC's Encounter" ] ;
-       fhir:description [ fhir:v "The Encounter Resource in the MOLIC-AVC project represents the actual interaction between \r\na patient and their healthcare provider(s). It's designed to document delivered health services or assess\r\nthe patient's health status." ] ;
+       fhir:name [ fhir:v "Cardiovascular Comorbidities" ] ;
+       fhir:description [ fhir:v "Indicate which comorbidities the patient is living with." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -92,11 +92,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-observation-profile> ;
-         fhir:reference [ fhir:v "StructureDefinition/molicavc-observation-profile" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness> ;
+         fhir:reference [ fhir:v "StructureDefinition/Consciousness" ]
        ] ;
-       fhir:name [ fhir:v "Profile of Molic-AVC's Observation" ] ;
-       fhir:description [ fhir:v "Observations are a central element in healthcare, used to support diagnosis, monitor progress, determine baselines \r\nand patterns and even capture demographic characteristics, as well as capture results of tests performed on products and substances. \r\nMost observations are simple name/value pair assertions with some metadata, but some observations group other observations together \r\nlogically, or even are multi-component observations." ] ;
+       fhir:name [ fhir:v "Stroke Severity: Consciousness" ] ;
+       fhir:description [ fhir:v "Indicate the patient’s level of consciousness measured on hospital arrival." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -104,11 +104,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile> ;
-         fhir:reference [ fhir:v "StructureDefinition/molicavc-organization-profile" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence> ;
+         fhir:reference [ fhir:v "StructureDefinition/DiagnosisEvidence" ]
        ] ;
-       fhir:name [ fhir:v "Profile of Molic-AVC's Organization" ] ;
-       fhir:description [ fhir:v "The Organization resource in the MOLIC-AVC project encompasses all entities or groups \r\ninvolved in the healthcare process and related health services as part of their formal responsibilities. \r\nExamples include: Primary Care Basic Health Units, Emergency Care Units, Reference Hospital for Stroke, \r\npublic ambulance transport (SAMU), private services, and others." ] ;
+       fhir:name [ fhir:v "Diagnosis Evidence Base" ] ;
+       fhir:description [ fhir:v "Indicate how the diagnosis was made." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -116,11 +116,179 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile> ;
-         fhir:reference [ fhir:v "StructureDefinition/molicavc-practitioner-profile" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest> ;
+         fhir:reference [ fhir:v "StructureDefinition/DischDest" ]
        ] ;
-       fhir:name [ fhir:v "Profile of Molic-AVC's Practitioner" ] ;
-       fhir:description [ fhir:v "The Practitioner Resource in the MOLIC-AVC project encompasses all individuals involved in the healthcare process and related health services as part of their formal responsibilities. This Resource is utilized to assign activities and responsibilities to these individuals. Examples include: doctors, nurses, therapists, receptionists, and so on." ] ;
+       fhir:name [ fhir:v "Discharge Destination Following Acute Care Hospitalization" ] ;
+       fhir:description [ fhir:v "Indicate the patient’s discharge destination from acute care hospital." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat> ;
+         fhir:reference [ fhir:v "StructureDefinition/EstStrokeSevNIHSSCat" ]
+       ] ;
+       fhir:name [ fhir:v "Estimated Stroke Severity: based on NIHSS Category" ] ;
+       fhir:description [ fhir:v "Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy> ;
+         fhir:reference [ fhir:v "StructureDefinition/Hemicraniectomy" ]
+       ] ;
+       fhir:name [ fhir:v "Hemicraniectomy" ] ;
+       fhir:description [ fhir:v "Indicate if the patient underwent hemicraniectomy." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorAtrialFibrillation" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Atrial Fibrillation and Flutter" ] ;
+       fhir:description [ fhir:v "Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorDiabetesMellitus" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Diabetes Mellitus" ] ;
+       fhir:description [ fhir:v "Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorHyperlipidemia" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Hyperlipidemia" ] ;
+       fhir:description [ fhir:v "Indicate whether the patient has ever been diagnosed with hyperlipidemia." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorHypertension" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Hypertension" ] ;
+       fhir:description [ fhir:v "Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorIschemicHeartDisease" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Ischemic Heart Disease" ] ;
+       fhir:description [ fhir:v "Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorMyocardialInfarction" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Myocardial Infarction" ] ;
+       fhir:description [ fhir:v "Indicate whether the patient has a documented history of myocardial infarction." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorStrokeExclTIA" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Stroke excluding Transient Ischemic Attacks" ] ;
+       fhir:description [ fhir:v "Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA> ;
+         fhir:reference [ fhir:v "StructureDefinition/PriorTIA" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Transient Ischemic Attacks" ] ;
+       fhir:description [ fhir:v "Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal> ;
+         fhir:reference [ fhir:v "StructureDefinition/ProcoagulantReversal" ]
+       ] ;
+       fhir:name [ fhir:v "Procoagulant Reversal Therapy" ] ;
+       fhir:description [ fhir:v "Indicate if the patient received procoagulant reversal therapy." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN> ;
+         fhir:reference [ fhir:v "StructureDefinition/RehabIN" ]
+       ] ;
+       fhir:name [ fhir:v "Inpatient Acute Care Rehabilitation" ] ;
+       fhir:description [ fhir:v "Indicate whether there is dedicated stroke rehabilitation during acute care." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT> ;
+         fhir:reference [ fhir:v "StructureDefinition/RehabOUT" ]
+       ] ;
+       fhir:name [ fhir:v "Post Acute Care Rehabilitation" ] ;
+       fhir:description [ fhir:v "Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization> ;
+         fhir:reference [ fhir:v "StructureDefinition/StrokeOrganization" ]
+       ] ;
+       fhir:name [ fhir:v "Healthcare Facility based on the Brazilian RNDS" ] ;
+       fhir:description [ fhir:v "The Organization Profile encompasses all healthcare institutions related to stroke care, based on the \r\nBrazilian National Data Network (RNDS)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -131,32 +299,104 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient> ;
          fhir:reference [ fhir:v "StructureDefinition/StrokePatient" ]
        ] ;
-       fhir:name [ fhir:v "Stroke Patient Profile" ] ;
-       fhir:description [ fhir:v "This profile stores demographics and other administrative information about an patient with stroke." ] ;
+       fhir:name [ fhir:v "Stroke Patient based on the Brazilian RNDS" ] ;
+       fhir:description [ fhir:v "This profile stores demographics and other administrative information about a patient with stroke, based on the Brazilian National Data Network (RNDS)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/AlcoholAmountExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/AlcoholAmountExtension" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/StrokePractitioner" ]
        ] ;
-       fhir:name [ fhir:v "Extension of Alcohol intake amount" ] ;
-       fhir:description [ fhir:v "Based on the ICHOM, one standard drink is equal to 12.5ml of pure alcohol, or roughly 1 small glass of wine/25cl of regular beer (5% alcohol)." ] ;
+       fhir:name [ fhir:v "Stroke Practitioner based on Brazilian RNDS" ] ;
+       fhir:description [ fhir:v "This profile encompasses all health professionals involved in the healthcare process and related health services \r\nas part of their formal responsibilities, conforming to the standards of the Brazilian National Data Network (RNDS)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Est-StrokeSevNIHSSCatExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/Est-StrokeSevNIHSSCatExtension" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur> ;
+         fhir:reference [ fhir:v "StructureDefinition/StrokeRecur" ]
        ] ;
-       fhir:name [ fhir:v "Extension of Estimated Stroke Severity Category based on NIHSS" ] ;
-       fhir:description [ fhir:v "Estimated Stroke Severity: Category. Indicate the estimated stroke severity category \r\nby the NIH Stroke Scale (NIHSS)." ] ;
+       fhir:name [ fhir:v "Stroke Recurrence." ] ;
+       fhir:description [ fhir:v "Indicate if the patient had a new stroke within 90 days of their first stroke occurrence." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS> ;
+         fhir:reference [ fhir:v "StructureDefinition/StrokeSevNIHSS" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Severity: NIHSS Score" ] ;
+       fhir:description [ fhir:v "Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType> ;
+         fhir:reference [ fhir:v "StructureDefinition/StrokeType" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Type" ] ;
+       fhir:description [ fhir:v "Indicate Stroke Type." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage> ;
+         fhir:reference [ fhir:v "StructureDefinition/SympIntracranialHemorrhage" ]
+       ] ;
+       fhir:name [ fhir:v "Symptomatic Intracranial Hemorrhage" ] ;
+       fhir:description [ fhir:v "Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur> ;
+         fhir:reference [ fhir:v "StructureDefinition/SymtDur" ]
+       ] ;
+       fhir:name [ fhir:v "Duration of Stroke Symptoms" ] ;
+       fhir:description [ fhir:v "Indicate the duration of the stroke symptoms measured on hospital arrival." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy> ;
+         fhir:reference [ fhir:v "StructureDefinition/Thrombectomy" ]
+       ] ;
+       fhir:name [ fhir:v "Thrombectomy" ] ;
+       fhir:description [ fhir:v "Indicate if the patient underwent thrombectomy." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic> ;
+         fhir:reference [ fhir:v "StructureDefinition/Thrombolytic" ]
+       ] ;
+       fhir:name [ fhir:v "Thrombolytic Therapy" ] ;
+       fhir:description [ fhir:v "Indicate if the patient received intravenous thrombolytic therapy." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -167,8 +407,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EthnicityExtension> ;
          fhir:reference [ fhir:v "StructureDefinition/EthnicityExtension" ]
        ] ;
-       fhir:name [ fhir:v "Extension of Patient Ethnicity" ] ;
-       fhir:description [ fhir:v "Extension to capture the patient's ethnicity which represents their cultural background or heritage. Although optional, ICHOM strongly encourages collecting this inclusive information." ] ;
+       fhir:name [ fhir:v "Ethnicity" ] ;
+       fhir:description [ fhir:v "Extension to capture the patient's ethnicity which represents their cultural background or heritage." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -179,44 +419,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/GenderIdentityExtension> ;
          fhir:reference [ fhir:v "StructureDefinition/GenderIdentityExtension" ]
        ] ;
-       fhir:name [ fhir:v "Extension of Patient Gender Identity" ] ;
-       fhir:description [ fhir:v "The patient's gender." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LiveAlonePreExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/LiveAlonePreExtension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Live Alone Pre-Stroke" ] ;
-       fhir:description [ fhir:v "Extension indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/LivingLocPreExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/LivingLocPreExtension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Patient's Residence Prior to a Stroke" ] ;
-       fhir:description [ fhir:v "An extension to capture the patient's residence prior to a stroke event, based on the ICHOM code." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-strokewindow-extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/molicavc-strokewindow-extension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Stroke Window" ] ;
-       fhir:description [ fhir:v "Brief hours post-symptom onset when prompt intervention reduces brain damage, lasting up to 4.5-12 hours." ] ;
+       fhir:name [ fhir:v "Gender Identity" ] ;
+       fhir:description [ fhir:v "Extension of the patient's gender." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -227,56 +431,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RaceExtension> ;
          fhir:reference [ fhir:v "StructureDefinition/RaceExtension" ]
        ] ;
-       fhir:name [ fhir:v "Extension of Race" ] ;
-       fhir:description [ fhir:v "Represents the race of a patient. This extension is aligned with USCore." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SmokingStatusExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/SmokingStatusExtension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Smoking Status" ] ;
-       fhir:description [ fhir:v "Extension to capture the patient's smoking status, as recommended by ICHOM." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevLocExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/StrokeSevLocExtension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Consciousness" ] ;
-       fhir:description [ fhir:v "Stroke severity: consciousness. Indicate the patient’s level of consciousness measured on hospitalar arrival." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSev-NIHSS-Extension> ;
-         fhir:reference [ fhir:v "StructureDefinition/StrokeSev-NIHSS-Extension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Stroke Severity Score based on NIHSS" ] ;
-       fhir:description [ fhir:v "Stroke severity score. Stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDurExtension> ;
-         fhir:reference [ fhir:v "StructureDefinition/SymtDurExtension" ]
-       ] ;
-       fhir:name [ fhir:v "Extension of Stroke's Symptom Duration" ] ;
-       fhir:description [ fhir:v "Duration of symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival." ] ;
+       fhir:name [ fhir:v "Race" ] ;
+       fhir:description [ fhir:v "Extension that represents the race of a patient." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -284,11 +440,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/cnes-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/cnes-valueset" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/CVDComorbiditiesVS> ;
+         fhir:reference [ fhir:v "ValueSet/CVDComorbiditiesVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)" ] ;
-       fhir:description [ fhir:v "This ValueSet details codes for Stroke Healthcare Units in Joinville based on National Registry of Health Establishments (CNES - Cadastro Nacional de Estabelecimentos de Saúde)." ] ;
+       fhir:name [ fhir:v "Cardiovascular Comorbidities" ] ;
+       fhir:description [ fhir:v "Valueset that indicate which comorbidities the patient is living with. Select all conditions that apply." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -296,11 +452,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-cvdcomorbidities-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/molicavc-cvdcomorbidities-valueset" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS> ;
+         fhir:reference [ fhir:v "ValueSet/ConsciousnessVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Cardiovascular Comorbidities" ] ;
-       fhir:description [ fhir:v " Indicate which comorbidities the patient is living with. Select all conditions that apply at every annual follow-up." ] ;
+       fhir:name [ fhir:v "State of Consciousness." ] ;
+       fhir:description [ fhir:v "ValueSet based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -311,8 +467,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/DiagnosisVS> ;
          fhir:reference [ fhir:v "ValueSet/DiagnosisVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of the Diagnostic Evidence Base" ] ;
-       fhir:description [ fhir:v "This ValueSet indicates which diagnostic evidence base was used for its realization" ] ;
+       fhir:name [ fhir:v "Diagnostic Evidence Base" ] ;
+       fhir:description [ fhir:v "ValueSet that indicates which diagnostic evidence base was used for its realization" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -323,8 +479,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS> ;
          fhir:reference [ fhir:v "ValueSet/DischDestVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Discharge Location" ] ;
-       fhir:description [ fhir:v "Discharge destination following acute care hospitalization. What type of place was the patient discharged to?" ] ;
+       fhir:name [ fhir:v "Discharge Location" ] ;
+       fhir:description [ fhir:v "ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -335,8 +491,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/EstStrokeSevNIHSSCatVS> ;
          fhir:reference [ fhir:v "ValueSet/EstStrokeSevNIHSSCatVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet that categorizes the estimated severity of the stroke using the NIHSS according to the ICHOM standard." ] ;
-       fhir:description [ fhir:v "This ValueSet is intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)." ] ;
+       fhir:name [ fhir:v "Estimated stroke severity using the NIHSS." ] ;
+       fhir:description [ fhir:v "ValueSet that intended to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -347,7 +503,7 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/GenderIdentityVS> ;
          fhir:reference [ fhir:v "ValueSet/GenderIdentityVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Gender Identity" ] ;
+       fhir:name [ fhir:v "Gender Identity" ] ;
        fhir:description [ fhir:v "ValueSet for Gender Identity based on LOINC." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -356,11 +512,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/hospital-department-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/hospital-department-valueset" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAloneVS> ;
+         fhir:reference [ fhir:v "ValueSet/LiveAloneVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet for Hospital Department" ] ;
-       fhir:description [ fhir:v "This ValueSet includes the hospital departments responsible for taking care of stroke patients." ] ;
+       fhir:name [ fhir:v "Live Alone Pre-Stroke" ] ;
+       fhir:description [ fhir:v "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -368,11 +524,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAlonePreVS> ;
-         fhir:reference [ fhir:v "ValueSet/LiveAlonePreVS" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPostVS> ;
+         fhir:reference [ fhir:v "ValueSet/LivingLocPostVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Live Alone Pre-Stroke" ] ;
-       fhir:description [ fhir:v "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology." ] ;
+       fhir:name [ fhir:v "Patient's Residence Post to a Stroke" ] ;
+       fhir:description [ fhir:v "ValueSet that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -383,32 +539,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/LivingLocPreVS> ;
          fhir:reference [ fhir:v "ValueSet/LivingLocPreVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Patient's Residence Prior to a Stroke" ] ;
-       fhir:description [ fhir:v "Represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/type-healthcare-unit-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/type-healthcare-unit-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "Type of Healthcare Unit ValueSet" ] ;
-       fhir:description [ fhir:v "This ValueSet details codes for healthcare units serving stroke patients in Brazil." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/molicavc-referencelocation-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/molicavc-referencelocation-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "ValueSet of Reference Location" ] ;
-       fhir:description [ fhir:v "Indicate and classify where the patient was referred." ] ;
+       fhir:name [ fhir:v "Patient's Residence Prior to a Stroke" ] ;
+       fhir:description [ fhir:v "ValueSet that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -419,7 +551,7 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/NoYesUnknownVS> ;
          fhir:reference [ fhir:v "ValueSet/NoYesUnknownVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet Yes, No and Unknown" ] ;
+       fhir:name [ fhir:v "Yes, No and Unknown" ] ;
        fhir:description [ fhir:v "ValueSet with responses Yes, No, and Unknown" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -431,20 +563,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS> ;
          fhir:reference [ fhir:v "ValueSet/PROMIS10VS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of PROMIS-10 Response Questionnaire" ] ;
-       fhir:description [ fhir:v "This ValueSet defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/professionalcode-valueset> ;
-         fhir:reference [ fhir:v "ValueSet/professionalcode-valueset" ]
-       ] ;
-       fhir:name [ fhir:v "ValueSet of Professional Code" ] ;
-       fhir:description [ fhir:v "This ValueSet is integral to the Molic-AVC project and details codes for professionals serving stroke patients in Brazil." ] ;
+       fhir:name [ fhir:v "PROMIS-10 Response Questionnaire" ] ;
+       fhir:description [ fhir:v "ValueSet that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -455,8 +575,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS> ;
          fhir:reference [ fhir:v "ValueSet/SMRSqVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of simplified modified Ranking Scale questionnaire (SMRSq)" ] ;
-       fhir:description [ fhir:v "This ValueSet defines the response values for the simplified modified Ranking Scale questionnaire." ] ;
+       fhir:name [ fhir:v "Simplified modified Ranking Scale questionnaire (SMRSq)" ] ;
+       fhir:description [ fhir:v "ValueSet that defines the response values for the simplified modified Ranking Scale questionnaire." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -467,7 +587,7 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS> ;
          fhir:reference [ fhir:v "ValueSet/SmokingStatusVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Smoking Status" ] ;
+       fhir:name [ fhir:v "Smoking Status" ] ;
        fhir:description [ fhir:v "ValueSet for Smoking Status. A person's current and past smoking behavior." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -479,8 +599,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeAmbVS> ;
          fhir:reference [ fhir:v "ValueSet/StrokeAmbVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Prestroke and Poststroke Functional Status: Ambulation" ] ;
-       fhir:description [ fhir:v "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Ambulation." ] ;
+       fhir:name [ fhir:v "Prestroke and Poststroke Functional Status: Ambulation" ] ;
+       fhir:description [ fhir:v "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Ambulation." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -491,20 +611,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS> ;
          fhir:reference [ fhir:v "ValueSet/StrokeDressingVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Prestroke and Poststroke Functional Status: Dressing" ] ;
-       fhir:description [ fhir:v "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing." ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeSevLocVS> ;
-         fhir:reference [ fhir:v "ValueSet/StrokeSevLocVS" ]
-       ] ;
-       fhir:name [ fhir:v "ValueSet Categorizing the State of Consciousness according to the ICHOM standard." ] ;
-       fhir:description [ fhir:v "This ValueSet is based on the ICHOM standard and it indicates the patient's state of consciousness as measured upon arrival at the reference hospital." ] ;
+       fhir:name [ fhir:v "Prestroke and Poststroke Functional Status: Dressing" ] ;
+       fhir:description [ fhir:v "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Dressing." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -515,8 +623,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS> ;
          fhir:reference [ fhir:v "ValueSet/StrokeToiletingVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet of Prestroke and Poststroke Functional Status: Toileting" ] ;
-       fhir:description [ fhir:v "This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Toileting." ] ;
+       fhir:name [ fhir:v "Prestroke and Poststroke Functional Status: Toileting" ] ;
+       fhir:description [ fhir:v "ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Toileting." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -527,8 +635,8 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS> ;
          fhir:reference [ fhir:v "ValueSet/StrokeTypeVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet for stroke type based on ICHOM" ] ;
-       fhir:description [ fhir:v "This ValueSet aims to categorize the stroke type according to the ICHOM standard." ] ;
+       fhir:name [ fhir:v "Stroke type based on ICHOM" ] ;
+       fhir:description [ fhir:v "ValueSet that aims to categorize the stroke type according to the ICHOM standard." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -539,27 +647,177 @@
          fhir:link <https://molic-avc.gabriellesantosleandro.com/ValueSet/SymtDurVS> ;
          fhir:reference [ fhir:v "ValueSet/SymtDurVS" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet Categorizing the Duration of Stroke Symptoms" ] ;
+       fhir:name [ fhir:v "Duration of Stroke Symptoms" ] ;
        fhir:description [ fhir:v "ValueSet that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/Patient/123.456.789-00> ;
-         fhir:reference [ fhir:v "Patient/123.456.789-00" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/CVDComorbiditiesCS> ;
+         fhir:reference [ fhir:v "CodeSystem/CVDComorbiditiesCS" ]
        ] ;
-       fhir:name [ fhir:v "Use case of Stroke Patient" ] ;
-       fhir:description [ fhir:v "This case study presents a patient profile. The profile extends the FHIR Patient \nresource with specialized extensions to capture essential data." ] ;
-       fhir:profile ( [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient>
-       ] [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient>
-       ] )
+       fhir:name [ fhir:v "Cardiovascular Comorbidities" ] ;
+       fhir:description [ fhir:v "CodeSystem that indicate which comorbidities the patient is living with. Select all conditions that apply." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS> ;
+         fhir:reference [ fhir:v "CodeSystem/ConsciousnessCS" ]
+       ] ;
+       fhir:name [ fhir:v "State of Consciousness according to the ICHOM standard" ] ;
+       fhir:description [ fhir:v "CodeSystem based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/DiagnosisCS> ;
+         fhir:reference [ fhir:v "CodeSystem/DiagnosisCS" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnostic Evidence Base" ] ;
+       fhir:description [ fhir:v "CodeSystem that indicates which diagnostic evidence base was used for its realization" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS> ;
+         fhir:reference [ fhir:v "CodeSystem/DischDestCS" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Location" ] ;
+       fhir:description [ fhir:v "CodeSystem about Discharge destination following acute care hospitalization. What type of place was the patient discharged to?" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/EstStrokeSevNIHSSCatCS> ;
+         fhir:reference [ fhir:v "CodeSystem/EstStrokeSevNIHSSCatCS" ]
+       ] ;
+       fhir:name [ fhir:v "Estimated stroke severity using the NIHSS." ] ;
+       fhir:description [ fhir:v "CodeSystem that intends to categorize the severity of the stroke based on the National Institutes of Health Stroke Scale (NIHSS)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS> ;
+         fhir:reference [ fhir:v "CodeSystem/LiveAloneCS" ]
+       ] ;
+       fhir:name [ fhir:v "Live Alone Pre-Stroke" ] ;
+       fhir:description [ fhir:v "CodeSystem indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPostCS> ;
+         fhir:reference [ fhir:v "CodeSystem/LivingLocPostCS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Residence Post to a Stroke" ] ;
+       fhir:description [ fhir:v "CodeSystem that represents the patient's most recent place of residence after the occurrence of a stroke based on ICHOM code." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/LivingLocPreCS> ;
+         fhir:reference [ fhir:v "CodeSystem/LivingLocPreCS" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Residence Prior to a Stroke" ] ;
+       fhir:description [ fhir:v "CodeSystem that represents the patient's most recent place of residence before the occurrence of a stroke based on ICHOM code." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS> ;
+         fhir:reference [ fhir:v "CodeSystem/PROMIS10VS" ]
+       ] ;
+       fhir:name [ fhir:v "PROMIS-10 Response Questionnaire" ] ;
+       fhir:description [ fhir:v "CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/SMRSqCS> ;
+         fhir:reference [ fhir:v "CodeSystem/SMRSqCS" ]
+       ] ;
+       fhir:name [ fhir:v "Simplified Modified Ranking Scale questionnaire (sMRSq)" ] ;
+       fhir:description [ fhir:v "CodeSystem that defines the response values for the simplified modified Ranking Scale questionnaire (sMRSq)." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/SmokingStatusCS> ;
+         fhir:reference [ fhir:v "CodeSystem/SmokingStatusCS" ]
+       ] ;
+       fhir:name [ fhir:v "Smoking Status" ] ;
+       fhir:description [ fhir:v "CodeSystem for Smoking Status. A person's current and past smoking behavior." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS> ;
+         fhir:reference [ fhir:v "CodeSystem/StrokeFuncStatusCS" ]
+       ] ;
+       fhir:name [ fhir:v "Prestroke and Poststroke Functional Status" ] ;
+       fhir:description [ fhir:v "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS> ;
+         fhir:reference [ fhir:v "CodeSystem/StrokeTypeCS" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Type" ] ;
+       fhir:description [ fhir:v "CodeSystem that aims to categorize the stroke type according to the ICHOM standard." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/CodeSystem/SymtDurCS> ;
+         fhir:reference [ fhir:v "CodeSystem/SymtDurCS" ]
+       ] ;
+       fhir:name [ fhir:v "Duration of Stroke Symptoms" ] ;
+       fhir:description [ fhir:v "CodeSystem that categorizes the duration of stroke symptoms, considering the time from symptom onset to admission at the reference hospital." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -611,56 +869,434 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Practitioner" ]
+         fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/Practitioner/MolicAVC-DoctorExample> ;
-         fhir:reference [ fhir:v "Practitioner/MolicAVC-DoctorExample" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleCVDComorbidities> ;
+         fhir:reference [ fhir:v "Observation/ExampleCVDComorbidities" ]
        ] ;
-       fhir:name [ fhir:v "Use case of Molic-AVC's Practitioner" ] ;
-       fhir:description [ fhir:v "Example instance of a doctor in the Molic-AVC project." ] ;
+       fhir:name [ fhir:v "Cardiovascular Comorbidities" ] ;
+       fhir:description [ fhir:v "Example of Cardiovascular Comorbidities. Indicate which comorbidities the patient is living with." ] ;
        fhir:profile ( [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile>
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities>
        ] [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-practitioner-profile>
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/CVDComorbidities>
        ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Encounter" ]
+         fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/Encounter/MolicAVC-EncouterExample> ;
-         fhir:reference [ fhir:v "Encounter/MolicAVC-EncouterExample" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleConsciousness> ;
+         fhir:reference [ fhir:v "Observation/ExampleConsciousness" ]
        ] ;
-       fhir:name [ fhir:v "Use case of Molic-AVC's Encounter" ] ;
-       fhir:description [ fhir:v "Example instance of an encounter for a patient admitted due to a stroke." ] ;
+       fhir:name [ fhir:v "Stroke Severity: Consciousness" ] ;
+       fhir:description [ fhir:v "Example of Stroke Severity: Consciousness. Indicate the patient’s level of consciousness measured on hospital arrival." ] ;
        fhir:profile ( [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile>
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness>
        ] [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-encounter-profile>
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Consciousness>
        ] )
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Organization" ]
+         fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/Organization/MolicAVC-OrganizationExample> ;
-         fhir:reference [ fhir:v "Organization/MolicAVC-OrganizationExample" ]
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleDiagnosisEvidence> ;
+         fhir:reference [ fhir:v "Observation/ExampleDiagnosisEvidence" ]
        ] ;
-       fhir:name [ fhir:v "Use case of Molic-AVC's Organization" ] ;
-       fhir:description [ fhir:v "Example instance of an Organization in the Molic-AVC project." ] ;
+       fhir:name [ fhir:v "Diagnosis Evidence Base" ] ;
+       fhir:description [ fhir:v "Example of Diagnosis Evidence Base. Indicate how the diagnosis was made." ] ;
        fhir:profile ( [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile>
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence>
        ] [
-         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile"^^xsd:anyURI ;
-         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/molicavc-organization-profile>
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DiagnosisEvidence>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleDischDest> ;
+         fhir:reference [ fhir:v "Observation/ExampleDischDest" ]
+       ] ;
+       fhir:name [ fhir:v "Discharge Destination Following Acute Care Hospitalization" ] ;
+       fhir:description [ fhir:v "Example of Discharge Destination Following Acute Care Hospitalization.  Indicate the patient’s discharge destination from acute care hospital." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/DischDest>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleEstStrokeSevNIHSSCat> ;
+         fhir:reference [ fhir:v "Observation/ExampleEstStrokeSevNIHSSCat" ]
+       ] ;
+       fhir:name [ fhir:v "Estimated Stroke Severity: based on NIHSS Category" ] ;
+       fhir:description [ fhir:v "Example of Estimated Stroke Severity: based on NIHSS Category. Indicate the estimated stroke severity category by the NIH Stroke Scale (NIHSS)." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/EstStrokeSevNIHSSCat>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleHemicraniectomy> ;
+         fhir:reference [ fhir:v "Observation/ExampleHemicraniectomy" ]
+       ] ;
+       fhir:name [ fhir:v "Hemicraniectomy" ] ;
+       fhir:description [ fhir:v "Example of Hemicraniectomy. Indicate if the patient underwent hemicraniectomy." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Hemicraniectomy>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorAtrialFibrillation> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorAtrialFibrillation" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Atrial Fibrillation and Flutter" ] ;
+       fhir:description [ fhir:v "Example of Prior Atrial Fibrillation and Flutter. Indicate whether the person has ever been diagnosed with atrial fibrillation and flutter." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorAtrialFibrillation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorDiabetesMellitus> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorDiabetesMellitus" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Diabetes Mellitus" ] ;
+       fhir:description [ fhir:v "Example of Prior Diabetes Mellitus. Indicate if the patient has a documented history of diabetes mellitus (regardless of duration of disease or need for anti-diabetic agents)." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorDiabetesMellitus>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorHyperlipidemia> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorHyperlipidemia" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Hyperlipidemia" ] ;
+       fhir:description [ fhir:v "Example of Prior Hyperlipidemia. Indicate whether the patient has ever been diagnosed with hyperlipidemia." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHyperlipidemia>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorHypertension> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorHypertension" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Hypertension" ] ;
+       fhir:description [ fhir:v "Example of Prior Hypertension. Indicate whether the patient has a documented history of hypertension, diagnosed and treated with medication and/or diet and/or exercise." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorHypertension>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorIschemicHeartDisease> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorIschemicHeartDisease" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Ischemic Heart Disease" ] ;
+       fhir:description [ fhir:v "Example of Prior Ischemic Heart Disease. Indicate whether the patient has ever been diagnosed with ischemic heart disease (including myocardial infarction)." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorIschemicHeartDisease>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorMyocardialInfarction> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorMyocardialInfarction" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Myocardial Infarction" ] ;
+       fhir:description [ fhir:v "Example of Prior Myocardial Infarction. Indicate whether the patient has a documented history of myocardial infarction." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorMyocardialInfarction>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorStrokeExclTIA> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorStrokeExclTIA" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Stroke excluding Transient Ischemic Attacks" ] ;
+       fhir:description [ fhir:v "Example of Prior Stroke excluding Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a stroke (excluding transient ischemic attacks)." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorStrokeExclTIA>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExamplePriorTIA> ;
+         fhir:reference [ fhir:v "Observation/ExamplePriorTIA" ]
+       ] ;
+       fhir:name [ fhir:v "Prior Transient Ischemic Attacks" ] ;
+       fhir:description [ fhir:v "Example of Prior Transient Ischemic Attacks. Indicate whether the patient was ever diagnosed with a Transient Ischemic Attacks." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/PriorTIA>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleProcoagulantReversal> ;
+         fhir:reference [ fhir:v "Observation/ExampleProcoagulantReversal" ]
+       ] ;
+       fhir:name [ fhir:v "Procoagulant Reversal Therapy" ] ;
+       fhir:description [ fhir:v "Example of Procoagulant Reversal Therapy. Indicate if the patient received procoagulant reversal therapy." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/ProcoagulantReversal>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleRehabIN> ;
+         fhir:reference [ fhir:v "Observation/ExampleRehabIN" ]
+       ] ;
+       fhir:name [ fhir:v "Inpatient Acute Care Rehabilitation" ] ;
+       fhir:description [ fhir:v "Example of Inpatient Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during acute care." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabIN>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleRehabOUT> ;
+         fhir:reference [ fhir:v "Observation/ExampleRehabOUT" ]
+       ] ;
+       fhir:name [ fhir:v "Post Acute Care Rehabilitation" ] ;
+       fhir:description [ fhir:v "Example of Post Acute Care Rehabilitation. Indicate whether there is dedicated stroke rehabilitation during post-acute care, either hospital based or out patient/home based." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/RehabOUT>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleStrokeRecur> ;
+         fhir:reference [ fhir:v "Observation/ExampleStrokeRecur" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Recurrence." ] ;
+       fhir:description [ fhir:v "Example of Stroke Recurrence. Indicate if the patient had a new stroke within 90 days of their first stroke occurrence." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeRecur>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleStrokeSevNIHSS> ;
+         fhir:reference [ fhir:v "Observation/ExampleStrokeSevNIHSS" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Severity: NIHSS Score" ] ;
+       fhir:description [ fhir:v "Example of Stroke Severity: NIHSS Score. Indicate the stroke severity as measured by the NIH Stroke Scale (NIHSS). Report the raw (uncategorized) NIHSS score." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeSevNIHSS>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleStrokeType> ;
+         fhir:reference [ fhir:v "Observation/ExampleStrokeType" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Type" ] ;
+       fhir:description [ fhir:v "Example of Stroke Type. Indicate Stroke Type." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeType>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleSympIntracranialHemorrhage> ;
+         fhir:reference [ fhir:v "Observation/ExampleSympIntracranialHemorrhage" ]
+       ] ;
+       fhir:name [ fhir:v "Symptomatic Intracranial Hemorrhage" ] ;
+       fhir:description [ fhir:v "Example of Symptomatic Intracranial Hemorrhage. Indicate if the patient developed symptomatic intracerebral hemorrhage after treatment of ischemic stroke with intravenous thrombolysis and/or thrombectomy." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SympIntracranialHemorrhage>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleSymtDur> ;
+         fhir:reference [ fhir:v "Observation/ExampleSymtDur" ]
+       ] ;
+       fhir:name [ fhir:v "Duration of Stroke Symptoms" ] ;
+       fhir:description [ fhir:v "Example of Duration of Stroke Symptoms. Indicate the duration of the stroke symptoms measured on hospital arrival." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/SymtDur>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleThrombectomy> ;
+         fhir:reference [ fhir:v "Observation/ExampleThrombectomy" ]
+       ] ;
+       fhir:name [ fhir:v "Thrombectomy" ] ;
+       fhir:description [ fhir:v "Example of Thrombectomy. Indicate if the patient underwent thrombectomy." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombectomy>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Observation/ExampleThrombolytic> ;
+         fhir:reference [ fhir:v "Observation/ExampleThrombolytic" ]
+       ] ;
+       fhir:name [ fhir:v "Thrombolytic Therapy" ] ;
+       fhir:description [ fhir:v "Example of Thrombolytic Therapy. Indicate if the patient received intravenous thrombolytic therapy." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/Thrombolytic>
        ] )
      ] [
        fhir:extension ( [
@@ -698,6 +1334,60 @@
        fhir:name [ fhir:v "Patient Reported Questionnaire 03 - 90 days post admission" ] ;
        fhir:description [ fhir:v "This questionnaire is designed to assess the patient-reported response in stroke at 90 days post admission." ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Organization/example-strokeorganization> ;
+         fhir:reference [ fhir:v "Organization/example-strokeorganization" ]
+       ] ;
+       fhir:name [ fhir:v "Healthcare Facility" ] ;
+       fhir:description [ fhir:v "Example of Healthcare Facility related to stroke care, based on the Brazilian National Data Network (RNDS)." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokeOrganization>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Patient/example-strokepatient> ;
+         fhir:reference [ fhir:v "Patient/example-strokepatient" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Patient" ] ;
+       fhir:description [ fhir:v "Example of Stroke Patient. This example presents a profile for stroke patient based on Brazilian RNDS." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePatient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Practitioner" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/Practitioner/example-strokepractitioner> ;
+         fhir:reference [ fhir:v "Practitioner/example-strokepractitioner" ]
+       ] ;
+       fhir:name [ fhir:v "Stroke Practitioner" ] ;
+       fhir:description [ fhir:v "This example presents a practitioner profile for stroke attendance based on Brazilian National Data Network." ] ;
+       fhir:profile ( [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner>
+       ] [
+         fhir:v "https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner"^^xsd:anyURI ;
+         fhir:link <https://molic-avc.gabriellesantosleandro.com/StructureDefinition/StrokePractitioner>
+       ] )
      ] ) ;
      fhir:page [
        fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
@@ -710,6 +1400,16 @@
          fhir:title [ fhir:v "Home" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
+         fhir:source [ fhir:v "stroke-cp.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "stroke-cp.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Stroke-CP" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:source [ fhir:v "data-dictionary.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "data-dictionary.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Data-Dictionary" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
          fhir:source [ fhir:v "fhir.html"^^xsd:anyURI ] ;
          fhir:name [ fhir:v "fhir.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "FHIR" ] ;
@@ -718,21 +1418,6 @@
          fhir:source [ fhir:v "ichom.html"^^xsd:anyURI ] ;
          fhir:name [ fhir:v "ichom.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "ICHOM" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [ fhir:v "lc-avc-bpmn.html"^^xsd:anyURI ] ;
-         fhir:name [ fhir:v "lc-avc-bpmn.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Stroke-CP (BPMN)" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [ fhir:v "data-dictionary.html"^^xsd:anyURI ] ;
-         fhir:name [ fhir:v "data-dictionary.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Data Dictionary" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:source [ fhir:v "paper.html"^^xsd:anyURI ] ;
-         fhir:name [ fhir:v "paper.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Paper" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:source [ fhir:v "downloads.html"^^xsd:anyURI ] ;
@@ -757,7 +1442,7 @@
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "releaselabel" ]
        ] ;
-       fhir:value [ fhir:v "ci-build" ]
+       fhir:value [ fhir:v "ballot" ]
      ] [
        fhir:code [
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;

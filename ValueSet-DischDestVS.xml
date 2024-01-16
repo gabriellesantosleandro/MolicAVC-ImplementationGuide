@@ -3,14 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="DischDestVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>1</td><td>Home or community-dwelling (not home hospice)</td></tr><tr><td>2</td><td>Residential facility</td></tr><tr><td>3</td><td>Dedicated inpatient rehabilitation facility</td></tr><tr><td>4</td><td>Another acute care hospital</td></tr><tr><td>5</td><td>Patient died in hospital</td></tr><tr><td>888</td><td>Other</td></tr><tr><td>999</td><td>Unknown</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-DischDestCS.html"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-1">1</a></td><td>Home or community-dwelling (not home hospice)</td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-2">2</a></td><td>Residential facility</td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-3">3</a></td><td>Dedicated inpatient rehabilitation facility</td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-4">4</a></td><td>Another acute care hospital</td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-5">5</a></td><td>Patient died in hospital</td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-888">888</a></td><td>Other</td></tr><tr><td><a href="CodeSystem-DischDestCS.html#DischDestCS-999">999</a></td><td>Unknown</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/DischDestVS"/>
-  <version value="1.0.1"/>
+  <version value="0.0.0"/>
   <name value="DischDestVS"/>
-  <title value="ValueSet of Discharge Location"/>
+  <title value="Discharge Location"/>
   <status value="active"/>
-  <date value="2023-11-21T19:08:35-03:00"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -36,10 +37,10 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="Discharge destination following acute care hospitalization. What type of place was the patient discharged to?"/>
+  <description value="ValueSet about discharge destination following acute care hospitalization. What type of place was the patient discharged to?"/>
   <compose>
     <include>
-      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/discharge-location/"/>
+      <system value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/DischDestCS"/>
       <concept>
         <code value="1"/>
         <display value="Home or community-dwelling (not home hospice)"/>

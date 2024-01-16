@@ -1,0 +1,58 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "LiveAloneVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-LiveAloneCS.html\"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-LiveAloneCS.html#LiveAloneCS-1\">1</a></td><td>Yes, I live/lived alone</td></tr><tr><td><a href=\"CodeSystem-LiveAloneCS.html#LiveAloneCS-2\">2</a></td><td>No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)</td></tr><tr><td><a href=\"CodeSystem-LiveAloneCS.html#LiveAloneCS-999\">999</a></td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/LiveAloneVS",
+  "version" : "0.0.0",
+  "name" : "LiveAloneVS",
+  "title" : "Live Alone Pre-Stroke",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ValueSet indicating whether a patient lived alone prior to a stroke event based on ICHOM terminology.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/LiveAloneCS",
+      "concept" : [{
+        "code" : "1",
+        "display" : "Yes, I live/lived alone"
+      },
+      {
+        "code" : "2",
+        "display" : "No, I share/shared my household with a spouse/partner or another person (e.g. sibling, children, parents)"
+      },
+      {
+        "code" : "999",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

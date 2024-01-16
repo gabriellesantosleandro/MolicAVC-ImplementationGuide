@@ -1,0 +1,62 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ConsciousnessVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-ConsciousnessCS.html\"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-0\">0</a></td><td>Fully awake</td></tr><tr><td><a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-1\">1</a></td><td>Somnolent</td></tr><tr><td><a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-2\">2</a></td><td>Coma</td></tr><tr><td><a href=\"CodeSystem-ConsciousnessCS.html#ConsciousnessCS-999\">999</a></td><td>Unknown</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/ConsciousnessVS",
+  "version" : "0.0.0",
+  "name" : "ConsciousnessVS",
+  "title" : "State of Consciousness.",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-11T13:00:00-03:00",
+  "publisher" : "Gabrielle dos Santos Leandro",
+  "contact" : [{
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com"
+    }]
+  },
+  {
+    "name" : "Gabrielle dos Santos Leandro",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://gabriellesantosleandro.com.br",
+      "use" : "work"
+    },
+    {
+      "system" : "email",
+      "value" : "gabrielle.santos.leandro@gmail.com",
+      "use" : "work"
+    }]
+  }],
+  "description" : "ValueSet based on the ICHOM standard that indicates the patient's state of consciousness as measured upon arrival at the reference hospital.",
+  "compose" : {
+    "include" : [{
+      "system" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/ConsciousnessCS",
+      "concept" : [{
+        "code" : "0",
+        "display" : "Fully awake"
+      },
+      {
+        "code" : "1",
+        "display" : "Somnolent"
+      },
+      {
+        "code" : "2",
+        "display" : "Coma"
+      },
+      {
+        "code" : "999",
+        "display" : "Unknown"
+      }]
+    }]
+  }
+}

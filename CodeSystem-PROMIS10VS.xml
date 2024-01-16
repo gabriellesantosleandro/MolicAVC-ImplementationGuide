@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PROMIS10VS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="PROMIS10VS-1"> </a></td><td>Poor</td></tr><tr><td style="white-space:nowrap">2<a name="PROMIS10VS-2"> </a></td><td>Fair</td></tr><tr><td style="white-space:nowrap">3<a name="PROMIS10VS-3"> </a></td><td>Good</td></tr><tr><td style="white-space:nowrap">4<a name="PROMIS10VS-4"> </a></td><td>Very Good</td></tr><tr><td style="white-space:nowrap">5<a name="PROMIS10VS-5"> </a></td><td>Excellent</td></tr><tr><td style="white-space:nowrap">6<a name="PROMIS10VS-6"> </a></td><td>Completely</td></tr><tr><td style="white-space:nowrap">7<a name="PROMIS10VS-7"> </a></td><td>Mostly</td></tr><tr><td style="white-space:nowrap">8<a name="PROMIS10VS-8"> </a></td><td>Moderately</td></tr><tr><td style="white-space:nowrap">9<a name="PROMIS10VS-9"> </a></td><td>A little</td></tr><tr><td style="white-space:nowrap">10<a name="PROMIS10VS-10"> </a></td><td>Not at all</td></tr><tr><td style="white-space:nowrap">11<a name="PROMIS10VS-11"> </a></td><td>Always</td></tr><tr><td style="white-space:nowrap">12<a name="PROMIS10VS-12"> </a></td><td>Often</td></tr><tr><td style="white-space:nowrap">13<a name="PROMIS10VS-13"> </a></td><td>Sometimes</td></tr><tr><td style="white-space:nowrap">14<a name="PROMIS10VS-14"> </a></td><td>Rarely</td></tr><tr><td style="white-space:nowrap">15<a name="PROMIS10VS-15"> </a></td><td>Never</td></tr><tr><td style="white-space:nowrap">16<a name="PROMIS10VS-16"> </a></td><td>None</td></tr><tr><td style="white-space:nowrap">17<a name="PROMIS10VS-17"> </a></td><td>Mild</td></tr><tr><td style="white-space:nowrap">18<a name="PROMIS10VS-18"> </a></td><td>Moderate</td></tr><tr><td style="white-space:nowrap">19<a name="PROMIS10VS-19"> </a></td><td>Severe</td></tr><tr><td style="white-space:nowrap">20<a name="PROMIS10VS-20"> </a></td><td>Very Severe</td></tr><tr><td style="white-space:nowrap">21<a name="PROMIS10VS-21"> </a></td><td>0: No pain</td></tr><tr><td style="white-space:nowrap">22<a name="PROMIS10VS-22"> </a></td><td>1: Very mild pain</td></tr><tr><td style="white-space:nowrap">23<a name="PROMIS10VS-23"> </a></td><td>2: Discomforting</td></tr><tr><td style="white-space:nowrap">24<a name="PROMIS10VS-24"> </a></td><td>3: Tolerable</td></tr><tr><td style="white-space:nowrap">25<a name="PROMIS10VS-25"> </a></td><td>4: Distressing</td></tr><tr><td style="white-space:nowrap">26<a name="PROMIS10VS-26"> </a></td><td>5: Very distressing</td></tr><tr><td style="white-space:nowrap">27<a name="PROMIS10VS-27"> </a></td><td>6: Intense</td></tr><tr><td style="white-space:nowrap">28<a name="PROMIS10VS-28"> </a></td><td>7: Very intense</td></tr><tr><td style="white-space:nowrap">29<a name="PROMIS10VS-29"> </a></td><td>8: Utterly horrible</td></tr><tr><td style="white-space:nowrap">30<a name="PROMIS10VS-30"> </a></td><td>9: Excruciating unbearable pain</td></tr><tr><td style="white-space:nowrap">31<a name="PROMIS10VS-31"> </a></td><td>10: Unspeakable pain</td></tr></table></div>
+  </text>
+  <url value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/PROMIS10VS"/>
+  <version value="0.0.0"/>
+  <name value="PROMIS10CS"/>
+  <title value="PROMIS-10 Response Questionnaire"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
+  <publisher value="Gabrielle dos Santos Leandro"/>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Gabrielle dos Santos Leandro"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://gabriellesantosleandro.com.br"/>
+      <use value="work"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="gabrielle.santos.leandro@gmail.com"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem that defines the response values for the PROMIS-10 (Patient-Reported Outcomes Measurement Information System 10-item short form) Questionnaire."/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="31"/>
+  <concept>
+    <code value="1"/>
+    <display value="Poor"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Fair"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="Good"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Very Good"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Excellent"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Completely"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Mostly"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="Moderately"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="A little"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="Not at all"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="Always"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="Often"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="Sometimes"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="Rarely"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="Never"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="None"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="Mild"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="Moderate"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="Severe"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="Very Severe"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="0: No pain"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="1: Very mild pain"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="2: Discomforting"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="3: Tolerable"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="4: Distressing"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="5: Very distressing"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="6: Intense"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="7: Very intense"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="8: Utterly horrible"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="9: Excruciating unbearable pain"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="10: Unspeakable pain"/>
+  </concept>
+</CodeSystem>

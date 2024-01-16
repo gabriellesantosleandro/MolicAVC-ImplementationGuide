@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ICHOM - Molic-AVC Project: Monitoring the Stroke Clinical Pathway v1.0.1</title>
+    <title>ICHOM - FHIR Implementation Guide for Stroke v0.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -39,17 +39,17 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Molic-AVC Project: Monitoring the Stroke Clinical Pathway</span>
+          <p><span style="font-size:12pt;font-weight:bold">FHIR Implementation Guide for Stroke</span>
             <br/>
-            <span style="display:inline-block;">1.0.1 - ci-build
+            <span style="display:inline-block;">0.0.0 - ballot
 
 
             </span>
@@ -80,19 +80,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
+    <a href="stroke-cp.html">Stroke-CP</a>
+  </li>
+  <li>
+    <a href="data-dictionary.html">Data-Dictionary</a>
+  </li>
+  <li>
     <a href="fhir.html">FHIR</a>
   </li>
   <li>
     <a href="ichom.html">ICHOM</a>
-  </li>
-  <li>
-    <a href="lc-avc-bpmn.html">Stroke-CP (BPMN)</a>
-  </li>
-  <li>
-    <a href="data-dictionary.html">Data Dictionary</a>
-  </li>
-  <li>
-    <a href="paper.html">Paper</a>
   </li>
   <li>
     <a href="artifacts.html">Artifacts</a>
@@ -126,7 +123,7 @@
 
             <a href="#bottom">bottom</a>
 
-          | <a href="lc-avc-bpmn.html">next&gt;</a>
+          | <a href="downloads.html">next&gt;</a>
 
           </span>
 
@@ -148,7 +145,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Molic-AVC Project: Monitoring the Stroke Clinical Pathway - Local Development build (v1.0.1). See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">FHIR Implementation Guide for Stroke - Local Development build (v0.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://molic-avc.gabriellesantosleandro.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>ICHOM</h2>
   
 
@@ -169,72 +166,65 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#background" id="markdown-toc-background">Background</a></li>
   <li><a href="#ichoms-patient-centered-health-outcome-measure-sets-for-stroke" id="markdown-toc-ichoms-patient-centered-health-outcome-measure-sets-for-stroke">ICHOM’s Patient-Centered Health Outcome Measure Sets for Stroke</a></li>
+  <li><a href="#definitions" id="markdown-toc-definitions">Definitions</a></li>
   <li><a href="#questionnaires" id="markdown-toc-questionnaires">Questionnaires</a></li>
   <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
-  <li><a href="#definitions" id="markdown-toc-definitions">Definitions</a></li>
-  <li><a href="#alignment-with-hl7-specifications" id="markdown-toc-alignment-with-hl7-specifications">Alignment with HL7 Specifications</a></li>
-  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
   <li><a href="#ip-statements" id="markdown-toc-ip-statements">IP Statements</a></li>
 </ul>
 
 </div>
 <h3 id="introduction">Introduction</h3>
 
-<p>The International Consortium for Health Outcomes Measurement <a href="https://www.ichom.org/">ICHOM</a> aims to empower value-based healthcare by defining globally a Patient-Centered Health Outcome Measure Sets, which involve considerations of outcomes reported by healthcare professionals as well as patients, in order to promote the adoption, reporting, and benchmarking of these measures on a global scale, with the goal of generating better health outcomes for all involved.</p>
-
-<p>So far, Patient-Centered Health Outcome Measure Sets have been defined for 45 different clinical conditions and specific patient populations through the gathering of global teams of patient advocates, healthcare professionals, and researchers, representing more than 50% of the global disease burden, as described on this <a href="https://www.ichom.org/patient-centered-outcome-measures">page</a>.</p>
-
-<p>To facilitate the adoption and implementation of these ICHOM Patient-Centered Health Outcome Measure Sets in healthcare, health information technology systems need them to be published in an interoperable form, and in a machine-readable format based on open standards. This will facilitate the semantically interoperable collection of the necessary measurements along the patient care pathway, as well as the subsequent reporting of outcomes based on these measurements. With this goal, ICHOM created the Patient-Centered Health Outcome Measure Set for Stroke. It is believed that the international reach of ICHOM’s standard sets will allow their use, adoption, and global implementation in clinical practice.</p>
-
-<p>This Implementation Guide (IG) utilizes version 5 of the FHIR standard.</p>
+<p style="text-align: justify; font-size: 14px;">
+The International Consortium for Health Outcomes Measurement <a href="https://www.ichom.org/" target="_blank">(ICHOM)</a> aims to empower value-based healthcare by defining globally a Patient-Centered Health Outcome Measure Sets, which involve considerations of outcomes reported by healthcare professionals as well as patients, in order to promote the adoption, reporting, and benchmarking of these measures on a global scale, with the goal of generating better health outcomes for all involved.<br />
+So far, Patient-Centered Health Outcome Measure Sets have been defined for 45 different clinical conditions and specific patient populations through the gathering of global teams of patient advocates, healthcare professionals, and researchers, representing more than 50% of the global disease burden, as described on this <a href="https://www.ichom.org/patient-centered-outcome-measures" target="_blank">page</a>.<br />
+To facilitate the adoption and implementation of these ICHOM Patient-Centered Health Outcome Measure Sets in healthcare, health information technology systems need them to be published in an interoperable form, and in a machine-readable format based on open standards. This will facilitate the semantically interoperable collection of the necessary measurements along the patient care pathway, as well as the subsequent reporting of outcomes based on these measurements. With this goal, ICHOM created the Patient-Centered Health Outcome Measure Set for Stroke. It is believed that the international reach of ICHOM's standard sets will allow their use, adoption, and global implementation in clinical practice.</p>
 
 <h3 id="background">Background</h3>
 
-<p>There is an increasing necessity to represent ICHOM’s Patient-Centered Health Outcome Measure Sets through HL7 FHIR APIs for the global community. The clinical elements within ICHOM’s Patient-Centered Health Outcome Measure Sets have been established and endorsed based on international clinical research. These elements have undergone a patient-focused process and have been critically reviewed by experts, ensuring their alignment with standard ontologies, such as SNOMED-CT.</p>
-
-<p>The purpose of this Implementation Guide is to formulate and disseminate the HL7 FHIR representation of ICHOM’s Patient-Centered Health Outcome Measure Set for Stroke, a set that has already gained international validation and peer review. This endeavor aims to facilitate interoperability in exchanging data pertinent to the measurement of value-based healthcare. This initiative aligns with the standards set by ICHOM’s international expert community, responsible for the creation of this comprehensive data set.</p>
+<p style="text-align: justify; font-size: 14px;">
+There is an increasing necessity to represent ICHOM's Patient-Centered Health Outcome Measure Sets through HL7 FHIR APIs for the global community. The clinical elements within ICHOM's Patient-Centered Health Outcome Measure Sets have been established and endorsed based on international clinical research. These elements have undergone a patient-focused process and have been critically reviewed by experts, ensuring their alignment with standard ontologies, such as SNOMED-CT.<br />
+The purpose of this FHIR IG is to formulate and disseminate a HL7 FHIR representation, integrating the stroke clinical pathway with the ICHOM’s Patient-Centered Outcomes Measure Set for Stroke. The initiative is dedicated to enhancing data interoperability, which is crucial for evaluating value-based healthcare practices. This initiative aligns with the standards set by ICHOM’s international expert community, responsible for the creation of this comprehensive data set.</p>
 
 <h3 id="ichoms-patient-centered-health-outcome-measure-sets-for-stroke">ICHOM’s Patient-Centered Health Outcome Measure Sets for Stroke</h3>
 
-<p>This Implementation Guide in the knowledge domain focuses on representing the same variables from the Patient-Centered Health Outcome Measure Set for Stroke in two different ways:</p>
-<ul>
-  <li>1) as <a href="artifacts.html#structures-questionnaires">FHIR Questionnaires</a> for patient-reported outcomes and clinically reported outcomes, and</li>
-  <li>2) as <a href="artifacts.html#structures-resource-profiles">Discrete FHIR Resources</a> for clinically reported outcomes. 
- Implementers have the freedom to choose whether they want to implement the questionnaires, the profiles, or both.</li>
-</ul>
+<p style="text-align: justify; font-size: 14px;">
+This Implementation Guide in the knowledge domain focuses on representing the same variables from the Patient-Centered Health Outcome Measure Set for Stroke in two different ways: <br />
+ - 1) as <a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#structures-questionnaires">FHIR Questionnaires</a> for patient-reported outcomes and clinically reported outcomes, and <br />
+ - 2) as <a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#structures-resource-profiles">FHIR Profiles</a> for clinically reported outcomes. <br />
+ Moreover, implementers are afforded the flexibility to choose between implementing the questionnaires, the profiles, or both, based on their specific needs.
+</p>
+
+<h3 id="definitions">Definitions</h3>
+
+<p style="text-align: justify; font-size: 14px;"> 
+* <b>PROM (Patient-Reported Outcome Measure):</b> A scientifically validated questionnaire that assesses specific aspects of a patient's health experience. Scores are assigned to each response, and these scores are totaled based on a published algorithm. Typically, both individual question responses and summarized scores are saved, but analyses are only performed on the summarized scores. Example: PROMIS Global.<br />
+* <b>Third-Party Providers:</b> Typically, technology or analytics companies that offer a platform to meet specific data collection or analysis needs, such as collecting patient PROMs data.<br />
+* <b>Learning Collaboration:</b> A quality improvement activity where provider organizations agree to privately share their de-identified patient outcome data with the aim of facilitating conversations and learning best care practices from each other.</p>
 
 <h3 id="questionnaires">Questionnaires</h3>
-<p>The <a href="artifacts.html#structures-questionnaires">Questionnaires</a> in this Implementation Guide are organized differently compared to the ICHOM Reference Guide and Data Dictionary, and this is due to different emphases or intended uses. The Reference Guide and Data Dictionary are meant to describe all data elements included in the set, hence they are organized by data type or variable (for example, Demographics, ‘Baseline Clinical Factors’). In contrast, this IG is intended to facilitate the collection of data elements. Therefore, it is organized based on the timing of patient health data collection considering their care journey; for example, at ‘baseline’, at ‘1-year follow-up’, and based on the data source (clinical or patient-reported). Despite this difference in organization, the data elements in the FHIR IG and in the ICHOM Reference Guide and Data Dictionary are completely aligned.</p>
+
+<p style="text-align: justify; font-size: 14px;"> 
+The <a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#structures-questionnaires">Questionnaires</a> in this FHIR IG are organized differently from the ICHOM Reference Guide and Data Dictionary, and this is due to different emphases or intended uses. The Reference Guide and Data Dictionary are designed to describe all data elements included in the set, so they are organized by data type or variable. In contrast, this FHIR IG is intended to facilitate the collection of data elements. Therefore, it is organized based on the timing of patient health data collection during their care journey; for example, at 'baseline,' at '1-year follow-up,' and based on the data source (clinical or patient-reported). Despite this difference in organization, the data elements in the FHIR IG and the ICHOM Reference Guide and Data Dictionary are completely aligned. The questionnaires have been divided into two major groups: Patient-reported questionnaires with data collection at the following time points: baseline, discharge or 7 days, and 90 days; and Clinician-reported questionnaires with data collection at the following time points: baseline, discharge or 7 days, 90 days, and annual update, as illustrated in Figure 1.</p>
 
 <table style="width: 100%; border-collapse: collapse;">
 <thead><tr><th>
 <img src="Questionnaires.png" alt="Ichom Questionnaires" style="width: 150%; display: block; margin-left: auto; margin-right: auto; clear: both;" />
 </th></tr></thead>
 </table>
+<p style="text-align: center; font-size: 14px;"> <b> Figure 1 </b> – Structure of Questionnaire in the FHIR IG for Stroke.</p>
 
 <h3 id="profiles">Profiles</h3>
 
-<p>The <a href="artifacts.html#structures-resource-profiles">Profiles</a> follow the organization of the ICHOM Reference Guide and Data Dictionary. Each variable is mapped to a single FHIR resource, or multiple variables are mapped to the same FHIR resource. The mappings themselves are communicated through a  <a href="https://www.hl7.org/fhir/profiling.html">FHIR Profile</a>.</p>
+<p style="text-align: justify; font-size: 14px;"> 
+The <a href="http://molic-avc.gabriellesantosleandro.com/artifacts.html#structures-resource-profiles">Profiles</a> adhere to the ICHOM reference guide and data dictionary organization, as well as to the Profiles of the Brazilian National Data Network. Each variable is mapped to a singular FHIR resource, whereas multiple variables may be mapped to the same FHIR resource. The mappings themselves are conveyed using a FHIR profile, as shown in Figure 2.</p>
 
-<h3 id="definitions">Definitions</h3>
-<ul>
-  <li>PROM (Patient-Reported Outcome Measure): A scientifically validated questionnaire that assesses specific aspects of a patient’s health experience. Scores are assigned to each response, and these scores are totaled based on a published algorithm. Typically, both individual question responses and summarized scores are saved, but analyses are only performed on the summarized scores. Examples: PHQ-9, PROMIS Global.</li>
-  <li>Third-Party Providers: Typically, technology or analytics companies that offer a platform to meet specific data collection or analysis needs, such as collecting patient PROMs data.</li>
-  <li>Learning Collaboration: A quality improvement activity where provider organizations agree to privately share their de-identified patient outcome data with the aim of facilitating conversations and learning best care practices from each other (example: <a href="https://msqc.org">https://msqc.org</a>).”</li>
-</ul>
-
-<h3 id="alignment-with-hl7-specifications">Alignment with HL7 Specifications</h3>
-
-<p>Artifacts from this Implementation Guide are aligned with:</p>
-<ul>
-  <li><a href="https://simplifier.net/redenacionaldedadosemsaude">Guia de Implementação da Rede Nacional de Dados em Saúde (RNDS)</a></li>
-  <li><a href="https://build.fhir.org/ig/HL7/fhir-ichom-breast-cancer-ig/">ICHOM Patient Centered Outcomes Measure Set for Breast Cancer</a></li>
-</ul>
-
-<h3 id="must-support">Must Support</h3>
-<p>The ‘Must Support’ annotation in this implementation guide is used to indicate that a specific element is mapped to a variable from the measure set and should be filled with data if available in the system.</p>
-
-<p>In cases where an element cannot be filled due to its unavailability in the source system and if the cardinality rules allow, the element can be left blank. However, if the cardinality rules require that an element be filled, the ‘Data Absent Reason’ extension MUST be used.”</p>
+<table style="width: 100%; border-collapse: collapse;">
+<thead><tr><th>
+<img src="Profiles.png" alt="Profiles" style="width: 80%; display: block; margin-left: auto; margin-right: auto; clear: both;" />
+</th></tr></thead>
+</table>
+<p style="text-align: center; font-size: 14px;"> <b> Figure 2 </b> – FHIR Profiles for Stroke: Alignment with ICHOM Data Set and Brazilian National Data Network. </p>
 
 <h3 id="ip-statements">IP Statements</h3>
 
@@ -242,13 +232,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <ul>
 <li>Copyright HL7. Licensed under creative commons public domain<div id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0203.html">identifierType</a>: <a href="StructureDefinition-molicavc-organization-profile.html">MolicAVC_OrganizationProfile</a></li>
-<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>: <a href="ValueSet-NoYesUnknownVS.html">NoYesUnknownVS</a>, <a href="Questionnaire-ClinicalResponseNinetyDays.html">clinician-reported-90days</a><span id="ips_2" onclick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 5 more</span></span><span id="ips2_2" style="display: none">, <a href="Questionnaire-ClinicalResponseAnnualUpdate.html">clinician-reported-annual-update</a>, <a href="Questionnaire-ClinicalResponseBaseline.html">clinician-reported-baseline</a>, <a href="Questionnaire-ClinicalResponseDischargeOrSevenDays.html">clinician-reported-discharge-7days</a>, <a href="Questionnaire-PatientReportedDischargeOrSevenDays.html">patient-reported-discharge-7days</a> and <a href="Questionnaire-PatientReportedNinetyDays.html">patient-reported-discharge-90days</a></span></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0131.html">contactRole2</a>: <a href="StructureDefinition-StrokePatient.html">StrokePatient</a></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0203.html">identifierType</a>: <a href="StructureDefinition-StrokeOrganization.html">StrokeOrganization</a>, <a href="StructureDefinition-StrokePatient.html">StrokePatient</a> and <a href="StructureDefinition-StrokePractitioner.html">StrokePractitioner</a></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0360.html">degreeLicenseCertificate</a>: <a href="Practitioner-example-strokepractitioner.html">Practitioner/example-strokepractitioner</a></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0532.html">expandedYes-NoIndicator</a>: <a href="Questionnaire-ClinicalResponseAnnualUpdate.html">ClinicalResponseAnnualUpdate</a>, <a href="Questionnaire-ClinicalResponseBaseline.html">ClinicalResponseBaseline</a><span id="ips_4" onclick="document.getElementById('ips_4').innerHTML = document.getElementById('ips2_4').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 37 more</span></span><span id="ips2_4" style="display: none">, <a href="Questionnaire-ClinicalResponseDischargeOrSevenDays.html">ClinicalResponseDischargeOrSevenDays</a>, <a href="Questionnaire-ClinicalResponseNinetyDays.html">ClinicalResponseNinetyDays</a>, <a href="StructureDefinition-Hemicraniectomy.html">Hemicraniectomy</a>, <a href="ValueSet-NoYesUnknownVS.html">NoYesUnknownVS</a>, <a href="Observation-ExampleHemicraniectomy.html">Observation/ExampleHemicraniectomy</a>, <a href="Observation-ExamplePriorAtrialFibrillation.html">Observation/ExamplePriorAtrialFibrillation</a>, <a href="Observation-ExamplePriorDiabetesMellitus.html">Observation/ExamplePriorDiabetesMellitus</a>, <a href="Observation-ExamplePriorHyperlipidemia.html">Observation/ExamplePriorHyperlipidemia</a>, <a href="Observation-ExamplePriorHypertension.html">Observation/ExamplePriorHypertension</a>, <a href="Observation-ExamplePriorIschemicHeartDisease.html">Observation/ExamplePriorIschemicHeartDisease</a>, <a href="Observation-ExamplePriorMyocardialInfarction.html">Observation/ExamplePriorMyocardialInfarction</a>, <a href="Observation-ExamplePriorStrokeExclTIA.html">Observation/ExamplePriorStrokeExclTIA</a>, <a href="Observation-ExamplePriorTIA.html">Observation/ExamplePriorTIA</a>, <a href="Observation-ExampleProcoagulantReversal.html">Observation/ExampleProcoagulantReversal</a>, <a href="Observation-ExampleRehabIN.html">Observation/ExampleRehabIN</a>, <a href="Observation-ExampleRehabOUT.html">Observation/ExampleRehabOUT</a>, <a href="Observation-ExampleStrokeRecur.html">Observation/ExampleStrokeRecur</a>, <a href="Observation-ExampleSympIntracranialHemorrhage.html">Observation/ExampleSympIntracranialHemorrhage</a>, <a href="Observation-ExampleThrombectomy.html">Observation/ExampleThrombectomy</a>, <a href="Observation-ExampleThrombolytic.html">Observation/ExampleThrombolytic</a>, <a href="Questionnaire-PatientReportedDischargeOrSevenDays.html">PatientReportedDischargeOrSevenDays</a>, <a href="Questionnaire-PatientReportedNinetyDays.html">PatientReportedNinetyDays</a>, <a href="StructureDefinition-PriorAtrialFibrillation.html">PriorAtrialFibrillation</a>, <a href="StructureDefinition-PriorDiabetesMellitus.html">PriorDiabetesMellitus</a>, <a href="StructureDefinition-PriorHyperlipidemia.html">PriorHyperlipidemia</a>, <a href="StructureDefinition-PriorHypertension.html">PriorHypertension</a>, <a href="StructureDefinition-PriorIschemicHeartDisease.html">PriorIschemicHeartDisease</a>, <a href="StructureDefinition-PriorMyocardialInfarction.html">PriorMyocardialInfarction</a>, <a href="StructureDefinition-PriorStrokeExclTIA.html">PriorStrokeExclTIA</a>, <a href="StructureDefinition-PriorTIA.html">PriorTIA</a>, <a href="StructureDefinition-ProcoagulantReversal.html">ProcoagulantReversal</a>, <a href="StructureDefinition-RehabIN.html">RehabIN</a>, <a href="StructureDefinition-RehabOUT.html">RehabOUT</a>, <a href="StructureDefinition-StrokeRecur.html">StrokeRecur</a>, <a href="StructureDefinition-SympIntracranialHemorrhage.html">SympIntracranialHemorrhage</a>, <a href="StructureDefinition-Thrombectomy.html">Thrombectomy</a> and <a href="StructureDefinition-Thrombolytic.html">Thrombolytic</a></span></li>
 </ul>
 </div></li>
 <li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.<div id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-GenderIdentityExtension.html">GenderIdentityExtension</a>, <a href="ValueSet-GenderIdentityVS.html">GenderIdentityVS</a> and <a href="Questionnaire-PatientReportedBaseline.html">patient-reported-baseline</a></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-GenderIdentityExtension.html">GenderIdentityExtension</a>, <a href="ValueSet-GenderIdentityVS.html">GenderIdentityVS</a>, <a href="Patient-example-strokepatient.html">Patient/example-strokepatient</a> and <a href="Questionnaire-PatientReportedBaseline.html">PatientReportedBaseline</a></li>
+</ul>
+</div></li>
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div id="ipp_3" onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<ul>
+<li>SNOMED Clinical Terms® (SNOMED CT®): <a href="StructureDefinition-CVDComorbidities.html">CVDComorbidities</a>, <a href="StructureDefinition-Consciousness.html">Consciousness</a><span id="ips_6" onclick="document.getElementById('ips_6').innerHTML = document.getElementById('ips2_6').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 46 more</span></span><span id="ips2_6" style="display: none">, <a href="StructureDefinition-DiagnosisEvidence.html">DiagnosisEvidence</a>, <a href="StructureDefinition-DischDest.html">DischDest</a>, <a href="StructureDefinition-EstStrokeSevNIHSSCat.html">EstStrokeSevNIHSSCat</a>, <a href="StructureDefinition-Hemicraniectomy.html">Hemicraniectomy</a>, <a href="Observation-ExampleCVDComorbidities.html">Observation/ExampleCVDComorbidities</a>, <a href="Observation-ExampleConsciousness.html">Observation/ExampleConsciousness</a>, <a href="Observation-ExampleDiagnosisEvidence.html">Observation/ExampleDiagnosisEvidence</a>, <a href="Observation-ExampleDischDest.html">Observation/ExampleDischDest</a>, <a href="Observation-ExampleEstStrokeSevNIHSSCat.html">Observation/ExampleEstStrokeSevNIHSSCat</a>, <a href="Observation-ExampleHemicraniectomy.html">Observation/ExampleHemicraniectomy</a>, <a href="Observation-ExamplePriorAtrialFibrillation.html">Observation/ExamplePriorAtrialFibrillation</a>, <a href="Observation-ExamplePriorDiabetesMellitus.html">Observation/ExamplePriorDiabetesMellitus</a>, <a href="Observation-ExamplePriorHyperlipidemia.html">Observation/ExamplePriorHyperlipidemia</a>, <a href="Observation-ExamplePriorHypertension.html">Observation/ExamplePriorHypertension</a>, <a href="Observation-ExamplePriorIschemicHeartDisease.html">Observation/ExamplePriorIschemicHeartDisease</a>, <a href="Observation-ExamplePriorMyocardialInfarction.html">Observation/ExamplePriorMyocardialInfarction</a>, <a href="Observation-ExamplePriorStrokeExclTIA.html">Observation/ExamplePriorStrokeExclTIA</a>, <a href="Observation-ExamplePriorTIA.html">Observation/ExamplePriorTIA</a>, <a href="Observation-ExampleProcoagulantReversal.html">Observation/ExampleProcoagulantReversal</a>, <a href="Observation-ExampleRehabIN.html">Observation/ExampleRehabIN</a>, <a href="Observation-ExampleRehabOUT.html">Observation/ExampleRehabOUT</a>, <a href="Observation-ExampleStrokeRecur.html">Observation/ExampleStrokeRecur</a>, <a href="Observation-ExampleStrokeSevNIHSS.html">Observation/ExampleStrokeSevNIHSS</a>, <a href="Observation-ExampleStrokeType.html">Observation/ExampleStrokeType</a>, <a href="Observation-ExampleSympIntracranialHemorrhage.html">Observation/ExampleSympIntracranialHemorrhage</a>, <a href="Observation-ExampleSymtDur.html">Observation/ExampleSymtDur</a>, <a href="Observation-ExampleThrombectomy.html">Observation/ExampleThrombectomy</a>, <a href="Observation-ExampleThrombolytic.html">Observation/ExampleThrombolytic</a>, <a href="StructureDefinition-PriorAtrialFibrillation.html">PriorAtrialFibrillation</a>, <a href="StructureDefinition-PriorDiabetesMellitus.html">PriorDiabetesMellitus</a>, <a href="StructureDefinition-PriorHyperlipidemia.html">PriorHyperlipidemia</a>, <a href="StructureDefinition-PriorHypertension.html">PriorHypertension</a>, <a href="StructureDefinition-PriorIschemicHeartDisease.html">PriorIschemicHeartDisease</a>, <a href="StructureDefinition-PriorMyocardialInfarction.html">PriorMyocardialInfarction</a>, <a href="StructureDefinition-PriorStrokeExclTIA.html">PriorStrokeExclTIA</a>, <a href="StructureDefinition-PriorTIA.html">PriorTIA</a>, <a href="StructureDefinition-ProcoagulantReversal.html">ProcoagulantReversal</a>, <a href="StructureDefinition-RehabIN.html">RehabIN</a>, <a href="StructureDefinition-RehabOUT.html">RehabOUT</a>, <a href="StructureDefinition-StrokeRecur.html">StrokeRecur</a>, <a href="StructureDefinition-StrokeSevNIHSS.html">StrokeSevNIHSS</a>, <a href="StructureDefinition-StrokeType.html">StrokeType</a>, <a href="StructureDefinition-SympIntracranialHemorrhage.html">SympIntracranialHemorrhage</a>, <a href="StructureDefinition-SymtDur.html">SymtDur</a>, <a href="StructureDefinition-Thrombectomy.html">Thrombectomy</a> and <a href="StructureDefinition-Thrombolytic.html">Thrombolytic</a></span></li>
 </ul>
 </div></li>
 </ul>
@@ -294,7 +291,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
               </td>
               <td style="text-align:right">&#xA0;
 
-                <a href="lc-avc-bpmn.html">next&gt;</a>
+                <a href="downloads.html">next&gt;</a>
 
               </td>
             </tr>
@@ -304,7 +301,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#1.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Nov 21, 2023 19:08-0300">2023-11-21</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://gabriellesantosleandro.com">Gabrielle dos Santos Leandro</a>.  Package guide#0.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Tue, Jan 16, 2024 20:08-0300">2024-01-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

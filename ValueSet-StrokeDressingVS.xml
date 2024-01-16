@@ -3,14 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="StrokeDressingVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>6</td><td>I could manage dressing/undressing without help.</td></tr><tr><td>7</td><td>I needed help dressing/undressing.</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-StrokeFuncStatusCS.html"><code>https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-6">6</a></td><td>I could manage dressing/undressing without help.</td></tr><tr><td><a href="CodeSystem-StrokeFuncStatusCS.html#StrokeFuncStatusCS-7">7</a></td><td>I needed help dressing/undressing.</td></tr></table></li></ul></div>
   </text>
   <url value="https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS"/>
-  <version value="1.0.1"/>
+  <version value="0.0.0"/>
   <name value="StrokeDressingVS"/>
-  <title value="ValueSet of Prestroke and Poststroke Functional Status: Dressing"/>
+  <title value="Prestroke and Poststroke Functional Status: Dressing"/>
   <status value="active"/>
-  <date value="2023-11-21T19:08:35-03:00"/>
+  <experimental value="false"/>
+  <date value="2024-01-11T13:00:00-03:00"/>
   <publisher value="Gabrielle dos Santos Leandro"/>
   <contact>
     <name value="Gabrielle dos Santos Leandro"/>
@@ -36,10 +37,10 @@
       <use value="work"/>
     </telecom>
   </contact>
-  <description value="This ValueSet defines the response values for the Prestroke and Poststroke Functional Status: Dressing."/>
+  <description value="ValueSet that defines the response values for the Prestroke and Poststroke Functional Status: Dressing."/>
   <compose>
     <include>
-      <system value="https://connect.ichom.org/patient-centered-outcome-measures/stroke/functionalaspectsrehabilitation/"/>
+      <system value="https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeFuncStatusCS"/>
       <concept>
         <code value="6"/>
         <display value="I could manage dressing/undressing without help."/>
