@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS",
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -27,8 +27,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS",
+      "StructureDefinition-StrokePractitioner.html" : "Stroke Practitioner based on Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -71,8 +71,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS",
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -86,8 +86,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS",
-      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS"
+      "StructureDefinition-StrokePatient.html" : "Stroke Patient based on the Brazilian RNDS",
+      "StructureDefinition-StrokeOrganization.html" : "Healthcare Facility based on the Brazilian RNDS"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -330,28 +330,28 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0532"],
       "uses" : {
       },
-      "Questionnaire-ClinicalResponseAnnualUpdate.html" : "Clinical Response Questionnaire 04 - Annual Follow-up",
-      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission",
-      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
-      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
-      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction",
-      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
-      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
-      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
       "Questionnaire-ClinicalResponseBaseline.html" : "Clinical Response Questionnaire 01 - Baseline",
-      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
-      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission",
-      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
-      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
-      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
-      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
-      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
+      "StructureDefinition-SympIntracranialHemorrhage.html" : "Symptomatic Intracranial Hemorrhage",
+      "Questionnaire-ClinicalResponseAnnualUpdate.html" : "Clinical Response Questionnaire 04 - Annual Follow-up",
       "StructureDefinition-StrokeRecur.html" : "Stroke Recurrence.",
-      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
-      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-PriorHypertension.html" : "Prior Hypertension",
+      "StructureDefinition-PriorStrokeExclTIA.html" : "Prior Stroke excluding Transient Ischemic Attacks",
       "StructureDefinition-PriorIschemicHeartDisease.html" : "Prior Ischemic Heart Disease",
-      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation"
+      "StructureDefinition-PriorDiabetesMellitus.html" : "Prior Diabetes Mellitus",
+      "StructureDefinition-RehabOUT.html" : "Post Acute Care Rehabilitation",
+      "StructureDefinition-RehabIN.html" : "Inpatient Acute Care Rehabilitation",
+      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission",
+      "StructureDefinition-Thrombolytic.html" : "Thrombolytic Therapy",
+      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission",
+      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
+      "StructureDefinition-PriorTIA.html" : "Prior Transient Ischemic Attacks",
+      "StructureDefinition-PriorHyperlipidemia.html" : "Prior Hyperlipidemia",
+      "StructureDefinition-Hemicraniectomy.html" : "Hemicraniectomy",
+      "StructureDefinition-ProcoagulantReversal.html" : "Procoagulant Reversal Therapy",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
+      "StructureDefinition-Thrombectomy.html" : "Thrombectomy",
+      "StructureDefinition-PriorAtrialFibrillation.html" : "Prior Atrial Fibrillation and Flutter",
+      "StructureDefinition-PriorMyocardialInfarction.html" : "Prior Myocardial Infarction"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/PROMIS10VS",
@@ -365,8 +365,8 @@
       ],
       "uses" : {
       },
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
-      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
+      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SMRSqVS",
@@ -380,8 +380,8 @@
       ],
       "uses" : {
       },
-      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission",
-      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission"
+      "Questionnaire-ClinicalResponseDischargeOrSevenDays.html" : "Clinical Response Questionnaire 02 - Discharge or 7 days post admission",
+      "Questionnaire-ClinicalResponseNinetyDays.html" : "Clinical Response Questionnaire 03 - 90 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/SmokingStatusVS",
@@ -410,8 +410,8 @@
       "uses" : {
       },
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
-      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
+      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeDressingVS",
@@ -426,8 +426,8 @@
       "uses" : {
       },
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
-      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
+      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeToiletingVS",
@@ -442,8 +442,8 @@
       "uses" : {
       },
       "Questionnaire-PatientReportedBaseline.html" : "Patient Reported Questionnaire 01 - Baseline",
-      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission",
-      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission"
+      "Questionnaire-PatientReportedDischargeOrSevenDays.html" : "Patient Reported Questionnaire 02 - Discharge or 7 days post admission",
+      "Questionnaire-PatientReportedNinetyDays.html" : "Patient Reported Questionnaire 03 - 90 days post admission"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/ValueSet/StrokeTypeVS",

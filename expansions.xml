@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0fb0dd93-bc13-456a-be49-07e8741d389d"/>
+  <id value="fa79a90e-ad6e-4e07-82ef-39888aea6cad"/>
   <meta>
-    <lastUpdated value="2024-01-16T20:08:55.271-03:00"/>
+    <lastUpdated value="2024-01-17T07:29:27.755-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -232,8 +232,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d48dfb47-fc49-48ef-b526-3f56854a87a2"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:88799d81-38e4-4f0c-ab55-1e5ef6e25d3b"/>
+          <timestamp value="2024-01-17T07:30:43-03:00"/>
           <total value="24"/>
           <parameter>
             <name value="excludeNested"/>
@@ -433,8 +433,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:1799ebea-9bd8-4722-8f83-9610dd458efb"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:15d4cb26-63e1-4c62-a128-055a5bd3024e"/>
+          <timestamp value="2024-01-17T07:30:43-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -526,8 +526,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:536c98aa-7ba8-4af0-9652-fff174c9bad1"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:6526feda-9497-4b39-b220-f73ef0f0024e"/>
+          <timestamp value="2024-01-17T07:30:43-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -646,8 +646,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:5419aff3-f1e3-4153-a0a4-5cff2d8cbe4c"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:bc921207-17d1-4755-9d26-33ca4d043bc9"/>
+          <timestamp value="2024-01-17T07:30:43-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -778,8 +778,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:e694173a-3e09-42f6-9849-c76cb1ceeaf7"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:661b6af1-a3e3-4432-833e-4e663e1ba6ef"/>
+          <timestamp value="2024-01-17T07:30:43-03:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -917,8 +917,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:c20abdb0-f215-4e12-b468-71f9bc46c1e3"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:c7b575da-901e-492f-97aa-4fa52fffc74d"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1037,8 +1037,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d8ca7d91-da6a-4f93-9fe4-5f7a7fc7f919"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:0b5bc4bd-29cd-4e70-ad12-189bcd36c138"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1165,8 +1165,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:6fd157c7-6ef1-4394-8b7a-03b9ff25a404"/>
-          <timestamp value="2024-01-16T20:10:34-03:00"/>
+          <identifier value="urn:uuid:720ccafc-6d36-4e86-87c3-dea7ce828e1c"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1310,8 +1310,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:e67d26e4-32b1-444b-ad5a-98c97f9d2875"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:2fd34302-bc53-42c4-80f1-c70110f7e227"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1437,10 +1437,10 @@
         <title value="Yes, No and Unknown"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2024-01-16T20:08:55-03:00"/>
+        <date value="2024-01-17T07:29:27-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:5f777c9b-438e-4258-9be9-62abce092b03"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:744f985f-251d-4f56-a604-e07d5ca05296"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1751,8 +1751,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:ba2df6e0-4222-4114-a3e7-6c1f566be33f"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:4ffd5398-a680-49b7-9a75-41a6c65a4a2c"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="31"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2011,8 +2011,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d88e8712-3689-47ab-8201-a700cbda8c12"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:6ccfa11d-913a-4779-985f-45199c57a665"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="7"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2143,8 +2143,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d8982328-792d-4b9d-86e7-62a137ca901c"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:64211203-7866-4103-ab71-334758aa4fa2"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2246,8 +2246,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:e3745185-946a-47a8-b501-8fee1d00985f"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:0204b17b-ad56-450c-99bb-6e6fd44685df"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2326,8 +2326,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:d045205d-8926-4997-8bef-4e560c2c38f0"/>
-          <timestamp value="2024-01-16T20:10:35-03:00"/>
+          <identifier value="urn:uuid:283759f4-84e8-43ee-a180-559d08f2f3c3"/>
+          <timestamp value="2024-01-17T07:30:44-03:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2401,8 +2401,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:7f7e069c-3283-454b-b3e7-224dfd0b9144"/>
-          <timestamp value="2024-01-16T20:10:36-03:00"/>
+          <identifier value="urn:uuid:450f42ec-eec9-4d9b-9f73-c4e666a2a648"/>
+          <timestamp value="2024-01-17T07:30:45-03:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2492,8 +2492,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:bc47d01a-4fe7-4b3c-8537-ab72c8c74f5d"/>
-          <timestamp value="2024-01-16T20:10:36-03:00"/>
+          <identifier value="urn:uuid:67aa495d-d6ff-4c6f-8db9-4790a948261a"/>
+          <timestamp value="2024-01-17T07:30:45-03:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2585,8 +2585,8 @@
         <experimental value="false"/>
         <date value="2024-01-11T13:00:00-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:0b237220-e8ee-4713-be7f-3332fa3c4e1b"/>
-          <timestamp value="2024-01-16T20:10:36-03:00"/>
+          <identifier value="urn:uuid:6befbf4c-87e1-43c9-a698-5777c604f3da"/>
+          <timestamp value="2024-01-17T07:30:45-03:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>

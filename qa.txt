@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 1.5.11
-Generated Tue Jan 16 20:13:14 BRT 2024. FHIR version 5.0.0 for guide#0.0.0 (canonical = https://molic-avc.gabriellesantosleandro.com)
+Generated Wed Jan 17 07:32:38 BRT 2024. FHIR version 5.0.0 for guide#0.0.0 (canonical = https://molic-avc.gabriellesantosleandro.com)
  Build Errors : 0 / 0 / 0
  C:\fhir\fhir-molic-avc-ig\fsh-generated\resources\CodeSystem-CVDComorbiditiesCS : 0 / 0 / 1
  C:\fhir\fhir-molic-avc-ig\fsh-generated\resources\CodeSystem-ConsciousnessCS : 0 / 0 / 1

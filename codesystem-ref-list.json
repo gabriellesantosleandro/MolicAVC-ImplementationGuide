@@ -290,9 +290,9 @@
       "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.",
       "uses" : {
       },
-      "ValueSet-StrokeToiletingVS.html" : "Prestroke and Poststroke Functional Status: Toileting",
       "ValueSet-StrokeDressingVS.html" : "Prestroke and Poststroke Functional Status: Dressing",
-      "ValueSet-StrokeAmbVS.html" : "Prestroke and Poststroke Functional Status: Ambulation"
+      "ValueSet-StrokeAmbVS.html" : "Prestroke and Poststroke Functional Status: Ambulation",
+      "ValueSet-StrokeToiletingVS.html" : "Prestroke and Poststroke Functional Status: Toileting"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",

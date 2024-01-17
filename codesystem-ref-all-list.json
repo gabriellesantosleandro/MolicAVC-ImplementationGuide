@@ -114,8 +114,8 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes",
-      "ValueSet-GenderIdentityVS.html" : "Gender Identity"
+      "ValueSet-GenderIdentityVS.html" : "Gender Identity",
+      "http://hl7.org/fhir/R5/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -403,9 +403,9 @@
       "description" : "CodeSystem that defines the response values for the Prestroke and Poststroke Functional Status.",
       "uses" : {
       },
-      "ValueSet-StrokeToiletingVS.html" : "Prestroke and Poststroke Functional Status: Toileting",
       "ValueSet-StrokeDressingVS.html" : "Prestroke and Poststroke Functional Status: Dressing",
-      "ValueSet-StrokeAmbVS.html" : "Prestroke and Poststroke Functional Status: Ambulation"
+      "ValueSet-StrokeAmbVS.html" : "Prestroke and Poststroke Functional Status: Ambulation",
+      "ValueSet-StrokeToiletingVS.html" : "Prestroke and Poststroke Functional Status: Toileting"
     },
     {
       "url" : "https://molic-avc.gabriellesantosleandro.com/CodeSystem/StrokeTypeCS",
